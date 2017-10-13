@@ -1,0 +1,28 @@
+{
+  "name": "hackaburg-website",
+  "version": "0.0.1",
+  "repository": "git@github.com:hackaburg/website.git",
+  "contributors": [
+    "michaelneu <git@michaeln.eu>"
+  ],
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "clean": "rimraf dist/"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-less": "^3.3.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.2",
+    "gulp-uglify": "^3.0.0",
+    "less-plugin-glob": "^2.0.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.5.3"
+  }
+}
