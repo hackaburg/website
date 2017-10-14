@@ -1,0 +1,26 @@
+addons:
+  apt:
+    packages:
+      - lftp
+
+language: node_js
+node_js:
+  - node
+
+cache: yarn
+
+branches:
+  only:
+    - master
+    - /v\d+\.\d+/
+
+before_deploy:
+  - yarn build
+
+deploy:
+  provider: script
+  script: lftp -e "set ssl:verify-certificate no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
