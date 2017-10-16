@@ -2,9 +2,7 @@
 
 > Hackaburg is a local hackathon event in Regensburg. This is the code of our website for the event in 2018. Have fun!
 
-[![NPM Version][^v6.9.0]][npm-url]
-[![Linux Build][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
+[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/hackaburg/website)
 
 ## Install
 You need npm and node installed on your machine.
