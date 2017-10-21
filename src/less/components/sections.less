@@ -1,0 +1,42 @@
+.section.heading {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+
+  .title {
+    margin-bottom: 0.25rem;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .subtitle {
+      h3 {
+        display: inline-block;
+        padding-bottom: 0.5rem;
+
+        font-size: 1.5rem;
+        border-bottom: 3px solid #000;
+      }
+  }
+
+  &.accent {
+    .title {
+      color: @color-accent;
+    }
+
+    .subtitle h3 {
+      border-bottom-color: @color-accent;
+    }
+  }
+
+  &.inverted {
+    .title {
+      color: #000;
+    }
+
+    .subtitle {
+      color: #fff;
+    }
+  }
+}
