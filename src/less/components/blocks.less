@@ -1,8 +1,14 @@
 .block {
   padding: 5rem 0rem;
 
+  z-index: @z-block;
+
   &.accent {
     color: #fff;
     background: linear-gradient(@color-accent, @color-accent-light);
+  }
+
+  &.white {
+    background-color: #fff;
   }
 }
