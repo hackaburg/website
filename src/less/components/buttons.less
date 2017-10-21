@@ -1,0 +1,34 @@
+.button,
+a.button {
+  display: inline-block;
+
+  padding: 0.5rem 2rem;
+
+  border-radius: 10rem;
+  border: 2px solid @color-accent;
+
+  color: @color-accent;
+  background-color: transparent;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transition-property: background-color, color;
+  transition-duration: @duration-transition;
+
+  &:hover {
+    color: #fff;
+    background-color: @color-accent;
+  }
+
+  &.inverted {
+    border-color: #fff;
+    background-color: #fff;
+    color: @color-accent;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+}

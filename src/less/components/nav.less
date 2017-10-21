@@ -1,0 +1,57 @@
+nav {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+
+  display: block;
+
+  color: #fff;
+  background-color: @color-accent;
+
+  text-transform: uppercase;
+  text-align: right;
+  
+  ul {
+    display: inline-block;
+    margin: 0rem;
+    margin-right: 10rem;
+    padding: 0rem;
+    
+    vertical-align: top;
+
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 1rem 2rem;
+
+        background-color: transparent;
+
+        transition-property: background-color;
+        transition-duration: @duration-transition;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+
+  .mlh {
+    position: absolute;
+    top: 0rem;
+    right: 3rem;
+
+    display: inline-block;
+    width: 5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
