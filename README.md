@@ -1,44 +1,34 @@
 # hackaburg website :rocket: :european_castle:
 
+[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/hackaburg/website)
+[![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/hackaburg/website/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/hackaburg/website)
+[![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/hackaburg/website/issues)
+
 > Hackaburg is a local hackathon event in Regensburg. This is the code of our website for the event in 2018. Have fun!
 
-[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/hackaburg/website)
 
 ## Install
-You need npm and node installed on your machine.
+You need to have node installed on your machine.
 
 ```bash
 npm install
 ```
-or (prevered)
+or (preferred)
 ```bash
-yarn install
+yarn
 ```
+
 
 ## Usage
 
-Build sources:
-```bash 
-npm run build 
-```
+You can take a look at the [package.json scripts section](package.json) to get an overview of available shorthands:
 
-Start dev server:
-```bash
-npm start
-```
+* build the website: `yarn build`
+* start a livereload dev server: `yarn start`
+* clean the built project: `yarn clean`
 
-Clean sources:
-```bash
-npm run clean
-```
 
 ## License
 
-[MIT](http://vjpr.mit-license.org)
-
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
-[travis-image]: https://img.shields.io/travis/live-js/live-xxx/master.svg
-[travis-url]: https://travis-ci.org/live-js/live-xxx
-[coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
-[coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
+The code in this project is released under the [MIT license](LICENSE).
