@@ -1,0 +1,66 @@
+.media {
+  position: relative;
+
+  margin: -@size-block-margin 0rem;
+
+  .description {
+    position: absolute;
+    top: 17rem;
+    left: 0rem;
+    right: 50%;
+
+    padding-right: @size-grid-margin;
+  }
+
+  .video.grid .row {
+    margin: 0rem;
+
+    z-index: @z-block-content;
+
+    & > * {
+      padding: 0rem;
+
+      transition-property: margin-left, width;
+      transition-duration: @duration-transition;
+      
+      .preview {
+        display: block;
+        height: @size-video-preview;
+    
+        background-image: url(http://placehold.it/500x500);
+        background-size: cover;
+        background-position: center;
+
+        text-align: center;
+      
+        .play {
+          display: inline-block;
+          padding: 2rem;
+          margin-top: @size-video-preview / 2 - 4rem;
+    
+          text-align: center;
+          background-color: @color-accent;
+
+          border-radius: 20rem;
+          z-index: @z-block-content;
+
+          .icon {
+            margin-left: 0.5rem;
+
+            &:before {
+              content: " ";
+
+              display: inline-block;
+              width: 0rem;
+              height: 0rem;
+              
+              border-style: solid;
+              border-width: 1.5rem 0rem 1.5rem 2.6rem;
+              border-color: transparent transparent transparent #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
