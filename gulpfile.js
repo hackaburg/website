@@ -110,7 +110,7 @@ gulp.task("copy", () => {
   }
 });
 
-gulp.task("watch", ["serve"], () => {
+gulp.task("watch", ["default", "serve"], () => {
   gulp.watch(sources.less.watch, ["css"]);
 
   gulp.watch(sources.templates.watch, (event) => {
