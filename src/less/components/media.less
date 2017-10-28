@@ -1,7 +1,18 @@
 .media {
   position: relative;
 
-  margin: -@size-block-margin 0rem;
+  margin-top: -@size-block-margin;
+  margin-bottom: -4.3rem;
+
+  video {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    
+    width: 100%;
+  }
 
   .description {
     position: absolute;
@@ -10,26 +21,23 @@
     right: 50%;
 
     padding-right: @size-grid-margin;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3rem solid transparent;
   }
 
   .video.grid .row {
+    position: relative;
     margin: 0rem;
 
     z-index: @z-block-content;
 
     & > * {
       padding: 0rem;
-
-      transition-property: margin-left, width;
-      transition-duration: @duration-transition;
       
       .preview {
         display: block;
         height: @size-video-preview;
-    
-        background-image: url(http://placehold.it/500x500);
-        background-size: cover;
-        background-position: center;
 
         text-align: center;
       
