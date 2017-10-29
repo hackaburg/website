@@ -3,23 +3,23 @@ extends ../layout.pug
 block nav
   ul
     li
-      a(href="#") About
+      a(href="#about") About
     li
-      a(href="#") Tracks
+      a(href="#tracks") Tracks
     li
-      a(href="#") Sponsors
+      a(href="#sponsors") Sponsors
     li
-      a(href="#") Hackaburg 2017
+      a(href="#hackaburg-2017") Hackaburg 2017
     li
-      a(href="#") Schedule
+      a(href="#schedule") Schedule
     li
-      a(href="#") Prices
+      a(href="#prices") Prices
     li
-      a(href="#") Venue
+      a(href="#venue") Venue
     li
-      a(href="#") FAQ
+      a(href="#faq") FAQ
     li
-      a(href="#") Team
+      a(href="#team") Team
 
 block content
   section.accent.block
@@ -34,7 +34,7 @@ block content
 
         a.inverted.button(href="#") apply now
 
-  .upwards.right.white.triangle
+  a.upwards.right.white.triangle(name="about")
     .castle.image.container
       img(src="assets/images/hackaburg.png")
 
@@ -56,7 +56,7 @@ block content
 
               p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 
-  .downwards.right.white.triangle
+  a.downwards.right.white.triangle(name="tracks")
   
   section.accent.block
     .tracks
@@ -101,7 +101,7 @@ block content
                 .title Free Choice
                 img(src="http://placehold.it/960x540")
 
-  .upwards.left.white.triangle
+  a.upwards.left.white.triangle(name="sponsors")
     .rocket.image.container
       img(src="assets/images/moon-landing.png")
 
@@ -156,7 +156,7 @@ block content
             a.accent.button(href="#") Become a partner
 
 
-  .downwards.right.white.triangle
+  a.downwards.right.white.triangle(name="hackaburg-2017")
 
   section.accent.block
     .media
@@ -177,7 +177,7 @@ block content
           p
             a.accent.text(href="#", target="_blank") Watch last year's after movie &raquo;
 
-  .upwards.left.accent.triangle
+  a.upwards.left.accent.triangle(name="schedule")
 
   section.accent.block
     .schedule
@@ -254,7 +254,7 @@ block content
                     h4 Registration
                   .time 1pm - 3pm
 
-  .downwards.right.accent.triangle
+  a.downwards.right.accent.triangle(name="prices")
 
   section.white.block
     .prices
@@ -265,7 +265,7 @@ block content
           .subtitle
             h3 Awesome projects get awesome stuff
 
-  .downwards.right.white.triangle
+  a.downwards.right.white.triangle(name="venue")
 
   section.accent.block
     .venue
@@ -278,7 +278,7 @@ block content
         
         img(src="http://placehold.it/960x540")
 
-  .upwards.right.white.triangle
+  a.upwards.right.white.triangle(name="faq")
 
   section.white.block
     .faq
@@ -317,7 +317,7 @@ block content
         p Missing something? Feel free to ping us at 
           a.accent.text(href="mailto:questions@hackaburg.de") questions@hackaburg.de
 
-  .downwards.right.white.triangle
+  a.downwards.right.white.triangle(name="team")
 
   section.accent.block
     .team
