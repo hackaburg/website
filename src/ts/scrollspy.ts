@@ -4,7 +4,7 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
 
 (function () {
   window.onscroll = (event) => {
-    const currentPosition = document.body.scrollTop,
+    const currentPosition = document.documentElement.scrollTop || document.body.scrollTop,
           navLinks = nodeListToArray(document.querySelectorAll("nav ul li a")),
           blockElements = nodeListToArray(document.querySelectorAll(".block")),
           blocks = blockElements.map((element, index) => {
@@ -18,19 +18,21 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
                                 })
                                 .reverse()
                                 .filter((b) => b.top < currentPosition);
-    
-    let index = 0;
 
+    for (const link of navLinks) {
+      link.className = "";
+    }
+
+    let index = 0;
+    
     if (blocks.length > 0) {
-      index = blocks[0].index;
+      index = blocks[0].index - 1;
     }
     
-    if (index < navLinks.length) {
-      for (const link of navLinks) {
-        link.className = "";
-      }
-
+    if (index >= 0 && index < navLinks.length) {
       navLinks[index].className = "active";
     }
   };
+
+  window.onscroll(null);
 })();
