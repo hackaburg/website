@@ -112,20 +112,13 @@ gulp.task("copy", () => {
 
 gulp.task("watch", ["default", "serve"], () => {
   gulp.watch(sources.less.watch, ["css"]);
+  gulp.watch(sources.js.watch, ["js"]);
 
   gulp.watch(sources.templates.watch, (event) => {
     if (event.type == "changed") {
         sources.templates.source = event.path;
 
         gulp.start("templates");
-    }
-  });
-
-  gulp.watch(sources.js.watch, (event) => {
-    if (event.type == "changed") {
-        sources.js.source = event.path;
-
-        gulp.start("js");
     }
   });
 
