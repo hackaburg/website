@@ -1,0 +1,51 @@
+.timetable {
+  .day {
+    .date {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .events {
+      .event {
+        padding: 1rem;
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    
+        &.white {
+          background-color: #fff;
+          color: #000;
+
+          .time {
+            color: #777;
+          }
+        }
+    
+        &.gray {
+          background-color: #777;
+          color: #fff;
+
+          .time {
+            color: #ddd;
+          }
+        }
+    
+        &.accent {
+          background-color: @color-accent-light;
+          color: #000;
+    
+          .time {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+    
+        & + .event {
+          margin-top: 1.5rem;
+        }
+    
+    
+        .title h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,24 @@
 extends ../layout.pug
 
+block nav
+  ul
+    li
+      a(href="#") About
+    li
+      a(href="#") Tracks
+    li
+      a(href="#") Sponsors
+    li
+      a(href="#") Schedule
+    li
+      a(href="#") Prices
+    li
+      a(href="#") Venue
+    li
+      a(href="#") FAQ
+    li
+      a(href="#") Team
+
 block content
   section.accent.block
     .container
@@ -137,6 +156,210 @@ block content
   .downwards.right.white.triangle
 
   section.accent.block
+    .schedule
+      .container
+        .inverted.section.heading
+          .title
+            h2 Schedule
+          .subtitle
+            h3 When and what
+
+        .timetable.grid
+          .row
+            .day.col-25
+              .date Thu, 24.05.2017
+              .events
+                .accent.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .white.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .gray.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+            .day.col-25
+              .date Fri, 25.05.2017
+              .events
+                .accent.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .white.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+            .day.col-25
+              .date Sat, 26.05.2017
+              .events
+                .accent.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .white.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .gray.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+            .day.col-25
+              .date Sun, 27.05.2017
+              .events
+                .accent.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .white.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+                .gray.event
+                  .title
+                    h4 Registration
+                  .time 1pm - 3pm
+
+  .downwards.right.accent.triangle
+
+  section.white.block
+    .prices
+      .container
+        .accent.section.heading
+          .title
+            h2 Prices
+          .subtitle
+            h3 Awesome projects get awesome stuff
+
+  .downwards.right.white.triangle
+
+  section.accent.block
+    .venue
+      .container
+        .inverted.section.heading
+          .title
+            h2 Venue
+          .subtitle
+            h3 How to get there
+        
+        img(src="http://placehold.it/960x540")
+
+  .upwards.right.white.triangle
+
+  section.white.block
+    .faq
+      .container
+        .accent.section.heading
+          .title
+            h2 FAQ
+          .subtitle
+            h3 Questions and answers
+
+        .grid
+          .row
+            .col-50
+              .question
+                .header
+                  h4 Question 1
+                .content Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+              
+              .question
+                .header
+                  h4 Question 2
+                .content Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+
+            .col-50
+              .question
+                .header
+                  h4 Question 3
+                .content Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+              
+              .question
+                .header
+                  h4 Question 4
+                .content Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+
+        br
+        p Missing something? Feel free to ping us at 
+          a.accent.text(href="mailto:questions@hackaburg.de") questions@hackaburg.de
+
+  .downwards.right.white.triangle
+
+  section.accent.block
+    .team
+      .container
+        .inverted.section.heading
+          .title
+            h2 Team
+          .subtitle
+            h3 The people behind hackaburg
+        
+        .grid
+          .row
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+          .row
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+            .col-25
+              .person
+                .image
+                  img(src="http://placehold.it/256x256")
+                .name Person's Name
+                .task Something
+
+
+  .downwards.right.accent.triangle
+
+  section.accent.block
     .media
       video(src="assets/images/video.mp4", loop, autoplay, muted)
       .container
@@ -151,10 +374,7 @@ block content
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
             br
             | Dolore magna aliquyam erat, sed diam voluptua. 
+          
+          p
+            a.accent.text(href="#", target="_blank") Watch last year's after movie &raquo;
 
-      .video.grid
-        .row
-          .col-offset-50.col-50
-            .preview
-              a.play(href="#")
-                i.icon
