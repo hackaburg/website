@@ -285,7 +285,17 @@ block content
           .subtitle
             h3 How to get there
         
-        img(src="http://placehold.it/960x540")
+        .grid
+          .row
+            .col-20
+              p TechBase Regensburg
+              p Franz-Mayer-Straße 1
+                br
+                | 93053 Regensburg
+              br
+              a.inverted.button(href="https://www.google.de/maps/dir//TechBase+Regensburg", target="_blank") Directions
+            .col-80
+              #map
 
   a.upwards.right.white.triangle(name="faq")
 
@@ -388,3 +398,5 @@ block content
                   img(src="http://placehold.it/256x256")
                 .name Person's Name
                 .task Something
+
+  script(type="text/javascript", src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU&sensor=true")
