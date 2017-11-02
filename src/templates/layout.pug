@@ -12,10 +12,13 @@ html
   body
     nav
       .container
+        input(type="checkbox", id="navbar-toggle")
         block nav
           ul
             li
               a(href="#") Home
+        label(for="navbar-toggle")
+          .burger
 
     block content
 

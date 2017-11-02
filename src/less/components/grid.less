@@ -32,3 +32,28 @@
     .col(100);
   }
 }
+
+@media screen and (max-width: @breakpoint-tablet) {
+  .container {
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+  .grid {
+    .row {
+      margin: 0rem;
+
+      .col-20,
+      .col-25,
+      .col-33,
+      .col-50,
+      .col-100 {
+        width: 100%;
+        padding: @size-grid-margin 0rem 0rem 0rem;
+
+        float: none;
+      }
+    }
+  }
+}

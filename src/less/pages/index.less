@@ -8,6 +8,10 @@
 
   .subtitle {
     margin: 0.5rem 0rem 2rem 0rem;
+
+    .date:before {
+      content: " | ";
+    }
   }
 
   .backers {
@@ -47,6 +51,10 @@
 }
 
 .sponsors {
+  .partner {
+    text-align: center;
+  }
+
   .become.sponsor {
     margin-top: 5rem;
   }
@@ -54,8 +62,56 @@
 
 .venue {
   margin-bottom: 5rem;
+
+  img {
+    width: 100%;
+  }
 }
 
 .team {
   margin-bottom: 5rem;
+}
+
+.media .section.heading {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+  .intro {
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .subtitle h3 {
+      font-size: 1rem;
+
+      .date {
+        display: block;
+
+        &:before {
+          content: "";
+        }
+      }
+    }
+
+    .backers {
+      a {
+        display: block;
+        margin-top: 3rem;
+
+        & + a {
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
 }

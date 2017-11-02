@@ -13,6 +13,11 @@ nav {
   text-align: right;
 
   z-index: 100;
+
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
   
   ul {
     display: inline-block;
@@ -61,6 +66,79 @@ nav {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  nav {
+    text-align: center;
+
+    ul {
+      display: block;
+      padding-top: 4.5rem;
+
+      overflow: hidden;
+
+      transition-property: height;
+      transition-duration: @duration-transition;
+
+      li {
+        display: block;
+
+        a.active {
+          background-color: transparent;
+        }
+      }
+    }
+
+    input[type="checkbox"] {
+      & + ul {
+        height: 0rem;
+      }
+
+      &:checked + ul {
+        height: 100vh;
+      }
+    }
+
+    label {
+      display: block;
+      padding: 2rem;
+
+      position: absolute;
+      top: 0rem;
+      right: 0rem;
+
+      cursor: pointer;
+
+      .burger {
+        display: block;
+        width: @size-burger-width;
+        height: @size-burger-height;
+
+        background-color: #fff;
+
+        &:before,
+        &:after {
+          content: " ";
+          display: block;
+          width: @size-burger-width;
+          height: @size-burger-height;
+
+          position: relative;
+
+          background-color: #fff;
+        }
+        
+        &:before {
+          top: @size-burger-distance;
+        }
+        
+        &:after {
+          bottom: @size-burger-distance + @size-burger-height;
+        }
+      }
     }
   }
 }

@@ -10,7 +10,7 @@
 
   .description {
     position: absolute;
-    bottom: @size-video-preview / 3;
+    bottom: @size-video-preview;
     left: 0rem;
     right: 50%;
 
@@ -18,5 +18,34 @@
 
     background-color: rgba(0, 0, 0, 0.75);
     border: 2rem solid transparent;
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  .media {
+    .description {
+      bottom: @size-video-preview / 4;
+    }
+  }
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+  .media {
+    margin: -5rem 0rem;
+
+    video {
+      display: none;
+    }
+
+    .description {
+      position: static;
+      bottom: 0rem;
+      right: 0rem;
+
+      margin: 0rem -1rem;
+      padding: 8rem 1rem;
+
+      border: none;
+    }
   }
 }
