@@ -1,5 +1,5 @@
 google.maps.event.addDomListener(window, "load", () => {
-  const position = new google.maps.LatLng(49.003169, 12.096859),
+  const position = new google.maps.LatLng(49.002131, 12.100056),
         container = document.querySelector(".venue #map"),
         map = new google.maps.Map(container, {
           zoom: 15,
