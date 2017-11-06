@@ -126,7 +126,8 @@ gulp.task("watch", ["default", "serve"], () => {
     gulp.watch(item.watch, (event) => {
         if (event.type != "deleted") {
             gulp.src(event.path)
-                .pipe(gulp.dest(item.destination));
+                .pipe(gulp.dest(item.destination))
+                .pipe(connect.reload());
         }
     });
   }
