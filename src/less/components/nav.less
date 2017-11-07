@@ -18,6 +18,12 @@ nav {
   label {
     display: none;
   }
+
+  .back.to.home {
+    display: block;
+    padding: 1.25rem;
+    float: left;
+  }
   
   ul {
     display: inline-block;
@@ -74,6 +80,10 @@ nav {
   nav {
     text-align: center;
 
+    .back.to.home {
+      padding: 2rem;
+    }
+
     ul {
       display: block;
       padding-top: 4.5rem;
@@ -93,11 +103,11 @@ nav {
     }
 
     input[type="checkbox"] {
-      & + ul {
+      & ~ ul {
         height: 0rem;
       }
 
-      &:checked + ul {
+      &:checked ~ ul {
         height: 100vh;
       }
     }
@@ -111,34 +121,6 @@ nav {
       right: 0rem;
 
       cursor: pointer;
-
-      .burger {
-        display: block;
-        width: @size-burger-width;
-        height: @size-burger-height;
-
-        background-color: #fff;
-
-        &:before,
-        &:after {
-          content: " ";
-          display: block;
-          width: @size-burger-width;
-          height: @size-burger-height;
-
-          position: relative;
-
-          background-color: #fff;
-        }
-        
-        &:before {
-          top: @size-burger-distance;
-        }
-        
-        &:after {
-          bottom: @size-burger-distance + @size-burger-height;
-        }
-      }
     }
   }
 }
