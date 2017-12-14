@@ -1,0 +1,35 @@
+.track {
+  .card-shadow();
+
+  position: relative;
+
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+  .title {
+    .card-shadow();
+
+    position: absolute;
+    bottom: 45%;
+    left: 4rem;
+    right: 4rem;
+    
+    padding: 0.4rem;
+    
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: @color-accent;
+
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+    float: left;
+    
+    z-index: 1;
+  }
+}

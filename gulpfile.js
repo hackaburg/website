@@ -110,8 +110,9 @@ gulp.task("copy", () => {
   }
 });
 
-gulp.task("watch", ["serve"], () => {
+gulp.task("watch", ["default", "serve"], () => {
   gulp.watch(sources.less.watch, ["css"]);
+  gulp.watch(sources.js.watch, ["js"]);
 
   gulp.watch(sources.templates.watch, (event) => {
     if (event.type == "changed") {
@@ -121,19 +122,12 @@ gulp.task("watch", ["serve"], () => {
     }
   });
 
-  gulp.watch(sources.js.watch, (event) => {
-    if (event.type == "changed") {
-        sources.js.source = event.path;
-
-        gulp.start("js");
-    }
-  });
-
   for (const item of sources.copy) {
     gulp.watch(item.watch, (event) => {
         if (event.type != "deleted") {
             gulp.src(event.path)
-                .pipe(gulp.dest(item.destination));
+                .pipe(gulp.dest(item.destination))
+                .pipe(connect.reload());
         }
     });
   }

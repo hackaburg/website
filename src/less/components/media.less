@@ -1,0 +1,51 @@
+.media {
+  position: relative;
+
+  margin-top: -@size-block-margin;
+  margin-bottom: -5rem;
+
+  video {
+    width: 100%;
+  }
+
+  .description {
+    position: absolute;
+    bottom: @size-video-preview;
+    left: 0rem;
+    right: 50%;
+
+    padding-right: @size-grid-margin;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2rem solid transparent;
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  .media {
+    .description {
+      bottom: @size-video-preview / 4;
+    }
+  }
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+  .media {
+    margin: -5rem 0rem;
+
+    video {
+      display: none;
+    }
+
+    .description {
+      position: static;
+      bottom: 0rem;
+      right: 0rem;
+
+      margin: 0rem -1rem;
+      padding: 8rem 1rem;
+
+      border: none;
+    }
+  }
+}

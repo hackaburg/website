@@ -1,0 +1,66 @@
+.icon {
+  display: block;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+  }
+
+  &.burger {
+    &,
+    &:before,
+    &:after {
+      width: @size-icon-burger-width;
+      height: @size-icon-burger-height;
+
+      background-color: #fff;
+    }
+
+    &:before,
+    &:after {
+      position: relative;
+    }
+    
+    &:before {
+      top: @size-icon-burger-distance;
+    }
+    
+    &:after {
+      bottom: @size-icon-burger-distance + @size-icon-burger-height;
+    }
+  }
+  
+  &.back.arrow {
+    width: @size-icon-arrow-width;
+
+    &,
+    &:before,
+    &:after {
+      height: @size-icon-arrow-height;
+
+      position: relative;
+
+      background-color: #fff;
+    }
+    
+    &:before,
+    &:after {
+      width: @size-icon-arrow-width / 1.5;
+      
+      left: -@size-icon-arrow-height * 0.9;
+
+      transform-origin: left center;
+    }
+
+    &:before {
+      top: @size-icon-arrow-height / 3;
+      transform: rotateZ(-45deg);
+    }
+    
+    &:after {
+      top: -@size-icon-arrow-height * 1.2;
+      transform: rotateZ(45deg);
+    }
+  }
+}

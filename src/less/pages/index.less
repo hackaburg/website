@@ -1,0 +1,133 @@
+.intro {
+  margin: 12vh 0rem;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    margin: 0.5rem 0rem 2rem 0rem;
+
+    .date:before {
+      content: " | ";
+    }
+  }
+
+  .backers {
+    margin-bottom: 3rem;
+
+    a {
+      img {
+        height: 5rem;
+      }
+      
+      & + a {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+.castle.image.container img,
+.rocket.image.container img {
+  position: absolute;
+
+  z-index: @z-triangle-content;
+}
+
+.castle.image.container img {
+  width: 22rem;
+
+  bottom: -6rem;
+  right: 0rem;
+}
+
+.rocket.image.container img {
+  bottom: -3rem;
+  right: 2rem;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.about {
+  margin: 3rem 0rem;
+
+  .tldr {
+    font-size: 2.25rem;
+  }
+}
+
+.tracks {
+  margin-bottom: 12rem;
+}
+
+.sponsors {
+  .partner {
+    text-align: center;
+  }
+
+  .become.sponsor {
+    margin-top: 5rem;
+  }
+}
+
+.venue {
+  margin-bottom: 5rem;
+
+  #map {
+    .card-shadow();
+    
+    height: 30rem;
+  }
+}
+
+.team {
+  margin-bottom: 5rem;
+}
+
+.media .section.heading {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+  .intro {
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .subtitle h3 {
+      font-size: 1rem;
+
+      .date {
+        display: block;
+
+        &:before {
+          content: "";
+        }
+      }
+    }
+
+    .backers {
+      a {
+        display: block;
+        margin-top: 3rem;
+
+        & + a {
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+}

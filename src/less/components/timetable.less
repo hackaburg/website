@@ -1,0 +1,61 @@
+.timetable {
+  .day {
+    .date {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .events {
+      .event {
+        .card-shadow();
+        
+        padding: 1rem;
+    
+        &.white {
+          background-color: #fff;
+          color: #000;
+
+          .time {
+            color: #777;
+          }
+        }
+
+        &.black {
+          background-color: #000;
+          color: #fff;
+
+          .time {
+            color: #fff;
+          }
+        }
+    
+        &.gray {
+          background-color: #777;
+          color: #fff;
+
+          .time {
+            color: #ddd;
+          }
+        }
+    
+        &.accent {
+          background-color: @color-accent-light;
+          color: #fff;
+    
+          .time {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+    
+        & + .event {
+          margin-top: 1.5rem;
+        }
+    
+    
+        .title h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

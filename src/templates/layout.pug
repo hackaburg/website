@@ -3,6 +3,38 @@ doctype html
 html
   head
     meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")
+    link(rel="stylesheet", href="assets/css/stylesheet.min.css")
+    title hackaburg 2018
 
   body
+    nav
+      .container
+        input(type="checkbox", id="navbar-toggle")
+        block nav
+          ul
+            li
+              a(href="#") Home
+        label(for="navbar-toggle")
+          .burger.icon
+
     block content
+
+    .upwards.left.white.triangle
+
+    footer.white.block
+      .container
+        .grid
+          .row
+            .col-50
+              ul
+                li
+                  a(href="imprint.html") Imprint
+            .right.aligned.text.col-50 made with 
+              span.accent.bigger.text &hearts; 
+              | in Regensburg
+
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js", integrity="sha256-nLkfxAF8lAuFgs9kcFqZff/MohZAA8mNLQ/buYWwOLs=", crossorigin="anonymous")
+    script(type="text/javascript", src="assets/js/hackaburg.min.js")

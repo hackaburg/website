@@ -1,0 +1,126 @@
+nav {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+
+  display: block;
+
+  color: #fff;
+  background-color: @color-accent;
+
+  text-transform: uppercase;
+  text-align: right;
+
+  z-index: 100;
+
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
+
+  .back.to.home {
+    display: block;
+    padding: 1.25rem;
+    float: left;
+  }
+  
+  ul {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    
+    vertical-align: top;
+
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 1rem 1rem;
+
+        position: relative;
+        overflow: hidden;
+
+        background-color: transparent;
+
+        transition-property: background-color;
+        transition-duration: @duration-transition;
+        
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: currentColor;
+        }
+
+        &.active {
+          background-color: @color-accent-light;
+        }
+      }
+    }
+  }
+
+  .mlh {
+    position: absolute;
+    top: 0rem;
+    right: -7rem;
+
+    display: inline-block;
+    width: 5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  nav {
+    text-align: center;
+
+    .back.to.home {
+      padding: 2rem;
+    }
+
+    ul {
+      display: block;
+      padding-top: 4.5rem;
+
+      overflow: hidden;
+
+      transition-property: height;
+      transition-duration: @duration-transition;
+
+      li {
+        display: block;
+
+        a.active {
+          background-color: transparent;
+        }
+      }
+    }
+
+    input[type="checkbox"] {
+      & ~ ul {
+        height: 0rem;
+      }
+
+      &:checked ~ ul {
+        height: 100vh;
+      }
+    }
+
+    label {
+      display: block;
+      padding: 2rem;
+
+      position: absolute;
+      top: 0rem;
+      right: 0rem;
+
+      cursor: pointer;
+    }
+  }
+}
