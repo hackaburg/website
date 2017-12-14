@@ -6,14 +6,14 @@ block nav
       a(href="#about") About
     li
       a(href="#tracks") Tracks
-    li
+    //-li
       a(href="#sponsors") Sponsors
     li
       a(href="#hackaburg-2017") Hackaburg 2017
     li
       a(href="#schedule") Schedule
     li
-      a(href="#prices") Prices
+      a(href="#teaser2018") Teaser 2018
     li
       a(href="#venue") Venue
     li
@@ -39,8 +39,11 @@ block content
 
           a(href="http://www.mittelbayerische.de", target="_blank")
             img(src="assets/images/mz.svg")
+        
+        a.inverted.button(href="https://www.facebook.com/hackaburg") Stay up to date
 
-        a.inverted.button(href="#") apply now
+        .subtitle
+          h5 * The application starts at the end of february 2018
 
   a.upwards.right.white.triangle(name="about")
     .castle.image.container
@@ -70,45 +73,45 @@ block content
           .subtitle
             h3 How you can change the future
 
-        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
-          br
-          | Dolore magna aliquyam erat, sed diam voluptua. 
+        p The new tracks introduced this year offer you the possibility to challenge in the category of interest. 
+          br 
+          | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
 
         .grid
           .row
             .col-50
-              a.track(href="#")
+              a.track
                 .title Artificial Intelligence
                 img(src="assets/images/track_5.png")
             .col-50
-              a.track(href="#")
+              a.track
                 .title Digital Journalism
                 img(src="assets/images/track_2.png")
           .row
             .col-50
-              a.track(href="#")
+              a.track
                 .title AR + VR
                 img(src="assets/images/track_4.png")
             .col-50
-              a.track(href="#")
+              a.track
                 .title Bavarian Tec
                 img(src="assets/images/track_3.png")
           .row
             .col-50
-              a.track(href="#")
+              a.track
                 .title Big Data
                 img(src="assets/images/track_1.png")
             .col-50
-              a.track(href="#")
+              a.track
                 .title Free Choice
                 img(src="assets/images/track_6.png")
 
 
-  a.upwards.left.white.triangle(name="sponsors")
+  //-a.upwards.left.white.triangle(name="sponsors")
     //- .rocket.image.container
     //-   img(src="assets/images/moon-landing.png")
 
-  section.white.block
+  //-section.white.block
     .sponsors
       .container
         .accent.section.heading
@@ -152,6 +155,8 @@ block content
               .level4.partner Partner
             .right.aligned.text.col-20
               .level4.partner Partner
+        .centered.text
+          p - - Currently we cannot name our sponsors publicly - - 
 
         .become.sponsor
           .centered.text
@@ -159,7 +164,7 @@ block content
             a.accent.button(href="#") Become a partner
 
 
-  a.downwards.right.white.triangle(name="hackaburg-2017")
+  a.downwards.right.accent.triangle(name="hackaburg-2017")
 
   section.accent.block
     .media
@@ -288,16 +293,30 @@ block content
                     h4 Hackathon ends
                   .time 5.15pm
 
-  a.downwards.right.accent.triangle(name="prices")
+  a.downwards.right.accent.triangle(name="teaser2018")
 
   section.white.block
     .prices
       .container
         .accent.section.heading
           .title
-            h2 Prices
+            h2 Teaser 2018
           .subtitle
-            h3 Awesome projects get awesome stuff
+            h3 $ ./hb_crack64.exe data
+      
+        .grid
+          .row
+            .col-33
+              p Hackaburg 2018 has finally started!
+              p Stay up to date over our social media channels.
+              br
+              a.accent.button(href="https://www.facebook.com/hackaburg") Follow us on Facebook
+              br
+              br
+              a.accent.button(href="https://www.instagram.com/hackaburg") Follow uns on Instagram
+            .col-66
+              <iframe class="iframe" width="100%" height="315" src="https://www.youtube.com/embed/pRULo5j4gZo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 
   a.downwards.right.white.triangle(name="venue")
 
@@ -434,49 +453,50 @@ block content
                 .image
                   img(src="assets/images/member/img_3.png")
                 .name Michael Neu
-                .task Technical Support
+                .task Technical Master Mind
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_5.png")
                 .name Felix Kopp
-                .task Team Member
+                .task Print
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_7.png")
                 .name Stefan Grebler
-                .task Team Member
+                .task Print
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_11.png")
                 .name Alina Edelmann
-                .task Team Member
+                .task Application Management
           .row
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_9.png")
                 .name Felix Sellmair
-                .task Team Member
+                .task Application Management
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_10.png")
                 .name Bastian Lange
-                .task Team Member
+                .task Application Management
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_8.png")
                 .name Alexander Frummet
-                .task Team Member
+                .task Application Management
             .col-25
               .person
                 .image
                   img(src="assets/images/member/img_12.png")
                 .name Nadine Schuller
-                .task Team Member
+                .task Application Management
 
   script(type="text/javascript", src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU&sensor=true")
+  script(async src="https://www.googletagmanager.com/gtag/js?id=UA-90366502-1")
