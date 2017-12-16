@@ -1,0 +1,75 @@
+.corrupted:hover {
+  display: inline-block;
+  transform-origin: center center;
+
+  animation-name: corrupted;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.reset-corruption() {
+  transform: rotateZ(0deg);
+  color: black;
+  text-shadow: none;
+}
+
+@keyframes corrupted {
+  0% {
+    .reset-corruption();
+  }
+
+  0.81818% {
+    transform: rotateZ(1deg);
+    color: transparent;
+    text-shadow: -1px -2px 0px black,
+                2px 2px 0px @color-corruption-2,
+                -3px 2px 0px @color-corruption-1;
+  }
+
+  1.90909% {
+    .reset-corruption();
+  }
+
+  3.27273% {
+    color: transparent;
+    text-shadow: 2px -1px 0px black,
+                4px -3px 0px @color-corruption-2,
+                -2px 2px 0px @color-corruption-3;
+  }
+
+  4.36364% {
+    .reset-corruption();
+  }
+
+  5.72727% {
+    transform: rotateZ(1.5deg);
+    text-shadow: -2px -3px 0px @color-corruption-2,
+                3px 2px 0px @color-corruption-1;
+  }
+
+  6.81818% {
+    .reset-corruption();
+  }
+
+  8.18182% {
+    color: transparent;
+    text-shadow: -1px -2px 0px black,
+                2px 0px 0px @color-corruption-2,
+                -3px 2px 0px @color-corruption-1;
+  }
+
+  9.27273% {
+    .reset-corruption();
+  }
+
+  10.63636% {
+    color: transparent;
+    text-shadow: 3px -1px 0px black,
+                -2px 3px 0px @color-corruption-1;
+  }
+
+  11.72727%,
+  100% {
+    .reset-corruption();
+  }
+}

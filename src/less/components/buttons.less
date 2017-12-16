@@ -12,6 +12,7 @@ a.button {
 
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 
   transition-property: background-color, color;
   transition-duration: @duration-transition;
@@ -30,5 +31,9 @@ a.button {
       background-color: transparent;
       color: #fff;
     }
+  }
+
+  &.fluid {
+    width: 100%;
   }
 }
