@@ -6,7 +6,7 @@
     "michaelneu <git@michaeln.eu>"
   ],
   "scripts": {
-    "test": "echo 'works on my machine ¯\\_(ツ)_/¯'",
+    "test": "gulp test",
     "start": "gulp watch",
     "build": "gulp",
     "clean": "rimraf dist/"
