@@ -13,5 +13,5 @@ interface Window {
   }
 
   gtag("js", new Date());
-  gtag("config", "UA-90366502-1");
+  gtag("config", "UA-90366502-2");
 })();
