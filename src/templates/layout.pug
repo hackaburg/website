@@ -61,3 +61,15 @@ html
 
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js", integrity="sha256-nLkfxAF8lAuFgs9kcFqZff/MohZAA8mNLQ/buYWwOLs=", crossorigin="anonymous")
     script(type="text/javascript", src="assets/js/hackaburg.min.js")
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-90366502-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "UA-90366502-1", { "anonymize_ip": true });
+
+
