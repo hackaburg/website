@@ -107,11 +107,11 @@ block content
                 img(src="assets/images/tracks/track_6.jpg")
 
 
-  //-a.upwards.left.white.triangle(name="sponsors")
+  a.upwards.left.white.triangle(name="sponsors")
     //- .rocket.image.container
     //-   img(src="assets/images/moon-landing.png")
 
-  //-section.white.block
+  section.white.block
     .sponsors
       .container
         .accent.section.heading
@@ -121,14 +121,16 @@ block content
           .subtitle
             h3 Partner with us
 
-        //-.centered.text.grid
+        .centered.text.grid
           .row
             .col-100
               .level1.partner Partner
 
           .row
             .right.aligned.text.col-33
-              .level2.partner Partner
+              .level2.partner
+                a(href="https://www.intive.com", target="_blank")
+                  img(src="assets/images/sponsors/3_intive.jpg")
             .col-33
               .level2.partner Partner
             .left.aligned.text.col-33
@@ -136,9 +138,13 @@ block content
 
           .row
             .col-25
-              .level3.partner Partner
+              .level3.partner
+                a(href="http://biopark-regensburg.de/", target="_blank")
+                  img(src="assets/images/sponsors/1_biopark.jpg")
             .col-25
-              .level3.partner Partner
+              .level3.partner
+                a(href="https://www.braincourt.com", target="_blank")
+                  img(src="assets/images/sponsors/2_braincourt.jpg")
             .col-25
               .level3.partner Partner
             .col-25
@@ -155,8 +161,6 @@ block content
               .level4.partner Partner
             .right.aligned.text.col-20
               .level4.partner Partner
-        .centered.text
-          p - - Currently we cannot name our sponsors publicly - - 
 
         .become.sponsor
           .centered.text
@@ -164,7 +168,7 @@ block content
             a.accent.button(href="#") Become a partner
 
 
-  a.downwards.right.accent.triangle(name="hackaburg-2017")
+  a.downwards.right.white.triangle(name="hackaburg-2017")
 
   section.accent.block
     .media
