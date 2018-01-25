@@ -24,6 +24,19 @@ nav {
     padding: 1.25rem;
     float: left;
   }
+
+  .brand {
+    float: left;
+
+    img {
+      margin: 0.125rem;
+      height: 2.75rem;
+    }
+
+    .text {
+      display: none;
+    }
+  }
   
   ul {
     display: inline-block;
@@ -78,20 +91,35 @@ nav {
 
 @media screen and (max-width: @breakpoint-tablet) {
   nav {
-    text-align: center;
-
     .back.to.home {
       padding: 2rem;
     }
 
+    .brand {
+      img {
+        margin-top: 0.5rem;
+        height: 3rem;
+      }
+
+      .text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 1.25rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+
     ul {
       display: block;
-      padding-top: 4.5rem;
+      width: 100%;
 
       overflow: hidden;
 
       transition-property: height;
       transition-duration: @duration-transition;
+
+      text-align: right;
 
       li {
         display: block;
