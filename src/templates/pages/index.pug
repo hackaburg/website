@@ -10,7 +10,7 @@ block nav
       a(href="#about") About
     li
       a(href="#tracks") Tracks
-    //-li
+    li
       a(href="#sponsors") Sponsors
     li
       a(href="#hackaburg-2017") Hackaburg 2017
@@ -111,11 +111,11 @@ block content
                 img(src="assets/images/tracks/track_6.jpg")
 
 
-  //-a.upwards.left.white.triangle(name="sponsors")
+  a.upwards.left.white.triangle(name="sponsors")
     //- .rocket.image.container
     //-   img(src="assets/images/moon-landing.png")
 
-  //-section.white.block
+  section.white.block
     .sponsors
       .container
         .accent.section.heading
@@ -125,42 +125,52 @@ block content
           .subtitle
             h3 Partner with us
 
-        //-.centered.text.grid
+        .centered.text.condensed.grid
           .row
             .col-100
-              .level1.partner Partner
+              .level1.partner
 
           .row
             .right.aligned.text.col-33
-              .level2.partner Partner
+              .level2.partner
+                a(href="https://www.syskron.com/", target="_blank")
+                  img(src="assets/images/sponsors/syskron.jpg")
             .col-33
-              .level2.partner Partner
+              .level2.partner
+                a(href="https://www.intive.com", target="_blank")
+                  img.scaled(src="assets/images/sponsors/intive.jpg")
             .left.aligned.text.col-33
-              .level2.partner Partner
+              .level2.partner
 
           .row
             .col-25
-              .level3.partner Partner
+              .level3.partner
+                a(href="https://www.braincourt.com", target="_blank")
+                  img(src="assets/images/sponsors/braincourt.jpg")
             .col-25
-              .level3.partner Partner
+              .level3.partner
+                a(href="http://biopark-regensburg.de/", target="_blank")
+                  img(src="assets/images/sponsors/biopark.jpg")
             .col-25
-              .level3.partner Partner
+              .level3.partner
+                a(href="https://www.witt-gruppe.eu", target="_blank")
+                  img(src="assets/images/sponsors/witt.jpg")
             .col-25
-              .level3.partner Partner
+              .level3.partner
 
           .row
             .left.aligned.text.col-20
-              .level4.partner Partner
+              .level4.partner
+                a(href="http://www.horsch.com/", target="_blank")
+                  img(src="assets/images/sponsors/horsch.jpg")
             .left.aligned.text.col-20
-              .level4.partner Partner
+              .level4.partner
             .col-20
-              .level4.partner Partner
+              .level4.partner
             .right.aligned.text.col-20
-              .level4.partner Partner
+              .level4.partner
             .right.aligned.text.col-20
-              .level4.partner Partner
-        .centered.text
-          p - - Currently we cannot name our sponsors publicly - - 
+              .level4.partner
 
         .become.sponsor
           .centered.text
@@ -168,7 +178,7 @@ block content
             a.accent.button(href="#") Become a partner
 
 
-  a.downwards.right.accent.triangle(name="hackaburg-2017")
+  a.downwards.right.white.triangle(name="hackaburg-2017")
 
   section.accent.block
     .media
