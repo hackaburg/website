@@ -43,22 +43,27 @@ html
       .container
         .grid
           .row
+            .col-33
+              a(href="https://www.gruenderland.bayern", target="_blank")
+                img(src="assets/images/footer/gruenderland.jpg")
+            .col-33
+              a(href="https://www.stmwi.bayern.de", target="_blank")
+                img(src="assets/images/footer/bayern.jpg")
+            .col-33
+              a(href="https://www.techbase.de", target="_blank")
+                img(src="assets/images/footer/techbase.jpg")
+
+          .row
             .col-50
               ul
+                li
+                  a(href="https://github.com/hackaburg/website", target="_blank") Found a bug?
                 li
                   a(href="imprint.html") Imprint
             .right.aligned.text.col-50 made with 
               span.accent.bigger.text &hearts; 
               | in Regensburg
 
-          .bayern.row
-            .col-33
-              img(src="assets/images/techbase.png")
-            .col-33
-              img(src="assets/images/gruenderland-bayern.png")
-            .col-33
-              img(src="assets/images/supported-by.png")
-            
 
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js", integrity="sha256-nLkfxAF8lAuFgs9kcFqZff/MohZAA8mNLQ/buYWwOLs=", crossorigin="anonymous")
     script(type="text/javascript", src="assets/js/hackaburg.min.js")
