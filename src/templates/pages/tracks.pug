@@ -1,0 +1,118 @@
+extends ../layout.pug
+
+block nav
+  include ../components/back-to-home.pug
+  
+  ul
+    li
+      a(href="#digital-journalism") Digital Journalism
+    li
+      a(href="#security") Security
+    li
+      a(href="#smart-society") Smart Society
+    li
+      a(href="#e-health") E-Health
+    li
+      a(href="#free-choice") Free Choice
+
+block content
+  section.accent.block
+    .container
+      br
+      h1 Tracks
+      br
+      p The new tracks introduced this year offer you the possibility to challenge in the category of interest.
+        br
+        | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
+      br
+      br
+
+  a.downwards.right.accent.triangle(name="digital-journalism")
+
+  section.white.block
+    .track-details.container
+      .grid
+        .row
+          .col-50
+            .track(style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
+              .title Digital Journalism
+          .col-50
+            .accent.section.heading
+                .title
+                  h2 Track 1
+                .subtitle
+                  h3 Digital Journalism
+
+            p The future of journalism is digital. But what does that mean for you as an attendee of hackaburg? Digital journalism is a contemporary form of journalism, in which isnews and features on current affairs, are presented solely or in combination with text, audio, video, or any other interactive form. It’s completely up to you, in which format you provide news or interesting information to the user. Think out of the box and try to develop new ways of  digital journalism.
+
+  a.downwards.left.white.triangle(name="security")
+
+  section.accent.block
+    .track-details.container
+      .grid
+        .row
+          .col-50
+            .track(style="background-image: url(assets/images/tracks/security.jpg);")
+              .title Security
+          .col-50
+            .inverted.section.heading
+                .title
+                  h2 Track 2
+                .subtitle
+                  h3 Security
+
+            p Pretty short story. We all know that 2017 and 2018 the topic blockchain exploded. Everyone is talking about crypto currencies, smart-contracts and systems such as Ethereum. Be creative! All those technologies provide a huge potential to secure and simplify tasks on the web.
+  
+  a.downwards.left.accent.triangle(name="smart-society")
+
+  section.white.block
+    .track-details.container
+      .grid
+        .row
+          .col-50
+            .track(style="background-image: url(assets/images/tracks/smart-society.jpg);")
+              .title Smart Society
+          .col-50
+            .accent.section.heading
+                .title
+                  h2 Track 3
+                .subtitle
+                  h3 Smart Society
+
+            p The concept of a smart society integrates information and communication technology, and various physical devices connected to the network (the Internet of things or IoT) to optimize the efficiency of cities for example in general. But what really makes a building, a city or an building intelligent? How do you track efficiency, or your energy consumption to improve your environmental footprint? How would you use lighting systems to boost human comfort, mood and productivity? If you want to improve the working and living environments of people around you, then this track is for you!
+  
+  a.downwards.right.white.triangle(name="e-health")
+  
+  section.accent.block
+    .track-details.container
+      .grid
+        .row
+          .col-50
+            .track(style="background-image: url(assets/images/tracks/e-health.jpg);")
+              .title E-Health
+          .col-50
+            .inverted.section.heading
+                .title
+                  h2 Track 4
+                .subtitle
+                  h3 E-Health
+
+            p Two things in life are certain: death and taxes. We can’t fix the latter, but recent technological advances have been pushing the former back by decades. How can we track our bodies to be healthier? How should we move and eat? Is biohacking or biotech the answer to our big questions about our health? If you’re interested in tracking and medical devices, biotech, augmentation and other solutions to amp up the future of Healthtech, apply now!
+
+  a.downwards.left.accent.triangle(name="free-choice")
+
+  section.white.block
+    .track-details.container
+      .grid
+        .row
+          .col-50
+            .track(style="background-image: url(assets/images/tracks/free-choice.jpg);")
+              .title Free Choice
+          .col-50
+            .accent.section.heading
+                .title
+                  h2 Track 5
+                .subtitle
+                  h3 Free Choice
+
+            p You have an idea that does not fit into one of the tracks we provide? That is absolutely no problem. The free choice track gives you the opportunity to hand every think you want. No restrictions are set here! Feel free to do what ever you want.
