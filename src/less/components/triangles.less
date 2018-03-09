@@ -81,4 +81,20 @@
       }
     }
   }
+
+  &.leftwards {
+    &.lower {
+      &:before {
+        border-width: 0rem 0rem 100vh @size-triangle;
+      }
+
+      &.white:before {
+        border-color: transparent transparent #fff transparent;
+      }
+      
+      &.accent:before {
+        border-color: transparent transparent @color-accent transparent;
+      }
+    }
+  }
 }
