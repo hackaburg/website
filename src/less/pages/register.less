@@ -47,12 +47,14 @@
   }
 
   .signup.form {
+    width: 15rem;
+
     label,
     input,
     button,
     p {
       display: block;
-      width: 15rem;
+      width: 100%;
     }
 
     label {
@@ -68,5 +70,47 @@
 
   .success.message {
     width: 15rem;
+  }
+
+  @media screen and (max-width: @breakpoint-tablet) {
+    .grid .row > * {
+      float: none;
+    }
+
+    .lower.triangle {
+      display: none;
+    }
+
+    .block {
+      width: 100vw;
+      height: auto;
+      padding: 5rem 1rem;
+    }
+
+    .centered.child {
+      position: static;
+      top: 0rem;
+      left: 0rem;
+
+      transform: none;
+    }
+
+    .description {
+      width: auto;
+      max-width: 80vw;
+      margin: auto;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .signup.form {
+      margin: 3rem auto;
+    }
   }
 }
