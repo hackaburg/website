@@ -1,0 +1,29 @@
+extends ../base.pug
+
+block body
+  .register.page
+    .condensed.grid
+      .row
+        .col-60.centering.parent.accent.block
+          .centered.child
+
+        .leftwards.lower.white.triangle
+
+        .col-40.centering.parent.white.block
+          .centered.child
+            .signup.form
+              .hidden.error.message#error
+
+              label Email
+              input#email(type="email", placeholder="foo@bar.edu")
+
+              label Password
+              input#password(type="password", placeholder="Password (at least 6 characters)")
+
+              button.accent.button#submit Register
+
+              p.centered.text Already have an account? 
+                a.accent.text(href="apply") Login
+            
+            .hidden.success.message#success
+              p We just sent you an email, please check your mailbox to complete your application.
