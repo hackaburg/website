@@ -35,6 +35,12 @@
           method: "post",
         });
 
+        if (response.status != 200) {
+          const data = await response.json();
+
+          throw new Error(data.message);
+        }
+
         form.remove();
         successMessage.classList.remove("hidden");
       } catch (error) {
