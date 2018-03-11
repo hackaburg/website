@@ -1,3 +1,5 @@
+/// <reference path="./facebook-pixel.ts" />
+
 (function () {
   const form = document.querySelector(".signup.form");
   const successMessage = document.querySelector("#success");
@@ -9,6 +11,8 @@
     const errorContainer = form.querySelector("#error") as HTMLDivElement;
 
     submitButton.onclick = async (event: MouseEvent) => {
+      window.fbq("track", "CompleteRegistration");
+
       const headers = new Headers();
       
       headers.append("Accept", "application/json");
