@@ -22,7 +22,7 @@ namespace facebook {
   if (facebook.pixel.didOptOut()) {
     window.fbq = (action, event) => 0;
   } else {
-    !function(f,b,e,v,n,t,s)
+    !function(f,b,e,v,n?:any,t?:any,s?:any)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';

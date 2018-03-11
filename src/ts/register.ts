@@ -2,7 +2,7 @@
 
 (function () {
   const form = document.querySelector(".signup.form");
-  const successMessage = document.querySelector("#success");
+  const successMessage = document.querySelector("#success") as HTMLDivElement;
 
   if (form) {
     const emailInput = form.querySelector("#email") as HTMLInputElement;

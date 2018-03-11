@@ -3,7 +3,7 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
 }
 
 (function () {
-  window.onscroll = (event) => {
+  function scrollHandler(event?: UIEvent) {
     const currentPosition = document.documentElement.scrollTop || document.body.scrollTop,
           navLinks = nodeListToArray(document.querySelectorAll("nav ul li a")),
           blockElements = nodeListToArray(document.querySelectorAll(".block")),
@@ -34,5 +34,6 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
     }
   };
 
-  window.onscroll(null);
+  window.onscroll = scrollHandler;
+  scrollHandler();
 })();
