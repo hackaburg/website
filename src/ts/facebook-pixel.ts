@@ -1,5 +1,5 @@
 interface Window {
-  fbq: any;
+  fbq(action: string, event: string): void;
   _fbq: any;
 }
 
@@ -19,7 +19,9 @@ namespace facebook {
 }
 
 (function () {
-  if (!facebook.pixel.didOptOut()) {
+  if (facebook.pixel.didOptOut()) {
+    window.fbq = (action, event) => 0;
+  } else {
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
