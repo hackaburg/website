@@ -14,10 +14,18 @@
       headers.append("Accept", "application/json");
       headers.append("Content-Type", "application/json");
 
-      const email = emailInput.value;
-      const password = passwordInput.value;
+      const email = emailInput.value.trim();
+      const password = passwordInput.value.trim();
 
       try {
+        if (!email) {
+          throw new Error("No email provided");
+        }
+
+        if (!password) {
+          throw new Error("No password provided");
+        }
+
         const response = await fetch("https://hackaburg.de/apply/auth/register", {
           body: JSON.stringify({
             email,
