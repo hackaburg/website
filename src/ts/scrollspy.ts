@@ -23,8 +23,8 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
       link.className = "";
     }
 
-    let index = 0;
-    
+    let index = -1;
+
     if (blocks.length > 0) {
       index = blocks[0].index - 1;
     }
