@@ -99,8 +99,23 @@
   margin-top: 0.5rem;
 }
 
-@media screen and (max-width: @breakpoint-tablet) {
+.mlh-trust-badge {
+  display: block;
+  width: 10%;
+  max-width: 6rem;
+  min-width: 4rem;
+  
+  position: fixed;
+  right: 2.5rem;
+  top: 0rem;
 
+  z-index: 10000
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  .mlh-trust-badge {
+    right: 7rem;
+  }
 }
 
 @media screen and (max-width: @breakpoint-mobile) {
@@ -143,5 +158,9 @@
     max-height: 65vh;
 
     right: 10vw;
+  }
+
+  .mlh-trust-badge {
+    display: none;
   }
 }
