@@ -28,9 +28,14 @@ const sources = {
   },
   copy: [
     {
-        watch: "src/images/**/*",
-        source: "src/images/**/*",
-        destination: "dist/assets/images/"
+      watch: "src/images/**/*",
+      source: "src/images/**/*",
+      destination: "dist/assets/images/"
+    },
+    {
+      watch: "src/robots.txt",
+      source: "src/robots.txt",
+      destination: "dist/"
     }
   ]
 };
