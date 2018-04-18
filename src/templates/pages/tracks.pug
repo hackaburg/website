@@ -14,6 +14,8 @@ block nav
       a(href="#e-health") E-Health
     li
       a(href="#free-choice") Free Choice
+    li
+      a(href="#challenges") Challenges
 
 block content
   section.accent.block
@@ -27,17 +29,15 @@ block content
       br
       br
 
-  a.downwards.right.accent.triangle(name="digital-journalism")
-
-  section.white.block
-    .track-details.container
+    a(name="digital-journalism")
+    .track-details.container.small.block
       .grid
         .row
           .col-50
             .track(style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
               .title Digital Journalism
           .col-50
-            .accent.section.heading
+            .inverted.section.heading
                 .title
                   h2 Track 1
                 .subtitle
@@ -45,10 +45,8 @@ block content
 
             p The future of journalism is digital. But what does that mean for you as an attendee of hackaburg? Digital journalism is a contemporary form of journalism, in which isnews and features on current affairs, are presented solely or in combination with text, audio, video, or any other interactive form. It’s completely up to you, in which format you provide news or interesting information to the user. Think out of the box and try to develop new ways of  digital journalism.
 
-  a.downwards.left.white.triangle(name="security")
-
-  section.accent.block
-    .track-details.container
+    a(name="security")
+    .track-details.container.small.block
       .grid
         .row
           .col-50
@@ -63,17 +61,15 @@ block content
 
             p Pretty short story. We all know that 2017 and 2018 the topic blockchain exploded. Everyone is talking about crypto currencies, smart-contracts and systems such as Ethereum. Be creative! All those technologies provide a huge potential to secure and simplify tasks on the web.
   
-  a.downwards.left.accent.triangle(name="smart-society")
-
-  section.white.block
-    .track-details.container
+    a(name="smart-society")
+    .track-details.container.small.block
       .grid
         .row
           .col-50
             .track(style="background-image: url(assets/images/tracks/smart-society.jpg);")
               .title Smart Society
           .col-50
-            .accent.section.heading
+            .inverted.section.heading
                 .title
                   h2 Track 3
                 .subtitle
@@ -81,10 +77,8 @@ block content
 
             p The concept of a smart society integrates information and communication technology, and various physical devices connected to the network (the Internet of things or IoT) to optimize the efficiency of cities for example in general. But what really makes a building, a city or an building intelligent? How do you track efficiency, or your energy consumption to improve your environmental footprint? How would you use lighting systems to boost human comfort, mood and productivity? If you want to improve the working and living environments of people around you, then this track is for you!
   
-  a.downwards.right.white.triangle(name="e-health")
-  
-  section.accent.block
-    .track-details.container
+    a(name="e-health")
+    .track-details.container.small.block
       .grid
         .row
           .col-50
@@ -99,20 +93,57 @@ block content
 
             p Two things in life are certain: death and taxes. We can’t fix the latter, but recent technological advances have been pushing the former back by decades. How can we track our bodies to be healthier? How should we move and eat? Is biohacking or biotech the answer to our big questions about our health? If you’re interested in tracking and medical devices, biotech, augmentation and other solutions to amp up the future of Healthtech, apply now!
 
-  a.downwards.left.accent.triangle(name="free-choice")
-
-  section.white.block
-    .track-details.container
+    a(name="free-choice")
+    .track-details.container.small.block
       .grid
         .row
           .col-50
             .track(style="background-image: url(assets/images/tracks/free-choice.jpg);")
               .title Free Choice
           .col-50
-            .accent.section.heading
+            .inverted.section.heading
                 .title
                   h2 Track 5
                 .subtitle
                   h3 Free Choice
 
             p You have an idea that does not fit into one of the tracks we provide? That is absolutely no problem. The free choice track gives you the opportunity to hand every think you want. No restrictions are set here! Feel free to do what ever you want.
+
+  a.downwards.right.accent.triangle(name="challenges")
+  section.white.block
+    .challenges.container
+      .accent.section.heading
+        .title
+          h2 NEW
+        .subtitle
+          h3 Partner Challenges
+
+      .grid
+        a(name="challenge-dracoon")
+        .challenge.row
+          .col-33
+            img(src="assets/images/sponsors/dracoon.jpg")
+          .col-66
+            h2.accent.text Dracoon
+            p The increasing number of digital documents in companies requires a good document management system. However, finding a specific document in a well-organized file store can still be tedious and time-consuming for employees. Despite the search function searching is often inconclusive because the document wasn’t provided with relevant annotations during the upload. Due to the fact that manual tagging of documents is an exhausting process for all users we want to find a way to automate this process.
+            p Join our team. Let us create an intelligent application using machine-learning to makes manual tagging unnecessary.
+            p We offer you a free DRACCON with tagged documents. You can start right away. It’s up to you.
+
+            .grid
+              .row
+                .col-50
+                  h3.accent.text What we'll bring
+                  ul
+                    li Free DRACOON with tagged documents
+                    li API and SDKs
+                    li Documentation with Swagger UI
+                    li Experienced DRACOON developer
+                .col-50
+                  h3.accent.text What's important to us
+                  ul
+                    li Fun hacking
+                    li Originality
+                    li Creativity
+                    li User Experience, Usability
+                    li Added value for customers and companies
+                    li Impact and Utility
