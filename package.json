@@ -11,6 +11,9 @@
     "build": "gulp",
     "clean": "rimraf dist/"
   },
+  "resolutions": {
+    "natives": "1.1.3"
+  },
   "devDependencies": {
     "@types/googlemaps": "^3.29.2",
     "@types/js-cookie": "^2.1.0",
