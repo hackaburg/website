@@ -1,3 +1,6 @@
+addons:
+  ssh_known_hosts: ${HOST}
+
 language: node_js
 node_js:
   - "9"
