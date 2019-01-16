@@ -1,8 +1,3 @@
-addons:
-  apt:
-    packages:
-      - lftp
-
 language: node_js
 node_js:
   - "9"
@@ -18,7 +13,9 @@ before_deploy:
 
 deploy:
   provider: script
-  script: lftp -e "set ssl:verify-certificate no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
+  script:
+    - echo "${KEY}" > ${KEYFILE}
+    - scp -r -i ${KEYFILE} ${DIR_LOCAL}/* ${USER}@${HOST}:${DIR_REMOTE}
   skip_cleanup: true
   on:
     branch: master
