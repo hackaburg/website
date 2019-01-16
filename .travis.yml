@@ -1,5 +1,5 @@
 addons:
-  ssh_known_hosts: ${HOST}
+  ssh_known_hosts: ftp.hackaburg.de
 
 language: node_js
 node_js:
@@ -18,7 +18,7 @@ deploy:
   provider: script
   script:
     - echo "${KEY}" > ${KEYFILE}
-    - scp -r -i ${KEYFILE} ${DIR_LOCAL}/* ${USER}@${HOST}:${DIR_REMOTE}
+    - scp -r -i ${KEYFILE} ${DIR_LOCAL}/* ${USER}@ftp.hackaburg.de:${DIR_REMOTE}
   skip_cleanup: true
   on:
     branch: master
