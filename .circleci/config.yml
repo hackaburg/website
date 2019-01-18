@@ -7,20 +7,20 @@ jobs:
     steps:
       - checkout
       - run:
-        name: install lftp
-        command: |
-          sudo apt-get update -q
-          sudo apt-get install -y lftp
+          name: install lftp
+          command: |
+            sudo apt-get update -q
+            sudo apt-get install -y lftp
       - run:
-        name: yarn
-        command: |
-          yarn install
-          yarn test
-          yarn build
+          name: yarn
+          command: |
+            yarn install
+            yarn test
+            yarn build
       - run:
-        name: deploy using lftp
-        command: |
-          lftp -e "set ssl:verify-certificate no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
+          name: deploy using lftp
+          command: |
+            lftp -e "set ssl:verify-certificate no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
 
 workflows:
   version: 2
