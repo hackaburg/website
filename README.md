@@ -1,6 +1,5 @@
 # hackaburg website :rocket: :european_castle:
 
-[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/hackaburg/website)
 [![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/hackaburg/website/LICENSE)
 [![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/hackaburg/website)
 [![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/hackaburg/website/issues)
