@@ -20,7 +20,7 @@ jobs:
       - run:
           name: deploy using lftp
           command: |
-            lftp -e "set ssl:verify-certificate no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
+            lftp -e "set ssl:verify-certificate no; set mirror:set-permissions no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
 
 workflows:
   version: 2
