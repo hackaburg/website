@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:9-alpine
+      - image: node:9
     steps:
       - checkout
       - run:
