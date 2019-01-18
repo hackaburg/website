@@ -1,5 +1,6 @@
 # hackaburg website :rocket: :european_castle:
 
+[![CircleCI](https://circleci.com/gh/hackaburg/website.svg?style=svg)](https://circleci.com/gh/hackaburg/website)
 [![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/hackaburg/website/LICENSE)
 [![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/hackaburg/website)
 [![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/hackaburg/website/issues)
