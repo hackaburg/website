@@ -2,9 +2,13 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
   return [].slice.call(nodes);
 }
 
+const raisedNavClassName = "raised";
+const raisedNavThresholdPixelsFromTop = 40;
+
 (function () {
   function scrollHandler(event?: UIEvent) {
     const currentPosition = document.documentElement.scrollTop || document.body.scrollTop,
+          nav = nodeListToArray(document.querySelectorAll("nav"))[0],
           navLinks = nodeListToArray(document.querySelectorAll("nav ul li a")),
           blockElements = nodeListToArray(document.querySelectorAll(".block")),
           blocks = blockElements.map((element, index) => {
@@ -31,6 +35,12 @@ function nodeListToArray<T extends Node>(nodes: NodeListOf<T>) : T[] {
     
     if (index >= 0 && index < navLinks.length) {
       navLinks[index].className = "active";
+    }
+
+    if (window.scrollY >=  raisedNavThresholdPixelsFromTop && !nav.classList.contains(raisedNavClassName)) {
+      nav.classList.add(raisedNavClassName);
+    } else if (window.scrollY < raisedNavThresholdPixelsFromTop) {
+      nav.classList.remove(raisedNavClassName);
     }
   };
 
