@@ -1,10 +1,12 @@
 .person {
-  .card-shadow();
-  
-  background-color: @color-accent-light;
+  text-align: center;
 
   .image {
+    .card-shadow();
+    .clearfix();
+
     img {
+      float: left;
       width: 100%;
       height: auto;
     }
@@ -15,12 +17,11 @@
     padding-bottom: 0rem;
 
     font-size: 1.2rem;
-    color: #000;
   }
 
   .task {
     padding: 1rem;
     padding-top: 0rem;
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
   }
 }
