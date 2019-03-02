@@ -6,13 +6,21 @@ nav {
 
   display: block;
 
-  color: #fff;
-  background-color: @color-accent;
+  color: #000;
+  background-color: transparent;
 
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
 
   z-index: 100;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.2s;
+
+  &.raised {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 
   input[type="checkbox"],
   label {
@@ -30,7 +38,7 @@ nav {
 
     img {
       margin: 0.125rem;
-      height: 2.75rem;
+      height: 2.5rem;
     }
 
     .text {
@@ -63,28 +71,14 @@ nav {
         transition-duration: @duration-transition;
         
         &:hover {
-          background-color: rgba(255, 255, 255, 0.1);
+          background-color: rgba(0, 0, 0, 0.05);
           color: currentColor;
         }
 
         &.active {
-          background-color: @color-accent-light;
+          background-color: rgba(0, 0, 0, 0.1);
         }
       }
-    }
-  }
-
-  .mlh {
-    position: absolute;
-    top: 0rem;
-    right: -7rem;
-
-    display: inline-block;
-    width: 5rem;
-
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 }
