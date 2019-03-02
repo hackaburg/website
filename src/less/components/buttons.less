@@ -2,15 +2,14 @@
 a.button {
   display: inline-block;
 
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
 
   border-radius: 10rem;
   border: 2px solid @color-accent;
 
-  color: @color-accent;
-  background-color: transparent;
+  color: #fff;
+  background-color: @color-accent;
 
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 
@@ -20,17 +19,17 @@ a.button {
   cursor: pointer;
 
   &:hover {
-    color: #fff;
-    background-color: @color-accent;
+    color: @color-accent;
+    background-color: transparent;
   }
 
   &.inverted {
-    border-color: #fff;
+    border-color: @color-accent;
     background-color: #fff;
     color: @color-accent;
 
     &:hover {
-      background-color: transparent;
+      background-color: @color-accent;
       color: #fff;
     }
 
