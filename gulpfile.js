@@ -1,14 +1,14 @@
-const gulp = require("gulp"),
-      connect = require("gulp-connect"),
-      pug = require("gulp-pug"),
-      data = require("gulp-data"),
-      path = require("path"),
-      less = require("gulp-less"),
-      minify = require("gulp-clean-css"),
-      sourcemaps = require("gulp-sourcemaps"),
-      rename = require("gulp-rename"),
-      tsc = require("gulp-typescript"),
-      uglify = require("gulp-uglify");
+const gulp = require("gulp");
+const connect = require("gulp-connect");
+const pug = require("gulp-pug");
+const data = require("gulp-data");
+const path = require("path");
+const less = require("gulp-less");
+const minify = require("gulp-clean-css");
+const sourcemaps = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+const tsc = require("gulp-typescript");
+const uglify = require("gulp-uglify");
 
 const sources = {
   templates: {
@@ -40,71 +40,72 @@ const sources = {
   ]
 };
 
-gulp.task("test", () => {
+function test(done) {
   const buffer = new Buffer("Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K", "base64");
 
   console.log(buffer.toString("utf8"));
-});
+  done();
+}
 
-gulp.task("serve", () => {
-  connect.server({
+function serve() {
+  return connect.server({
     root: "dist/",
     livereload: true
   });
-});
+}
 
-gulp.task("templates", () => {
-  gulp.src(sources.templates.source)
+function templates() {
+  return gulp.src(sources.templates.source)
     .pipe(data((file) => {
-        return {
-            filename: path.basename(file.path)
-        };
+      return {
+        filename: path.basename(file.path)
+      };
     }))
     .pipe(pug({
-        pretty: true
+      pretty: true
     }))
     .pipe(gulp.dest(sources.templates.destination))
     .pipe(connect.reload());
-});
+}
 
-gulp.task("css", () => {
-  gulp.src(sources.less.source)
+function css() {
+  return gulp.src(sources.less.source)
     .pipe(sourcemaps.init())
     .pipe(less({
-        plugins: [
-            require("less-plugin-glob")
-        ]
+      plugins: [
+        require("less-plugin-glob")
+      ]
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(sources.less.destination))
     .pipe(minify({
-        level: {
-            2: {
-                mergeAdjacentRules: true,
-                mergeIntoShorthands: true,
-                mergeMedia: true,
-                mergeNonAdjacentRules: true,
-                mergeSemantically: false,
-                overrideProperties: true,
-                reduceNonAdjacentRules: true,
-                removeDuplicateFontRules: true,
-                removeDuplicateMediaBlocks: true,
-                removeDuplicateRules: true,
-                restructureRules: false
-            }
+      level: {
+        2: {
+          mergeAdjacentRules: true,
+          mergeIntoShorthands: true,
+          mergeMedia: true,
+          mergeNonAdjacentRules: true,
+          mergeSemantically: false,
+          overrideProperties: true,
+          reduceNonAdjacentRules: true,
+          removeDuplicateFontRules: true,
+          removeDuplicateMediaBlocks: true,
+          removeDuplicateRules: true,
+          restructureRules: false
         }
+      }
     }))
     .pipe(rename({
-        suffix: ".min"
+      suffix: ".min"
     }))
     .pipe(gulp.dest(sources.less.destination))
     .pipe(connect.reload());
-});
+}
 
-gulp.task("js", () => {
+function js() {
   const tsconfig = require("./tsconfig.json");
 
-  gulp.src(sources.js.source)
+  return gulp.src(sources.js.source)
     .pipe(sourcemaps.init())
     .pipe(tsc(tsconfig.compilerOptions))
     .pipe(sourcemaps.write())
@@ -112,36 +113,36 @@ gulp.task("js", () => {
     .pipe(uglify())
     .pipe(gulp.dest(sources.js.destination))
     .pipe(connect.reload());
-});
+}
 
-gulp.task("copy", () => {
+function copy(done) {
   for (const item of sources.copy) {
     gulp.src(item.source)
         .pipe(gulp.dest(item.destination));
   }
-});
 
-gulp.task("watch", ["default", "serve"], () => {
-  gulp.watch(sources.less.watch, ["css"]);
-  gulp.watch(sources.js.watch, ["js"]);
+  done();
+}
 
-  gulp.watch(sources.templates.watch, (event) => {
-    if (event.type == "changed") {
-        sources.templates.source = event.path;
-
-        gulp.start("templates");
-    }
-  });
+gulp.task(test);
+gulp.task(serve);
+gulp.task(templates);
+gulp.task(css);
+gulp.task(js);
+gulp.task(copy);
+gulp.task("default", gulp.parallel("css", "templates", "copy", "js"));
+gulp.task("watch", gulp.series("default", gulp.parallel("serve", () => {
+  gulp.watch(sources.less.watch, css);
+  gulp.watch(sources.js.watch, js);
+  gulp.watch(sources.templates.watch, templates);
 
   for (const item of sources.copy) {
     gulp.watch(item.watch, (event) => {
-        if (event.type != "deleted") {
-            gulp.src(event.path)
-                .pipe(gulp.dest(item.destination))
-                .pipe(connect.reload());
-        }
+      if (event.type != "deleted") {
+        gulp.src(event.path)
+          .pipe(gulp.dest(item.destination))
+          .pipe(connect.reload());
+      }
     });
   }
-});
-
-gulp.task("default", ["css", "templates", "copy", "js"]);
+})));
