@@ -2,22 +2,20 @@ extends ../layout.pug
 
 block nav
   .brand
-    img(src="assets/images/logo-white.png")
+    img(src="assets/images/logo.png")
     .text Hackaburg
 
   ul
     li
       a(href="#about") About
     li
+      a(href="#challenges") Challenges
+    li
       a(href="#tracks") Tracks
     li
       a(href="#sponsors") Sponsors
     li
-      a(href="#hackaburg-2017") Hackaburg 2017
-    li
       a(href="#schedule") Schedule
-    li
-      a(href="#teaser2018") Teaser 2018
     li
       a(href="#venue") Venue
     li
@@ -29,30 +27,29 @@ block nav
     img(src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg", alt="Major League Hacking 2018 Hackathon Season")
 
 block content
-  section.accent.block
+  section.white.header.block
     .container
       .intro
         .title
-          h1 hackaburg 2018
+          h1
+            .hi Hello! We are
+            | Hackaburg
 
         .subtitle
-          h3 join the adventure hackathon
+          h3 Join the adventure Hackathon
           h3 TechBase Regensburg
-            span.date 25. - 27. May 2018
+            span.date 24. - 25. May 2019
+
+        a.button(href="https://hackaburg.de/apply", target="_blank") Apply Now
 
         .backers
           a(href="https://www.digitale-oberpfalz.de", target="_blank")
             img(src="assets/images/dgo.svg")
 
-          a(href="http://www.mittelbayerische.de", target="_blank")
-            img(src="assets/images/mz.svg")
-        
-        a(href="https://slack.hackaburg.de", target="_blank") JOIN SLACK 
+          a(href="https://www.ratisbona-coding.de", target="_blank")
+            img(src="assets/images/ratisbona_coding.svg")
 
-  a.upwards.right.white.triangle(name="about")
-    .castle.image.container
-      img.floating(src="assets/images/hackaburg.svg")
-
+  a(name="about")
   section.white.block
     .container
       .about
@@ -65,12 +62,12 @@ block content
           p.tldr Hackaburg is a meeting point* for over 100 developers, designers, and entrepreneurs from around the world.
           p * of 21 nationalities to be exact and a hackathon experience like no other.
 
-  a.downwards.right.white.triangle(name="tracks")
+  a(name="tracks")
 
-  section.accent.block
+  section.white.block
     .tracks
       .container
-        .inverted.section.heading
+        .accent.section.heading
           .title
             h2 Tracks
 
@@ -84,26 +81,26 @@ block content
         .grid
           .row
             .col-50
-              a.track(href="tracks.html#digital-journalism", style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
+              a.raisable.track(href="tracks.html#digital-journalism", style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
                 .title Digital Journalism
             .col-50
-              a.track(href="tracks.html#security", style="background-image: url(assets/images/tracks/security.jpg);")
+              a.raisable.track(href="tracks.html#security", style="background-image: url(assets/images/tracks/security.jpg);")
                 .title Security
           .row
             .col-50
-              a.track(href="tracks.html#smart-society", style="background-image: url(assets/images/tracks/smart-society.jpg);")
+              a.raisable.track(href="tracks.html#smart-society", style="background-image: url(assets/images/tracks/smart-society.jpg);")
                 .title Smart Society
             .col-50
-              a.track(href="tracks.html#e-health", style="background-image: url(assets/images/tracks/e-health.jpg);")
+              a.raisable.track(href="tracks.html#e-health", style="background-image: url(assets/images/tracks/e-health.jpg);")
                 .title E-Health
           .row
             .col-100
-              a.track(href="tracks.html#free-choice", style="background-image: url(assets/images/tracks/free-choice.jpg);")
+              a.raisable.track(href="tracks.html#free-choice", style="background-image: url(assets/images/tracks/free-choice.jpg);")
                 .title Free Choice
 
 
         .challenges
-          .inverted.section.heading
+          .accent.section.heading
             .title
               h2 NEW
 
@@ -123,9 +120,7 @@ block content
           .centered.challenges.text
             a.inverted.button(href="tracks.html#challenges") Explore the Challenges
 
-  a.upwards.left.white.triangle(name="sponsors")
-    //- .rocket.image.container
-    //-   img(src="assets/images/moon-landing.png")
+  a(name="sponsors")
 
   section.white.block
     .sponsors
@@ -241,7 +236,7 @@ block content
 
   a.downwards.right.white.triangle(name="hackaburg-2017")
 
-  section.accent.block
+  section.white.block
     .media
       video(src="assets/images/video.mp4", loop, autoplay, muted)
       .container
@@ -258,12 +253,12 @@ block content
           p
             a.accent.text(href="https://www.youtube.com/watch?v=pRULo5j4gZo", target="_blank") Watch last year's after movie &raquo;
 
-  a.upwards.left.accent.triangle(name="schedule")
+  a.upwards.left.white.triangle(name="schedule")
 
-  section.accent.block
+  section.white.block
     .schedule
       .container
-        .inverted.section.heading
+        .accent.section.heading
           .title
             h2 Schedule
           .subtitle
@@ -415,7 +410,7 @@ block content
                     h4 Hackathon ends
                   .time 5.pm
 
-  a.downwards.right.accent.triangle(name="teaser2018")
+  a(name="teaser2018")
 
   section.white.block
     .prices
@@ -441,12 +436,12 @@ block content
               iframe(class="iframe", src="https://www.youtube.com/embed/VeSWKffbPpI", frameborder="0", gesture="media", allow="encrypted-media", allowfullscreen)
 
 
-  a.downwards.right.white.triangle(name="venue")
+  a(name="venue")
 
-  section.accent.block
+  section.white.block
     .venue
       .container
-        .inverted.section.heading
+        .accent.section.heading
           .title
             h2 Venue
           .subtitle
@@ -464,7 +459,7 @@ block content
             .col-80
               #map
 
-  a.upwards.right.white.triangle(name="faq")
+  a(name="faq")
 
   section.white.block
     .faq
@@ -548,7 +543,7 @@ block content
                   a(class="accent text", href="mailto:applications@hackaburg.de") applications@hackaburg.de
                   |  and we'll look into it.
 
-  a.upwards.right.white.triangle(name="hardware")
+  a(name="hardware")
 
   section.white.block
     .faq
@@ -567,7 +562,7 @@ block content
           .centered.text
             a.accent.marginTop1.button(href="https://docs.google.com/presentation/d/1xuf9xucnWyAuPmr-SwNnWhc9ByWBK_dOXXVU3PsH4aA/edit?usp=sharing") MLH's Hardware Lab
 
-  a.upwards.right.white.triangle(name="jury")
+  a(name="jury")
 
   section.white.block
     .faq
@@ -584,12 +579,12 @@ block content
 
 
 
-  a.downwards.right.white.triangle(name="team")
+  a(name="team")
 
-  section.accent.block
+  section.white.block
     .team
       .container
-        .inverted.section.heading
+        .accent.section.heading
           .title
             h2 Team
           .subtitle
