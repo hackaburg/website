@@ -2,7 +2,7 @@ extends ../layout.pug
 
 block nav
   include ../components/back-to-home.pug
-  
+
   ul
     li
       a(href="#contact") Kontakt
@@ -16,11 +16,10 @@ block nav
       a(href="#usage-data") Nutzungsdaten
     li
       a(href="#cookies") Cookies
-    
+
 block content
-  section.accent.block
+  section.white.block
     .container
-      br
       h1 Impressum
       p R-Tech GmbH &mdash; ein Unternehmen der Stadt Regensburg
         br
@@ -32,10 +31,8 @@ block content
         br
         | Umsatzsteuer ID-Nr.: DE 216839078
       p Die R-Tech GmbH führt die Geschäfte der Digitalen Gründerinitiative Oberpfalz DGO.
-      br
 
-  a.upwards.right.white.triangle(name="contact")
-  
+  a(name="contact")
   section.small.white.block
     .container
       br
@@ -67,7 +64,7 @@ block content
         a.accent.text(href="mailto:veronika.fetzer@techbase.de") veronika.fetzer@techbase.de
 
       h3.accent.text Presse
-      p Tanja Braun 
+      p Tanja Braun
         br
         | E-Mail: 
         a.accent.text(href="mailto:tanja.braun@techbase.de") tanja.braun@techbase.de
@@ -146,7 +143,7 @@ block content
     .container
       h2.accent.text Auskunftsrecht
       p Als Nutzer unseres Internetangebotes haben Sie das Recht, von uns Auskunft über die zu Ihrer Person oder zu Ihrem Pseudonym gespeicherten Daten zu verlangen. Auf Ihr Verlangen kann die Auskunft auch elektronisch erteilt werden.
-      
+
       br
       p Quelle: Rechtsanwalt Kluge, Hannover
       br
