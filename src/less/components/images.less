@@ -1,5 +1,7 @@
-.person {
+.person,
+.device {
   text-align: center;
+  position: relative;
 
   .image {
     .card-shadow();
@@ -23,5 +25,22 @@
     padding: 1rem;
     padding-top: 0rem;
     opacity: 0.5;
+  }
+
+  .bubble {
+    position: absolute;
+    top: -1rem;
+    right: -1.25rem;
+
+    width: 2.5rem;
+    padding: 0.5rem;
+
+    background-color: @color-accent;
+    color: #fff;
+
+    border-radius: 2rem;
+    font-size: 1.2rem;
+
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
   }
 }
