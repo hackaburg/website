@@ -137,12 +137,11 @@ gulp.task("watch", gulp.series("default", gulp.parallel("serve", () => {
   gulp.watch(sources.templates.watch, templates);
 
   for (const item of sources.copy) {
-    gulp.watch(item.watch, (event) => {
-      if (event.type != "deleted") {
-        gulp.src(event.path)
+    gulp.watch(item.watch).on("change", (path) => (
+        gulp.src(path)
           .pipe(gulp.dest(item.destination))
-          .pipe(connect.reload());
-      }
-    });
+          .pipe(connect.reload())
+      )
+    );
   }
 })));
