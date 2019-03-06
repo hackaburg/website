@@ -53,7 +53,7 @@ block content
   section.white.block
     .container
       .about
-        .accent.section.heading 
+        .accent.section.heading
           .title
             h2 About
           .subtitle
@@ -74,8 +74,8 @@ block content
           .subtitle
             h3 How you can change the future
 
-        p The new tracks introduced this year offer you the possibility to challenge in the category of interest. 
-          br 
+        p The new tracks introduced this year offer you the possibility to challenge in the category of interest.
+          br
           | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
 
         .grid
@@ -166,7 +166,7 @@ block content
               .level3.partner
                 a(href="https://www.witt-gruppe.eu", target="_blank")
                   img(src="assets/images/sponsors/witt.jpg")
-          .row  
+          .row
             .col-33
               .level3.partner
                 a(href="https://vector.com", target="_blank")
@@ -202,7 +202,7 @@ block content
               .level4.partner
                  a(href="http://hackp.ac/mlh-stickermule-hackathons", target="_blank")
                   img(src="assets/images/sponsors/sticker_mule.jpg")
-          
+
           .row
             .left.aligned.text.col-20
               .level5.partner
@@ -227,10 +227,10 @@ block content
               .level5.partner
                 a(href="https://www.fritz-kola.de/", target="_blank")
                   img(src="assets/images/sponsors/fritzkola.jpg")
-          
+
         .become.sponsor
           .centered.text
-            p Interested in joining Hackaburg? 
+            p Interested in joining Hackaburg?
             a.accent.button(href="mailto:partner@hackaburg.de") Become a partner
 
 
@@ -264,151 +264,185 @@ block content
           .subtitle
             h3 When and what
 
-        .timetable.grid
-          .row
-            .day.col-33
-              .date Fri, 25.05.2018
-              .events
-                .accent.event
-                  .title
-                    h4 Registration
-                  .time 3pm - 4pm
+        .timetable
+          .hours
+            .hour.line 08:00
+            .hour.line 10:00
+            .hour.line 12:00
+            .hour.line 14:00
+            .hour.line 16:00
+            .hour.line 18:00
+            .hour.line 20:00
+            .hour.line 22:00
 
-                .gray.event
-                  .title
-                    h4 Opening Ceremony
-                  .time 4.15pm - 5pm
+          .days
+            .day
+              .date Fri, 24.05.2019
+              .events.grid
+                .row
+                  .col-100
+                    .striped.event
+                      .duration
+                        .one.hour
+                        .half.hour
+                      .content
+                        .time 08:00 - 09:30
+                        .title
+                          h4 Registration
 
-                .gray.event
-                  .title
-                    h4 Keynotes
-                  .time 5pm - 5.30pm
+                    .gray.event
+                      .duration
+                        .half.hour
+                      .content
+                        .time 09:30 - 10:00
+                        .title
+                          h4 Opening Ceremony
 
-                .gray.event
-                  .title
-                    h4 Idea Pitches
-                  .time 5.30pm - 6.20pm
+                    .gray.event
+                      .duration
+                        .half.hour
+                        .fifteen.minutes
+                      .content
+                        .time 10:00 - 10:45
+                        .title
+                          h4 Keynotes
 
-                .gray.event
-                  .title
-                    h4 Further important information
-                  .time 6.20pm - 6.30pm
+                    .gray.event
+                      .duration
+                        .half.hour
+                        .fifteen.minutes
+                      .content
+                        .time 10:45 - 11:30
+                        .title
+                          h4 Idea Pitches
 
-                .white.event
-                  .title
-                    h4 Dinner
-                  .time 6.30pm - 7.15pm
+                    .gray.event
+                      .duration
+                        .half.hour
+                      .content
+                        .time 11:30 - 12:00
+                        .title
+                          h4 Further important information
 
-                .accent.event
-                  .title
-                    h4 “3, 2, 1… HACK!” & GetTogether
-                  .time 7.15pm - 
+                    .striped.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 12:00 - 18:00
+                        .title
+                          h4 Dinner
 
-            .day.col-33
-              .date Sat, 26.05.2018
-              .events
-                .white.event
-                  .title
-                    h4 Breakfast
-                  .time 8.30am - 10am
+                    .accent.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 18:00 - 00:00
+                        .title
+                          h4 “3, 2, 1... HACK!” &amp; GetTogether
 
-                .accent.event
-                  .title
-                    h4 Career fair 
-                  .time 8.30am - 5pm
+            .day
+              .date Sat, 25.05.2019
+              .events.grid
+                .row
+                  .col-50
+                    .blank.event
+                      .duration
+                        .half.hour
 
-                .accent.event
-                  .title
-                    h4 Workshop Consol: Off to a new island - Kotlin for backend development
-                  .time 10am - 12pm
+                    .striped.event
+                      .duration
+                        .one.hour
+                        .half.hour
+                      .content
+                        .time 08:30 - 10:00
+                        .title
+                          h4 Breakfast
 
-                .white.event
-                  .title
-                    h4 Lunch
-                  .time 12am - 2pm
+                    .accent.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 10:00 - 12:00
+                        .title
+                          h4 Workshop Consol
+                        p Off to a new island - Kotlin for backend development
 
-                .accent.event
-                  .title
-                    h4 Workshop Continental: CI/CD with Jenkins X
-                  .time 12.30am - 2pm
+                    .striped.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 12:00 - 14:00
+                        .title
+                          h4 Lunch
 
-                .accent.event
-                  .title
-                    h4 Workshop BrainCourt: Machine Learning with KNIME
-                  .time 1pm - 3pm
+                    .accent.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 14:00 - 16:00
+                        .title
+                          h4 Workshop BrainCourt
+                        p Machine Learning with KNIME
 
-                .accent.event
-                  .title
-                    h4 Workshop Witt Weiden: Kubernetes-Cluster with 6 Raspberry Pis 
-                  .time 3pm - 5pm
+                    .accent.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                      .content
+                        .time 16:00 - 18:00
+                        .title
+                          h4 Workshop Witt Weiden
+                        p Kubernetes-Cluster with 6 Raspberry Pis
 
-                .white.event
-                  .title
-                    h4 Dinner
-                  .time 6pm - 7.30pm
+                    .striped.event
+                      .duration
+                        .one.hour
+                        .half.hour
+                      .content
+                        .time 18:00 - 19:30
+                        .title
+                          h4 Dinner
 
-            .day.col-33
-              .date Sun, 27.05.2018
-              .events
-                .accent.event
-                  .title
-                    h4 Hacking continues …
-                  .time 12pm - 2pm
+                  .col-50
+                    .blank.event
+                      .duration
+                        .one.hour
+                        .half.hour
 
-                .white.event
-                  .title
-                    h4 Breakfast
-                  .time 8.30am - 10am
+                    .gray.event
+                      .duration
+                        .one.hour
+                        .one.hour
+                        .half.hour
+                      .content
+                        .time 09:30 - 12:00
+                        .title
+                          h4 Career fair
 
-                .accent.event
-                  .title
-                    h4 Hand in your projects
-                  .time 10am - 11am
+                    .blank.event
+                      .duration
+                        .half.hour
 
-                .black.event
-                  .title
-                    h4 Hacking closes
-                  .time 11am
-                
-                .accent.event
-                  .title
-                    h4 Prejudging expo for judges
-                  .time 11.15am - 12.30am
-
-                .white.event
-                  .title
-                    h4 Lunch
-                  .time 12.30am - 13.30pm
-
-                .black.event
-                  .title
-                    h4 Final Pitch Announcment
-                  .time 12.45am
-
-                .gray.event
-                  .title
-                    h4 Pitch Preparation
-                  .time 12.30am - 2pm
-                
-                .gray.event
-                  .title
-                    h4 Final Pitches
-                  .time 2pm - 3.30pm
-
-                .gray.event
-                  .title
-                    h4 Jury will choose the winner
-                  .time 3.30pm - 4pm 
-
-                .gray.event
-                  .title
-                    h4 Winner will be announced
-                  .time 4pm - 4.30pm
-
-                .accent.event
-                  .title
-                    h4 Hackathon ends
-                  .time 5.pm
+                    .accent.event
+                      .duration
+                        .one.hour
+                        .half.hour
+                      .content
+                        .time 12:30 - 14:00
+                        .title
+                          h4 Workshop Continental
+                        p CI/CD with Jenkins X
 
   a(name="teaser2018")
 
@@ -421,7 +455,7 @@ block content
           .subtitle
             h3
               a.corrupted(href="http://eu-west-1.hackaburg.de/bWF5YmUgdGhpcyB1cmwgY29udGFpbnMgc29tZXRoaW5nLi4K.zip", target="_blank") $ ./hb_initialization64.exe data
-      
+
         .grid
           .row
             .col-33
@@ -535,7 +569,7 @@ block content
                     li Bavaria (outside of the Oberpfalz): 25€
                     li Germany: 40€
                     li Rest of Europe (SEPA area): 75€
-                .content 
+                .content
                   b Important note: 
                   | We can only transfer money in the SEPA area! Thus, be ready to provide your travel receipts and bank address.
 
@@ -556,7 +590,7 @@ block content
 
         .grid
           .row
-            img(src="assets/images/hardware.jpg")           
+            img(src="assets/images/hardware.jpg")
           .centered.text
             a.accent.button(href="https://docs.google.com/spreadsheets/d/1EjpvBarvlzSfZeel_dNAipzqGFRiBV3Q9WchPpg8XJ0/edit?usp=sharing") Conrad Electronic's Hardware List
           .centered.text
@@ -575,7 +609,7 @@ block content
 
         .grid
           .row
-            img(src="assets/images/jury.jpg")           
+            img(src="assets/images/jury.jpg")
 
 
 
@@ -596,7 +630,7 @@ block content
               .person
                 .image
                   img(src="assets/images/member/img_1.jpg")
-                .name Markus Guder 
+                .name Markus Guder
                 .task Main Organizer Program
             .col-25
               .person
@@ -679,6 +713,5 @@ block content
                   img(src="assets/images/member/img_12.jpg")
                 .name Nadine Schuller
                 .task Application Management
-                
 
   script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU&sensor=true")
