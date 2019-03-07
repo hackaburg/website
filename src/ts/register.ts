@@ -1,6 +1,6 @@
 /// <reference path="./facebook-pixel.ts" />
 
-(function () {
+(() => {
   const form = document.querySelector(".signup.form");
   const successMessage = document.querySelector("#success") as HTMLDivElement;
 
@@ -14,7 +14,7 @@
       window.fbq("track", "CompleteRegistration");
 
       const headers = new Headers();
-      
+
       headers.append("Accept", "application/json");
       headers.append("Content-Type", "application/json");
 
@@ -39,7 +39,7 @@
           method: "post",
         });
 
-        if (response.status != 200) {
+        if (response.status !== 200) {
           const data = await response.json();
 
           throw new Error(data.message);
