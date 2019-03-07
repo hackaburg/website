@@ -1,35 +1,28 @@
 .partner {
-  text-align: center;
   text-transform: uppercase;
   color: #999;
 
-  &.level1 img {
-    width: auto;
-    height: 10rem;
+  .logo {
+    display: block;
+    margin: auto;
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
-  &.level2 img {
-    width: auto;
+  &.level1 .logo {
+    width: 75%;
+    height: 7rem;
+  }
+
+  &.level2 .logo {
+    width: 50%;
+    height: 5.5rem;
+  }
+
+  &.level3 .logo {
+    width: 65%;
     height: 3.5rem;
-
-    &.scaled {
-      margin-top: 0.375rem;
-      height: 3rem;
-    }
-  }
-
-  &.level3 img {
-    width: auto;
-    height: 2.35rem;
-  }
-
-  &.level4 img {
-    width: auto;
-    height: 2.15rem;
-  }
-
-  &.level5 img {
-    width: auto;
-    height: 1.70rem;
   }
 }
