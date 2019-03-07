@@ -1,13 +1,12 @@
 (() => {
-  const corruptedLinks = document.querySelectorAll("a.corrupted");
+  const corruptedLinks = [...document.querySelectorAll("a.corrupted")];
 
-  for (let i = 0; i < corruptedLinks.length; i++) {
+  for (const link of corruptedLinks) {
     (() => {
-      const link = corruptedLinks.item(i) as HTMLLinkElement;
       let clickCounter = 0;
       let lastClick = 0;
 
-      link.onclick = (event: MouseEvent) => {
+      link.addEventListener("click", (event: Event) => {
         const now = Date.now();
 
         if (lastClick + 500 < now) {
@@ -35,7 +34,7 @@
 
           return false;
         }
-      };
+      });
     })();
   }
 })();
