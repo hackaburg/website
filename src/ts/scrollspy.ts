@@ -2,7 +2,7 @@
   const raisedNavClassName = "raised";
   const raisedNavThresholdPixelsFromTop = 40;
 
-  function scrollHandler(event?: UIEvent) {
+  function scrollHandler() {
     const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
     const nav = document.querySelectorAll("nav").item(0);
     const navLinks = [...document.querySelectorAll("nav ul li a")];
