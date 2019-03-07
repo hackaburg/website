@@ -4,6 +4,8 @@
         "outFile": "hackaburg.js",
         "strict": true,
         "downlevelIteration": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "lib": [
             "es2015",
             "dom",

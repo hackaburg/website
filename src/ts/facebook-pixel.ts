@@ -20,7 +20,7 @@ namespace facebook {
 
 (() => {
   if (facebook.pixel.didOptOut()) {
-    window.fbq = (action, event) => 0;
+    window.fbq = () => 0;
   } else {
     // tslint:disable
     !function(f,b,e,v,n?:any,t?:any,s?:any):any
