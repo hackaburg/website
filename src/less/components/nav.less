@@ -15,7 +15,7 @@ nav {
   z-index: 100;
 
   transition-property: background-color, box-shadow;
-  transition-duration: 0.2s;
+  transition-duration: @duration-transition;
 
   &.raised {
     background-color: #fff;
@@ -45,12 +45,12 @@ nav {
       display: none;
     }
   }
-  
+
   ul {
     display: inline-block;
     margin: 0rem;
     padding: 0rem;
-    
+
     vertical-align: top;
 
     list-style: none;
@@ -69,7 +69,7 @@ nav {
 
         transition-property: background-color;
         transition-duration: @duration-transition;
-        
+
         &:hover {
           background-color: rgba(0, 0, 0, 0.05);
           color: currentColor;
