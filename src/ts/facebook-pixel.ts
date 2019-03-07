@@ -8,20 +8,21 @@ namespace facebook {
     const name = "fb_pixel_opt_out";
     const optedOutValue = "opted_out";
 
-    export function optOut() : void {
+    export function optOut(): void {
       Cookies.set(name, optedOutValue);
     }
 
-    export function didOptOut() : boolean {
+    export function didOptOut(): boolean {
       return Cookies.get(name) === optedOutValue;
     }
   }
 }
 
-(function () {
+(() => {
   if (facebook.pixel.didOptOut()) {
     window.fbq = (action, event) => 0;
   } else {
+    // tslint:disable
     !function(f,b,e,v,n?:any,t?:any,s?:any):any
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -30,7 +31,8 @@ namespace facebook {
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window,document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    window.fbq('init', '451796375237579'); 
+    window.fbq('init', '451796375237579');
     window.fbq('track', 'PageView');
+    // tslint:enable
   }
 })();

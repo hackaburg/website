@@ -6,11 +6,11 @@ interface JumpOptions {
   a11y?: boolean;
 }
 
-declare function Jump(selector: string, options?: JumpOptions) : void;
+declare function Jump(selector: string, options?: JumpOptions): void;
 
-(function () {
-  const links = document.querySelectorAll("nav ul li a"),
-        navbarToggle = document.querySelector("#navbar-toggle") as HTMLInputElement;
+(() => {
+  const links = document.querySelectorAll("nav ul li a");
+  const navbarToggle = document.querySelector("#navbar-toggle") as HTMLInputElement;
 
   for (let i = 0; i < links.length; i++) {
     const link = links.item(i) as HTMLLinkElement;
@@ -20,7 +20,7 @@ declare function Jump(selector: string, options?: JumpOptions) : void;
                          .replace(/[^#]*#(.*)/, "[name='$1']");
 
       Jump(target, {
-        duration: 200
+        duration: 200,
       });
 
       if (navbarToggle.checked) {

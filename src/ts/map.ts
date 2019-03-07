@@ -1,163 +1,164 @@
-(function () {
+(() => {
   if (!("google" in window)) {
     return;
   }
-  
+
   google.maps.event.addDomListener(window, "load", () => {
-    const position = new google.maps.LatLng(49.002131, 12.100056),
-          container = document.querySelector(".venue #map"),
-          map = new google.maps.Map(container, {
-            zoom: 15,
-            scrollwheel: false,
+    const position = new google.maps.LatLng(49.002131, 12.100056);
+    const container = document.querySelector(".venue #map");
+    const map = new google.maps.Map(container, {
             center: position,
+            scrollwheel: false,
+            zoom: 15,
+
             styles: [
               {
-                featureType: "all",
                 elementType: "labels.text",
+                featureType: "all",
                 stylers: [
                   {
-                    color: "#8bc34a"
+                    color: "#8bc34a",
                   },
                   {
-                    weight: 0.37
-                  }
-                ]
+                    weight: 0.37,
+                  },
+                ],
               },
               {
-                featureType: "administrative",
                 elementType: "labels.text.fill",
+                featureType: "administrative",
                 stylers: [
                   {
-                    color: "#444444"
-                  }
-                ]
+                    color: "#444444",
+                  },
+                ],
               },
               {
+                elementType: "all",
                 featureType: "landscape",
-                elementType: "all",
                 stylers: [
                   {
-                    color: "#f2f2f2"
-                  }
-                ]
+                    color: "#f2f2f2",
+                  },
+                ],
               },
               {
+                elementType: "all",
                 featureType: "poi",
-                elementType: "all",
                 stylers: [
                   {
-                    visibility: "off"
-                  }
-                ]
+                    visibility: "off",
+                  },
+                ],
               },
               {
+                elementType: "labels.icon",
                 featureType: "poi.attraction",
-                elementType: "labels.icon",
                 stylers: [
                   {
-                    visibility: "on"
+                    visibility: "on",
                   },
                   {
-                    saturation: 0
+                    saturation: 0,
                   },
                   {
-                    weight: 2.00
-                  }
-                ]
+                    weight: 2.00,
+                  },
+                ],
               },
               {
+                elementType: "labels.icon",
                 featureType: "poi.business",
-                elementType: "labels.icon",
                 stylers: [
                   {
-                    visibility: "on"
-                  }
-                ]
+                    visibility: "on",
+                  },
+                ],
               },
               {
+                elementType: "labels.icon",
                 featureType: "poi.government",
-                elementType: "labels.icon",
                 stylers: [
                   {
-                    visibility: "on"
-                  }
-                ]
+                    visibility: "on",
+                  },
+                ],
               },
               {
+                elementType: "labels.icon",
                 featureType: "poi.park",
-                elementType: "labels.icon",
                 stylers: [
                   {
-                    visibility: "on"
-                  }
-                ]
+                    visibility: "on",
+                  },
+                ],
               },
               {
+                elementType: "labels.icon",
                 featureType: "poi.school",
-                elementType: "labels.icon",
                 stylers: [
                   {
-                    visibility: "on"
-                  }
-                ]
+                    visibility: "on",
+                  },
+                ],
               },
               {
+                elementType: "all",
                 featureType: "road",
-                elementType: "all",
                 stylers: [
                   {
-                    saturation: -100
+                    saturation: -100,
                   },
                   {
-                    lightness: 45
-                  }
-                ]
+                    lightness: 45,
+                  },
+                ],
               },
               {
+                elementType: "all",
                 featureType: "road.highway",
-                elementType: "all",
                 stylers: [
                   {
-                    visibility: "simplified"
-                  }
-                ]
+                    visibility: "simplified",
+                  },
+                ],
               },
               {
-                featureType: "road.arterial",
                 elementType: "labels.icon",
+                featureType: "road.arterial",
                 stylers: [
                   {
-                    visibility: "off"
-                  }
-                ]
+                    visibility: "off",
+                  },
+                ],
               },
               {
+                elementType: "all",
                 featureType: "transit",
-                elementType: "all",
                 stylers: [
                   {
-                    visibility: "off"
-                  }
-                ]
+                    visibility: "off",
+                  },
+                ],
               },
               {
-                featureType: "water",
                 elementType: "all",
+                featureType: "water",
                 stylers: [
                   {
-                    color: "#8bc34a"
+                    color: "#8bc34a",
                   },
                   {
-                    visibility: "on"
-                  }
-                ]
-              }
-            ]
+                    visibility: "on",
+                  },
+                ],
+              },
+            ],
           });
 
-    new google.maps.Marker({
+    return new google.maps.Marker({
+      map,
       position,
-      map
     });
   });
 })();
