@@ -15,6 +15,7 @@ jobs:
           name: yarn
           command: |
             yarn install
+            yarn lint
             yarn test
             yarn build
       - run:
