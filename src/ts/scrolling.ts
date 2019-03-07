@@ -15,7 +15,7 @@ declare function Jump(selector: string, options?: JumpOptions): void;
   for (let i = 0; i < links.length; i++) {
     const link = links.item(i) as HTMLLinkElement;
 
-    link.onclick = (event: MouseEvent) => {
+    link.addEventListener("click", (event: MouseEvent) => {
       const target = link.href
                          .replace(/[^#]*#(.*)/, "[name='$1']");
 
@@ -31,6 +31,6 @@ declare function Jump(selector: string, options?: JumpOptions): void;
       event.stopPropagation();
 
       return true;
-    };
+    });
   }
 })();

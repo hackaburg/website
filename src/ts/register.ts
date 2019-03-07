@@ -10,7 +10,7 @@
     const submitButton = form.querySelector("#submit") as HTMLButtonElement;
     const errorContainer = form.querySelector("#error") as HTMLDivElement;
 
-    submitButton.onclick = async (event: MouseEvent) => {
+    submitButton.addEventListener("click", async (event: MouseEvent) => {
       window.fbq("track", "CompleteRegistration");
 
       const headers = new Headers();
@@ -56,6 +56,6 @@
       event.stopPropagation();
 
       return false;
-    };
+    });
   }
 })();

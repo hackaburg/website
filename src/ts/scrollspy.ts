@@ -1,16 +1,12 @@
-function nodeListToArray<T extends Node>(nodes: NodeListOf<T>): T[] {
-  return [].slice.call(nodes);
-}
-
-const raisedNavClassName = "raised";
-const raisedNavThresholdPixelsFromTop = 40;
-
 (() => {
+  const raisedNavClassName = "raised";
+  const raisedNavThresholdPixelsFromTop = 40;
+
   function scrollHandler(event?: UIEvent) {
     const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    const nav = nodeListToArray(document.querySelectorAll("nav"))[0];
-    const navLinks = nodeListToArray(document.querySelectorAll("nav ul li a"));
-    const blockElements = nodeListToArray(document.querySelectorAll(".block"));
+    const nav = document.querySelectorAll("nav").item(0);
+    const navLinks = [...document.querySelectorAll("nav ul li a")];
+    const blockElements = [...document.querySelectorAll(".block")];
     const blocks = blockElements.map((element, elementIndex) => {
       const rect = element.getBoundingClientRect();
 
@@ -44,6 +40,6 @@ const raisedNavThresholdPixelsFromTop = 40;
     }
   }
 
-  window.onscroll = scrollHandler;
+  window.addEventListener("scroll", scrollHandler);
   scrollHandler();
 })();
