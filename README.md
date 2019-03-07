@@ -5,18 +5,13 @@
 [![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/hackaburg/website)
 [![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/hackaburg/website/issues)
 
-> Hackaburg is a local hackathon event in Regensburg. This is the code of our website for the event in 2018. Have fun!
+Hackaburg is a hackathon in Regensburg. This is the code of our website. Have fun!
 
-
-## Install
-You need to have node installed on your machine.
+## Setup
+To install the dependencies, simply run:
 
 ```bash
-npm install
-```
-or (preferred)
-```bash
-yarn
+$ yarn install
 ```
 
 
@@ -27,6 +22,15 @@ You can take a look at the [package.json scripts section](package.json) to get a
 * build the website: `yarn build`
 * start a livereload dev server: `yarn start`
 * clean the built project: `yarn clean`
+
+
+## Contributing
+
+There are a few things to keep in mind when contributing:
+
+- Try to do as much as possible with CSS only. We don't want to scare off attendees without JS enabled, so gracefully upgrade the UI instead of gracefully downgrading it.
+- LESS variables should start with their "region", so a color "foobar" should be called `@color-foobar` and a size `@size-foobar`. It's slightly easier to search for these "regions" that way.
+- If you really need JS, use an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) as we don't use webpack and might stick to our current setup.
 
 
 ## License
