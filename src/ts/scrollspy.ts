@@ -1,4 +1,17 @@
 (() => {
+  interface HistoryState {
+    url?: string;
+  }
+
+  function updateHash(hash: string) {
+    const state = (history.state || {}) as HistoryState;
+
+    if (state.url !== hash) {
+      state.url = hash;
+      history.replaceState(state, "", hash);
+    }
+  }
+
   const raisedNavClassName = "raised";
   const raisedNavThresholdPixelsFromTop = 40;
 
@@ -30,7 +43,11 @@
     }
 
     if (index >= 0 && index < navLinks.length) {
-      navLinks[index].className = "active";
+      const activeLink = navLinks[index] as HTMLAnchorElement;
+      activeLink.className = "active";
+      updateHash(activeLink.href);
+    } else {
+      updateHash("#");
     }
 
     if (window.scrollY >=  raisedNavThresholdPixelsFromTop && !nav.classList.contains(raisedNavClassName)) {
