@@ -41,8 +41,7 @@ const sources = {
 };
 
 function test(done) {
-  const buffer = new Buffer("Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K", "base64");
-
+  const buffer = Buffer.from("Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K", "base64");
   console.log(buffer.toString("utf8"));
   done();
 }
