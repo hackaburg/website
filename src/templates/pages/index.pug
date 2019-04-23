@@ -8,10 +8,8 @@ block nav
   ul
     li
       a(href="#about") About
-    //- li
-    //-   a(href="#challenges") Challenges
-    //- li
-    //-   a(href="#tracks") Tracks
+    li
+      a(href="#tracks") Tracks
     li
       a(href="#sponsors") Sponsors
     li
@@ -65,62 +63,57 @@ block content
 
           p.tldr Hackaburg is a unique hackathon experience that brings together more than 100 developers, designers and entrepreneurs from around the world.
 
-  //- a(name="tracks")
-  //- section.white.block
-  //-   .tracks
-  //-     .container
-  //-       .accent.section.heading
-  //-         .title
-  //-           h2 Tracks
+  a(name="tracks")
+  section.white.block
+    .tracks
+      .container
+        .accent.section.heading
+          .title
+            h2 Tracks
 
-  //-         .subtitle
-  //-           h3 How you can change the future
+          .subtitle
+            h3 How you can change the future
 
-  //-       p The new tracks introduced this year offer you the possibility to challenge in the category of interest.
-  //-         br
-  //-         | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
-
-  //-       .grid
-  //-         .row
-  //-           .col-50
-  //-             a.raisable.track(href="tracks.html#digital-journalism", style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
-  //-               .title Digital Journalism
-  //-           .col-50
-  //-             a.raisable.track(href="tracks.html#security", style="background-image: url(assets/images/tracks/security.jpg);")
-  //-               .title Security
-  //-         .row
-  //-           .col-50
-  //-             a.raisable.track(href="tracks.html#smart-society", style="background-image: url(assets/images/tracks/smart-society.jpg);")
-  //-               .title Smart Society
-  //-           .col-50
-  //-             a.raisable.track(href="tracks.html#e-health", style="background-image: url(assets/images/tracks/e-health.jpg);")
-  //-               .title E-Health
-  //-         .row
-  //-           .col-100
-  //-             a.raisable.track(href="tracks.html#free-choice", style="background-image: url(assets/images/tracks/free-choice.jpg);")
-  //-               .title Free Choice
-
-
-  //-       .challenges
-  //-         .accent.section.heading
-  //-           .title
-  //-             h2 NEW
-
-  //-           .subtitle
-  //-             h3 Partner Challenges
-
-  //-         p Starting this year, our partners can offer special challenges in each track which you can compete in as well. The partners providing the challenges can award special prices and they may provide you with some extras throughout the event, e.g. special hardware or APIs.
-
-  //-         ul
-  //-           li
-  //-             a(href="tracks.html#challenge-dracoon") Dracoon &mdash; document classification challenge
-  //-           li
-  //-             a(href="tracks.html#challenge-vector") Vector &mdash; hardware challenge
-  //-           li
-  //-             a(href="tracks.html#challenge-consolinno") Consolinno &mdash; smart contracts in local heating networks challenge
-
-  //-         .centered.challenges.text
-  //-           a.inverted.button(href="tracks.html#challenges") Explore the Challenges
+        .grid
+          .row
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/connected-mobility.jpg);")
+                  .title Connected Mobility
+                    .sponsor SSV Jahn Regensburg
+                .description How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility.
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/hardware-hacking-games.jpg);")
+                  .title Hardware Hacking Games
+                    .sponsor Infineon
+                .description Use the provided hardware to create a new game from scratch!
+          .row
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/digital-insurance.jpg);")
+                  .title Digital Insurance
+                    .sponsor Telis Finanz
+                .description Create a chatbot that filters the customer input to consult them with services they actually need. Feel free to use whatever platform you like!
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/smart-robotics.jpg);")
+                  .title Smart Robotics
+                    .sponsor Continental
+                .description How can you make a robot even smarter? Find solutions based on Arduino software for interactions between humans and robots.
+          .row
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/privacy.jpg);")
+                  .title Privacy
+                    .sponsor Projekt29
+                .description Catch the hidden trackers: find and display them all and create smart solutions that are able to protect web users in the future.
+            .col-50
+              .track
+                .image(style="background-image: url(assets/images/tracks/free-choice.jpg);")
+                  .title Free Choice
+                    .sponsor Hackaburg
+                .description You have an idea that doesn't fit into one of the tracks above? No restrictions are set here, feel free to build what ever you want!
 
   a(name="sponsors")
   section.white.block
