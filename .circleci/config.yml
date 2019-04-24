@@ -38,6 +38,10 @@ jobs:
           name: deploy using lftp
           command: |
             lftp -e "set ssl:verify-certificate no; set mirror:set-permissions no; mirror -R ${DIR_LOCAL} ${DIR_REMOTE}; quit" -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_HOST}
+      - run:
+          name: purge cloudflare cache
+          command: |
+            yarn cloudflare
 
 workflows:
   version: 2

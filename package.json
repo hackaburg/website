@@ -10,6 +10,7 @@
     "test": "gulp test",
     "start": "gulp watch",
     "build": "gulp",
+    "cloudflare": "gulp cloudflare",
     "clean": "rimraf dist/"
   },
   "resolutions": {
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@types/googlemaps": "^3.29.2",
     "@types/js-cookie": "^2.1.0",
+    "cloudflare": "^2.4.1",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-connect": "^5.7.0",

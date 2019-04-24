@@ -9,6 +9,10 @@ const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 const tsc = require("gulp-typescript");
 const uglify = require("gulp-uglify");
+const cloudflareClient = require("cloudflare")({
+  email: process.env.CLOUDFLARE_EMAIL,
+  key: process.env.CLOUDFLARE_API_KEY,
+});
 
 const sources = {
   templates: {
@@ -123,12 +127,43 @@ function copy(done) {
   done();
 }
 
+function cloudflare(done) {
+  if (!process.env.CLOUDFLARE_ZONE_NAME) {
+    console.error("no cloudflare zone name provided, won't purge cache!")
+    done();
+    return;
+  }
+
+  (async () => {
+    const zones = await cloudflareClient.zones.browse();
+    const domainZones = zones.result.filter((zone) => zone.name === process.env.CLOUDFLARE_ZONE_NAME)
+
+    if (!domainZones.length) {
+      return;
+    }
+
+    try {
+      const zoneId = domainZones[0].id;
+      const response = await cloudflareClient.zones.purgeCache(zoneId, {
+        purge_everything: true,
+      });
+
+      console.log(`cache purged: ${response.success}`)
+    } catch (error) {
+      console.error("couldn't purge cache");
+    }
+
+    done();
+  })();
+}
+
 gulp.task(test);
 gulp.task(serve);
 gulp.task(templates);
 gulp.task(css);
 gulp.task(js);
 gulp.task(copy);
+gulp.task(cloudflare)
 gulp.task("default", gulp.parallel("css", "templates", "copy", "js"));
 gulp.task("watch", gulp.series("default", gulp.parallel("serve", () => {
   gulp.watch(sources.less.watch, css);
