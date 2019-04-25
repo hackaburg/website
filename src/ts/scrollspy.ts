@@ -46,7 +46,7 @@
       const activeLink = navLinks[index] as HTMLAnchorElement;
       activeLink.className = "active";
       updateHash(activeLink.href);
-    } else {
+    } else if (hashResetEnabled) {
       updateHash("#");
     }
 
@@ -57,6 +57,8 @@
     }
   }
 
+  let hashResetEnabled = false;
+  window.addEventListener("load", () => hashResetEnabled = true);
   window.addEventListener("scroll", scrollHandler);
   scrollHandler();
 })();
