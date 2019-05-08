@@ -22,8 +22,6 @@ block nav
       a(href="#venue") Venue
     li
       a(href="#faq") FAQ
-    //- li
-    //-   a(href="#team") Team
 
   a.mlh-trust-badge(href="https://mlh.io/seasons/eu-2019/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray" target="_blank")
     img(src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg" alt="Major League Hacking 2019 Hackathon Season")
@@ -626,31 +624,83 @@ block content
                   a(class="accent text", href="mailto:applications@hackaburg.de") applications@hackaburg.de
                   |  and we'll look into it.
 
-  //- a(name="hardware")
+  a(name="hardware")
+  section.white.block
+    .hardware
+      .container
+        .accent.section.heading
+          .title
+            h2 Hardware
+          .subtitle
+            h3 You need it? We have it!
 
-  //- section.white.block
-  //-   .faq
-  //-     .container
-  //-       .accent.section.heading
-  //-         .title
-  //-           h2 Hardware
-  //-         .subtitle
-  //-           h3 You need it? We have it!
+        .grid
+          .row
+            .col-10
+            .col-80
+              .grid
+                .row
+                  .col-33
+                    .bottom.aligned
+                      .device
+                        .image
+                          img(src="assets/images/devices/raspberry-pi-3b.jpg")
+                        .bubble 5
+                        .name Raspberry Pi 3 B+
 
-  //-       .grid
-  //-         .row
-  //-           .col-20
-  //-             .device
-  //-               .image
-  //-                 img(src="http://placehold.it/300x500")
-  //-               .bubble 2
+                  .col-33
+                    .bottom.aligned
+                      .device
+                        .image
+                          img(src="assets/images/devices/leap-motion.jpg")
+                        .bubble 1
+                        .name Leap Motion
 
+                  .col-33
+                    .bottom.aligned
+                      .device
+                        .image
+                          img(src="assets/images/devices/particle-argon.jpg")
+                        .bubble 2
+                        .name Particle Argon
 
-  //-           img(src="assets/images/hardware.jpg")
-  //-         .centered.text
-  //-           a.accent.button(href="https://docs.google.com/spreadsheets/d/1EjpvBarvlzSfZeel_dNAipzqGFRiBV3Q9WchPpg8XJ0/edit?usp=sharing") Conrad Electronic's Hardware List
-  //-         .centered.text
-  //-           a.accent.marginTop1.button(href="https://docs.google.com/presentation/d/1xuf9xucnWyAuPmr-SwNnWhc9ByWBK_dOXXVU3PsH4aA/edit?usp=sharing") MLH's Hardware Lab
+          .row
+            .col-25
+              .bottom.aligned
+                .device
+                  .image
+                    img(src="assets/images/devices/arduino-kit.jpg")
+                  .bubble 8
+                  .name Arduino Kits
+
+            .col-25
+              .bottom.aligned
+                .device
+                  .image
+                    img(src="assets/images/devices/arduino-sensor-kit-1.jpg")
+                  .bubble 4
+                  .name Arduino Sensor Kits
+
+            .col-25
+              .bottom.aligned
+                .device
+                  .image
+                    img(src="assets/images/devices/nucleo-F411RE.jpg")
+                  .bubble 1
+                  .name NUCLEO F411RE
+
+            .col-25
+              .bottom.aligned
+                .device
+                  .image
+                    img(src="assets/images/devices/nucleo-L053R8.jpg")
+                  .bubble 2
+                  .name NUCLEO L053R8
+
+        p.centered.text
+          a.accent.button(href="mailto:ewald@hackaburg.de", target="_blank") Need more? Tell Ewald
+          | 
+          a.inverted.accent.button(href="https://docs.google.com/presentation/d/1xuf9xucnWyAuPmr-SwNnWhc9ByWBK_dOXXVU3PsH4aA/edit?usp=sharing", target="_blank") MLH's Hardware Lab
 
   //- a(name="jury")
   //- section.white.block
