@@ -9,9 +9,9 @@ const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 const tsc = require("gulp-typescript");
 const uglify = require("gulp-uglify");
+
 const cloudflareClient = require("cloudflare")({
-  email: process.env.CLOUDFLARE_EMAIL,
-  key: process.env.CLOUDFLARE_API_KEY,
+  token: process.env.CLOUDFLARE_PURGE_TOKEN,
 });
 
 const sources = {
@@ -128,22 +128,16 @@ function copy(done) {
 }
 
 function cloudflare(done) {
-  if (!process.env.CLOUDFLARE_ZONE_NAME) {
-    console.error("no cloudflare zone name provided, won't purge cache!")
+  const zoneId = process.env.CLOUDFLARE_ZONE_ID;
+
+  if (!zoneId) {
+    console.error("no cloudflare zone id provided, won't purge cache!")
     done();
     return;
   }
 
   (async () => {
-    const zones = await cloudflareClient.zones.browse();
-    const domainZones = zones.result.filter((zone) => zone.name === process.env.CLOUDFLARE_ZONE_NAME)
-
-    if (!domainZones.length) {
-      return;
-    }
-
     try {
-      const zoneId = domainZones[0].id;
       const response = await cloudflareClient.zones.purgeCache(zoneId, {
         purge_everything: true,
       });
