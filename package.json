@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/googlemaps": "^3.29.2",
     "@types/js-cookie": "^2.1.0",
-    "cloudflare": "^2.4.1",
+    "cloudflare": "^2.6.0",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-connect": "^5.7.0",
