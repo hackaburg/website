@@ -10,7 +10,6 @@
     "test": "node -e \"console.log(Buffer.from('Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K', 'base64').toString('utf-8'))\"",
     "start": "webpack-dev-server --mode=development",
     "build": "NODE_ENV=production webpack --mode=production",
-    "cloudflare": "gulp cloudflare",
     "clean": "rimraf dist/"
   },
   "resolutions": {
@@ -21,7 +20,6 @@
     "@types/js-cookie": "^2.1.0",
     "@types/jump.js": "^1.0.2",
     "@types/node": "^12.7.1",
-    "cloudflare": "^2.6.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
