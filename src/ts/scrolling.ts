@@ -8,29 +8,27 @@ interface JumpOptions {
 
 declare function Jump(selector: string, options?: JumpOptions): void;
 
-(() => {
-  const links = document.querySelectorAll("nav ul li a");
-  const navbarToggle = document.querySelector("#navbar-toggle") as HTMLInputElement;
+const links = document.querySelectorAll("nav ul li a");
+const navbarToggle = document.querySelector("#navbar-toggle") as HTMLInputElement;
 
-  for (let i = 0; i < links.length; i++) {
-    const link = links.item(i) as HTMLLinkElement;
+for (let i = 0; i < links.length; i++) {
+  const link = links.item(i) as HTMLLinkElement;
 
-    link.addEventListener("click", (event: MouseEvent) => {
-      const target = link.href
-                         .replace(/[^#]*#(.*)/, "[name='$1']");
+  link.addEventListener("click", (event: MouseEvent) => {
+    const target = link.href
+      .replace(/[^#]*#(.*)/, "[name='$1']");
 
-      Jump(target, {
-        duration: 200,
-      });
-
-      if (navbarToggle.checked) {
-        navbarToggle.checked = false;
-      }
-
-      event.preventDefault();
-      event.stopPropagation();
-
-      return true;
+    Jump(target, {
+      duration: 200,
     });
-  }
-})();
+
+    if (navbarToggle.checked) {
+      navbarToggle.checked = false;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    return true;
+  });
+}
