@@ -108,6 +108,7 @@ module.exports = {
   },
   externals: {
     "js-cookie": "Cookies",
+    "jump.js": "Jump",
   },
   devServer: {
     port: 8080,

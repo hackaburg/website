@@ -95,6 +95,11 @@
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.1.0.tgz#a8916246aa994db646c66d54c854916213300a51"
 
+"@types/jump.js@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jump.js/-/jump.js-1.0.2.tgz#9eb1cf571e406bb3514a062008b6889ab9984160"
+  integrity sha1-nrHPVx5Aa7NRSgYgCLaImrmYQWA=
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"

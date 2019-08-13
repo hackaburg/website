@@ -1,12 +1,4 @@
-interface JumpOptions {
-  duration?: number;
-  offset?: number;
-  callback?: () => void;
-  easing?: (t: number, b: number, c: number, d: number) => number;
-  a11y?: boolean;
-}
-
-declare function Jump(selector: string, options?: JumpOptions): void;
+import * as Jump from "jump.js";
 
 const links = document.querySelectorAll("nav ul li a");
 const navbarToggle = document.querySelector("#navbar-toggle") as HTMLInputElement;

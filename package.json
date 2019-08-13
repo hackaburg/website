@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/googlemaps": "^3.29.2",
     "@types/js-cookie": "^2.1.0",
+    "@types/jump.js": "^1.0.2",
     "@types/node": "^12.7.1",
     "cloudflare": "^2.6.0",
     "copy-webpack-plugin": "^5.0.4",
