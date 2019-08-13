@@ -25,6 +25,10 @@ jobs:
           name: test
           command: |
             yarn test
+      - run:
+          name: purge cloudflare cache
+          command: |
+            ./scripts/purge-cloudflare-cache.sh
 
 workflows:
   version: 2
