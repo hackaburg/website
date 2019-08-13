@@ -107,7 +107,7 @@ module.exports = {
     },
   },
   externals: {
-    "js-cookie": "js-cookie",
+    "js-cookie": "Cookies",
   },
   devServer: {
     port: 8080,
