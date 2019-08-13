@@ -1,15 +1,14 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "outFile": "hackaburg.js",
-        "strict": true,
-        "downlevelIteration": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "lib": [
-            "es2015",
-            "dom",
-            "dom.iterable"
-        ]
-    }
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "downlevelIteration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [
+      "es2015",
+      "dom",
+      "dom.iterable"
+    ]
+  }
 }
