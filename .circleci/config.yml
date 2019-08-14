@@ -25,6 +25,17 @@ jobs:
           name: test
           command: |
             yarn test
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: build image
+          command: |
+            docker build -t hackaburg/website .
+      - run:
+          name: push image to docker hub
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+            docker push hackaburg/website
       - run:
           name: purge cloudflare cache
           command: |
