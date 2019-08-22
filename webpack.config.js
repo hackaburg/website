@@ -42,6 +42,12 @@ module.exports = {
         to: "assets/images",
       },
     ]),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/robots.txt",
+        to: "robots.txt",
+      },
+    ]),
     new ImageminWebpackPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       disable: isDevelopmentBuild,
