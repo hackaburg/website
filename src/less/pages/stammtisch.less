@@ -1,0 +1,65 @@
+  
+  .stammtisch{
+    background-image: url(../assets/images/stammtisch.png);
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+  
+  .stammtisch-font {
+    font-size: 1rem;
+    margin-bottom: 7vh;
+  }
+  
+  .intro {
+    margin: 20vh 0rem;
+    margin-bottom: 1vh;
+  
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+  
+      .hi {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+      }
+    }  
+
+    .countdown {
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+  }
+    
+  @media screen and (max-width: @breakpoint-tablet) {
+  
+    .stammtisch {
+      background-size: auto 50%;
+      margin-top: 8vh;
+    }
+     
+  }
+  
+  @media screen and (max-width: @breakpoint-mobile) {
+  
+    .stammtisch {
+      background-size: auto 40%;
+      margin-top: 4vh;
+    }
+  
+    .intro {
+      margin-top: 34vh;
+      margin-bottom: 0vh;
+  
+      text-align: center;
+  
+      h1 {
+        font-size: 2rem;
+      }     
+
+    }
+  }
+  
