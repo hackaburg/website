@@ -4,57 +4,42 @@ a.button {
 
   padding: 0.5rem 3rem;
 
-  border-radius: 10rem;
+  border-radius: 5px;
   border: 2px solid @color-accent;
 
   color: #fff;
   background-color: @color-accent;
 
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 
-  transition-property: background-color, color;
+  transition-property: background-color, color, border-color;
   transition-duration: @duration-transition;
 
   cursor: pointer;
 
   &:hover {
-    color: @color-accent;
-    background-color: transparent;
+    background-color: @color-accent-light;
+    border-color: @color-accent-light;
   }
 
   &.inverted {
     border-color: @color-accent;
-    background-color: #fff;
+    background-color: transparent;
     color: @color-accent;
 
     &:hover {
       background-color: @color-accent;
       color: #fff;
     }
-
-    &.punched-out {
-      border-color: #fff;
-      background-color: transparent;
-      color: #fff;
-
-      &:hover {
-        background-color: #fff;
-        color: @color-accent;
-      }
-    }
-  }
-
-  &.apply {
-    padding: 1.0 1.0 1.0 1.0rem;
-    font-size: 1.1rem;
   }
 
   &.fluid {
     width: 100%;
   }
 
-  &.marginTop1{
+  &.marginTop1 {
     margin-top: 1rem;
   }
 }

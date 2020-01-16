@@ -1,32 +1,35 @@
 .header.block {
-  background-image: url(../assets/images/header.jpg);
+  // background-image: url(../assets/images/header.jpg);
   background-size: auto 100%;
   background-position: top right;
   background-repeat: no-repeat;
 }
 
-.intro {
+.intro  {
   margin: 20vh 0rem;
 
-  h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+  h1,
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
 
-    .hi {
-      font-size: 2rem;
-      font-weight: 300;
-      margin-bottom: 0.5rem;
+  h1 {
+    font-weight: bold;
+    margin-bottom: 0rem;
+  }
+
+  h2 {
+    font-weight: 300;
+
+    .year:before {
+      content: " | ";
     }
   }
 
   .subtitle {
     margin: 0.5rem 0rem 2rem 0rem;
-    font-weight: 300;
-
-    .date:before {
-      content: " | ";
-    }
+    font-weight: normal;
   }
 
   .countdown {
@@ -47,32 +50,17 @@
       }
     }
   }
+
+  .apply.button {
+    font-size: 1.1rem;
+  }
 }
 
-.disabled{
+.disabled {
   background-color: #dddddd !important;
   border-color: grey !important;
   color: grey !important;
   cursor: default !important;
-}
-
-.castle.image.container img,
-.rocket.image.container img {
-  position: absolute;
-
-  z-index: @z-triangle-content;
-}
-
-.castle.image.container img {
-  width: 22rem;
-
-  bottom: -6rem;
-  right: 0rem;
-}
-
-.rocket.image.container img {
-  bottom: -3rem;
-  right: 2rem;
 }
 
 .grid img {
@@ -145,7 +133,7 @@
   right: 2.5rem;
   top: 0rem;
 
-  z-index: 10000
+  z-index: 10000;
 }
 
 @media screen and (max-width: @breakpoint-tablet) {
@@ -169,7 +157,8 @@
 
     text-align: center;
 
-    h1 {
+    h1,
+    h2 {
       font-size: 2rem;
     }
 
