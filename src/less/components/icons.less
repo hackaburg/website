@@ -14,23 +14,23 @@
       width: @size-icon-burger-width;
       height: @size-icon-burger-height;
 
-      background-color: #000;
+      background-color: white;
     }
 
     &:before,
     &:after {
       position: relative;
     }
-    
+
     &:before {
       top: @size-icon-burger-distance;
     }
-    
+
     &:after {
       bottom: @size-icon-burger-distance + @size-icon-burger-height;
     }
   }
-  
+
   &.back.arrow {
     width: @size-icon-arrow-width;
 
@@ -41,13 +41,13 @@
 
       position: relative;
 
-      background-color: #000;
+      background-color: white;
     }
-    
+
     &:before,
     &:after {
       width: @size-icon-arrow-width / 1.5;
-      
+
       left: -@size-icon-arrow-height * 0.9;
 
       transform-origin: left center;
@@ -57,7 +57,7 @@
       top: @size-icon-arrow-height / 3;
       transform: rotateZ(-45deg);
     }
-    
+
     &:after {
       top: -@size-icon-arrow-height * 1.2;
       transform: rotateZ(45deg);

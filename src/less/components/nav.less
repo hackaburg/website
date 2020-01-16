@@ -6,10 +6,10 @@ nav {
 
   display: block;
 
-  color: #000;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
 
-  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
   text-align: center;
 
   z-index: 100;
@@ -18,7 +18,7 @@ nav {
   transition-duration: @duration-transition;
 
   &.raised {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -35,15 +35,7 @@ nav {
 
   .brand {
     float: left;
-
-    img {
-      margin: 0.125rem;
-      height: 2.5rem;
-    }
-
-    .text {
-      display: none;
-    }
+    padding: 1rem;
   }
 
   ul {
@@ -85,25 +77,16 @@ nav {
 
 @media screen and (max-width: @breakpoint-tablet) {
   nav {
-    background-color: #fff;
+    background-color: @color-background;
+    color: white;
+    border-bottom: 2px solid white;
+
+    &.raised {
+      background-color: @color-background;
+    }
 
     .back.to.home {
       padding: 2rem;
-    }
-
-    .brand {
-      img {
-        margin-top: 0.5rem;
-        height: 3rem;
-      }
-
-      .text {
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 1.25rem;
-        margin-left: 0.5rem;
-        font-size: 1.5rem;
-      }
     }
 
     ul {
@@ -138,7 +121,7 @@ nav {
 
     label {
       display: block;
-      padding: 2rem;
+      padding: 1.5rem;
 
       position: absolute;
       top: 0rem;
