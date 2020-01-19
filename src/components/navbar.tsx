@@ -23,6 +23,7 @@ const Nav = styled.nav<INavProps>`
   color: white;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
 
   transition-property: background-color;
   transition-duration: ${transitionDuration};
