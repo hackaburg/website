@@ -4,6 +4,9 @@ export const siteTitle = "Hackaburg 2020";
 
 export const accentColor = "#1d74f5";
 export const accentColorLight = "#5694f0";
+export const starBackgroundColor = "#040b1a";
+
+export const triangleSize = "6rem";
 
 export const transitionDuration = "0.2s";
 
