@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import * as React from "react";
+import { Anchors } from "../anchors";
 import { breakpointMobile, breakpointTablet } from "../constants";
+import { useScrollSpyMarker } from "../hooks/use-scrollspy";
 import { Header } from "./header";
 import { Image } from "./image";
 
@@ -41,20 +43,24 @@ const Content = styled.div`
   }
 `;
 
-export const About = () => (
-  <AboutContainer>
-    <TowerContainer>
-      <Image label="Hackaburg tower" src="images/space/tower.png" />
-    </TowerContainer>
+export const About = () => {
+  const marker = useScrollSpyMarker(Anchors.About);
+  return (
+    <AboutContainer>
+      {marker}
+      <TowerContainer>
+        <Image label="Hackaburg tower" src="images/space/tower.png" />
+      </TowerContainer>
 
-    <FlagContainer>
-      <Image label="Hackaburg flag" src="images/space/flag.png" />
-    </FlagContainer>
+      <FlagContainer>
+        <Image label="Hackaburg flag" src="images/space/flag.png" />
+      </FlagContainer>
 
-    <Content>
-      <Header title="About" subtitle="What is Hackaburg?" />
-      Hackaburg is a unique hackathon experience that brings together more than
-      100 developers, designers and entrepreneurs from around the world.
-    </Content>
-  </AboutContainer>
-);
+      <Content>
+        <Header title="About" subtitle="What is Hackaburg?" />
+        Hackaburg is a unique hackathon experience that brings together more
+        than 100 developers, designers and entrepreneurs from around the world.
+      </Content>
+    </AboutContainer>
+  );
+};
