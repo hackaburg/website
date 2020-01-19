@@ -4,6 +4,7 @@ import { About } from "../components/about";
 import { Landing } from "../components/landing";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
+import { Tracks } from "../components/tracks";
 
 export default () => (
   <Page>
@@ -42,5 +43,6 @@ export default () => (
 
     <Landing />
     <About />
+    <Tracks />
   </Page>
 );
