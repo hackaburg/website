@@ -2,6 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { siteDescription, siteTitle } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
+import { Background } from "./background";
 import { Footer } from "./footer";
 import "./reset.css";
 
@@ -11,8 +12,9 @@ interface IPageProps {
 
 export const Page = ({ children }: IPageProps) => {
   const icon = usePublicFileURL("images/logo.png");
+
   return (
-    <>
+    <Background>
       <Helmet>
         <meta charSet="utf-8" />
         <meta
@@ -82,6 +84,6 @@ export const Page = ({ children }: IPageProps) => {
       {children}
 
       <Footer />
-    </>
+    </Background>
   );
 };
