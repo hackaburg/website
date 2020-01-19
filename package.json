@@ -10,7 +10,7 @@
     "test": "node -e \"console.log(Buffer.from('Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K', 'base64').toString('utf-8'))\"",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "clean": "rimraf .cache public"
+    "clean": "rimraf .cache/ public/ dist/"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.27",
