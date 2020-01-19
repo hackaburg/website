@@ -9,7 +9,8 @@
       "member-ordering": false,
       "no-console": false,
       "no-namespace": false,
-      "no-reference": false
+      "no-reference": false,
+      "max-line-length": false
     },
     "rulesDirectory": []
 }
