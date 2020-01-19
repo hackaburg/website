@@ -32,6 +32,10 @@ const Nav = styled.nav<INavProps>`
     `
     background-color: rgba(0, 0, 0, 0.75);
   `}
+
+  @media screen and (max-width: ${breakpointTablet}) {
+    background-color: black;
+  }
 `;
 
 const ToggleInput = styled.input`

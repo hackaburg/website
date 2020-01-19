@@ -3,6 +3,7 @@ export const siteDescription =
 export const siteTitle = "Hackaburg 2020";
 
 export const accentColor = "#1d74f5";
+export const accentColorLight = "#5694f0";
 
 export const transitionDuration = "0.2s";
 
