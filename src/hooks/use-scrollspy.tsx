@@ -85,7 +85,7 @@ const findActiveMarkerName = (): string | null => {
     .filter((position) => position.top < currentPosition);
 
   if (markerPositions.length === 0) {
-    return items[0].value.name;
+    return null;
   }
 
   return markerPositions[0]!.name;
