@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Anchors } from "../anchors";
+import { About } from "../components/about";
 import { Landing } from "../components/landing";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
@@ -40,5 +41,6 @@ export default () => (
     />
 
     <Landing />
+    <About />
   </Page>
 );
