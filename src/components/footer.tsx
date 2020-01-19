@@ -10,6 +10,7 @@ import { Link } from "./link";
 const FooterContainer = styled.div`
   padding: 1rem;
   color: #777;
+  background-color: white;
 `;
 
 const List = styled.ul`
@@ -37,8 +38,8 @@ const AccentText = styled.span`
 `;
 
 export const Footer = () => (
-  <Container>
-    <FooterContainer>
+  <FooterContainer>
+    <Container>
       <Row>
         <Column width={1}>
           <Link
@@ -108,6 +109,6 @@ export const Footer = () => (
           </RightAligned>
         </Column>
       </Row>
-    </FooterContainer>
-  </Container>
+    </Container>
+  </FooterContainer>
 );

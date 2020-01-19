@@ -5,7 +5,6 @@ import { breakpointMobile } from "../../constants";
 const RowDiv = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: stretch;
 
   @media screen and (max-width: ${breakpointMobile}) {
     display: block;
@@ -13,7 +12,12 @@ const RowDiv = styled.div`
 `;
 
 interface IRowProps {
+  center?: boolean;
   children: React.ReactNode;
 }
 
-export const Row = ({ children }: IRowProps) => <RowDiv>{children}</RowDiv>;
+export const Row = ({ center, children }: IRowProps) => (
+  <RowDiv style={{ alignItems: center ? "center" : "stretch" }}>
+    {children}
+  </RowDiv>
+);
