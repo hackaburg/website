@@ -4,6 +4,7 @@ import { About } from "../components/about";
 import { Landing } from "../components/landing";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
+import { Sponsors } from "../components/sponsors";
 import { Tracks } from "../components/tracks";
 
 export default () => (
@@ -44,5 +45,6 @@ export default () => (
     <Landing />
     <About />
     <Tracks />
+    <Sponsors />
   </Page>
 );
