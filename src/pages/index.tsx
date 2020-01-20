@@ -7,6 +7,7 @@ import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
 import { Schedule } from "../components/schedule";
 import { Sponsors } from "../components/sponsors";
+import { Teaser } from "../components/teaser";
 import { Tracks } from "../components/tracks";
 
 export default () => (
@@ -50,5 +51,6 @@ export default () => (
     <Sponsors />
     <Aftermovie />
     <Schedule />
+    <Teaser />
   </Page>
 );
