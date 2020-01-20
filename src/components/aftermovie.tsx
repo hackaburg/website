@@ -1,7 +1,12 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { Anchors } from "../anchors";
-import { accentColor, starBackgroundColor, triangleSize } from "../constants";
+import {
+  accentColor,
+  breakpointMobile,
+  starBackgroundColor,
+  triangleSize,
+} from "../constants";
 import { useScrollSpyMarker } from "../hooks/use-scrollspy";
 import { Header } from "./header";
 import { Link } from "./link";
@@ -11,6 +16,16 @@ import { AutoPlayVideo } from "./video";
 const AftermovieContainer = styled.div`
   position: relative;
   margin: 10rem 0;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    margin: 5rem 0;
+  }
+`;
+
+const VideoContainer = styled.div`
+  @media screen and (max-width: ${breakpointMobile}) {
+    display: none;
+  }
 `;
 
 const TriangleContainer = styled.div`
@@ -30,6 +45,12 @@ const DescriptionContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   backdrop-filter: blur(10px);
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    position: static;
+    width: auto;
+    transform: none;
+  }
 `;
 
 const AccentText = styled.div`
@@ -43,7 +64,9 @@ export const Aftermovie = () => {
     <AftermovieContainer>
       {marker}
 
-      <AutoPlayVideo src="images/video.mp4" />
+      <VideoContainer>
+        <AutoPlayVideo src="images/video.mp4" />
+      </VideoContainer>
 
       <TriangleContainer>
         <DownwardsRightTriangle color={starBackgroundColor} />
