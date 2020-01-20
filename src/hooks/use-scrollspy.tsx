@@ -78,7 +78,7 @@ const findActiveMarkerName = (): string | null => {
 
       return {
         name: marker.value.name,
-        top: rect.top + window.scrollY - 40,
+        top: rect.top + window.scrollY - 200,
       };
     })
     .reverse()
