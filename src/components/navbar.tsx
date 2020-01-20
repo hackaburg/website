@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { useCallback, useState } from "react";
-import { breakpointTablet, transitionDuration } from "../constants";
+import {
+  accentColor,
+  breakpointTablet,
+  transitionDuration,
+} from "../constants";
 import { useIncrementedID } from "../hooks/use-incremented-id";
 import { useRaisedNavbar } from "../hooks/use-raised-navbar";
 import { useScrollSpyActiveElementName } from "../hooks/use-scrollspy";
@@ -97,6 +101,12 @@ const ClickableArea = styled.div<IClickableAreaProps>`
   display: block;
   background-color: transparent;
   padding: 1rem;
+
+  ${(props) =>
+    props.active &&
+    `
+      background-color: ${accentColor};
+    `}
 `;
 
 interface INavbarItem {
