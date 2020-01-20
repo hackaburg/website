@@ -5,6 +5,7 @@ import { Aftermovie } from "../components/aftermovie";
 import { Landing } from "../components/landing";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
+import { Schedule } from "../components/schedule";
 import { Sponsors } from "../components/sponsors";
 import { Tracks } from "../components/tracks";
 
@@ -48,5 +49,6 @@ export default () => (
     <Tracks />
     <Sponsors />
     <Aftermovie />
+    <Schedule />
   </Page>
 );
