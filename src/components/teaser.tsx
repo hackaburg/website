@@ -28,7 +28,7 @@ const AstronautContainer = styled.div`
 const Content = styled.div`
   position: relative;
   left: 13rem;
-  margin: 10rem auto 30rem auto;
+  margin: 10rem auto 20rem auto;
   width: 45rem;
 
   @media screen and (max-width: ${breakpointTablet}) {
