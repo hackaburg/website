@@ -9,6 +9,7 @@ import { Schedule } from "../components/schedule";
 import { Sponsors } from "../components/sponsors";
 import { Teaser } from "../components/teaser";
 import { Tracks } from "../components/tracks";
+import { Venue } from "../components/venue";
 
 export default () => (
   <Page>
@@ -52,5 +53,6 @@ export default () => (
     <Aftermovie />
     <Schedule />
     <Teaser />
+    <Venue />
   </Page>
 );
