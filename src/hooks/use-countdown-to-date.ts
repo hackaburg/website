@@ -26,9 +26,7 @@ export const useCountdownToDate = (date: Date): string => {
       difference = 0;
     }
 
-    if (timerSpan) {
-      setText(formatTimeDifference(difference));
-    }
+    setText(formatTimeDifference(difference));
   }, [targetTimestamp]);
 
   useInterval(intervalHandler, 1000);
