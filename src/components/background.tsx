@@ -8,6 +8,7 @@ interface IBackgroundDivProps {
 
 const BackgroundDiv = styled.div<IBackgroundDivProps>`
   background-image: url(${(props) => props.imageUrl});
+  background-color: #040b1a;
   color: white;
 `;
 
