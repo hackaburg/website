@@ -21,6 +21,10 @@ const ImageContainer = styled.div`
   bottom: -3rem;
   right: 2rem;
   width: 15rem;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    display: none;
+  }
 `;
 
 const QuestionsContainer = styled.div`
