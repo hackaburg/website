@@ -3,6 +3,7 @@ import * as React from "react";
 import { useCallback, useRef } from "react";
 import Helmet from "react-helmet";
 import { Anchors } from "../anchors";
+import { breakpointMobile } from "../constants";
 import {
   useGoogleMapsApiKey,
   useGoogleMapsWhenLoaded,
@@ -23,6 +24,12 @@ const Address = styled.div`
   display: inline-block;
   width: 15rem;
   margin-right: 2rem;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Map = styled.div`
