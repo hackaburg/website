@@ -1,4 +1,5 @@
 export enum Anchors {
+  // index
   About = "about",
   Tracks = "tracks",
   Sponsors = "sponsors",
@@ -7,4 +8,14 @@ export enum Anchors {
   Teaser = "teaser",
   Venue = "venue",
   FAQ = "faq",
+
+  // imprint
+  Kontakt = "contact",
+  VerweiseUndLinks = "references",
+  Datenermittlung = "data",
+  Bestandsdaten = "existing-data",
+  Nutzungsdaten = "usage-data",
+  Cookies = "cookies",
+  FacebookPixel = "fb-pixel",
+  Auskunftsrecht = "disclosure",
 }
