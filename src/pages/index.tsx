@@ -2,6 +2,7 @@ import * as React from "react";
 import { Anchors } from "../anchors";
 import { About } from "../components/about";
 import { Aftermovie } from "../components/aftermovie";
+import { FAQ } from "../components/faq";
 import { Landing } from "../components/landing";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
@@ -43,6 +44,10 @@ export default () => (
           label: "Venue",
           marker: Anchors.Venue,
         },
+        {
+          label: "FAQ",
+          marker: Anchors.FAQ,
+        },
       ]}
     />
 
@@ -54,5 +59,6 @@ export default () => (
     <Schedule />
     <Teaser />
     <Venue />
+    <FAQ />
   </Page>
 );
