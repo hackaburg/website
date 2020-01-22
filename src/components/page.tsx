@@ -4,6 +4,10 @@ import { siteDescription, siteTitle } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 import { Background } from "./background";
 import { Footer } from "./footer";
+import { Cookiebanner } from "./libs/cookiebanner";
+import { FacebookPixel } from "./libs/facebook-pixel";
+import { GoogleTagManager } from "./libs/google-tag-manager";
+import { JumpJS } from "./libs/jump-js";
 import "./reset.css";
 
 interface IPageProps {
@@ -41,45 +45,12 @@ export const Page = ({ children }: IPageProps) => {
         <link rel="icon" type="image/png" sizes="16x16" href={icon} />
 
         <title>{siteTitle}</title>
-
-        <script
-          id="cookiebanner"
-          type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.1/cookiebanner.min.js"
-          integrity="sha256-tKsZSIsHQmNHgO2qfK8KT9SSOvKTbxgskN5dfhrpUS8="
-          crossOrigin="anonymous"
-          data-message="We use cookies to improve your browsing experience."
-          data-moreinfo="https://hackaburg.de/imprint.html"
-        ></script>
-        <script
-          type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"
-          integrity="sha256-9Nt2r+tJnSd2A2CRUvnjgsD+ES1ExvjbjBNqidm9doI="
-          crossOrigin="anonymous"
-        ></script>
-        <script
-          type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js"
-          integrity="sha256-nLkfxAF8lAuFgs9kcFqZff/MohZAA8mNLQ/buYWwOLs="
-          crossOrigin="anonymous"
-        ></script>
-
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-90366502-1"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            gtag("js", new Date());
-            gtag("config", "UA-90366502-1", {
-                "anonymize_ip": true
-            })
-          `}
-        </script>
       </Helmet>
+
+      <Cookiebanner />
+      <JumpJS />
+      <FacebookPixel />
+      <GoogleTagManager />
 
       {children}
 
