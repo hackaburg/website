@@ -6,4 +6,5 @@ export enum Anchors {
   Schedule = "schedule",
   Teaser = "teaser",
   Venue = "venue",
+  FAQ = "faq",
 }
