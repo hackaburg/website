@@ -13,5 +13,13 @@ interface IVideoProps {
 
 export const AutoPlayVideo = ({ src }: IVideoProps) => {
   const url = usePublicFileURL(src);
-  return <Video autoPlay={true} loop={true} muted={true} src={url ?? src} />;
+  return (
+    <Video
+      preload="none"
+      autoPlay={true}
+      loop={true}
+      muted={true}
+      src={url ?? src}
+    />
+  );
 };
