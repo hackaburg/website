@@ -7,11 +7,20 @@ import { Container } from "./container";
 import { Column } from "./grid/column";
 import { Row } from "./grid/row";
 import { Header } from "./header";
+import { Image } from "./image";
 import { Link } from "./link";
 import { Question } from "./question";
 
 const FAQContainer = styled.section`
   margin: 10rem 0;
+  position: relative;
+`;
+
+const ImageContainer = styled.div`
+  position: absolute;
+  bottom: -3rem;
+  right: 2rem;
+  width: 15rem;
 `;
 
 const QuestionsContainer = styled.div`
@@ -36,6 +45,11 @@ export const FAQ = () => {
   return (
     <FAQContainer>
       {marker}
+
+      <ImageContainer>
+        <Image label="Hackaburg dome" src="images/space/dome.png" />
+      </ImageContainer>
+
       <Container>
         <Header title="FAQ" subtitle="Questions and answers" />
         <Row>
