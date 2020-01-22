@@ -1,35 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { useEffect } from "react";
+import { useCDNScript } from "./use-cdn-script";
 
 const isGoogleMapsLoaded = () => window.google !== undefined;
-const checkIntervalMilliseconds = 200;
 
 export const useGoogleMapsWhenLoaded = (callback: () => void): void => {
-  useEffect(() => {
-    const updateLoadedState = () => {
-      if (!isGoogleMapsLoaded()) {
-        return;
-      }
-
-      if (intervalID != null) {
-        clearInterval(intervalID);
-        intervalID = null;
-      }
-
-      callback();
-    };
-
-    let intervalID: NodeJS.Timeout | null = setInterval(
-      updateLoadedState,
-      checkIntervalMilliseconds,
-    );
-
-    return () => {
-      if (intervalID != null) {
-        clearTimeout(intervalID);
-      }
-    };
-  }, [callback]);
+  useCDNScript(isGoogleMapsLoaded, callback);
 };
 
 interface IQueryResult {

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import * as React from "react";
 import { Anchors } from "../anchors";
 import { Container } from "../components/container";
-import { optOut } from "../components/facebook-pixel";
+import { optOut } from "../components/libs/facebook-pixel";
 import { Link } from "../components/link";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
