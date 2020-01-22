@@ -133,7 +133,7 @@ export const Navbar = ({ items }: INavbarProps) => {
 
   const renderedItems = items.map((item) => (
     <Item key={item.marker}>
-      <Link label={item.label} to={`#${item.marker}`}>
+      <Link label={item.label} to={`#${item.marker}`} underline={false}>
         <ClickableArea onClick={hideMenu} active={activeItem === item.marker}>
           {item.label}
         </ClickableArea>
@@ -144,7 +144,11 @@ export const Navbar = ({ items }: INavbarProps) => {
   return (
     <Nav raised={isRaised}>
       <Container>
-        <Brand>Hackaburg 2020</Brand>
+        <Brand>
+          <Link label="Home" to="../index.html" underline={false}>
+            Hackaburg 2020
+          </Link>
+        </Brand>
 
         <ToggleButton htmlFor={navbarID}>
           <Burger />

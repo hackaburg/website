@@ -10,15 +10,35 @@ declare global {
   }
 }
 
-const A = styled.a`
+interface IAProps {
+  underline: boolean;
+}
+
+const A = styled.a<IAProps>`
   color: inherit;
-  text-decoration: none;
+
+  ${(props) =>
+    props.underline
+      ? `
+        text-decoration: underline;
+      `
+      : `
+        text-decoration: none;
+      `}
 
   &:active,
   &:focus,
   &:visited {
     color: currentColor;
-    text-decoration: none;
+
+    ${(props) =>
+      props.underline
+        ? `
+          text-decoration: underline;
+        `
+        : `
+          text-decoration: none;
+        `}
   }
 `;
 
@@ -27,9 +47,16 @@ interface ILinkProps {
   label: string;
   target?: "_blank";
   to: string;
+  underline?: boolean;
 }
 
-export const Link = ({ children, label, target, to }: ILinkProps) => {
+export const Link = ({
+  children,
+  label,
+  target,
+  to,
+  underline = true,
+}: ILinkProps) => {
   const smoothScrollToTarget = useCallback(
     (event: React.SyntheticEvent) => {
       event.preventDefault();
@@ -44,7 +71,13 @@ export const Link = ({ children, label, target, to }: ILinkProps) => {
   const onClick = to.startsWith("#") ? smoothScrollToTarget : undefined;
 
   return (
-    <A aria-label={label} href={to} onClick={onClick} target={target}>
+    <A
+      aria-label={label}
+      href={to}
+      onClick={onClick}
+      target={target}
+      underline={underline}
+    >
       {children ?? label}
     </A>
   );
