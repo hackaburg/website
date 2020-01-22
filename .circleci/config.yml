@@ -18,9 +18,17 @@ jobs:
             - node_modules
           key: dependencies-{{ checksum "package.json" }}
       - run:
+          name: prettier
+          command: |
+            yarn prettier --check
+      - run:
           name: lint
           command: |
             yarn lint
+      - run:
+          name: typecheck
+          command: |
+            yarn typecheck
       - run:
           name: test
           command: |
