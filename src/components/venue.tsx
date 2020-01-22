@@ -33,7 +33,7 @@ const Address = styled.div`
 `;
 
 const Map = styled.div`
-  height: 15rem;
+  height: 25rem;
   border-radius: 5px;
 `;
 
@@ -219,7 +219,7 @@ export const Venue = () => {
         {marker}
         <Header title="Venue" subtitle="How to get there" />
 
-        <Row center>
+        <Row>
           <Address>
             <p>TechBase Regensburg</p>
             <p>
