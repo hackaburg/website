@@ -1,11 +1,17 @@
 import styled from "@emotion/styled";
 import * as React from "react";
-import { useRef } from "react";
+import { useCallback, useRef } from "react";
+import Helmet from "react-helmet";
 import { Anchors } from "../anchors";
-import { useGoogleMaps } from "../hooks/use-google-maps";
+import {
+  useGoogleMapsApiKey,
+  useGoogleMapsWhenLoaded,
+} from "../hooks/use-google-maps";
 import { useScrollSpyMarker } from "../hooks/use-scrollspy";
 import { Button } from "./button";
 import { Container } from "./container";
+import { Column } from "./grid/column";
+import { Row } from "./grid/row";
 import { Header } from "./header";
 import { Link } from "./link";
 
@@ -19,20 +25,23 @@ const Address = styled.div`
   margin-right: 2rem;
 `;
 
-const Map = styled.div``;
+const Map = styled.div`
+  height: 15rem;
+  border-radius: 5px;
+`;
 
 export const Venue = () => {
   const marker = useScrollSpyMarker(Anchors.Venue);
   const mapRef = useRef<HTMLDivElement | null>(null);
   const markerRef = useRef<google.maps.Marker | null>(null);
-
-  useGoogleMaps(() => {
-    if (!mapRef.current || 1 > 0) {
+  const apiKey = useGoogleMapsApiKey();
+  const setupGoogleMaps = useCallback(() => {
+    if (!mapRef.current) {
       return;
     }
 
-    const position = new google.maps.LatLng(49.002131, 12.100056);
-    const map = new google.maps.Map(mapRef.current, {
+    const position = new window.google.maps.LatLng(49.002131, 12.100056);
+    const map = new window.google.maps.Map(mapRef.current, {
       center: position,
       scrollwheel: false,
       zoom: 15,
@@ -182,41 +191,50 @@ export const Venue = () => {
       ],
     });
 
-    markerRef.current = new google.maps.Marker({
+    markerRef.current = new window.google.maps.Marker({
       map,
       position,
     });
-  });
+  }, []);
+
+  useGoogleMapsWhenLoaded(setupGoogleMaps);
 
   return (
-    <VenueContainer>
-      <Container>
+    <Container>
+      <Helmet>
+        <script
+          type="text/javascript"
+          src={`https://maps.googleapis.com/maps/api/js?key=${apiKey}`}
+        ></script>
+      </Helmet>
+
+      <VenueContainer>
         {marker}
         <Header title="Venue" subtitle="How to get there" />
 
-        <Address>
-          <p>TechBase Regensburg</p>
-          <p>
-            Franz-Mayer-Straße 1
-            <br />
-            93053 Regensburg
-          </p>
+        <Row center>
+          <Address>
+            <p>TechBase Regensburg</p>
+            <p>
+              Franz-Mayer-Straße 1
+              <br />
+              93053 Regensburg
+            </p>
 
-          <Link
-            label="Google Maps to Hackaburg"
-            target="_blank"
-            to="https://www.google.de/maps/dir//TechBase+Regensburg"
-          >
-            <Button fluid>Directions</Button>
-          </Link>
-        </Address>
-        <Map ref={mapRef} />
-      </Container>
+            <Link
+              label="Google Maps to Hackaburg"
+              target="_blank"
+              to="https://www.google.de/maps/dir//TechBase+Regensburg"
+            >
+              <Button fluid>Directions</Button>
+            </Link>
+          </Address>
 
-      <script
-        type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU"
-      ></script>
-    </VenueContainer>
+          <Column>
+            <Map ref={mapRef} />
+          </Column>
+        </Row>
+      </VenueContainer>
+    </Container>
   );
 };

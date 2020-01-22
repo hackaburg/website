@@ -1,26 +1,60 @@
-import { useEffect, useState } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { useEffect } from "react";
 
-const isGoogleMapsLoaded = () => typeof google !== undefined;
+const isGoogleMapsLoaded = () => window.google !== undefined;
+const checkIntervalMilliseconds = 200;
 
-export const useGoogleMaps = (callback: () => void): void => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
+export const useGoogleMapsWhenLoaded = (callback: () => void): void => {
   useEffect(() => {
     const updateLoadedState = () => {
-      if (isGoogleMapsLoaded()) {
-        setIsLoaded(true);
-        clearInterval(intervalID);
-
-        callback();
+      console.log("checking", window.google);
+      if (!isGoogleMapsLoaded()) {
+        return;
       }
+
+      if (intervalID != null) {
+        clearInterval(intervalID);
+        intervalID = null;
+      }
+
+      callback();
     };
 
-    const intervalID = setInterval(updateLoadedState, 200);
+    let intervalID: NodeJS.Timeout | null = setInterval(
+      updateLoadedState,
+      checkIntervalMilliseconds,
+    );
 
     return () => {
-      if (!isLoaded) {
-        clearInterval(intervalID);
+      if (intervalID != null) {
+        clearTimeout(intervalID);
       }
     };
-  }, []);
+  }, [callback]);
+};
+
+interface IQueryResult {
+  site?: {
+    siteMetadata?: {
+      apiKeys?: {
+        GOOGLE_MAPS_API_KEY?: string;
+      };
+    };
+  };
+}
+
+export const useGoogleMapsApiKey = (): string | undefined => {
+  const result = useStaticQuery<IQueryResult>(graphql`
+    query GoogleMapsApiKeyQuery {
+      site {
+        siteMetadata {
+          apiKeys {
+            GOOGLE_MAPS_API_KEY
+          }
+        }
+      }
+    }
+  `);
+
+  return result.site?.siteMetadata?.apiKeys?.GOOGLE_MAPS_API_KEY;
 };
