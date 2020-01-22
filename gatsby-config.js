@@ -1,4 +1,11 @@
+const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || "";
+
 module.exports = {
+  siteMetadata: {
+    apiKeys: {
+      GOOGLE_MAPS_API_KEY,
+    },
+  },
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
