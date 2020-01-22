@@ -7,7 +7,6 @@ const checkIntervalMilliseconds = 200;
 export const useGoogleMapsWhenLoaded = (callback: () => void): void => {
   useEffect(() => {
     const updateLoadedState = () => {
-      console.log("checking", window.google);
       if (!isGoogleMapsLoaded()) {
         return;
       }
