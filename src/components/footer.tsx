@@ -98,7 +98,7 @@ export const Footer = () => (
             </Item>
 
             <Item>
-              <Link label="Imprint" target="_blank" to="imprint.html" />
+              <Link label="Imprint" to="imprint" />
             </Item>
           </List>
         </Column>
