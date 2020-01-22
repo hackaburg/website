@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import * as React from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useEventListener } from "./use-event-listener";
@@ -32,9 +33,14 @@ const useArrayItem = (initialValue: IMarker) => {
   return ref.current;
 };
 
+const Marker = styled.a`
+  position: relative;
+  top: -5rem;
+`;
+
 export const useScrollSpyMarker = (name: string) => {
   const ref = useRef(null);
-  const marker = <a id={name} ref={ref} />;
+  const marker = <Marker id={name} ref={ref} />;
 
   useArrayItem({
     name,
