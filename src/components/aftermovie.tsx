@@ -77,7 +77,7 @@ export const Aftermovie = () => {
       <DescriptionContainer>
         <Header title="Hackaburg 2019" subtitle="What happened last year?" />
         <p>
-          120 participants from all over Germany together with 15 Sponsors
+          120 participants from all over Germany together with 22 Sponsors
           transformed the facilities of Techbase Regensburg into a home for 20
           Teams working on a large variety of projects. The best teams got
           rewarded with prizes of more than 6.000 € in total value and everyone
@@ -88,7 +88,7 @@ export const Aftermovie = () => {
           <Link
             label="Watch last year's aftermovie &raquo;"
             target="_blank"
-            to="https://www.youtube.com/watch?v=LVb5gjv5KeE"
+            to="https://www.youtube.com/watch?v=ygeK5hStwP8"
           />
         </AccentText>
       </DescriptionContainer>
