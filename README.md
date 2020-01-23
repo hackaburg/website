@@ -30,9 +30,11 @@ The websites of previous years are automatically built and put into their respec
 
 There are a few things to keep in mind when contributing:
 
-- Try to do as much as possible with CSS only. We don't want to scare off attendees without JS enabled, so gracefully upgrade the UI instead of gracefully downgrading it.
-- LESS variables should start with their "region", so a color "foobar" should be called `@color-foobar` and a size `@size-foobar`. It's slightly easier to search for these "regions" that way.
-- If you really need JS, keep it simple. This website is mostly static, so most things can be achieved with vanilla JS.
+- We're using Prettier, so make sure to either format your code using `yarn prettier --write`, or by installing an extension for your editor to auto-format everything.
+- We're using Gatsby because of it's static rendering. Keep in mind that your components should work without a browser environment, i.e. that you're not relying on `window` to render a component.
+- Use function components over class components, extract static GraphQL queries into Hooks where possible.
+- If you need a third party library, use a CDN. We care about caching, and using a link to a CDN is better than serving a vendor bundle ourselves. To ensure you only call the third party library once it's loaded, use the `useCDNScript` hook.
+- Try to do as much without JavaScript as possible, as some attendands still use Noscript (or similar). When visiting our site, the navbar works when a user has JavaScript turned off, however a dynamic countdown doesn't need to work. Rather upgrade gracefully than downgrading the user experience.
 
 
 ## License
