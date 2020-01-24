@@ -68,11 +68,7 @@ export const Footer = () => (
         </Column>
 
         <Column width={1}>
-          <Link
-            label="TechBase"
-            target="_blank"
-            to="https://www.gruenderland.bayern"
-          >
+          <Link label="TechBase" target="_blank" to="https://www.techbase.de">
             <Image label="TechBase Logo" src="images/footer/techbase.jpg" />
           </Link>
         </Column>
