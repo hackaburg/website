@@ -3,11 +3,30 @@ import * as React from "react";
 import { accentColor } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 
+const TitleContainer = styled.div`
+  overflow: hidden;
+  height: 4.5rem;
+  transition: 0.5s;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  -webkit-backdrop-filter: blur(10px);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  z-index: 0;
+  cursor: default;
+`;
+
 const ImageContainer = styled.div`
   position: relative;
 
   display: block;
-  width: 100%;
   height: 15rem;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -17,35 +36,45 @@ const ImageContainer = styled.div`
   background-size: 100% auto;
   background-position: center center;
   background-color: white;
+
+  &:hover ${TitleContainer} {
+    height: 100%;
+  }
 `;
 
-const Title = styled.h3`
-  position: absolute;
-  bottom: 1rem;
-  left: 0rem;
-
-  padding: 1rem 1.5rem;
-
-  font-size: 1.25rem;
-  text-align: center;
-  text-transform: uppercase;
-
-  background-color: rgba(0, 0, 0, 0.75);
+const Title = styled.div`
   color: white;
-  -webkit-backdrop-filter: blur(10px);
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+`;
 
-  z-index: 0;
-  cursor: default;
+const Description = styled.div`
+  display: block;
+
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  text-align: left;
+
+  &::before {
+    opacity: 0.9;
+    color: white;
+  }
 `;
 
 const Sponsor = styled.div`
   display: block;
+  padding-left: 1rem;
 
   color: ${accentColor};
   font-size: 0.8rem;
   text-align: left;
+  text-transform: uppercase;
 
   &::before {
     content: "by ";
@@ -72,13 +101,12 @@ export const Track = ({
   return (
     <div>
       <ImageContainer style={{ backgroundImage: `url(${url})` }}>
-        <Title>
-          {title}
+        <TitleContainer>
+          <Title>{title}</Title>
           <Sponsor>{sponsor}</Sponsor>
-        </Title>
+          <Description>{description}</Description>
+        </TitleContainer>
       </ImageContainer>
-
-      {description}
     </div>
   );
 };
