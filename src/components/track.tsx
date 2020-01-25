@@ -4,14 +4,14 @@ import { accentColor } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 
 const TitleContainer = styled.div`
-  overflow: hidden;
-  height: 4.5rem;
-  transition: 0.5s;
-
   position: absolute;
+
   bottom: 0;
   left: 0;
   right: 0;
+  height: 4.5rem;
+  overflow: hidden;
+  transition: 0.5s ease;
 
   background-color: rgba(0, 0, 0, 0.75);
 
@@ -34,8 +34,8 @@ const ImageContainer = styled.div`
   border-radius: 5px;
 
   background-size: 100% auto;
-  background-position: center center;
   background-color: white;
+  background-position: center center;
 
   &:hover ${TitleContainer} {
     height: 100%;
@@ -44,8 +44,10 @@ const ImageContainer = styled.div`
 
 const Title = styled.div`
   color: white;
-  padding-left: 1rem;
+
   padding-top: 1rem;
+  padding-left: 1rem;
+
   font-size: 1.25rem;
   font-weight: bold;
   text-align: left;
@@ -56,8 +58,10 @@ const Description = styled.div`
   display: block;
 
   color: white;
+
   padding-top: 1rem;
   padding-left: 1rem;
+
   font-size: 0.8rem;
   text-align: left;
 
@@ -69,9 +73,11 @@ const Description = styled.div`
 
 const Sponsor = styled.div`
   display: block;
-  padding-left: 1rem;
 
   color: ${accentColor};
+
+  padding-left: 1rem;
+
   font-size: 0.8rem;
   text-align: left;
   text-transform: uppercase;
