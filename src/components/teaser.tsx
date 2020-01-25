@@ -83,13 +83,21 @@ export const Teaser = () => {
             <Text>Hackaburg 2020 has finally started!</Text>
             <Text>Stay up to date on our social media channels</Text>
 
-            <Link label="Hackaburg Instagram" target="_blank" to="https://www.instagram.com/hackaburg/">
+            <Link
+              label="Hackaburg Instagram"
+              target="_blank"
+              to="https://www.instagram.com/hackaburg/"
+            >
               <Button fluid>Follow us on Instagram</Button>
             </Link>
 
             <br />
 
-            <Link label="Hackaburg Facebook" target="_blank" to="https://www.facebook.com/hackaburg/">
+            <Link
+              label="Hackaburg Facebook"
+              target="_blank"
+              to="https://www.facebook.com/hackaburg/"
+            >
               <Button fluid>Follow us on Facebook</Button>
             </Link>
           </Column>
