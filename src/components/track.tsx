@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import * as React from "react";
-import { accentColor } from "../constants";
+import { accentColor, transitionDuration } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 
 const TitleContainer = styled.div`
@@ -11,13 +11,14 @@ const TitleContainer = styled.div`
   right: 0;
   height: 4.5rem;
   overflow: hidden;
-  transition: 0.5s ease;
+  transition-property: height;
+  transition-duration: ${transitionDuration};
 
+  border-radius: 5px;
+  color: white;
   background-color: rgba(0, 0, 0, 0.75);
 
   -webkit-backdrop-filter: blur(10px);
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
 
   z-index: 0;
   cursor: default;
@@ -35,7 +36,6 @@ const ImageContainer = styled.div`
 
   background-size: 100% auto;
   background-color: white;
-  background-position: center center;
 
   &:hover ${TitleContainer} {
     height: 100%;
@@ -50,25 +50,16 @@ const Title = styled.div`
 
   font-size: 1.25rem;
   font-weight: bold;
-  text-align: left;
   text-transform: uppercase;
 `;
 
 const Description = styled.div`
   display: block;
 
-  color: white;
-
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
 
   font-size: 0.8rem;
   text-align: left;
-
-  &::before {
-    opacity: 0.9;
-    color: white;
-  }
 `;
 
 const Sponsor = styled.div`
