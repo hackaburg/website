@@ -16,7 +16,7 @@ const TitleContainer = styled.div`
 
   border-radius: 5px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
 
   -webkit-backdrop-filter: blur(10px);
 
@@ -45,8 +45,8 @@ const ImageContainer = styled.div`
 const Title = styled.div`
   color: white;
 
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
 
   font-size: 1.25rem;
   font-weight: bold;
