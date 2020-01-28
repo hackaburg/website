@@ -7,7 +7,7 @@ const ImageContainer = styled.div`
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center;
   width: 100%;
 `;
 
