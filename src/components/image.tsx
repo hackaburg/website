@@ -13,15 +13,15 @@ interface IImageProps {
   width?: string;
 }
 
-export const Image = ({ label, src, width, height }: IImageProps) => {
+export const Image = ({ height, label, src, width }: IImageProps) => {
   const image = usePublicFileURL(src);
   return (
     <Img
       alt={label}
       src={image ?? src}
       style={{
-        width,
         height,
+        width,
       }}
     />
   );

@@ -15,7 +15,7 @@ import { AutoPlayVideo } from "./video";
 
 const AftermovieContainer = styled.div`
   position: relative;
-  margin: 10rem 0;
+  margin-bottom: 10rem;
 
   @media screen and (max-width: ${breakpointMobile}) {
     margin: 5rem 0;
@@ -71,7 +71,7 @@ export const Aftermovie = () => {
       </VideoContainer>
 
       <TriangleContainer>
-        <DownwardsRightTriangle color={starBackgroundColor} />
+        <DownwardsRightTriangle color="white" />
       </TriangleContainer>
 
       <UpwardsLeftTriangle color={starBackgroundColor} />
