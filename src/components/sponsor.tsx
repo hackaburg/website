@@ -1,30 +1,35 @@
-import styled from "@emotion/styled";
 import * as React from "react";
-import { usePublicFileURL } from "../hooks/use-public-file-url";
+import { css } from "@emotion/core";
 import { Link } from "./link";
-
-const ImageContainer = styled.div`
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-`;
+import { Image } from "./image";
 
 interface ISponsorProps {
-  height: string;
   imageURL: string;
   name: string;
   url: string;
+  width?: string;
+  height?: string;
 }
 
-export const Sponsor = ({ height, imageURL, name, url }: ISponsorProps) => {
-  const publicImageURL = usePublicFileURL(imageURL);
+export const Sponsor = ({
+  imageURL,
+  name,
+  url,
+  width = "auto",
+  height = undefined,
+}: ISponsorProps) => {
+  const imageStyle = css({
+    display: "block",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+    width: width,
+    height: height,
+  });
+
   return (
     <Link label={name} target="_blank" to={url}>
-      <ImageContainer
-        style={{ backgroundImage: `url(${publicImageURL})`, height }}
-      />
+      <Image label={name} src={imageURL} style={imageStyle} />
     </Link>
   );
 };
