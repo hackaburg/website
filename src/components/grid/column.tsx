@@ -1,13 +1,18 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 
-const ColumnDiv = styled.div``;
+const ColumnDiv = styled.div`
+  flex-basis: 0;
+`;
 
 interface IColumnProps {
   children: React.ReactNode;
-  width?: number;
+  grow?: number;
+  shrink?: number;
 }
 
-export const Column = ({ children, width = 1 }: IColumnProps) => (
-  <ColumnDiv style={{ flexGrow: width }}>{children}</ColumnDiv>
+export const Column = ({ children, grow, shrink }: IColumnProps) => (
+  <ColumnDiv style={{ flexGrow: grow, flexShrink: shrink }}>
+    {children}
+  </ColumnDiv>
 );
