@@ -27,7 +27,7 @@ const AstronautContainer = styled.div`
 
 const Content = styled.div`
   position: relative;
-  left: 13rem;
+  left: 10rem;
   margin: 10rem auto 20rem auto;
   width: 45rem;
 
@@ -37,10 +37,12 @@ const Content = styled.div`
 
   @media screen and (max-width: ${breakpointMobile}) {
     width: auto;
+    padding: 1rem;
   }
 `;
 
 const Text = styled.p`
+  margin: 0.5rem 0;
   font-size: 1rem;
   width: 21rem;
 
@@ -50,18 +52,33 @@ const Text = styled.p`
 `;
 
 const Spacer = styled.div`
-  height: 2rem;
+  height: 1rem;
+`;
+
+const EmbeddedVideoContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 15rem;
+
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 1rem;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    margin: 0;
+  }
 `;
 
 const EmbeddedVideo = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 15rem;
-  padding-left: 1rem;
-  border-radius: 5px;
+  height: 100%;
+`;
 
-  @media screen and (max-width: ${breakpointMobile}) {
-    padding: 1rem;
-  }
+const ButtonContainer = styled.div`
+  margin-top: 1rem;
 `;
 
 export const Teaser = () => {
@@ -79,35 +96,39 @@ export const Teaser = () => {
         <Header title="Teaser" subtitle="Launch sequence initiated" />
         <Spacer />
         <Row center>
-          <Column grow={1}>
+          <Column shrink={1}>
             <Text>Hackaburg 2020 has finally started!</Text>
             <Text>Stay up to date on our social media channels</Text>
 
-            <Link
-              label="Hackaburg Instagram"
-              target="_blank"
-              to="https://www.instagram.com/hackaburg/"
-            >
-              <Button fluid>Follow us on Instagram</Button>
-            </Link>
+            <ButtonContainer>
+              <Link
+                label="Hackaburg Instagram"
+                target="_blank"
+                to="https://www.instagram.com/hackaburg/"
+              >
+                <Button fluid>Follow us on Instagram</Button>
+              </Link>
+            </ButtonContainer>
 
-            <br />
-
-            <Link
-              label="Hackaburg Facebook"
-              target="_blank"
-              to="https://www.facebook.com/hackaburg/"
-            >
-              <Button fluid>Follow us on Facebook</Button>
-            </Link>
+            <ButtonContainer>
+              <Link
+                label="Hackaburg Facebook"
+                target="_blank"
+                to="https://www.facebook.com/hackaburg/"
+              >
+                <Button fluid>Follow us on Facebook</Button>
+              </Link>
+            </ButtonContainer>
           </Column>
 
-          <Column grow={30}>
-            <EmbeddedVideo
-              src="https://www.youtube.com/embed/OqN_HOEJLTA"
-              frameBorder="0"
-              allowFullScreen
-            />
+          <Column grow={1}>
+            <EmbeddedVideoContainer>
+              <EmbeddedVideo
+                src="https://www.youtube.com/embed/OqN_HOEJLTA"
+                frameBorder="0"
+                allowFullScreen
+              />
+            </EmbeddedVideoContainer>
           </Column>
         </Row>
       </Content>
