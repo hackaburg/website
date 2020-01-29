@@ -1,15 +1,19 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { Anchors } from "../anchors";
+import { starBackgroundColor } from "../constants";
 import { useScrollSpyMarker } from "../hooks/use-scrollspy";
 import { Container } from "./container";
 import { Column } from "./grid/column";
 import { Row } from "./grid/row";
 import { Header } from "./header";
 import { Sponsor } from "./sponsor";
+import { UpwardsLeftTriangle } from "./triangle";
 
 const SponsorsContainer = styled.div`
-  margin: 10rem 0;
+  background-color: white;
+  color: ${starBackgroundColor};
+  padding-bottom: 10rem;
 `;
 
 interface ISponsorContainer {
@@ -46,7 +50,6 @@ export const Sponsors = () => {
   const marker = useScrollSpyMarker(Anchors.Sponsors);
   const levels: ISponsorList[] = [
     {
-      width: "90%",
       sponsors: [
         {
           imageURL: "images/sponsors/projekt29.png",
@@ -61,9 +64,9 @@ export const Sponsors = () => {
           width: "100%",
         },
       ],
+      width: "90%",
     },
     {
-      width: "45%",
       sponsors: [
         {
           imageURL: "images/sponsors/internetx.png",
@@ -84,9 +87,9 @@ export const Sponsors = () => {
           width: "50%",
         },
       ],
+      width: "45%",
     },
     {
-      width: "35%",
       sponsors: [
         {
           imageURL: "images/sponsors/bertrandt.png",
@@ -107,6 +110,7 @@ export const Sponsors = () => {
           width: "100%",
         },
       ],
+      width: "35%",
     },
   ];
 
@@ -137,6 +141,8 @@ export const Sponsors = () => {
 
   return (
     <SponsorsContainer>
+      <UpwardsLeftTriangle color="white" />
+
       {marker}
       <Container>
         <Header title="Sponsors" subtitle="Our partners" />
