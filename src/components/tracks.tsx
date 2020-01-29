@@ -26,7 +26,7 @@ export const Tracks = () => {
         <Header title="Tracks" subtitle="How you can change the future" />
 
         <Row>
-          <Column>
+          <Column grow={1}>
             <TrackContainer>
               <Track
                 description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
@@ -37,31 +37,7 @@ export const Tracks = () => {
             </TrackContainer>
           </Column>
 
-          <Column>
-            <TrackContainer>
-              <Track
-                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
-                imageURL="images/tracks/connected-mobility.jpg"
-                sponsor="SSV Jahn Regensburg"
-                title="A common goal"
-              />
-            </TrackContainer>
-          </Column>
-        </Row>
-
-        <Row>
-          <Column>
-            <TrackContainer>
-              <Track
-                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
-                imageURL="images/tracks/connected-mobility.jpg"
-                sponsor="SSV Jahn Regensburg"
-                title="A common goal"
-              />
-            </TrackContainer>
-          </Column>
-
-          <Column>
+          <Column grow={1}>
             <TrackContainer>
               <Track
                 description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
@@ -74,7 +50,7 @@ export const Tracks = () => {
         </Row>
 
         <Row>
-          <Column>
+          <Column grow={1}>
             <TrackContainer>
               <Track
                 description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
@@ -85,7 +61,31 @@ export const Tracks = () => {
             </TrackContainer>
           </Column>
 
-          <Column>
+          <Column grow={1}>
+            <TrackContainer>
+              <Track
+                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
+                imageURL="images/tracks/connected-mobility.jpg"
+                sponsor="SSV Jahn Regensburg"
+                title="A common goal"
+              />
+            </TrackContainer>
+          </Column>
+        </Row>
+
+        <Row>
+          <Column grow={1}>
+            <TrackContainer>
+              <Track
+                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
+                imageURL="images/tracks/connected-mobility.jpg"
+                sponsor="SSV Jahn Regensburg"
+                title="A common goal"
+              />
+            </TrackContainer>
+          </Column>
+
+          <Column grow={1}>
             <TrackContainer>
               <Track
                 description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
