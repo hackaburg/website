@@ -7,12 +7,22 @@ const Img = styled.img`
 `;
 
 interface IImageProps {
+  height?: string;
   label: string;
   src: string;
-  style: any;
+  width?: string;
 }
 
-export const Image = ({ label, src, style = undefined }: IImageProps) => {
+export const Image = ({ label, src, width, height }: IImageProps) => {
   const image = usePublicFileURL(src);
-  return <Img alt={label} src={image ?? src} style={style} />;
+  return (
+    <Img
+      alt={label}
+      src={image ?? src}
+      style={{
+        width,
+        height,
+      }}
+    />
+  );
 };

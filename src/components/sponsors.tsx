@@ -12,16 +12,25 @@ const SponsorsContainer = styled.div`
   margin: 10rem 0;
 `;
 
-const SponsorContainer = styled.div`
+interface ISponsorContainer {
+  containerWidth: string;
+}
+
+const SponsorContainer = styled.div<ISponsorContainer>`
   padding: 1rem;
+  text-align: center;
+  margin: auto;
+
+  ${(props) => `
+    width: ${props.containerWidth};
+  `}
 `;
 
 const RowContainer = styled.div`
-  margin: 2rem 0;
+  margin: 4rem 0;
 `;
 
 interface ISponsor {
-  height?: string;
   width?: string;
   imageURL: string;
   name: string;
@@ -29,6 +38,7 @@ interface ISponsor {
 }
 
 interface ISponsorList {
+  width: string;
   sponsors: ISponsor[];
 }
 
@@ -36,93 +46,94 @@ export const Sponsors = () => {
   const marker = useScrollSpyMarker(Anchors.Sponsors);
   const levels: ISponsorList[] = [
     {
+      width: "90%",
       sponsors: [
         {
           imageURL: "images/sponsors/projekt29.png",
           name: "Projekt 29 GmbH & Co. KG",
           url: "https://www.projekt29.de",
-          height: "5rem",
+          width: "85%",
         },
         {
           imageURL: "images/sponsors/telis.png",
           name: "Telis Finanz",
           url: "https://www.telis-finanz.de",
-          height: "5rem",
+          width: "100%",
         },
       ],
     },
     {
+      width: "45%",
       sponsors: [
         {
           imageURL: "images/sponsors/internetx.png",
           name: "InterNetX GmbH",
           url: "https://www.internetx.com",
-          height: "3rem",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/tcon.png",
           name: "T.CON",
           url: "https://www.tcon-international.com",
-          height: "3rem",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/mr.png",
           name: "Maschinenfabrik Reinhausen GmbH",
           url: "https://www.reinhausen.com",
-          height: "3rem",
+          width: "50%",
         },
       ],
     },
     {
+      width: "35%",
       sponsors: [
         {
           imageURL: "images/sponsors/bertrandt.png",
           name: "Bertrandt",
           url: "https://www.bertrandt.com",
-          height: "2rem",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/horsch.png",
           name: "Horsch Maschinen GmbH",
           url: "https://www.horsch.com",
-          height: "2rem",
+          width: "90%",
         },
         {
           imageURL: "images/sponsors/telis.png",
           name: "Telis Finanz",
           url: "https://www.telis-finanz.de",
-          height: "2rem",
+          width: "100%",
         },
       ],
     },
   ];
 
-  const renderedLevels = levels.map(({ sponsors }, levelIndex) => {
-    const renderedSponsors = sponsors.map(
-      (
-        { imageURL, name, url, height = undefined, width = undefined },
-        sponsorIndex,
-      ) => (
-        <Column key={sponsorIndex}>
-          <SponsorContainer>
-            <Sponsor
-              height={height}
-              width={width}
-              imageURL={imageURL}
-              name={name}
-              url={url}
-            />
-          </SponsorContainer>
-        </Column>
-      ),
-    );
+  const renderedLevels = levels.map(
+    ({ width: levelWidth, sponsors }, levelIndex) => {
+      const renderedSponsors = sponsors.map(
+        ({ imageURL, name, url, width }, sponsorIndex) => (
+          <Column key={sponsorIndex} grow={1}>
+            <SponsorContainer containerWidth={levelWidth}>
+              <Sponsor
+                width={width}
+                imageURL={imageURL}
+                name={name}
+                url={url}
+              />
+            </SponsorContainer>
+          </Column>
+        ),
+      );
 
-    return (
-      <RowContainer key={levelIndex}>
-        <Row center>{renderedSponsors}</Row>
-      </RowContainer>
-    );
-  });
+      return (
+        <RowContainer key={levelIndex}>
+          <Row center>{renderedSponsors}</Row>
+        </RowContainer>
+      );
+    },
+  );
 
   return (
     <SponsorsContainer>
