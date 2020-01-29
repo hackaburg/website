@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Link } from "./link";
 import { Image } from "./image";
+import { Link } from "./link";
 
 interface ISponsorProps {
   imageURL: string;
