@@ -31,6 +31,8 @@ const VideoContainer = styled.div`
 const TriangleContainer = styled.div`
   position: absolute;
   top: ${triangleSize};
+  left: 0;
+  right: 0;
 `;
 
 const DescriptionContainer = styled.div`
