@@ -21,10 +21,11 @@ const RowContainer = styled.div`
 `;
 
 interface ISponsor {
+  height?: string;
+  width?: string;
+  imageURL: string;
   name: string;
   url: string;
-  imageURL: string;
-  size: string;
 }
 
 interface ISponsorList {
@@ -37,16 +38,16 @@ export const Sponsors = () => {
     {
       sponsors: [
         {
-          imageURL: "images/sponsors/telis.png",
-          name: "Telis Finanz",
-          url: "https://www.telis-finanz.de",
-          size: "5rem",
+          imageURL: "images/sponsors/projekt29.png",
+          name: "Projekt 29 GmbH & Co. KG",
+          url: "https://www.projekt29.de",
+          height: "5rem",
         },
         {
           imageURL: "images/sponsors/telis.png",
           name: "Telis Finanz",
           url: "https://www.telis-finanz.de",
-          size: "5rem",
+          height: "5rem",
         },
       ],
     },
@@ -56,19 +57,19 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/internetx.png",
           name: "InterNetX GmbH",
           url: "https://www.internetx.com",
-          size: "3rem",
+          height: "3rem",
         },
         {
           imageURL: "images/sponsors/tcon.png",
           name: "T.CON",
           url: "https://www.tcon-international.com",
-          size: "3rem",
+          height: "3rem",
         },
         {
           imageURL: "images/sponsors/mr.png",
           name: "Maschinenfabrik Reinhausen GmbH",
           url: "https://www.reinhausen.com",
-          size: "5rem",
+          height: "3rem",
         },
       ],
     },
@@ -78,19 +79,19 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/bertrandt.png",
           name: "Bertrandt",
           url: "https://www.bertrandt.com",
-          size: "2rem",
+          height: "2rem",
         },
         {
           imageURL: "images/sponsors/horsch.png",
           name: "Horsch Maschinen GmbH",
           url: "https://www.horsch.com",
-          size: "4rem",
+          height: "2rem",
         },
         {
           imageURL: "images/sponsors/telis.png",
           name: "Telis Finanz",
           url: "https://www.telis-finanz.de",
-          size: "2rem",
+          height: "2rem",
         },
       ],
     },
@@ -98,10 +99,19 @@ export const Sponsors = () => {
 
   const renderedLevels = levels.map(({ sponsors }, levelIndex) => {
     const renderedSponsors = sponsors.map(
-      ({ imageURL, name, url, size }, sponsorIndex) => (
+      (
+        { imageURL, name, url, height = undefined, width = undefined },
+        sponsorIndex,
+      ) => (
         <Column key={sponsorIndex}>
           <SponsorContainer>
-            <Sponsor height={size} imageURL={imageURL} name={name} url={url} />
+            <Sponsor
+              height={height}
+              width={width}
+              imageURL={imageURL}
+              name={name}
+              url={url}
+            />
           </SponsorContainer>
         </Column>
       ),
