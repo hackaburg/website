@@ -237,7 +237,7 @@ export const Venue = () => {
             </Link>
           </Address>
 
-          <Column>
+          <Column grow={1}>
             <Map ref={mapRef} />
           </Column>
         </Row>
