@@ -57,7 +57,7 @@ export const FAQ = () => {
       <Container>
         <Header title="FAQ" subtitle="Questions and answers" />
         <Row>
-          <Column>
+          <Column grow={1}>
             <QuestionsContainer>
               <Question title="What exactly is a hackathon?">
                 A hackathon is an event in which software developers, designers
@@ -93,7 +93,7 @@ export const FAQ = () => {
             </QuestionsContainer>
           </Column>
 
-          <Column>
+          <Column grow={1}>
             <QuestionsContainer>
               <Question title="Do I have to be a programmer to attend?">
                 NO! We're looking for a diverse group of people who want to work
