@@ -79,7 +79,7 @@ export const Teaser = () => {
         <Header title="Teaser" subtitle="Launch sequence initiated" />
         <Spacer />
         <Row center>
-          <Column width={1}>
+          <Column grow={1}>
             <Text>Hackaburg 2020 has finally started!</Text>
             <Text>Stay up to date on our social media channels</Text>
 
@@ -102,7 +102,7 @@ export const Teaser = () => {
             </Link>
           </Column>
 
-          <Column width={30}>
+          <Column grow={30}>
             <EmbeddedVideo
               src="https://www.youtube.com/embed/OqN_HOEJLTA"
               frameBorder="0"
