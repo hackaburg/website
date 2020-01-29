@@ -41,7 +41,7 @@ export const Footer = () => (
   <FooterContainer>
     <Container>
       <Row>
-        <Column width={1}>
+        <Column grow={1}>
           <Link
             label="Gründerland Bayern"
             target="_blank"
@@ -54,7 +54,7 @@ export const Footer = () => (
           </Link>
         </Column>
 
-        <Column width={1}>
+        <Column grow={1}>
           <Link
             label="Bayerisches Staatsministerium für Wirtschaft, Landesentwicklung und Energie"
             target="_blank"
@@ -67,7 +67,7 @@ export const Footer = () => (
           </Link>
         </Column>
 
-        <Column width={1}>
+        <Column grow={1}>
           <Link label="TechBase" target="_blank" to="https://www.techbase.de">
             <Image label="TechBase Logo" src="images/footer/techbase.jpg" />
           </Link>
@@ -75,7 +75,7 @@ export const Footer = () => (
       </Row>
 
       <Row>
-        <Column width={1}>
+        <Column grow={1}>
           <List>
             <Item>
               <Link
@@ -99,7 +99,7 @@ export const Footer = () => (
           </List>
         </Column>
 
-        <Column width={1}>
+        <Column grow={1}>
           <RightAligned>
             Made with <AccentText>&hearts;</AccentText> in Regensburg
           </RightAligned>
