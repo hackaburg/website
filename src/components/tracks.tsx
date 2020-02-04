@@ -19,6 +19,7 @@ const TrackContainer = styled.div`
 export const Tracks = () => {
   const marker = useScrollSpyMarker(Anchors.Tracks);
 
+  /*
   return (
     <Container>
       <TracksContainer>
@@ -96,6 +97,23 @@ export const Tracks = () => {
             </TrackContainer>
           </Column>
         </Row>
+      </TracksContainer>
+    </Container>
+  );
+  */
+
+  return (
+    <Container>
+      <TracksContainer>
+        {marker}
+        <Header title="Tracks" subtitle="How you can change the future" />
+
+        <h3>
+          Tracks will be announced at a later date. Check back with us some
+          other time to see all of the awesome things we have in store for you.
+        </h3>
+        <br />
+        <br />
       </TracksContainer>
     </Container>
   );
