@@ -47,8 +47,8 @@ interface ISponsorList {
 }
 
 // Jupiter: Infineon, Continental, Projekt 29, (Nexis probably)
-// Uranus: MR, InternetX, T-Con, Zollner (Telis & Vector probably)
-// Neptun: Horsch, Witt, TNG, Bertrandt, Byte-Schmiede (wird umbenannt), Intence
+// Uranus: MR, InternetX, T-Con, Zollner, BHS (Telis & Vector probably)
+// Neptun: Horsch, Witt, TNG, Bertrandt, Byte-Schmiede (wird umbenannt)
 
 export const Sponsors = () => {
   const marker = useScrollSpyMarker(Anchors.Sponsors);
@@ -70,7 +70,7 @@ export const Sponsors = () => {
         {
           imageURL: "images/sponsors/continental.jpg",
           name: "Continental",
-          url: "",
+          url: "https://www.continental.com",
           width: "100%",
         },
       ],
@@ -91,7 +91,7 @@ export const Sponsors = () => {
           width: "100%",
         },
         {
-          imageURL: "images/sponsors/mr.png",
+          imageURL: "images/sponsors/mr.jpg",
           name: "Maschinenfabrik Reinhausen GmbH",
           url: "https://www.reinhausen.com",
           width: "50%",
@@ -100,6 +100,12 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/zollner.jpg",
           name: "Zollner Elektronik",
           url: "https://www.zollner.de",
+          width: "100%",
+        },
+        {
+          imageURL: "images/sponsors/",
+          name: "BHS",
+          url: "https://www.bhsworld.de",
           width: "100%",
         },
       ],
@@ -120,7 +126,7 @@ export const Sponsors = () => {
           width: "90%",
         },
         {
-          imageURL: "images/sponsors/witt.jpg",
+          imageURL: "images/sponsors/witt.png",
           name: "Witt Gruppe",
           url: "https://www.witt-weiden.de",
           width: "100%",
@@ -135,12 +141,6 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/byteschmiede.png",
           name: "Byte-Schmiede",
           url: "",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/intence.jpg",
-          name: "Intence",
-          url: "https://www.intence.de/home/",
           width: "100%",
         },
       ],
