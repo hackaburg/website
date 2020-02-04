@@ -59,7 +59,7 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/projekt29.png",
           name: "Projekt 29 GmbH & Co. KG",
           url: "https://www.projekt29.de",
-          width: "85%",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/infineon.png",
@@ -74,7 +74,7 @@ export const Sponsors = () => {
           width: "100%",
         },
       ],
-      width: "90%",
+      width: "100%",
     },
     {
       sponsors: [
@@ -94,7 +94,7 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/mr.jpg",
           name: "Maschinenfabrik Reinhausen GmbH",
           url: "https://www.reinhausen.com",
-          width: "50%",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/zollner.jpg",
@@ -109,7 +109,7 @@ export const Sponsors = () => {
           width: "100%",
         },
       ],
-      width: "45%",
+      width: "80%",
     },
     {
       sponsors: [
@@ -123,7 +123,7 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/horsch.png",
           name: "Horsch Maschinen GmbH",
           url: "https://www.horsch.com",
-          width: "90%",
+          width: "100%",
         },
         {
           imageURL: "images/sponsors/witt.png",
@@ -144,7 +144,7 @@ export const Sponsors = () => {
           width: "100%",
         },
       ],
-      width: "35%",
+      width: "60%",
     },
   ];
 
