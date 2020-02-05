@@ -17,7 +17,7 @@ interface ITimetableProps {
 export const Timetable = ({ children, showCurrentTime }: ITimetableProps) => (
   <TimetableContainer>
     <Hours>
-      {showCurrentTime && <CurrentTime />}
+      {showCurrentTime && <CurrentTime startHour={8} endHour={22} />}
       <HourLine text="08:00" />
       <HourLine text="10:00" />
       <HourLine text="12:00" />

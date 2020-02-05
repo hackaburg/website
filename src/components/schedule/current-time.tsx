@@ -54,7 +54,12 @@ const getCurrentTime = (): ITime => {
   };
 };
 
-export const CurrentTime = () => {
+interface ICurrentTimeProps {
+  endHour: number;
+  startHour: number;
+}
+
+export const CurrentTime = ({ endHour, startHour }: ICurrentTimeProps) => {
   const [currentTime, setCurrentTime] = useState(getCurrentTime());
   const { hours, minutes } = currentTime;
 
@@ -64,8 +69,8 @@ export const CurrentTime = () => {
 
   useInterval(updateTimeInterval, 30 * 1000);
 
-  const display = isBetween(8, hours, 22) ? "block" : "none";
-  const verticalPosition = hours - 8 + minutes / 60;
+  const display = isBetween(startHour, hours, endHour) ? "block" : "none";
+  const verticalPosition = hours - startHour + minutes / 60;
   const top = `${(verticalPosition / 2) * (hourSize + 1.065)}rem`;
 
   return (
