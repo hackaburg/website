@@ -11,12 +11,13 @@ const TimetableContainer = styled.div`
 
 interface ITimetableProps {
   children: React.ReactNode;
+  showCurrentTime: boolean;
 }
 
-export const Timetable = ({ children }: ITimetableProps) => (
+export const Timetable = ({ children, showCurrentTime }: ITimetableProps) => (
   <TimetableContainer>
     <Hours>
-      <CurrentTime />
+      {showCurrentTime && <CurrentTime />}
       <HourLine text="08:00" />
       <HourLine text="10:00" />
       <HourLine text="12:00" />
