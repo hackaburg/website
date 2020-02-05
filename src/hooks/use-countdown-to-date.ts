@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react";
+import { prependZero } from "../lib/prepend-zero";
 import { useInterval } from "./use-interval";
-
-const prependZero = (value: number) => (value < 10 ? `0${value}` : `${value}`);
 
 const formatTimeDifference = (difference: number) => {
   const seconds = difference % 60;
