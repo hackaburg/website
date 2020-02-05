@@ -23,7 +23,7 @@ const Nav = styled.nav<INavProps>`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
 
   color: white;
   font-weight: bold;
@@ -118,7 +118,7 @@ const BadgeDiv = styled.div`
   right: 50px;
   top: 0;
   width: 10%;
-  z-index: 10000;
+  z-index: 6;
 
   @media screen and (max-width: ${breakpointTablet}) {
     visibility: hidden;
