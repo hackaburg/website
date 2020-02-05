@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { Days } from "./days";
-import { HourLine, Hours } from "./hours";
+import { HourLine, Hours, CurrentTime } from "./hours";
 
 const TimetableContainer = styled.div`
   position: relative;
@@ -15,6 +15,7 @@ interface ITimetableProps {
 export const Timetable = ({ children }: ITimetableProps) => (
   <TimetableContainer>
     <Hours>
+      <CurrentTime />
       <HourLine text="08:00" />
       <HourLine text="10:00" />
       <HourLine text="12:00" />
