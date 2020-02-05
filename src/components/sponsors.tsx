@@ -108,6 +108,12 @@ export const Sponsors = () => {
           url: "https://www.bhsworld.de",
           width: "100%",
         },
+        {
+          imageURL: "images/sponsors",
+          name: "Telis Finanz",
+          url: "https://www.telis-finanz.de",
+          width: "100%",
+        },
       ],
       width: "80%",
     },
