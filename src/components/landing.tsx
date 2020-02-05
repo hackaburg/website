@@ -79,6 +79,7 @@ const BackerImage = styled.div`
   }
 `;
 
+/*
 export const Landing = () => (
   <LandingContainer>
     <SpaceImageContainer>
@@ -94,6 +95,57 @@ export const Landing = () => (
         <ApplyContainer>
           <Button>Apply now</Button>
         </ApplyContainer>
+
+        <Backers>
+          <Row center>
+            <Column>
+              <Link
+                label="Digitale Gründerinitiative Oberpfalz"
+                target="_blank"
+                to="https://www.digitale-oberpfalz.de"
+              >
+                <BackerImage>
+                  <Image
+                    label="Digitale Gründerinitiative Oberpfalz logo"
+                    src="images/dgo.svg"
+                  />
+                </BackerImage>
+              </Link>
+            </Column>
+
+            <Column>
+              <Link
+                label="ratisbona coding e.V."
+                target="_blank"
+                to="https://ratisbona-coding.org"
+              >
+                <BackerImage>
+                  <Image
+                    label="ratisbona coding e.V. logo"
+                    src="images/sponsors/ratisbona-coding.png"
+                  />
+                </BackerImage>
+              </Link>
+            </Column>
+          </Row>
+        </Backers>
+      </Content>
+    </Container>
+  </LandingContainer>
+);
+*/
+
+export const Landing = () => (
+  <LandingContainer>
+    <SpaceImageContainer>
+      <Image label="Hackaburg in space" src="images/space/all.png" />
+    </SpaceImageContainer>
+
+    <Container>
+      <Content>
+        <Title>Hackaburg</Title>
+        <Subtitle>Mission | 2020</Subtitle>
+        <Location>TechBase Regensburg | 14. - 16. May 2020</Location>
 
         <Backers>
           <Row center>
