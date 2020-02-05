@@ -3,6 +3,7 @@ import * as React from "react";
 import { useCallback, useState } from "react";
 import { breakpointMobile, hourSize } from "../../constants";
 import { useInterval } from "../../hooks/use-interval";
+import { isBetween } from "../../lib/is-between";
 import { prependZero } from "../../lib/prepend-zero";
 
 const CurrentTimeLineContainer = styled.div`
@@ -52,9 +53,6 @@ const getCurrentTime = (): ITime => {
     minutes: now.getMinutes(),
   };
 };
-
-const isBetween = (min: number, value: number, max: number) =>
-  min <= value && value <= max;
 
 export const CurrentTime = () => {
   const [currentTime, setCurrentTime] = useState(getCurrentTime());
