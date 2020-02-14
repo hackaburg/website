@@ -48,7 +48,7 @@ for build in $all_builds; do
   # the output directory there, as it might be a symlink
   build_output_name="$tmp_folder_name/$build_name"
   mkdir -p "$build_output_name"
-  mv "$output_folder_name/*" "$build_output_name"
+  mv $output_folder_name/* $build_output_name
   rm -rf "$output_folder_name"
 done
 
