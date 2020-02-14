@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xe
+
 # patterns to identify whether year tags and dev branches
 year_tag_pattern="hb-*"
 dev_branch_pattern="dev/*"
