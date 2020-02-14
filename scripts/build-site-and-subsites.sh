@@ -30,9 +30,6 @@ for build in $all_builds; do
     build_name=${build:3}
   else
     build_name=$build
-
-    dev_folder_name=$(dirname "$build")
-    mkdir -p "$tmp_folder_name/$dev_folder_name"
   fi
 
   echo "building site for $build"
@@ -44,7 +41,12 @@ for build in $all_builds; do
 
   yarn install
   yarn build
-  mv $output_folder_name "$tmp_folder_name/$build_name"
+
+  # move built files to the output directory. we can't just move
+  # the output directory there, as it might be a symlink
+  build_output_name="$tmp_folder_name/$build_name"
+  mkdir -p "$build_output_name"
+  mv "$output_folder_name/*" "$build_output_name"
 done
 
 mv $tmp_folder_name $output_folder_name
