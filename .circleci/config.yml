@@ -26,7 +26,7 @@ jobs:
           command: |
             yarn test
       - setup_remote_docker:
-          docker_layer_caching: true
+          docker_layer_caching: false
       - run:
           name: Install Docker client
           command: |
