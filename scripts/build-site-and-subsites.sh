@@ -20,7 +20,7 @@ mv $output_folder_name $tmp_folder_name
 all_year_tags=$(git tag -l $year_tag_pattern)
 
 # get all dev branches
-all_dev_branches=$(git branch --list $dev_branch_pattern | cut -c 3-)
+all_dev_branches=$(git branch --remote --list origin/$dev_branch_pattern | cut -c 10-)
 
 # combine build targets
 printf -v all_builds $"$all_year_tags\n$all_dev_branches"
