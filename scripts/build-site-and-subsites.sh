@@ -42,7 +42,7 @@ for build in $all_builds; do
   fi
 
   yarn install
-  yarn build
+  BASE_URL="/$build" yarn build
 
   # move built files to the output directory. we can't just move
   # the output directory there, as it might be a symlink
