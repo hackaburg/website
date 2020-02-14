@@ -48,13 +48,3 @@ jobs:
           name: purge cloudflare cache
           command: |
             ./scripts/purge-cloudflare-cache.sh
-
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - master
