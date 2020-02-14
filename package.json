@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "test": "node -e \"console.log(Buffer.from('Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K', 'base64').toString('utf-8'))\"",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "clean": "rimraf dist .cache/ public/"
   },
   "devDependencies": {
