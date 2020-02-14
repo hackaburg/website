@@ -26,7 +26,7 @@ all_dev_branches=$(git branch --remote --list origin/$dev_branch_pattern | cut -
 printf -v all_builds $"$all_year_tags\n$all_dev_branches"
 
 for build in $all_builds; do
-  if [[ $build == hb-* ]]; then
+  if [[ $build == $year_tag_pattern ]]; then
     build_name=${build:3}
   else
     build_name=$build
