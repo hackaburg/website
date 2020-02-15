@@ -11,8 +11,8 @@ import { useRaisedNavbar } from "../hooks/use-raised-navbar";
 import { useScrollSpyActiveElementName } from "../hooks/use-scrollspy";
 import { Container } from "./container";
 import { Burger } from "./icons/burger";
-import { Link } from "./link";
 import { Image } from "./image";
+import { Link } from "./link";
 
 interface INavProps {
   raised: boolean;
