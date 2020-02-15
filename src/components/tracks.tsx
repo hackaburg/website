@@ -3,15 +3,19 @@ import * as React from "react";
 import { Anchors } from "../anchors";
 import { useScrollSpyMarker } from "../hooks/use-scrollspy";
 import { Container } from "./container";
+// @ts-ignore
 import { Column } from "./grid/column";
+// @ts-ignore
 import { Row } from "./grid/row";
 import { Header } from "./header";
+// @ts-ignore
 import { Track } from "./track";
 
 const TracksContainer = styled.div`
   margin: 5rem 0;
 `;
 
+// @ts-ignore
 const TrackContainer = styled.div`
   padding: 1rem 2rem 1rem 0;
 `;

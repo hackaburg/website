@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { breakpointMobile, breakpointTablet } from "../constants";
+// @ts-ignore
 import { Button } from "./button";
 import { Container } from "./container";
 import { Column } from "./grid/column";
@@ -60,6 +61,7 @@ const Location = styled.h3`
   font-size: 1.5rem;
 `;
 
+// @ts-ignore
 const ApplyContainer = styled.div`
   font-size: 1.25rem;
 `;
