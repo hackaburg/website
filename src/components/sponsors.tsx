@@ -114,6 +114,12 @@ export const Sponsors = () => {
           url: "https://www.telis-finanz.de",
           width: "100%",
         },
+        {
+          imageURL: "images/sponsors/vector.png",
+          name: "Vector IT",
+          url: "https://www.vector.com",
+          width: "100%",
+        },
       ],
       width: "80%",
     },
