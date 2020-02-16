@@ -9,7 +9,6 @@ dev_branch_pattern="dev/*"
 # we'll restore the original branch at the end
 original_branch=$(git rev-parse --abbrev-ref HEAD)
 
-git fetch
 git checkout origin/master
 yarn install
 yarn build
