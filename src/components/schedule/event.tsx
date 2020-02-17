@@ -82,27 +82,27 @@ const getHeightFromDuration = (hours: number, minutes: number) =>
   `${((hours + minutes / 60) * hourSize) / 1.615}rem`;
 
 interface IEventProps {
-  accent?: boolean;
   children?: React.ReactNode;
+  food?: boolean;
   hidden?: boolean;
   hours: number;
   minutes: number;
-  striped?: boolean;
+  special?: boolean;
   time: string;
   title: React.ReactNode;
 }
 
 export const Event = ({
-  accent = false,
   children = null,
+  food = false,
   hidden = false,
   hours,
   minutes,
-  striped = false,
+  special = false,
   time,
   title,
 }: IEventProps) => (
-  <EventContainer accent={accent} hidden={hidden} striped={striped}>
+  <EventContainer accent={special} hidden={hidden} striped={food}>
     <DurationContainer
       style={{
         height: getHeightFromDuration(hours, minutes),
