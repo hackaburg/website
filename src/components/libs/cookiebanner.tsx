@@ -10,7 +10,7 @@ export const Cookiebanner = () => (
       integrity="sha256-tKsZSIsHQmNHgO2qfK8KT9SSOvKTbxgskN5dfhrpUS8="
       crossOrigin="anonymous"
       data-message="We use cookies to improve your browsing experience."
-      data-moreinfo="https://hackaburg.de/imprint.html"
+      data-moreinfo="https://hackaburg.de/imprint"
     ></script>
   </Helmet>
 );
