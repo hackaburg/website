@@ -38,7 +38,7 @@ const TriangleContainer = styled.div`
 
 const DescriptionContainer = styled.div`
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 25%;
   transform: translate(-50%, -50%);
 
