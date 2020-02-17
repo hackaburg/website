@@ -103,7 +103,7 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
 
         <Backers>
           <Row center>
-            <Column>
+            <Column grow={1}>
               <Link
                 label="Digitale Gründerinitiative Oberpfalz"
                 target="_blank"
@@ -118,7 +118,7 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
               </Link>
             </Column>
 
-            <Column>
+            <Column grow={1.5}>
               <Link
                 label="ratisbona coding e.V."
                 target="_blank"
