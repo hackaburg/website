@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import * as React from "react";
+import { breakpointMobile } from "../../constants";
 import { CurrentTime } from "./current-time";
 import { Days } from "./days";
 import { HourLine, Hours } from "./hours";
@@ -7,6 +8,11 @@ import { HourLine, Hours } from "./hours";
 const TimetableContainer = styled.div`
   position: relative;
   height: 45rem;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    height: auto;
+    margin: 5rem 0;
+  }
 `;
 
 interface ITimetableProps {
