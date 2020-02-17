@@ -13,7 +13,7 @@ const AboutContainer = styled.section`
 
 const TowerContainer = styled.div`
   position: absolute;
-  left: -10rem;
+  left: -14.5rem;
   width: 30rem;
 
   @media screen and (max-width: ${breakpointTablet}) {
