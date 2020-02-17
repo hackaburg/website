@@ -18,7 +18,8 @@ const AftermovieContainer = styled.div`
   margin-bottom: 10rem;
 
   @media screen and (max-width: ${breakpointMobile}) {
-    margin: 5rem 0;
+    padding: 5rem 0;
+    margin: 0;
   }
 `;
 
@@ -52,6 +53,7 @@ const DescriptionContainer = styled.div`
     position: static;
     width: auto;
     transform: none;
+    margin: 8rem 0;
   }
 `;
 
@@ -74,8 +76,6 @@ export const Aftermovie = () => {
         <DownwardsRightTriangle color="white" />
       </TriangleContainer>
 
-      <UpwardsLeftTriangle color={starBackgroundColor} />
-
       <DescriptionContainer>
         <Header title="Hackaburg 2019" subtitle="What happened last year?" />
         <p>
@@ -94,6 +94,8 @@ export const Aftermovie = () => {
           />
         </AccentText>
       </DescriptionContainer>
+
+      <UpwardsLeftTriangle color={starBackgroundColor} />
     </AftermovieContainer>
   );
 };
