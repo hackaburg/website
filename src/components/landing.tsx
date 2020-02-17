@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import * as React from "react";
 import { breakpointMobile, breakpointTablet } from "../constants";
-// @ts-ignore
 import { Button } from "./button";
 import { Container } from "./container";
 import { Column } from "./grid/column";
@@ -61,7 +60,6 @@ const Location = styled.h3`
   font-size: 1.5rem;
 `;
 
-// @ts-ignore
 const ApplyContainer = styled.div`
   font-size: 1.25rem;
 `;
@@ -81,8 +79,11 @@ const BackerImage = styled.div`
   }
 `;
 
-/*
-export const Landing = () => (
+interface ILandingProps {
+  isApplicationOpen: boolean;
+}
+
+export const Landing = ({ isApplicationOpen }: ILandingProps) => (
   <LandingContainer>
     <SpaceImageContainer>
       <Image label="Hackaburg in space" src="images/space/all.png" />
@@ -94,60 +95,11 @@ export const Landing = () => (
         <Subtitle>Mission | 2020</Subtitle>
         <Location>TechBase Regensburg | 14. - 16. May 2020</Location>
 
-        <ApplyContainer>
-          <Button>Apply now</Button>
-        </ApplyContainer>
-
-        <Backers>
-          <Row center>
-            <Column>
-              <Link
-                label="Digitale Gründerinitiative Oberpfalz"
-                target="_blank"
-                to="https://www.digitale-oberpfalz.de"
-              >
-                <BackerImage>
-                  <Image
-                    label="Digitale Gründerinitiative Oberpfalz logo"
-                    src="images/dgo.svg"
-                  />
-                </BackerImage>
-              </Link>
-            </Column>
-
-            <Column>
-              <Link
-                label="ratisbona coding e.V."
-                target="_blank"
-                to="https://ratisbona-coding.org"
-              >
-                <BackerImage>
-                  <Image
-                    label="ratisbona coding e.V. logo"
-                    src="images/sponsors/ratisbona-coding.png"
-                  />
-                </BackerImage>
-              </Link>
-            </Column>
-          </Row>
-        </Backers>
-      </Content>
-    </Container>
-  </LandingContainer>
-);
-*/
-
-export const Landing = () => (
-  <LandingContainer>
-    <SpaceImageContainer>
-      <Image label="Hackaburg in space" src="images/space/all.png" />
-    </SpaceImageContainer>
-
-    <Container>
-      <Content>
-        <Title>Hackaburg</Title>
-        <Subtitle>Mission | 2020</Subtitle>
-        <Location>TechBase Regensburg | 14. - 16. May 2020</Location>
+        {isApplicationOpen && (
+          <ApplyContainer>
+            <Button>Apply now</Button>
+          </ApplyContainer>
+        )}
 
         <Backers>
           <Row center>
