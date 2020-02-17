@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import * as React from "react";
 import { triangleSize } from "../constants";
 
-const TriangleContainer = styled.div`
+const TriangleWrapper = styled.div`
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -22,45 +22,45 @@ interface ITriangleProps {
 }
 
 export const UpwardsLeftTriangle = ({ color = "white" }: ITriangleProps) => (
-  <TriangleContainer>
+  <TriangleWrapper>
     <Base
       css={css`
         border-width: ${triangleSize} 0rem 0rem 100vw;
         border-color: transparent transparent transparent ${color};
       `}
     />
-  </TriangleContainer>
+  </TriangleWrapper>
 );
 
 export const UpwardsRightTriangle = ({ color = "white" }: ITriangleProps) => (
-  <TriangleContainer>
+  <TriangleWrapper>
     <Base
       css={css`
         border-width: 0rem 0rem ${triangleSize} 100vw;
         border-color: transparent transparent ${color} transparent;
       `}
     />
-  </TriangleContainer>
+  </TriangleWrapper>
 );
 
 export const DownwardsLeftTriangle = ({ color = "white" }: ITriangleProps) => (
-  <TriangleContainer>
+  <TriangleWrapper>
     <Base
       css={css`
         border-width: ${triangleSize} 100vw 0rem 0rem;
         border-color: ${color} transparent transparent transparent;
       `}
     />
-  </TriangleContainer>
+  </TriangleWrapper>
 );
 
 export const DownwardsRightTriangle = ({ color = "white" }: ITriangleProps) => (
-  <TriangleContainer>
+  <TriangleWrapper>
     <Base
       css={css`
         border-width: 0rem 100vw ${triangleSize} 0rem;
         border-color: transparent ${color} transparent transparent;
       `}
     />
-  </TriangleContainer>
+  </TriangleWrapper>
 );
