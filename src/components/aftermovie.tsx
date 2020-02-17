@@ -4,6 +4,7 @@ import { Anchors } from "../anchors";
 import {
   accentColor,
   breakpointMobile,
+  breakpointTablet,
   starBackgroundColor,
   triangleSize,
 } from "../constants";
@@ -36,6 +37,12 @@ const TriangleContainer = styled.div`
   right: 0;
 `;
 
+const ResponsiveTriangleContainer = styled.div`
+  @media screen and (max-width: ${breakpointTablet}) {
+    display: none;
+  }
+`;
+
 const DescriptionContainer = styled.div`
   position: absolute;
   top: 40%;
@@ -48,6 +55,11 @@ const DescriptionContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   backdrop-filter: blur(10px);
+
+  @media screen and (max-width: ${breakpointTablet}) {
+    top: 50%;
+    left: 50%;
+  }
 
   @media screen and (max-width: ${breakpointMobile}) {
     position: static;
@@ -73,7 +85,9 @@ export const Aftermovie = () => {
       </VideoContainer>
 
       <TriangleContainer>
-        <DownwardsRightTriangle color="white" />
+        <ResponsiveTriangleContainer>
+          <DownwardsRightTriangle color="white" />
+        </ResponsiveTriangleContainer>
       </TriangleContainer>
 
       <DescriptionContainer>
@@ -95,7 +109,9 @@ export const Aftermovie = () => {
         </AccentText>
       </DescriptionContainer>
 
-      <UpwardsLeftTriangle color={starBackgroundColor} />
+      <ResponsiveTriangleContainer>
+        <UpwardsLeftTriangle color={starBackgroundColor} />
+      </ResponsiveTriangleContainer>
     </AftermovieContainer>
   );
 };
