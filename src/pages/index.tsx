@@ -9,7 +9,7 @@ import { Page } from "../components/page";
 import { Schedule } from "../components/schedule";
 import { Sponsors } from "../components/sponsors";
 import { Teaser } from "../components/teaser";
-import { Tracks } from "../components/tracks";
+import { TracksPlaceholder } from "../components/tracks-placeholder";
 import { Venue } from "../components/venue";
 
 export default () => (
@@ -53,7 +53,7 @@ export default () => (
 
     <Landing />
     <About />
-    <Tracks />
+    <TracksPlaceholder />
     <Sponsors />
     <Aftermovie />
     <Schedule />
