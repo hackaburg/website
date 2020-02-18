@@ -27,7 +27,7 @@ const AstronautContainer = styled.div`
 
 const Content = styled.div`
   position: relative;
-  left: 10rem;
+  left: 8rem;
   margin: 10rem auto 20rem auto;
   width: 45rem;
 
