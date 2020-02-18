@@ -78,7 +78,7 @@ export const Schedule = () => {
               minutes={30}
               time="01:30 - 02:00"
               title="Playtime"
-              food
+              special
             />
           </Event>
         </Day>
@@ -143,7 +143,7 @@ export const Schedule = () => {
               minutes={30}
               time="01:30 - 02:00"
               title="Playtime"
-              food
+              special
             />
           </Event>
         </Day>
