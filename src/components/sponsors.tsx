@@ -109,7 +109,7 @@ export const Sponsors = () => {
           width: "100%",
         },
         {
-          imageURL: "images/sponsors",
+          imageURL: "images/sponsors/telis.png",
           name: "Telis Finanz",
           url: "https://www.telis-finanz.de",
           width: "100%",
