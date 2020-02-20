@@ -94,7 +94,7 @@ export const Sponsors = () => {
           imageURL: "images/sponsors/mr.jpg",
           name: "Maschinenfabrik Reinhausen GmbH",
           url: "https://www.reinhausen.com",
-          width: "100%",
+          width: "50%",
         },
         {
           imageURL: "images/sponsors/zollner.jpg",
