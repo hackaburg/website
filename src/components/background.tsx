@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import * as React from "react";
+import { breakpointMobile } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
-import {breakpointMobile} from "../constants";
 
 interface IBackgroundDivProps {
   imageUrl: string | undefined;
