@@ -28,42 +28,42 @@ export const Schedule = () => {
       <Header title="Schedule" subtitle="When and what" />
       <Timetable showCurrentTime={isDuringEvent}>
         <Day date="Thu, 14.05.2020">
-          <Spacer hours={7} minutes={30} />
+          <Spacer hours={8} minutes={0} />
           <Event
-            hours={1}
-            minutes={0}
-            time="15:30 - 16:30"
+            hours={0}
+            minutes={45}
+            time="16:00 - 16:45"
             title="Registration"
             food
           />
           <Event
-            hours={0}
-            minutes={30}
-            time="16:30 - 17:00"
+            hours={1}
+            minutes={45}
+            time="16:45 - 18:30"
             title="Opening Ceremony"
-            special
-          />
-          <Event
-            hours={0}
-            minutes={30}
-            time="17:00 - 17:30"
-            title="Track Presentation"
-            special
-          />
-          <Event
-            hours={0}
-            minutes={30}
-            time="17:30 - 18:00"
-            title="Idea Pitches"
-            special
-          />
-          <Event
-            hours={0}
-            minutes={30}
-            time="18:00 - 18:30"
-            title="Sponsor Pitches"
-            special
-          />
+          >
+            <Event
+              hours={0}
+              minutes={25}
+              time="17:30 - 17:50"
+              title="Track Presentation"
+              special
+            />
+            <Event
+              hours={0}
+              minutes={25}
+              time="17:50 - 18:10"
+              title="Idea Pitches"
+              special
+            />
+            <Event
+              hours={0}
+              minutes={25}
+              time="18:10 - 18:30"
+              title="Sponsor Pitches"
+              special
+            />
+          </Event>
           <Event
             hours={0}
             minutes={45}
@@ -84,7 +84,7 @@ export const Schedule = () => {
         </Day>
         <Day date="Fri, 15.05.2020">
           <Event hours={15} minutes={0} time="00:00 - 24:00" title="Hacking">
-            <Spacer hours={0} minutes={30} />
+            <Spacer hours={0} minutes={35} />
             <Event
               hours={1}
               minutes={0}
@@ -149,7 +149,7 @@ export const Schedule = () => {
         </Day>
         <Day date="Sat, 16.05.2020">
           <Event hours={5} minutes={0} time="00:00 - 13:00" title="Hacking">
-            <Spacer hours={0} minutes={30} />
+            <Spacer hours={0} minutes={35} />
             <Event
               hours={1}
               minutes={0}
