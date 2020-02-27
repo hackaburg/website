@@ -15,7 +15,7 @@ interface IPageProps {
 }
 
 export const Page = ({ children }: IPageProps) => {
-  const icon = usePublicFileURL("images/logo.png");
+  const icon = usePublicFileURL("images/favicon.png");
 
   return (
     <Background>
@@ -43,6 +43,7 @@ export const Page = ({ children }: IPageProps) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="650" />
         <link rel="icon" type="image/png" sizes="16x16" href={icon} />
+        <link rel="shortcut icon" href={icon}></link>
 
         <title>{siteTitle}</title>
       </Helmet>
