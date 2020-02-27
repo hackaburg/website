@@ -5,10 +5,7 @@
     "downlevelIteration": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "lib": [
-      "es2015",
-      "dom",
-      "dom.iterable"
-    ]
-  }
+    "lib": ["es2015", "dom", "dom.iterable"]
+  },
+  "include": ["src/ts/**/*.ts"]
 }
