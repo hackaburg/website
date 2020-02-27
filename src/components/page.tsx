@@ -16,6 +16,7 @@ interface IPageProps {
 
 export const Page = ({ children }: IPageProps) => {
   const icon = usePublicFileURL("images/favicon.png");
+  const opengraphImage = usePublicFileURL("images/og-image.jpg");
 
   return (
     <Background>
@@ -34,11 +35,11 @@ export const Page = ({ children }: IPageProps) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="http://hackaburg.de/assets/images/og-image.jpg"
+          content={`http://hackaburg.de${opengraphImage}`}
         />
         <meta
           property="og:image:secure_url"
-          content="https://hackaburg.de/assets/images/og-image.jpg"
+          content={`https://hackaburg.de${opengraphImage}`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="650" />
