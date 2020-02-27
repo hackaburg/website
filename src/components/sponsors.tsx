@@ -43,7 +43,7 @@ interface ISponsor {
 
 interface ISponsorList {
   width: string;
-  sponsors: ISponsor[];
+  lines: ISponsor[][];
 }
 
 // Jupiter: Infineon, Continental, Projekt 29, (Nexis probably)
@@ -54,128 +54,144 @@ export const Sponsors = () => {
   const marker = useScrollSpyMarker(Anchors.Sponsors);
   const levels: ISponsorList[] = [
     {
-      sponsors: [
-        {
-          imageURL: "images/sponsors/projekt29.png",
-          name: "Projekt 29 GmbH & Co. KG",
-          url: "https://www.projekt29.de",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/infineon.png",
-          name: "Infineon",
-          url: "https://www.telis-finanz.de",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/continental.jpg",
-          name: "Continental",
-          url: "https://www.continental.com",
-          width: "100%",
-        },
-      ],
-      width: "100%",
-    },
-    {
-      sponsors: [
-        {
-          imageURL: "images/sponsors/internetx.png",
-          name: "InterNetX GmbH",
-          url: "https://www.internetx.com",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/tcon.png",
-          name: "T.CON",
-          url: "https://www.tcon-international.com",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/mr.jpg",
-          name: "Maschinenfabrik Reinhausen GmbH",
-          url: "https://www.reinhausen.com",
-          width: "50%",
-        },
-        {
-          imageURL: "images/sponsors/zollner.jpg",
-          name: "Zollner Elektronik",
-          url: "https://www.zollner.de",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/telis.png",
-          name: "Telis Finanz",
-          url: "https://www.telis-finanz.de",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/vector.png",
-          name: "Vector IT",
-          url: "https://www.vector.com",
-          width: "100%",
-        },
+      lines: [
+        [
+          {
+            imageURL: "images/sponsors/projekt29.png",
+            name: "Projekt 29 GmbH & Co. KG",
+            url: "https://www.projekt29.de",
+            width: "50%",
+          },
+        ],
+        [
+          {
+            imageURL: "images/sponsors/infineon.png",
+            name: "Infineon",
+            url: "https://infineon.com",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/continental.jpg",
+            name: "Continental",
+            url: "https://www.continental.com",
+            width: "100%",
+          },
+        ],
       ],
       width: "80%",
     },
     {
-      sponsors: [
-        {
-          imageURL: "images/sponsors/bertrandt.png",
-          name: "Bertrandt",
-          url: "https://www.bertrandt.com",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/horsch.png",
-          name: "Horsch Maschinen GmbH",
-          url: "https://www.horsch.com",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/witt.png",
-          name: "Witt Gruppe",
-          url: "https://www.witt-weiden.de",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/",
-          name: "TNG",
-          url: "https://www.tngtech.com",
-          width: "100%",
-        },
-        {
-          imageURL: "images/sponsors/byteschmiede.png",
-          name: "Byte-Schmiede",
-          url: "",
-          width: "100%",
-        },
+      lines: [
+        [
+          {
+            imageURL: "images/sponsors/internetx.png",
+            name: "InterNetX GmbH",
+            url: "https://www.internetx.com",
+            width: "80%",
+          },
+          {
+            imageURL: "images/sponsors/tcon.png",
+            name: "T.CON",
+            url: "https://www.tcon-international.com",
+            width: "80%",
+          },
+          {
+            imageURL: "images/sponsors/mr.jpg",
+            name: "Maschinenfabrik Reinhausen GmbH",
+            url: "https://www.reinhausen.com",
+            width: "40%",
+          },
+        ],
+        [
+          {
+            imageURL: "images/sponsors/zollner.jpg",
+            name: "Zollner Elektronik",
+            url: "https://www.zollner.de",
+            width: "80%",
+          },
+          {
+            imageURL: "images/sponsors/telis.png",
+            name: "Telis Finanz",
+            url: "https://www.telis-finanz.de",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/vector.png",
+            name: "Vector IT",
+            url: "https://www.vector.com",
+            width: "100%",
+          },
+        ],
       ],
-      width: "60%",
+      width: "80%",
+    },
+    {
+      lines: [
+        [
+          {
+            imageURL: "images/sponsors/bertrandt.png",
+            name: "Bertrandt",
+            url: "https://www.bertrandt.com",
+            width: "80%",
+          },
+          {
+            imageURL: "images/sponsors/horsch.png",
+            name: "Horsch Maschinen GmbH",
+            url: "https://www.horsch.com",
+            width: "60%",
+          },
+        ],
+        [
+          {
+            imageURL: "images/sponsors/witt.png",
+            name: "Witt Gruppe",
+            url: "https://www.witt-weiden.de",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/tng.png",
+            name: "TNG",
+            url: "https://www.tngtech.com",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/datadesk.png",
+            name: "DataDesk",
+            url: "https://datadesk.de",
+            width: "100%",
+          },
+        ],
+      ],
+      width: "50%",
     },
   ];
 
   const renderedLevels = levels.map(
-    ({ width: levelWidth, sponsors }, levelIndex) => {
-      const renderedSponsors = sponsors.map(
-        ({ imageURL, name, url, width }, sponsorIndex) => (
-          <Column key={sponsorIndex} grow={1}>
-            <SponsorContainer containerWidth={levelWidth}>
-              <Sponsor
-                width={width}
-                imageURL={imageURL}
-                name={name}
-                url={url}
-              />
-            </SponsorContainer>
-          </Column>
-        ),
-      );
+    ({ width: levelWidth, lines }, levelIndex) => {
+      const renderedLines = lines.map((line, lineIndex) => {
+        const renderedSponsors = line.map(
+          ({ imageURL, name, url, width }, sponsorIndex) => (
+            <Column key={sponsorIndex} grow={1}>
+              <SponsorContainer containerWidth={levelWidth}>
+                <Sponsor
+                  width={width}
+                  imageURL={imageURL}
+                  name={name}
+                  url={url}
+                />
+              </SponsorContainer>
+            </Column>
+          ),
+        );
 
-      return (
-        <RowContainer key={levelIndex}>
-          <Row center>{renderedSponsors}</Row>
-        </RowContainer>
-      );
+        return (
+          <div key={lineIndex}>
+            <Row center>{renderedSponsors}</Row>
+          </div>
+        );
+      });
+
+      return <RowContainer key={levelIndex}>{renderedLines}</RowContainer>;
     },
   );
 
