@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import * as React from "react";
+import { breakpointMobile } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 
 interface IBackgroundDivProps {
@@ -10,6 +11,10 @@ const BackgroundDiv = styled.div<IBackgroundDivProps>`
   background-image: url(${(props) => props.imageUrl});
   background-color: #040b1a;
   color: white;
+
+  @media screen and (max-width: ${breakpointMobile}) {
+    background-size: 535px 535px;
+  }
 `;
 
 interface IBackgroundProps {
