@@ -3,7 +3,6 @@ import * as React from "react";
 import { Anchors } from "../anchors";
 import { starBackgroundColor } from "../constants";
 import { useScrollSpyMarker } from "../hooks/use-scrollspy";
-import { Container } from "./container";
 import { Column } from "./grid/column";
 import { Row } from "./grid/row";
 import { Header } from "./header";
@@ -14,6 +13,18 @@ const SponsorsContainer = styled.div`
   background-color: white;
   color: ${starBackgroundColor};
   padding-bottom: 10rem;
+`;
+
+const LevelContainer = styled.div`
+  & + & {
+    margin-top: 1rem;
+    border-top: 1px dashed #ccc;
+    padding-top: 1rem;
+  }
+`;
+
+const RowContainer = styled.div`
+  margin: 4rem 0;
 `;
 
 interface ISponsorContainer {
@@ -28,10 +39,6 @@ const SponsorContainer = styled.div<ISponsorContainer>`
   ${(props) => `
     width: ${props.containerWidth};
   `}
-`;
-
-const RowContainer = styled.div`
-  margin: 4rem 0;
 `;
 
 interface ISponsor {
@@ -57,17 +64,15 @@ export const Sponsors = () => {
       lines: [
         [
           {
-            imageURL: "images/sponsors/projekt29.png",
-            name: "Projekt 29 GmbH & Co. KG",
-            url: "https://www.projekt29.de",
-            width: "50%",
-          },
-        ],
-        [
-          {
             imageURL: "images/sponsors/infineon.png",
             name: "Infineon",
             url: "https://infineon.com",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/projekt29.png",
+            name: "Projekt 29 GmbH & Co. KG",
+            url: "https://www.projekt29.de",
             width: "100%",
           },
           {
@@ -101,8 +106,6 @@ export const Sponsors = () => {
             url: "https://www.reinhausen.com",
             width: "40%",
           },
-        ],
-        [
           {
             imageURL: "images/sponsors/zollner.jpg",
             name: "Zollner Elektronik",
@@ -123,7 +126,7 @@ export const Sponsors = () => {
           },
         ],
       ],
-      width: "80%",
+      width: "65%",
     },
     {
       lines: [
@@ -140,8 +143,6 @@ export const Sponsors = () => {
             url: "https://www.horsch.com",
             width: "60%",
           },
-        ],
-        [
           {
             imageURL: "images/sponsors/witt.png",
             name: "Witt Gruppe",
@@ -191,7 +192,11 @@ export const Sponsors = () => {
         );
       });
 
-      return <RowContainer key={levelIndex}>{renderedLines}</RowContainer>;
+      return (
+        <LevelContainer key={levelIndex}>
+          <RowContainer>{renderedLines}</RowContainer>
+        </LevelContainer>
+      );
     },
   );
 
@@ -200,11 +205,11 @@ export const Sponsors = () => {
       <UpwardsLeftTriangle color="white" />
 
       {marker}
-      <Container>
+      <div style={{ textAlign: "center" }}>
         <Header title="Sponsors" subtitle="Our partners" />
+      </div>
 
-        {renderedLevels}
-      </Container>
+      {renderedLevels}
     </SponsorsContainer>
   );
 };
