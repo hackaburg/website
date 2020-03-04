@@ -1,7 +1,6 @@
 # hackaburg website
 
 [![CircleCI](https://circleci.com/gh/hackaburg/website.svg?style=shield)](https://circleci.com/gh/hackaburg/website)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hackaburg/website)](https://hub.docker.com/r/hackaburg/website)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/hackaburg/website)](https://hub.docker.com/r/hackaburg/website)
 [![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/hackaburg/website/LICENSE)
 
