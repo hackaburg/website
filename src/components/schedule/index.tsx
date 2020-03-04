@@ -72,7 +72,7 @@ export const Schedule = () => {
             food
           />
           <Event hours={3} minutes={45} time="19:15 - 24:00" title="Hacking">
-            <Spacer hours={2} minutes={45} />
+            <Spacer hours={2} minutes={50} />
             <Event
               hours={0}
               minutes={30}
