@@ -106,6 +106,8 @@ export const Sponsors = () => {
             url: "https://www.reinhausen.com",
             width: "40%",
           },
+        ],
+        [
           {
             imageURL: "images/sponsors/zollner.jpg",
             name: "Zollner Elektronik",
@@ -126,7 +128,7 @@ export const Sponsors = () => {
           },
         ],
       ],
-      width: "65%",
+      width: "60%",
     },
     {
       lines: [
