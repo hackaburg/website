@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import * as React from "react";
 import { useCallback } from "react";
 
-import * as JumpJS from "jump.js";
+import JumpJS from "jump.js";
 
 declare global {
   interface Window {
