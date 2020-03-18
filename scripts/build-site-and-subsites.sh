@@ -10,7 +10,7 @@ dev_branch_pattern="dev/*"
 original_branch=$(git rev-parse --abbrev-ref HEAD)
 
 git checkout origin/master
-yarn install
+yarn install --pure-lockfile
 yarn build
 
 # backup the current site
@@ -41,7 +41,7 @@ for build in $all_builds; do
     exit $?
   fi
 
-  yarn install
+  yarn install --pure-lockfile
   BASE_URL="/$build" yarn build
 
   # move built files to the output directory. we can't just move
