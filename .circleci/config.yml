@@ -52,7 +52,3 @@ jobs:
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
             docker push hackaburg/website
-      - run:
-          name: purge cloudflare cache
-          command: |
-            ./scripts/purge-cloudflare-cache.sh
