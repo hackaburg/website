@@ -10,8 +10,8 @@ import { Day } from "./days";
 import { Event, Spacer } from "./event";
 import { Timetable } from "./timetable";
 
-const eventStart = new Date(2020, 4, 14, 16, 0, 0);
-const eventEnd = new Date(2020, 4, 16, 23, 59, 59);
+const eventStart = new Date(2020, 10, 26, 16, 0, 0);
+const eventEnd = new Date(2020, 10, 28, 23, 59, 59);
 
 export const Schedule = () => {
   const marker = useScrollSpyMarker(Anchors.Schedule);

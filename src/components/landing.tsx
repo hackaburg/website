@@ -93,7 +93,7 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
       <Content>
         <Title>Hackaburg</Title>
         <Subtitle>Mission | 2020</Subtitle>
-        <Location>TechBase Regensburg | 14. - 16. May 2020</Location>
+        <Location>TechBase Regensburg | 26. - 28. November 2020</Location>
 
         {isApplicationOpen && (
           <ApplyContainer>
