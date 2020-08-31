@@ -9,5 +9,7 @@ ENV GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
 
 COPY . ./
 
-EXPOSE 8080
-CMD ["yarn", "serve:production"]
+RUN yarn build
+
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html

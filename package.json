@@ -9,7 +9,6 @@
   "scripts": {
     "test": "gulp test",
     "start": "gulp watch",
-    "serve:production": "gulp serve:production",
     "build": "gulp",
     "clean": "rimraf dist/"
   },

@@ -54,15 +54,6 @@ function serve() {
   });
 }
 
-async function serveProduction(done) {
-  return connect.server({
-    root: "dist/",
-    livereload: false,
-    port: 8080,
-    host: "0.0.0.0"
-  })
-}
-
 function templates() {
   return gulp.src(sources.templates.source)
     .pipe(data((file) => {
@@ -135,7 +126,6 @@ function copy(done) {
 
 gulp.task(test);
 gulp.task(serve);
-gulp.task("serve:production", serveProduction);
 gulp.task(templates);
 gulp.task(css);
 gulp.task(js);
