@@ -3,11 +3,13 @@
   "version": "2.2.1",
   "repository": "git@github.com:hackaburg/website.git",
   "contributors": [
-    "michaelneu <git@michaeln.eu>"
+    "michaelneu <git@michaeln.eu>",
+    "phntxx <phntxx@gmail.com>"
   ],
   "scripts": {
     "test": "gulp test",
     "start": "gulp watch",
+    "serve:production": "gulp serve:production",
     "build": "gulp",
     "clean": "rimraf dist/"
   },
