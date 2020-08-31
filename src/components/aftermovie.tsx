@@ -91,7 +91,7 @@ export const Aftermovie = () => {
       </TriangleContainer>
 
       <DescriptionContainer>
-        <Header title="Hackaburg 2019" subtitle="What happened last year?" />
+        <Header title="Hackaburg 2019" subtitle="What happened last time?" />
         <p>
           125 attendees from all over Germany together with 22 Sponsors
           transformed the facilities of Techbase Regensburg into a home for 20

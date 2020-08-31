@@ -79,6 +79,21 @@ const BackerImage = styled.div`
   }
 `;
 
+const Update = styled.div`
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 1rem 0;
+  
+ 
+  @media screen and not (max-width: ${breakpointMobile}) {
+    margin: 0 5rem;
+  }
+`;
+
 interface ILandingProps {
   isApplicationOpen: boolean;
 }
@@ -92,8 +107,8 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
     <Container>
       <Content>
         <Title>Hackaburg</Title>
-        <Subtitle>Mission | 2020</Subtitle>
-        <Location>TechBase Regensburg | 26. - 28. November 2020</Location>
+        <Subtitle>Mission | 2021</Subtitle>
+        <Location>TechBase Regensburg | 10. - 12. July 2021</Location>
 
         {isApplicationOpen && (
           <ApplyContainer>
@@ -134,6 +149,11 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
             </Column>
           </Row>
         </Backers>
+        <Update>
+          We are heartbroken to announce that, due to the current developments
+          regarding COVID-19, we have decided to postpone Hackaburg until 2021.
+          We apologize for any inconveniences caused by this decision.
+        </Update>
       </Content>
     </Container>
   </LandingContainer>
