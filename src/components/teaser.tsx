@@ -97,7 +97,8 @@ export const Teaser = () => {
         <Spacer />
         <Row center>
           <Column shrink={1}>
-            <Text>Stay up to date on our social media channels:</Text>
+            <Text>Hackaburg 2021 has finally started!</Text>
+            <Text>Stay up to date on our social media channels</Text>
 
             <ButtonContainer>
               <Link
