@@ -81,14 +81,13 @@ const BackerImage = styled.div`
 
 const Update = styled.div`
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   text-align: center;
 
   padding: 1rem 0;
-  
- 
+
   @media screen and not (max-width: ${breakpointMobile}) {
     margin: 0 5rem;
   }
