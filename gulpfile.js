@@ -41,7 +41,10 @@ const sources = {
 };
 
 function test(done) {
-  const buffer = new Buffer("Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K", "base64");
+  const buffer = new Buffer(
+    "Cgl3b3JrcyBvbiBteSBtYWNoaW5lIMKvXF8o44OEKV8vwq8K",
+    "base64"
+  );
 
   console.log(buffer.toString("utf8"));
   done();
@@ -55,49 +58,62 @@ function serve() {
 }
 
 function templates() {
-  return gulp.src(sources.templates.source)
-    .pipe(data((file) => {
-      return {
-        filename: path.basename(file.path)
-      };
-    }))
-    .pipe(pug({
-      pretty: true
-    }))
+  return gulp
+    .src(sources.templates.source)
+    .pipe(
+      data(file => {
+        return {
+          filename: path.basename(file.path)
+        };
+      })
+    )
+    .pipe(
+      pug({
+        pretty: true,
+        data: {
+          GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY
+        }
+      })
+    )
     .pipe(gulp.dest(sources.templates.destination))
     .pipe(connect.reload());
 }
 
 function css() {
-  return gulp.src(sources.less.source)
+  return gulp
+    .src(sources.less.source)
     .pipe(sourcemaps.init())
-    .pipe(less({
-      plugins: [
-        require("less-plugin-glob")
-      ]
-    }))
+    .pipe(
+      less({
+        plugins: [require("less-plugin-glob")]
+      })
+    )
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(sources.less.destination))
-    .pipe(minify({
-      level: {
-        2: {
-          mergeAdjacentRules: true,
-          mergeIntoShorthands: true,
-          mergeMedia: true,
-          mergeNonAdjacentRules: true,
-          mergeSemantically: false,
-          overrideProperties: true,
-          reduceNonAdjacentRules: true,
-          removeDuplicateFontRules: true,
-          removeDuplicateMediaBlocks: true,
-          removeDuplicateRules: true,
-          restructureRules: false
+    .pipe(
+      minify({
+        level: {
+          2: {
+            mergeAdjacentRules: true,
+            mergeIntoShorthands: true,
+            mergeMedia: true,
+            mergeNonAdjacentRules: true,
+            mergeSemantically: false,
+            overrideProperties: true,
+            reduceNonAdjacentRules: true,
+            removeDuplicateFontRules: true,
+            removeDuplicateMediaBlocks: true,
+            removeDuplicateRules: true,
+            restructureRules: false
+          }
         }
-      }
-    }))
-    .pipe(rename({
-      suffix: ".min"
-    }))
+      })
+    )
+    .pipe(
+      rename({
+        suffix: ".min"
+      })
+    )
     .pipe(gulp.dest(sources.less.destination))
     .pipe(connect.reload());
 }
@@ -105,7 +121,8 @@ function css() {
 function js() {
   const tsconfig = require("./tsconfig.json");
 
-  return gulp.src(sources.js.source)
+  return gulp
+    .src(sources.js.source)
     .pipe(sourcemaps.init())
     .pipe(tsc(tsconfig.compilerOptions))
     .pipe(sourcemaps.write())
@@ -117,8 +134,7 @@ function js() {
 
 function copy(done) {
   for (const item of sources.copy) {
-    gulp.src(item.source)
-        .pipe(gulp.dest(item.destination));
+    gulp.src(item.source).pipe(gulp.dest(item.destination));
   }
 
   done();
@@ -131,18 +147,25 @@ gulp.task(css);
 gulp.task(js);
 gulp.task(copy);
 gulp.task("default", gulp.parallel("css", "templates", "copy", "js"));
-gulp.task("watch", gulp.series("default", gulp.parallel("serve", () => {
-  gulp.watch(sources.less.watch, css);
-  gulp.watch(sources.js.watch, js);
-  gulp.watch(sources.templates.watch, templates);
+gulp.task(
+  "watch",
+  gulp.series(
+    "default",
+    gulp.parallel("serve", () => {
+      gulp.watch(sources.less.watch, css);
+      gulp.watch(sources.js.watch, js);
+      gulp.watch(sources.templates.watch, templates);
 
-  for (const item of sources.copy) {
-    gulp.watch(item.watch, (event) => {
-      if (event.type != "deleted") {
-        gulp.src(event.path)
-          .pipe(gulp.dest(item.destination))
-          .pipe(connect.reload());
+      for (const item of sources.copy) {
+        gulp.watch(item.watch, event => {
+          if (event.type != "deleted") {
+            gulp
+              .src(event.path)
+              .pipe(gulp.dest(item.destination))
+              .pipe(connect.reload());
+          }
+        });
       }
-    });
-  }
-})));
+    })
+  )
+);
