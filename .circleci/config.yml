@@ -47,8 +47,12 @@ jobs:
           name: build image
           command: |
             docker build --build-arg GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY -t hackaburg/website .
+            docker build --build-arg GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY -t hackaburg/website:hb-2018 https://github.com/hackaburg/website.git#hb-2018
+            docker build --build-arg GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY -t hackaburg/website:hb-2019 https://github.com/hackaburg/website.git#hb-2019
       - run:
           name: push image to docker hub
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
             docker push hackaburg/website
+            docker push hackaburg/website:hb-2018
+            docker push hackaburg/website:hb-2019
