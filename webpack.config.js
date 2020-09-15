@@ -8,66 +8,64 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isDevelopmentBuild = process.env.NODE_ENV !== "production";
 
 const templatePath = "./src/templates/pages";
-const templateHtmlPlugins =
-  readdirSync(templatePath)
-    .map((template) => new HtmlWebpackPlugin({
+const templateHtmlPlugins = readdirSync(templatePath).map(
+  template =>
+    new HtmlWebpackPlugin({
       template: join(templatePath, template),
       filename: template.replace(/\.pug$/, ".html"),
-    }));
+      templateParameters: {
+        GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY
+      }
+    })
+);
 
 module.exports = {
   entry: {
     hackaburg: "./src/ts/index.ts",
-    stylesheet: "./src/less/stylesheet.less",
+    stylesheet: "./src/less/stylesheet.less"
   },
   output: {
     path: join(__dirname, "dist"),
-    filename:
-      isDevelopmentBuild
-        ? "[name].[hash].js"
-        : "[name].[contenthash].min.js",
+    filename: isDevelopmentBuild
+      ? "[name].[hash].js"
+      : "[name].[contenthash].min.js"
   },
   resolve: {
-    extensions: [
-      ".ts",
-      ".js",
-      ".less",
-    ],
+    extensions: [".ts", ".js", ".less"]
   },
   plugins: [
     ...templateHtmlPlugins,
     new CopyWebpackPlugin([
       {
         from: "./src/images",
-        to: "assets/images",
-      },
+        to: "assets/images"
+      }
     ]),
     new CopyWebpackPlugin([
       {
         from: "./src/robots.txt",
-        to: "robots.txt",
-      },
+        to: "robots.txt"
+      }
     ]),
     new ImageminWebpackPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
-      disable: isDevelopmentBuild,
+      disable: isDevelopmentBuild
     }),
     new MiniCssExtractPlugin({
-      filename:
-        isDevelopmentBuild
-          ? "[name].[hash].css"
-          : "[name].[contenthash].min.css",
-    }),
+      filename: isDevelopmentBuild
+        ? "[name].[hash].css"
+        : "[name].[contenthash].min.css"
+    })
   ],
   module: {
     rules: [
       {
         test: /\.ts$/,
-        loader: "ts-loader",
+        loader: "ts-loader"
       },
       {
         test: /\.pug$/,
-        loader: "pug-loader",
+        loader: "pug-loader"
       },
       {
         test: /\.less$/,
@@ -75,30 +73,26 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: isDevelopmentBuild,
-            },
+              hmr: isDevelopmentBuild
+            }
           },
           {
             loader: "css-loader",
             options: {
               url: false,
-              modules: false,
-            },
+              modules: false
+            }
           },
           {
             loader: "less-loader",
             options: {
-              paths: [
-                join(__dirname, "./src"),
-              ],
-              plugins: [
-                LessGlobPlugin,
-              ],
-            },
-          },
-        ],
-      },
-    ],
+              paths: [join(__dirname, "./src")],
+              plugins: [LessGlobPlugin]
+            }
+          }
+        ]
+      }
+    ]
   },
   optimization: {
     splitChunks: {
@@ -107,16 +101,16 @@ module.exports = {
           name: "styles",
           test: /\.css$/,
           chunks: "all",
-          enforce: true,
-        },
-      },
-    },
+          enforce: true
+        }
+      }
+    }
   },
   externals: {
     "js-cookie": "Cookies",
-    "jump.js": "Jump",
+    "jump.js": "Jump"
   },
   devServer: {
-    port: 8080,
-  },
+    port: 8080
+  }
 };
