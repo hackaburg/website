@@ -1,5 +1,5 @@
 export const siteDescription =
-  "Hackaburg is meeting point for over 100 developers, designers, and enterpreneurs from around the world. Join the adventure in May 2020!";
+  "Hackaburg is meeting point for over 100 developers, designers, and enterpreneurs from around the world. Join the adventure in June 2021!";
 export const siteTitle = "Hackaburg 2021";
 
 export const accentColor = "#1d74f5";
