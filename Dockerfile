@@ -8,7 +8,6 @@ ARG GOOGLE_MAPS_API_KEY
 ENV GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
 
 COPY . ./
-RUN /app/scripts/build-site-and-subsites.sh
 
 FROM ratisbonacoding/nginx-cloudflare-cache
 COPY --from=build /app/dist /usr/share/nginx/html
