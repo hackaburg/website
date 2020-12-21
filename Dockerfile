@@ -11,5 +11,5 @@ COPY . ./
 
 RUN yarn build
 
-FROM nginx:alpine
+FROM ratisbonacoding/nginx-cloudflare-cache
 COPY --from=build /app/dist /usr/share/nginx/html
