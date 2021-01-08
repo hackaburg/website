@@ -69,9 +69,8 @@ export const Sponsors = () => {
             url: "https://infineon.com",
             width: "100%",
           },
-
           {
-            imageURL: "images/sponsors/bayernwerk.jpg",
+            imageURL: "images/sponsors/bayernwerk.png",
             name: "Bayernwerk",
             url: "https://www.bayernwerk-netz.de/de.html",
             width: "100%",
