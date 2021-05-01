@@ -51,7 +51,7 @@ export default () => (
       ]}
     />
 
-    <Landing isApplicationOpen={false} />
+    <Landing isApplicationOpen={true} />
     <About />
     <TracksPlaceholder />
     <Sponsors />
