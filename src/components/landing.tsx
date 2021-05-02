@@ -111,7 +111,13 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
 
         {isApplicationOpen && (
           <ApplyContainer>
-            <Button>Apply now</Button>
+            <Link
+              label="Apply now"
+              target="_blank"
+              to="https://www.hackaburg.de/apply/"
+            >
+              <Button>Apply now</Button>
+            </Link>
           </ApplyContainer>
         )}
 
