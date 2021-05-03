@@ -114,7 +114,7 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
             <Link
               label="Apply now"
               target="_blank"
-              to="https://www.hackaburg.de/apply/"
+              to="/apply/"
             >
               <Button>Apply now</Button>
             </Link>
