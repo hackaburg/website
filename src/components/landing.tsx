@@ -111,11 +111,7 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
 
         {isApplicationOpen && (
           <ApplyContainer>
-            <Link
-              label="Apply now"
-              target="_blank"
-              to="/apply/"
-            >
+            <Link label="Apply now" target="_blank" to="/apply/">
               <Button>Apply now</Button>
             </Link>
           </ApplyContainer>
