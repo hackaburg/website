@@ -124,7 +124,7 @@ export const Teaser = () => {
           <Column grow={1}>
             <EmbeddedVideoContainer>
               <EmbeddedVideo
-                src="https://www.youtube.com/embed/OqN_HOEJLTA"
+                src="https://www.youtube.com/embed/_b3sA3cFmQ8"
                 frameBorder="0"
                 allowFullScreen
               />
