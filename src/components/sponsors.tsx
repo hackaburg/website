@@ -75,6 +75,12 @@ export const Sponsors = () => {
             url: "https://www.bayernwerk-netz.de/de.html",
             width: "100%",
           },
+          {
+            imageURL: "images/sponsors/continental.jpg",
+            name: "Continental",
+            url: "https://www.continental.com/de",
+            width: "100%",
+          },
         ],
       ],
       width: "80%",
