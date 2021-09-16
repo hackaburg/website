@@ -69,7 +69,7 @@ export const FAQ = () => {
               </Question>
 
               <Question title="How many people will the hackathon have?">
-                We're planning with 120 attendees, 90% students and 10%
+                We're planning with 90 attendees, 90% students and 10%
                 professionals! Just apply here!
               </Question>
 
@@ -88,7 +88,7 @@ export const FAQ = () => {
               </Question>
 
               <Question title="Overnight Stay?">
-                Sure! We'll have a sleeping room available with 20 campbeds.
+                Sure! We'll provide beds as required at a local hostel (maximum 30).
               </Question>
             </QuestionsContainer>
           </Column>

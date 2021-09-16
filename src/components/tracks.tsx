@@ -29,10 +29,10 @@ export const Tracks = () => {
           <Column grow={1}>
             <TrackContainer>
               <Track
-                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
+                description="How can digital tools - with regards to situations like the COVID-19 pandemic - elevate collaboration and networking within a company to a whole new level?"
                 imageURL="images/tracks/connected-mobility.jpg"
-                sponsor="SSV Jahn Regensburg"
-                title="A common goal"
+                sponsor="Bayernwerk"
+                title="New ways to work"
               />
             </TrackContainer>
           </Column>
@@ -40,10 +40,10 @@ export const Tracks = () => {
           <Column grow={1}>
             <TrackContainer>
               <Track
-                description="How can we connect people with the same destination: the local football arena? Find digital and sustainable solutions to connect those people to foster shared mobility."
+                description="Build a device that can differentiate different vehicles by the sound of their propulsion mechanisms to make for a smarter car park."
                 imageURL="images/tracks/connected-mobility.jpg"
-                sponsor="SSV Jahn Regensburg"
-                title="A common goal"
+                sponsor="Infineon"
+                title="Smart Car Park"
               />
             </TrackContainer>
           </Column>

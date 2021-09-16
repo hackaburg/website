@@ -201,7 +201,7 @@ export const Schedule = () => {
                 hours={1}
                 minutes={0}
                 time="15:00 - 16:00"
-                title="Felice Eisfahrrad"
+                title="Stenz Ice cream"
                 food
               />
               <Event
