@@ -3,13 +3,22 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:latest
+      - image: node:lts
     steps:
       - checkout
+      - setup_remote_docker
       - restore_cache:
           keys:
             - dependencies-{{ checksum "package.json" }}
             - dependencies-
+            - v1-{{ .Branch }}
+      - run:
+          name: Install dependencies
+          command: |
+            apk add --no-cache \
+              py-pip=9.0.0-r1
+            pip install \
+              docker-compose==1.12.0
       - run:
           command: |
             yarn install
@@ -33,3 +42,30 @@ jobs:
           name: test
           command: |
             yarn test
+      - run:
+          name: Load Docker image layer cache
+          command: |
+            set +o pipefail
+            docker load -i /caches/app.tar | true
+      - run:
+          name: Build application Docker image
+          command: |
+            docker build --cache-from=app -t app .
+      - run:
+          name: Save Docker image layer cache
+          command: |
+            mkdir -p /caches
+            docker save -o /caches/app.tar app
+      - save_cache:
+          key: v1-{{ .Branch }}-{{ epoch }}
+          paths:
+            - /caches/app.tar
+      - deploy:
+          name: Push application Docker image
+          command: |
+            docker login --username ${DOCKER_USER} --password ${DOCKER_PASSWORD}
+            docker tag app hackaburg/website:latest
+            docker push hackaburg/website:latest
+            
+          
+      
