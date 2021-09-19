@@ -15,10 +15,7 @@ jobs:
       - run:
           name: install
           command: |
-            apt-get update
-            apt-get install curl
-            curl -sL https://deb.nodesource.com/setup_4.x | bash
-            apt-get install nodejs
+            apk add --update npm
             npm i -g yarn
             yarn install
       - save_cache:
