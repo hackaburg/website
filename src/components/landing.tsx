@@ -151,11 +151,6 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
           </Row>
         </Backers>
         <Update>
-          We are heartbroken to announce that, due to the current developments
-          regarding COVID-19, we have decided to postpone Hackaburg until 2021.
-          We apologize for any inconveniences caused by this decision.
-        </Update>
-        <Update>
           Our registration is open now. This is to enable us to keep you up to
           date on the state of Hackaburg 2021. Registering at this point is
           entirely optional and does not entitle you to an admission once the

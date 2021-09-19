@@ -88,7 +88,8 @@ export const FAQ = () => {
               </Question>
 
               <Question title="Overnight Stay?">
-                Sure! We'll provide beds as required at a local hostel (maximum 30).
+                Sure! We'll provide beds as required at a local hostel (maximum
+                30).
               </Question>
             </QuestionsContainer>
           </Column>
