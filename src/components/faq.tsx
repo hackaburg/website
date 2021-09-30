@@ -69,7 +69,7 @@ export const FAQ = () => {
               </Question>
 
               <Question title="How many people will the hackathon have?">
-                We're planning with 90 attendees, 90% students and 10%
+                We're planning with ~95 attendees, 90% students and 10%
                 professionals! Just apply here!
               </Question>
 
@@ -137,6 +137,12 @@ export const FAQ = () => {
                 <b>Important note: </b> We can only transfer money in the SEPA
                 area! Thus, be ready to provide your travel receipts and bank
                 address.
+              </Question>
+              <Question title="Are there any restrictions regarding the COVID-19 situation?">
+                Yes. This event will be held with a 2G-concept, meaning that
+                only people that are fully vaccinated or have recovered from a
+                COVID-19 infection can participate. Make sure to bring valid
+                proof of vaccination or recovery to the event.
               </Question>
             </QuestionsContainer>
           </Column>

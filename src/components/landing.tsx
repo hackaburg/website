@@ -79,20 +79,6 @@ const BackerImage = styled.div`
   }
 `;
 
-const Update = styled.div`
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  padding: 1rem 0;
-
-  @media screen and not (max-width: ${breakpointMobile}) {
-    margin: 0 5rem;
-  }
-`;
-
 interface ILandingProps {
   isApplicationOpen: boolean;
 }
@@ -150,12 +136,6 @@ export const Landing = ({ isApplicationOpen }: ILandingProps) => (
             </Column>
           </Row>
         </Backers>
-        <Update>
-          Our registration is open now. This is to enable us to keep you up to
-          date on the state of Hackaburg 2021. Registering at this point is
-          entirely optional and does not entitle you to an admission once the
-          event goes forward.
-        </Update>
       </Content>
     </Container>
   </LandingContainer>
