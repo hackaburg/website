@@ -15,7 +15,7 @@ interface IPageProps {
 
 export const Page = ({ children }: IPageProps) => {
   const icon = usePublicFileURL("images/favicon.png");
-  const opengraphImage = usePublicFileURL("images/og-image.jpg");
+  const opengraphImage = usePublicFileURL("images/og-image.png");
 
   return (
     <Background>
