@@ -9,7 +9,7 @@ import { Page } from "../components/page";
 import { Schedule } from "../components/schedule";
 import { Sponsors } from "../components/sponsors";
 import { Teaser } from "../components/teaser";
-import { TracksPlaceholder } from "../components/tracks-placeholder";
+import { Tracks } from "../components/tracks";
 import { Venue } from "../components/venue";
 
 export default () => (
@@ -53,7 +53,7 @@ export default () => (
 
     <Landing isApplicationOpen={true} />
     <About />
-    <TracksPlaceholder />
+    <Tracks />
     <Sponsors />
     <Aftermovie />
     <Schedule />
