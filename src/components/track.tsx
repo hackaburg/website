@@ -9,7 +9,7 @@ const TitleContainer = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4.5rem;
+  height: 5rem;
   overflow: hidden;
   transition-property: height;
   transition-duration: ${transitionDuration};
@@ -56,7 +56,7 @@ const Title = styled.div`
 const Description = styled.div`
   display: block;
 
-  padding: 1rem;
+  padding: 1.5rem;
 
   font-size: 0.8rem;
   text-align: left;
