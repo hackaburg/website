@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { siteDescription, siteTitle } from "../constants";
+import { siteDescription, siteTitle, themeColor } from "../constants";
 import { usePublicFileURL } from "../hooks/use-public-file-url";
 import { Background } from "./background";
 import { Footer } from "./footer";
@@ -30,7 +30,7 @@ export const Page = ({ children }: IPageProps) => {
           name="keywords"
           content="hackathon,regensburg,innovation,development,design,entrepreneurship"
         />
-        <meta name="theme-color" content="#9ac017" />
+        <meta name="theme-color" content={themeColor} />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

@@ -5,6 +5,7 @@ export const siteTitle = "Hackaburg 2021";
 export const accentColor = "#1d74f5";
 export const accentColorLight = "#5694f0";
 export const starBackgroundColor = "#040b1a";
+export const themeColor = "#040b1a";
 
 export const triangleSize = "6rem";
 export const hourSize = 5.1;
