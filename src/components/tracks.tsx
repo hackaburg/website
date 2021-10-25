@@ -47,7 +47,8 @@ export const Tracks = () => {
               />
             </TrackContainer>
           </Column>
-
+        </Row>
+        <Row>
           <Column grow={1}>
             <TrackContainer>
               <Track
@@ -55,6 +56,16 @@ export const Tracks = () => {
                 imageURL="images/tracks/smart-sustainability-plant.png"
                 sponsor="Continental"
                 title="Smart Sustainability Plant"
+              />
+            </TrackContainer>
+          </Column>
+          <Column grow={1}>
+            <TrackContainer>
+              <Track
+                description="You have an idea that doesn't fit into one of the tracks above? No restrictions are set here, feel free to build what ever you want!"
+                imageURL="images/tracks/free-choice.jpg"
+                sponsor="Hackaburg"
+                title="Free Choice"
               />
             </TrackContainer>
           </Column>
