@@ -171,7 +171,7 @@ const Imprint = () => {
               Eine Zusammenführung dieser Daten mit anderen Datenquellen wird
               nicht vorgenommen. Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1
               lit. f DSGVO auf Basis unseres berechtigten Interesses an der
-              Verbesserung der Stabilität und Funktionalität unserer Website.   
+              Verbesserung der Stabilität und Funktionalität unserer Website.
               Aus Gründen der technischen Sicherheit, insbesondere zur Abwehr
               von Angriffsversuchen auf unseren Webserver, werden diese Daten
               von uns kurzzeitig gespeichert. Ein Rückschluss auf einzelne

@@ -18,7 +18,7 @@ export enum Anchors {
   Cookies = "cookies",
   Auskunftsrecht = "disclosure",
 
-  //gdpr
+  // gdpr
   Intro = "intro",
   PersonenbezogeneDaten = "your-data",
   AutomatischGespeicherteDaten = "automatically-saved-data",
