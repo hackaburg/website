@@ -5,8 +5,6 @@ import { usePublicFileURL } from "../hooks/use-public-file-url";
 import { Background } from "./background";
 import { Footer } from "./footer";
 import { Cookiebanner } from "./libs/cookiebanner";
-import { FacebookPixel } from "./libs/facebook-pixel";
-import { GoogleTagManager } from "./libs/google-tag-manager";
 import "./reset.css";
 
 interface IPageProps {
@@ -49,8 +47,6 @@ export const Page = ({ children }: IPageProps) => {
       </Helmet>
 
       <Cookiebanner />
-      <FacebookPixel />
-      <GoogleTagManager />
 
       {children}
 

@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import * as React from "react";
 import { Anchors } from "../anchors";
 import { Container } from "../components/container";
-import { optOut } from "../components/libs/facebook-pixel";
 import { Link } from "../components/link";
 import { Navbar } from "../components/navbar";
 import { Page } from "../components/page";
@@ -18,39 +17,42 @@ const Section = styled.section`
 
 const Title = styled.h2``;
 
-const FacebookPixelOptOutClickArea = styled.span`
-  cursor: pointer;
-  text-decoration: underline;
-`;
-
 const Imprint = () => {
   return (
     <Page>
       <Navbar
         items={[
           {
-            label: "Kontakt",
-            marker: Anchors.Kontakt,
+            label: "Intro",
+            marker: Anchors.Intro,
           },
           {
-            label: "Verweise und Links",
-            marker: Anchors.VerweiseUndLinks,
+            label: "Personenbezogene Daten",
+            marker: Anchors.PersonenbezogeneDaten,
           },
           {
-            label: "Datenermittlung",
-            marker: Anchors.Datenermittlung,
+            label: "Automatisch gespeicherte Daten",
+            marker: Anchors.AutomatischGespeicherteDaten,
           },
           {
-            label: "Bestandsdaten",
-            marker: Anchors.Bestandsdaten,
+            label: "Registrierung",
+            marker: Anchors.Registrierung,
+          },
+          {
+            label: "Sicherheit",
+            marker: Anchors.Sicherheit,
+          },
+          {
+            label: "Betroffenenrechte",
+            marker: Anchors.Betroffenenrechte,
           },
           {
             label: "Nutzungsdaten",
             marker: Anchors.Nutzungsdaten,
           },
           {
-            label: "Cookies",
-            marker: Anchors.Cookies,
+            label: "Änderungen der Datenschutzerklärung",
+            marker: Anchors.Aenderungen,
           },
         ]}
       />
@@ -344,51 +346,6 @@ const Imprint = () => {
               Ihrem Rechner durch entsprechende Einstellungen in Ihrem Browser
               zu verhindern. Hierdurch könnten allerdings der Funktionsumfang
               unseres Angebotes eingeschränkt werden.
-            </p>
-          </Container>
-        </Section>
-
-        {useScrollSpyMarker(Anchors.FacebookPixel)}
-        <Section>
-          <Container>
-            <Title>
-              Konversionsmessung mit dem Besucheraktions-Pixel von Facebook
-            </Title>
-            <p>
-              Mit Ihrer Einwilligung setzen wir innerhalb unseres
-              Internetauftritts den “Besucheraktions-Pixel” der Facebook Inc.,
-              1601 S. California Ave, Palo Alto, CA 94304, USA (“Facebook”) ein.
-              Mit dessen Hilfe können wir die Aktionen von Nutzern
-              nachverfolgen, nach dem diese eine Facebook-Werbeanzeige gesehen
-              oder geklickt haben. So können wir die Wirksamkeit der
-              Facebook-Werbeanzeigen für statistische und marktforschungszwecke
-              erfassen. Die so erfassten Daten sind für uns anonym, das heißt
-              wir sehen nicht die personenbezogenen Daten einzelner Nutzer.
-              Diese Daten werden jedoch von Facebook gespeichert und
-              verarbeitet, worüber wir Sie entsprechend unserem Kenntnisstand
-              unterrichten. Facebook kann diese Daten mit ihrem Facebookkonto
-              verbinden und auch für eigene Werbezwecke, entsprechend Facebooks
-              Datensverwendungsrichtlinie verwenden{" "}
-              <Link
-                label="https://www.facebook.com/about/privacy/"
-                target="_blank"
-                to="https://www.facebook.com/about/privacy/"
-              />
-              . Sie können Facebook sowie dessen Partnern das Schalten von
-              Werbeanzeigen auf und außerhalb von Facebook ermöglichen. Es kann
-              ferner zu diesen Zwecken ein Cookie auf Ihrem Rechner gespeichert
-              werden.
-            </p>
-            <p>
-              Diese Einwilligung darf nur von Nutzern, die älter als 13 Jahre
-              alt sind erklärt werden. Falls Sie jünger sind, bitten wir, Ihre
-              Erziehungsberechtigten um Rat zu fragen.
-            </p>
-            <p>
-              <FacebookPixelOptOutClickArea onClick={optOut}>
-                Bitte klicken Sie hier
-              </FacebookPixelOptOutClickArea>
-              , wenn Sie Ihre Einwilligung widerrufen möchten.
             </p>
           </Container>
         </Section>

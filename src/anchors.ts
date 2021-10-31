@@ -16,6 +16,15 @@ export enum Anchors {
   Bestandsdaten = "existing-data",
   Nutzungsdaten = "usage-data",
   Cookies = "cookies",
-  FacebookPixel = "fb-pixel",
   Auskunftsrecht = "disclosure",
+
+  //gdpr
+  Intro = "intro",
+  PersonenbezogeneDaten = "your-data",
+  AutomatischGespeicherteDaten = "automatically-saved-data",
+  Registrierung = "registration",
+  Google = "google",
+  Sicherheit = "safety",
+  Betroffenenrechte = "your-rights",
+  Aenderungen = "changes",
 }
