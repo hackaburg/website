@@ -98,7 +98,7 @@ export const Schedule = () => {
               hours={1}
               minutes={0}
               time="11:00 - 12:00"
-              title="Workshop"
+              title="How to get sound into the Raspi by Infineon"
               special
             />
 
@@ -116,7 +116,7 @@ export const Schedule = () => {
               hours={1}
               minutes={0}
               time="16:00 - 17:00"
-              title="Workshop"
+              title="Superschnelles Multiplatform-Protoyping mit ReactJS by Bayernwerk"
               special
             />
 
@@ -133,7 +133,7 @@ export const Schedule = () => {
               hours={1}
               minutes={0}
               time="19:00 - 20:00"
-              title="Workshop"
+              title="Soldering Workshop by Continental"
               special
             />
 
@@ -208,7 +208,7 @@ export const Schedule = () => {
                 hours={1}
                 minutes={0}
                 time="16:00 - 17:00"
-                title="Workshop"
+                title="Meditation Workshop"
                 special
               />
             </Column>

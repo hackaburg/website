@@ -69,7 +69,7 @@ export const FAQ = () => {
               </Question>
 
               <Question title="How many people will the hackathon have?">
-                We're planning with ~95 attendees, 90% students and 10%
+                We're planning with ~120 attendees, 90% students and 10%
                 professionals! Just apply here!
               </Question>
 
