@@ -47,7 +47,9 @@ jobs:
       - run:
           name: Build application Docker image
           command: |
-            docker build --cache-from=app -t app --build-arg GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY} .
+            docker build --build-arg GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY} -t hackaburg/website:latest --cache-from=app .
+            docker build --build-arg GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY} -t hackaburg/website:hb-2018 https://github.com/hackaburg/website.git#hb-2018
+            docker build --build-arg GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY} -t hackaburg/website:hb-2019 https://github.com/hackaburg/website.git#hb-2019
       - run:
           name: Save Docker image layer cache
           command: |
@@ -61,8 +63,6 @@ jobs:
           name: Push application Docker image
           command: |
             docker login --username ${DOCKER_USER} --password ${DOCKER_PASSWORD}
-            docker tag app hackaburg/website:latest
             docker push hackaburg/website:latest
-            
-          
-      
+            docker push hackaburg/website:hb-2018
+            docker push hackaburg/website:hb-2019
