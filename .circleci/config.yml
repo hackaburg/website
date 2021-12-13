@@ -16,7 +16,7 @@ jobs:
       - run:
           name: install
           command: |
-            apk add --update npm
+            apk add --update npm git
             npm i -g yarn
             yarn install
       - save_cache:
