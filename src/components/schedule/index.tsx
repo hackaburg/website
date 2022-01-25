@@ -10,8 +10,8 @@ import { Day } from "./days";
 import { Event, Spacer } from "./event";
 import { Timetable } from "./timetable";
 
-const eventStart = new Date(2021, 11, 25, 16, 0, 0);
-const eventEnd = new Date(2021, 11, 27, 23, 59, 59);
+const eventStart = new Date(2022, 7, 7, 16, 0, 0);
+const eventEnd = new Date(2022, 7, 9, 23, 59, 59);
 
 export const Schedule = () => {
   const marker = useScrollSpyMarker(Anchors.Schedule);
@@ -27,7 +27,7 @@ export const Schedule = () => {
 
       <Header title="Schedule" subtitle="When and what" />
       <Timetable showCurrentTime={isDuringEvent}>
-        <Day date="Thu, 25.11.2021">
+        <Day date="Thu, 7.7.2022">
           <Spacer hours={8} minutes={0} />
           <Event
             hours={0}
@@ -82,7 +82,7 @@ export const Schedule = () => {
             />
           </Event>
         </Day>
-        <Day date="Fri, 26.11.2021">
+        <Day date="Fri, 8.7.2022">
           <Event hours={15} minutes={0} time="00:00 - 24:00" title="Hacking">
             <Spacer hours={0} minutes={35} />
             <Event
@@ -147,7 +147,7 @@ export const Schedule = () => {
             />
           </Event>
         </Day>
-        <Day date="Sat, 27.11.2021">
+        <Day date="Sat, 9.7.2022">
           <Event hours={5} minutes={0} time="00:00 - 13:00" title="Hacking">
             <Spacer hours={0} minutes={35} />
             <Event

@@ -146,7 +146,7 @@ export const Navbar = ({ items }: INavbarProps) => {
       <Container>
         <Brand>
           <Link label="Home" to="../index.html" underline={false}>
-            Hackaburg 2021
+            Hackaburg 2022
           </Link>
         </Brand>
 
