@@ -195,23 +195,6 @@ export const Schedule = () => {
                 special
               />
             </Column>
-            <Column grow={1}>
-              <Spacer hours={1} minutes={0} />
-              <Event
-                hours={1}
-                minutes={0}
-                time="15:00 - 16:00"
-                title="Glühwein stand"
-                food
-              />
-              <Event
-                hours={1}
-                minutes={0}
-                time="16:00 - 17:00"
-                title="Meditation Workshop"
-                special
-              />
-            </Column>
           </Row>
 
           <Event
