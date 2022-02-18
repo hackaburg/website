@@ -95,17 +95,17 @@ export const Sponsors = () => {
             width: "70%",
           },
           {
-            imageURL: "images/sponsors/tcon.png",
-            name: "T.CON",
-            url: "https://www.tcon-international.com",
-            width: "70%",
-          },
-          {
             imageURL: "images/sponsors/mr.jpg",
             name: "Maschinenfabrik Reinhausen GmbH",
             url: "https://www.reinhausen.com",
             width: "35%",
           },
+          {
+            imageURL: "images/sponsors/vector.png",
+            name: "Vector IT",
+            url: "https://www.vector.com",
+            width: "100%",
+          }
         ],
         [
           {
@@ -118,12 +118,6 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/telis.png",
             name: "Telis Finanz",
             url: "https://www.telis-finanz.de",
-            width: "100%",
-          },
-          {
-            imageURL: "images/sponsors/vector.png",
-            name: "Vector IT",
-            url: "https://www.vector.com",
             width: "100%",
           },
           {
