@@ -100,12 +100,6 @@ export const Sponsors = () => {
             url: "https://www.reinhausen.com",
             width: "35%",
           },
-          {
-            imageURL: "images/sponsors/vector.png",
-            name: "Vector IT",
-            url: "https://www.vector.com",
-            width: "100%",
-          }
         ],
         [
           {
@@ -115,9 +109,9 @@ export const Sponsors = () => {
             width: "80%",
           },
           {
-            imageURL: "images/sponsors/telis.png",
-            name: "Telis Finanz",
-            url: "https://www.telis-finanz.de",
+            imageURL: "images/sponsors/vector.png",
+            name: "Vector IT",
+            url: "https://www.vector.com",
             width: "100%",
           },
           {
