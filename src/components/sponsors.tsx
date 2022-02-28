@@ -100,6 +100,12 @@ export const Sponsors = () => {
             url: "https://www.reinhausen.com",
             width: "35%",
           },
+          {
+            imageURL: "images/sponsors/trinnovative.png",
+            name: "trinnovative GmbH",
+            url: "https://www.trinnovative.de",
+            width: "100%",
+          },
         ],
         [
           {
