@@ -81,6 +81,12 @@ export const Sponsors = () => {
             url: "https://www.continental.com/de",
             width: "100%",
           },
+          {
+            imageURL: "images/sponsors/wolf.png",
+            name: "Wolf",
+            url: "https://www.wolf.eu",
+            width: "100%",
+          },
         ],
       ],
       width: "80%",
