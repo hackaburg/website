@@ -64,12 +64,6 @@ export const Sponsors = () => {
       lines: [
         [
           {
-            imageURL: "images/sponsors/infineon.png",
-            name: "Infineon",
-            url: "https://infineon.com",
-            width: "100%",
-          },
-          {
             imageURL: "images/sponsors/bayernwerk.png",
             name: "Bayernwerk",
             url: "https://www.bayernwerk-netz.de/de.html",
@@ -79,6 +73,12 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/continental.jpg",
             name: "Continental",
             url: "https://www.continental.com/de",
+            width: "100%",
+          },
+          {
+            imageURL: "images/sponsors/infineon.png",
+            name: "Infineon",
+            url: "https://infineon.com",
             width: "100%",
           },
           {
@@ -95,6 +95,12 @@ export const Sponsors = () => {
       lines: [
         [
           {
+            imageURL: "images/sponsors/bechtle.png",
+            name: "Bechtle AG",
+            url: "https://www.bechtle.com",
+            width: "40%",
+          },
+          {
             imageURL: "images/sponsors/internetx.png",
             name: "InterNetX GmbH",
             url: "https://www.internetx.com",
@@ -104,21 +110,21 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/mr.jpg",
             name: "Maschinenfabrik Reinhausen GmbH",
             url: "https://www.reinhausen.com",
-            width: "35%",
+            width: "40%",
           },
           {
-            imageURL: "images/sponsors/trinnovative.png",
-            name: "trinnovative GmbH",
-            url: "https://www.trinnovative.de",
+            imageURL: "images/sponsors/projekt29.png",
+            name: "Projekt 29 GmbH & Co. KG",
+            url: "https://www.projekt29.de",
             width: "100%",
           },
         ],
         [
           {
-            imageURL: "images/sponsors/zollner.jpg",
-            name: "Zollner Elektronik",
-            url: "https://www.zollner.de",
-            width: "80%",
+            imageURL: "images/sponsors/trinnovative.png",
+            name: "trinnovative GmbH",
+            url: "https://www.trinnovative.de",
+            width: "100%",
           },
           {
             imageURL: "images/sponsors/vector.png",
@@ -127,10 +133,10 @@ export const Sponsors = () => {
             width: "100%",
           },
           {
-            imageURL: "images/sponsors/projekt29.png",
-            name: "Projekt 29 GmbH & Co. KG",
-            url: "https://www.projekt29.de",
-            width: "100%",
+            imageURL: "images/sponsors/zollner.jpg",
+            name: "Zollner Elektronik",
+            url: "https://www.zollner.de",
+            width: "80%",
           },
         ],
       ],
@@ -152,11 +158,13 @@ export const Sponsors = () => {
             width: "60%",
           },
           {
-            imageURL: "images/sponsors/witt.png",
-            name: "Witt Gruppe",
-            url: "https://www.witt-weiden.de",
+            imageURL: "images/sponsors/maganamed.png",
+            name: "Maganamed",
+            url: "https://maganamed.com",
             width: "100%",
           },
+        ],
+        [
           {
             imageURL: "images/sponsors/tng.png",
             name: "TNG",
@@ -164,9 +172,9 @@ export const Sponsors = () => {
             width: "100%",
           },
           {
-            imageURL: "images/sponsors/maganamed.png",
-            name: "Maganamed",
-            url: "https://maganamed.com",
+            imageURL: "images/sponsors/witt.png",
+            name: "Witt Gruppe",
+            url: "https://www.witt-weiden.de",
             width: "100%",
           },
         ],
