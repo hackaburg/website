@@ -98,7 +98,7 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/bechtle.png",
             name: "Bechtle AG",
             url: "https://www.bechtle.com",
-            width: "40%",
+            width: "35%",
           },
           {
             imageURL: "images/sponsors/internetx.png",
@@ -110,13 +110,13 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/mr.jpg",
             name: "Maschinenfabrik Reinhausen GmbH",
             url: "https://www.reinhausen.com",
-            width: "40%",
+            width: "35%",
           },
           {
             imageURL: "images/sponsors/projekt29.png",
             name: "Projekt 29 GmbH & Co. KG",
             url: "https://www.projekt29.de",
-            width: "100%",
+            width: "70%",
           },
         ],
         [
@@ -124,19 +124,19 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/trinnovative.png",
             name: "trinnovative GmbH",
             url: "https://www.trinnovative.de",
-            width: "100%",
+            width: "60%",
           },
           {
             imageURL: "images/sponsors/vector.png",
             name: "Vector IT",
             url: "https://www.vector.com",
-            width: "100%",
+            width: "60%",
           },
           {
             imageURL: "images/sponsors/zollner.jpg",
             name: "Zollner Elektronik",
             url: "https://www.zollner.de",
-            width: "80%",
+            width: "60%",
           },
         ],
       ],
@@ -149,13 +149,13 @@ export const Sponsors = () => {
             imageURL: "images/sponsors/bertrandt.png",
             name: "Bertrandt",
             url: "https://www.bertrandt.com",
-            width: "80%",
+            width: "100%",
           },
           {
             imageURL: "images/sponsors/horsch.png",
             name: "Horsch Maschinen GmbH",
             url: "https://www.horsch.com",
-            width: "60%",
+            width: "100%",
           },
           {
             imageURL: "images/sponsors/maganamed.png",
@@ -163,8 +163,6 @@ export const Sponsors = () => {
             url: "https://maganamed.com",
             width: "100%",
           },
-        ],
-        [
           {
             imageURL: "images/sponsors/tng.png",
             name: "TNG",
