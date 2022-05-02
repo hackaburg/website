@@ -82,7 +82,7 @@ export const Sponsors = () => {
             width: "100%",
           },
           {
-            imageURL: "images/sponsors/wolf.png",
+            imageURL: "images/sponsors/wolf.jpg",
             name: "Wolf",
             url: "https://www.wolf.eu",
             width: "100%",
