@@ -68,6 +68,8 @@ export const Tracks = () => {
               />
             </TrackContainer>
           </Column>
+        </Row>
+        <Row>
           <Column grow={1}>
             <TrackContainer>
               <Track
