@@ -127,7 +127,8 @@ export const Navbar = ({ items }: INavbarProps) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const hideMenu = useCallback(() => setIsMenuVisible(false), []);
   const updateMenuVisibility = useCallback(
-    (event) => setIsMenuVisible(event.target.checked),
+    (event: React.ChangeEvent<HTMLInputElement>) =>
+      setIsMenuVisible(event.target.checked),
     [],
   );
 

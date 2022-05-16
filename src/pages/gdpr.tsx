@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
 import * as React from "react";
+import styled from "@emotion/styled";
 import { Anchors } from "../anchors";
 import { Container } from "../components/container";
 import { Link } from "../components/link";

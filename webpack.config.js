@@ -8,12 +8,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isDevelopmentBuild = process.env.NODE_ENV !== "production";
 
 const templatePath = "./src/templates/pages";
-const templateHtmlPlugins =
-  readdirSync(templatePath)
-    .map((template) => new HtmlWebpackPlugin({
+const templateHtmlPlugins = readdirSync(templatePath).map(
+  (template) =>
+    new HtmlWebpackPlugin({
       template: join(templatePath, template),
       filename: template.replace(/\.pug$/, ".html"),
-    }));
+    }),
+);
 
 module.exports = {
   entry: {
@@ -22,17 +23,12 @@ module.exports = {
   },
   output: {
     path: join(__dirname, "dist"),
-    filename:
-      isDevelopmentBuild
-        ? "[name].[hash].js"
-        : "[name].[contenthash].min.js",
+    filename: isDevelopmentBuild
+      ? "[name].[hash].js"
+      : "[name].[contenthash].min.js",
   },
   resolve: {
-    extensions: [
-      ".ts",
-      ".js",
-      ".less",
-    ],
+    extensions: [".ts", ".js", ".less"],
   },
   plugins: [
     ...templateHtmlPlugins,
@@ -53,10 +49,9 @@ module.exports = {
       disable: isDevelopmentBuild,
     }),
     new MiniCssExtractPlugin({
-      filename:
-        isDevelopmentBuild
-          ? "[name].[hash].css"
-          : "[name].[contenthash].min.css",
+      filename: isDevelopmentBuild
+        ? "[name].[hash].css"
+        : "[name].[contenthash].min.css",
     }),
   ],
   module: {
@@ -88,12 +83,8 @@ module.exports = {
           {
             loader: "less-loader",
             options: {
-              paths: [
-                join(__dirname, "./src"),
-              ],
-              plugins: [
-                LessGlobPlugin,
-              ],
+              paths: [join(__dirname, "./src")],
+              plugins: [LessGlobPlugin],
             },
           },
         ],

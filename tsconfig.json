@@ -6,7 +6,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "target": "ES2017"
+    "skipLibCheck": true,
+    "target": "ES2017",
+    "types": ["@emotion/react/types/css-prop"]
   },
   "include": [
       "./src/**/*"
