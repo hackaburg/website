@@ -9,8 +9,6 @@ import { Column } from "./grid/column";
 import { Row } from "./grid/row";
 import { Header } from "./header";
 import { Link } from "./link";
-import { MapContainer, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const VenueContainer = styled.div`
   margin: 10rem 0;
@@ -28,7 +26,8 @@ const Address = styled.div`
   }
 `;
 
-const Map = styled(MapContainer)`
+const Map = styled.iframe`
+  width: 100%;
   height: 25rem;
   border-radius: 5px;
 `;
@@ -61,12 +60,10 @@ export const Venue = () => {
           </Address>
 
           <Column grow={1}>
-            <Map center={[49.00225, 12.10015]} zoom={17} scrollWheelZoom={true}>
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-            </Map>
+            <Map
+              scrolling="no"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=12.093780040740969%2C48.99895101491149%2C12.106568813323976%2C49.005672708905124&amp;layer=mapnik&amp;marker=49.00231197530939%2C12.10017442703247"
+            ></Map>
           </Column>
         </Row>
       </VenueContainer>
