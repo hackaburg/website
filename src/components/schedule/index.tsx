@@ -111,12 +111,21 @@ export const Schedule = () => {
               food
             />
 
-            <Spacer hours={2} minutes={0} />
+            <Spacer hours={0} minutes={0} />
+            <Event
+              hours={1}
+              minutes={0}
+              time="14:00 - 15:00"
+              title="How do you want to work? Waterfall vs Agile by Wolf & TeamWille"
+              special
+            />
+
+            <Spacer hours={1} minutes={0} />
             <Event
               hours={1}
               minutes={0}
               time="16:00 - 17:00"
-              title="Superschnelles Multiplatform-Protoyping mit ReactJS by Bayernwerk"
+              title="Ultra-fast multiplatform-protoyping with ReactJS by Bayernwerk"
               special
             />
 
