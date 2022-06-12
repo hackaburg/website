@@ -21,27 +21,27 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v3.0.0
       with:
         cmd: install
 
     - name: Check code formatting
-      uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v3.0.0
       with:
         cmd: prettier --check
 
     - name: Check code linting
-      uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v3.0.0
       with:
         cmd: lint
 
     - name: Check typing
-      uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v3.0.0
       with:
         cmd: typecheck
 
     - name: Check typing
-      uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v3.0.0
       with:
         cmd: test
 
