@@ -167,7 +167,29 @@ export const Schedule = () => {
               food
             />
 
-            <Spacer hours={1} minutes={30} />
+            <Row>
+              <Column grow={1}>
+                <Event
+                  hours={1}
+                  minutes={0}
+                  time="10:00 - 11:00"
+                  title="Automate Infrastructure with Code by Bechtle"
+                  special
+                />
+              </Column>
+              <Column grow={1}>
+                <Event
+                  hours={1}
+                  minutes={0}
+                  time="10:00 - 11:00"
+                  title="How to develop software quickly by Trinnovative"
+                  special
+                />
+              </Column>
+            </Row>
+
+            <Spacer hours={0} minutes={30} />
+
             <Event
               hours={1}
               minutes={30}

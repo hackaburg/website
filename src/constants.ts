@@ -8,7 +8,7 @@ export const starBackgroundColor = "#040b1a";
 export const themeColor = "#040b1a";
 
 export const triangleSize = "6rem";
-export const hourSize = 5.1;
+export const hourSize = 6.75;
 
 export const transitionDuration = "0.2s";
 

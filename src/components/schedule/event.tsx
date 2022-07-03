@@ -79,7 +79,7 @@ const TitleContainer = styled.div`
 `;
 
 const getHeightFromDuration = (hours: number, minutes: number) =>
-  `${((hours + minutes / 60) * hourSize) / 1.655}rem`;
+  `${((hours + minutes / 60) * hourSize) / 1.65}rem`;
 
 interface IEventProps {
   children?: React.ReactNode;

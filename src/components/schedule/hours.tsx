@@ -38,7 +38,7 @@ const HourLineContainer = styled.div`
   }
 
   & + & {
-    margin-top: ${hourSize}rem;
+    margin-top: ${hourSize * 1.05}rem;
   }
 `;
 

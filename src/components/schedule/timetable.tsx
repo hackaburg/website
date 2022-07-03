@@ -7,7 +7,7 @@ import { HourLine, Hours } from "./hours";
 
 const TimetableContainer = styled.div`
   position: relative;
-  height: 45rem;
+  height: 60rem;
 
   @media screen and (max-width: ${breakpointMobile}) {
     height: auto;
