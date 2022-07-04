@@ -125,7 +125,7 @@ export const Schedule = () => {
               hours={1}
               minutes={0}
               time="16:00 - 17:00"
-              title="Ultra-fast multiplatform-protoyping with ReactJS by Bayernwerk"
+              title="Ultra-fast multiplatform-protoyping with Flutter by Bayernwerk"
               special
             />
 
