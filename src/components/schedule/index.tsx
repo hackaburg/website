@@ -182,7 +182,7 @@ export const Schedule = () => {
                   hours={1}
                   minutes={0}
                   time="10:00 - 11:00"
-                  title="How to develop software quickly by Trinnovative"
+                  title="How to build a QR-Rally by Trinnovative"
                   special
                 />
               </Column>
