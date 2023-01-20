@@ -9,7 +9,7 @@
 </script>
 
 <nav
-	class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+	class="bg-black px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
 >
 	<div class="container flex flex-wrap items-center justify-between mx-auto">
 		<NavLogo />
@@ -35,7 +35,7 @@
 		</div>
 		<div class={menuOpen ? ' menu hidden' : 'menu'}>
 			<ul
-				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
+				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 text-white md:bg-black dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
 			>
 				<li class="mt-2 hover:text-navHighlight-900">
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>

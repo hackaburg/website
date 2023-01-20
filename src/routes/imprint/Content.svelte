@@ -3,7 +3,7 @@
 </script>
 
 <BaseComponent headline={'Imprint'} subHeadline={'How can you reach us?'} id={'imprint'}>
-	<section>
+	<section class="text-white">
 		<h2 class="mb-2">Angaben gemäß § 5 TMG</h2>
 		<p class="mb-8">
 			ratisbona coding e.V.<br />
@@ -14,8 +14,8 @@
 		<p class="mb-8">
 			<strong>Vertreten durch:</strong><br />
 			<span>Markus Guder (1. Vorsitzender)</span> <br />
-			<span>Sumia Dühlmeyer (2. Vorsitzende)</span><br />
-			<span>Ewald Reinhardt (Kassier)</span><br />
+			<span>Ewald Reinhardt (2. Vorsitzende)</span><br />
+			<span>Samuel Roben (Kassier)</span><br />
 			<span>Bastian Meißner (Beisitzer)</span><br />
 		</p>
 

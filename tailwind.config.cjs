@@ -4,17 +4,13 @@ module.exports = {
 		'./src/**/*.{html,js,svelte,ts}',
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
-	theme: {
-		colors: {
-			hackaburg: {
-				100: '#82bd53',
-				900: '#82bd53'
-			},
-			navHighlight: {
-				900: '#686868'
-			}
-		}
-	},
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#3fb28f",
+      },
+    },
+  },
 	plugins: [require('flowbite/plugin')],
 	darkMode: 'class'
 };
