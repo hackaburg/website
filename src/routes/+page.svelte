@@ -1,59 +1,34 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Nav from './components/Nav.svelte';
+	import '../app.css';
+	import 'flowbite/dist/flowbite.css';
+	import Hero from './landing/Hero.svelte';
+	import About from './landing/About.svelte';
+	import Ziele from './landing/Ziele.svelte';
+	import Footer from './components/Footer.svelte';
+	import Projekte from './landing/Projekte.svelte';
+	import Mitglied from './landing/Mitglied.svelte';
+	import Termine from './landing/Termine.svelte';
+	import KontaktOldSchool from './landing/KontaktOldSchool.svelte';
+	export const prerender = true;
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<Nav />
+<div class="container mx-auto">
+	<Hero />
+	<About />
+	<Ziele />
+	<Projekte />
+	<Mitglied />
+	<Termine />
+	<KontaktOldSchool />
+</div>
+<Footer />
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	@media (min-width: 1536px) {
+		.container {
+			max-width: 1336px;
+		}
 	}
 </style>
