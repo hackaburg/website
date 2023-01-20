@@ -2,10 +2,10 @@ FROM node:lts AS build
 
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN yarn install
+RUN npm install
 
 COPY . ./
-RUN yarn build
+RUN npm build
 
 FROM ratisbonacoding/nginx-cloudflare-cache
 COPY --from=build /app/dist /usr/share/nginx/html
