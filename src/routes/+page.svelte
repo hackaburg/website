@@ -4,12 +4,15 @@
 	import 'flowbite/dist/flowbite.css';
 	import Hero from './landing/Hero.svelte';
 	import About from './landing/About.svelte';
-	import Ziele from './landing/Ziele.svelte';
 	import Footer from './components/Footer.svelte';
-	import Projekte from './landing/Projekte.svelte';
-	import Mitglied from './landing/Mitglied.svelte';
-	import Termine from './landing/Termine.svelte';
-	import KontaktOldSchool from './landing/KontaktOldSchool.svelte';
+	import Green from './landing/Green.svelte';
+	import Behind from './landing/Behind.svelte';
+	import Tracks from './landing/Tracks.svelte';
+	import Supporters from './landing/Supporters.svelte';
+	import Hb22 from './landing/Hb22.svelte';
+	import Schedule from './landing/Schedule.svelte';
+	import Venue from './landing/Venue.svelte';
+	import Faq from './landing/FAQ.svelte';
 	export const prerender = true;
 </script>
 
@@ -17,11 +20,14 @@
 <div class="container mx-auto">
 	<Hero />
 	<About />
-	<Ziele />
-	<Projekte />
-	<Mitglied />
-	<Termine />
-	<KontaktOldSchool />
+	<Green />
+	<Tracks />
+	<Behind />
+	<Supporters />
+	<Hb22 />
+	<Schedule />
+	<Venue />
+	<Faq />
 </div>
 <Footer />
 
