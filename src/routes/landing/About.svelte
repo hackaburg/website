@@ -4,13 +4,9 @@
 
 <BaseComponent headline={'About'} subHeadline={'What is Hackaburg?'} id={'about'}>
 	<div class="w-full md:w-1/2">
-		<p class="text-black">
-			Wir sind der ratisbona-coding e.V., ein <strong>gemeinnütziger</strong> Verein aus Regensburg.
-			Wir haben uns <strong>2018</strong> aus dem studentischen Organisationsteam des
-			<strong>Hackaburg Hackathons</strong>
-			gegründet. Wir als junger Verrein organisieren neben der Hackaburg noch weitere
-			<strong>IT-Events</strong>
-			in der <strong>Region Regensburg</strong>.
+		<p class="text-black text-xl text-center">
+			Hackaburg is a unique hackathon experience that brings together more than 120 developers,
+			designers and entrepreneurs from around the world.
 		</p>
 	</div>
 </BaseComponent>
