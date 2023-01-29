@@ -8,12 +8,13 @@
 			<h1
 				class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white mt-8"
 			>
-				Hackaburg 2023
+				HACKABURG Goes
+					<span class="hackaburg">Green</span>
 			</h1>
+
 			<p
 				class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-			>
-				Wir organisieren das ganze Jahr über eine Vielzahl an Tech-Events.
+			>TechBase Regensburg | 25.5 - 27.5.2023
 			</p>
 		</div>
 		<div class="lg:mt-0 lg:col-span-7 lg:flex mx-auto p-8">
