@@ -10,8 +10,8 @@
 					<img src={logo} class="mr-3 h-8 invert" alt="ratisbona coding e.V. Logo" />
 				</a>
 				<p class="max-w-xs mt-4 text-sm text-white">
-					Schön, dass ihr auf unserer Website vorbeigeschaut habt. Mehr über uns findet ihr auf
-					unseren Social-Media Kanälen.
+					Nice of you to stop by our website. You can find more about us on our social media
+					channels.
 				</p>
 
 				<p class="w-1/2 text-sm mt-8 font-normal text-white">Made with 💚 in Regensburg</p>
@@ -88,10 +88,10 @@
 					<h2 class="mb-6 ml-12 text-md font-bold text-white uppercase dark:text-white">Verein</h2>
 					<ul class="ml-12 text-white dark:text-gray-400">
 						<li class="mb-4">
-							<a href="/datenschutz" class="hover:underline">Datenschutz</a>
+							<a href="/dataprotection" class="hover:underline">Data Protection</a>
 						</li>
 						<li class="mb-4">
-							<a href="/impressum" class="hover:underline">Impressum</a>
+							<a href="/imprint" class="hover:underline">Imprint</a>
 						</li>
 					</ul>
 				</div>

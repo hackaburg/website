@@ -2,9 +2,9 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
-<BaseComponent headline={'Datenschutz'} id={'datenschutz'}>
+<BaseComponent headline={'Datenschutz'} subHeadline={'No Cookies?!'} id={'datenschutz'}>
 	<section class="text-center h-60">
-		Nanu, so wenig Text? Nun, das liegt daran, dass wir keine personenbezogenen Daten sammeln. So
-		einfach.
+		Eeeh what, so little text? Well, that's because we don't collect any personal data. It's that
+		simple.
 	</section>
 </BaseComponent>
