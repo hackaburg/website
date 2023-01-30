@@ -2,7 +2,7 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
-<BaseComponent headline={'Impressum'} id={'impressum'}>
+<BaseComponent headline={'Imprint'} subHeadline={'How can you reach us?'} id={'imprint'}>
 	<section>
 		<h2 class="mb-2">Angaben gemäß § 5 TMG</h2>
 		<p class="mb-8">
