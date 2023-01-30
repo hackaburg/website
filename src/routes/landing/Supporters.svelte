@@ -4,12 +4,12 @@
 	let images = {
 		partners: [
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: 'https://via.placeholder.com/600x300',
 				alt: 'your-image-description-1',
 				description: 'Image 1 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: 'https://via.placeholder.com/600x300',
 				alt: 'your-image-description-2',
 				description: 'Image 2 description'
 			}
@@ -89,7 +89,7 @@
 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem recusandae minima temporibus
 			id autem vel culpa magni?
 		</p>
-		<div class="grid mb-8 row">
+		<div class="mb-8 row">
 			{#each images.partners as partner}
 				<div class="img-split">
 					<img src={partner.src} alt={partner.alt} />
@@ -144,6 +144,7 @@
 	.img-split {
 		width: calc(50% - 20px);
 		margin: 10px;
+		margin: auto;
 	}
 
 	.img-normal {
