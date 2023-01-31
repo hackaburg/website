@@ -4,9 +4,9 @@
 </script>
 
 <BaseComponent headline={'Hackaburg 2022'} subHeadline={'What happened last time?'} id={'green'} />
-<div class="diagonal-box p-4 md:p-0">
+<div class="diagonal-box p-4 md:p-0 hb22">
 	<video class="hidden md:block" preload="none" autoplay loop muted src={videoUrl} />
-	<div class="info-box text-white p-4 mt-5  md:top-1/3 md:left-1/4 md:p-8 md:max-w-xl">
+	<div class="info-box text-white p-4 mt-5 md:top-1/3 md:left-1/4 md:p-8 md:max-w-xl">
 		<h2 class="text-4xl">HACKABURG 2022</h2>
 		<h3 class="text-2xl">What happened last time?</h3>
 		<p class="mt-4">
@@ -29,7 +29,6 @@
 <style scoped>
 	.diagonal-box {
 		transform: skewY(5deg);
-		height: 50rem;
 		overflow: hidden;
 		margin: 0 auto;
 		display: block;
@@ -41,5 +40,16 @@
 		background-color: rgba(0, 0, 0, 0.75);
 		border-radius: 5px;
 		backdrop-filter: blur(10px);
+	}
+
+	.hb22 {
+		height: 50rem;
+	}
+
+	@media only screen and (max-width: 600px) {
+		/* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+		.hb22 {
+			height: 25rem;
+		}
 	}
 </style>
