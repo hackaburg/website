@@ -1,5 +1,4 @@
 <script>
-	import timeline from '$lib/images/timeline.svg';
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
