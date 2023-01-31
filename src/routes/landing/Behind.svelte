@@ -1,11 +1,17 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
+	import team from '$lib/images/team.png';
 </script>
 
-<BaseComponent headline={'Behind Hackaburg'} subHeadline={'Ratisbona Coding e.V.'} id={'green'}>
+<BaseComponent
+	headline={'Behind Hackaburg'}
+	subHeadline={'Ratisbona Coding e.V.'}
+	id={'ratisbona-coding'}
+>
 	<div class="w-full md:w-1/2 flex flex-wrap">
 		<div class="w-1/2 p-4">
-			<img src="https://via.placeholder.com/150" alt="your-image-description" class="w-full" />
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src={team} alt="your-image-description" class="w-2/3 mx-auto" />
 		</div>
 		<div class="w-1/2 p-4 text-center">
 			<p class="text-base mb-8 text-left">

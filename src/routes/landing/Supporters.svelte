@@ -1,51 +1,63 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
 
+	import bechtle from '$lib/images/supporters/bechtle.svg';
+	import continental from '$lib/images/supporters/continental.svg';
+	import energieAgentur from '$lib/images/supporters/energieAgentur.svg';
+	import krones from '$lib/images/supporters/krones.svg';
+	import tcon from '$lib/images/supporters/tcon.svg';
+	import tng from '$lib/images/supporters/tng.svg';
+	import trinnovative from '$lib/images/supporters/trinnovative.svg';
+	import vitesco from '$lib/images/supporters/vitesco.svg';
+	import zollner from '$lib/images/supporters/zollner.svg';
+	import dgo from '$lib/images/supporters/dgo.svg';
+	import rNext from '$lib/images/supporters/rNext.png';
+
 	let images = {
 		partners: [
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: rNext,
 				alt: 'your-image-description-1',
 				description: 'Image 1 description'
 			},
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: dgo,
 				alt: 'your-image-description-2',
 				description: 'Image 2 description'
 			}
 		],
 		starter: [
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: energieAgentur,
 				alt: 'your-image-description-1',
 				description: 'Image 1 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: tng,
 				alt: 'your-image-description-2',
 				description: 'Image 2 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: trinnovative,
 				alt: 'your-image-description-3',
 				description: 'Image 3 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: krones,
 				alt: 'your-image-description-4',
 				description: 'Image 4 description'
 			}
 		],
 		medium: [
 			{
-				src: 'https://via.placeholder.com/400x200',
-				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				src: bechtle,
+				alt: 'Bechtle',
+				description: 'Bechtle'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
-				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				src: tcon,
+				alt: 'tcon',
+				description: 'Tcon'
 			},
 			{
 				src: 'https://via.placeholder.com/400x200',
@@ -60,17 +72,17 @@
 		],
 		premium: [
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: continental,
 				alt: 'your-image-description-1',
 				description: 'Image 1 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: zollner,
 				alt: 'your-image-description-2',
 				description: 'Image 2 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: vitesco,
 				alt: 'your-image-description-3',
 				description: 'Image 3 description'
 			}
@@ -105,21 +117,21 @@
 
 		<div class="row">
 			{#each images.premium as image}
-				<div class="image img-normal">
+				<div class="image img-normal p-4">
 					<img src={image.src} alt={image.alt} />
 				</div>
 			{/each}
 		</div>
 		<div class="row">
 			{#each images.medium as image}
-				<div class="image img-small">
+				<div class="image img-small p-16 pt-0">
 					<img src={image.src} alt={image.alt} />
 				</div>
 			{/each}
 		</div>
 		<div class="row">
 			{#each images.starter as image}
-				<div class="image img-smaller">
+				<div class="image img-smaller p-5 pt-0">
 					<img src={image.src} alt={image.alt} />
 				</div>
 			{/each}

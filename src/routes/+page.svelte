@@ -24,7 +24,11 @@
 	<Tracks />
 	<Behind />
 	<Supporters />
-	<Hb22 />
+</div>
+
+<Hb22 />
+
+<div class="container mx-auto">
 	<Schedule />
 	<Venue />
 	<Faq />
