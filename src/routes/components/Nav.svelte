@@ -1,6 +1,4 @@
 <script>
-	import logo from '$lib/images/rb_logo.svg';
-
 	let menuOpen = true;
 
 	function toggle() {
@@ -12,9 +10,10 @@
 	class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
 >
 	<div class="container flex flex-wrap items-center justify-between mx-auto">
-		<a href="https://ratisbona-coding.org" class="flex items-center">
-			<img src={logo} class="h-6 mr-3 sm:h-9" alt="Ratisbona Logo" />
-		</a>
+		<h1 class="text-xl font-extrabold tracking-tight dark:text-white">
+			HACKA
+			<span class="-ml-1 hackaburg">BURG</span>
+		</h1>
 		<div>
 			<button
 				data-collapse-toggle="navbar-sticky"
@@ -42,22 +41,31 @@
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>
 				</li>
 				<li>
-					<a href="/#about" class="nav-element-base">Über uns</a>
+					<a href="/#about" class="nav-element-base">About</a>
 				</li>
 				<li>
-					<a href="/#ziele" class="nav-element-base">Unsere Ziele</a>
+					<a href="/#green" class="nav-element-base hackaburg">Green</a>
 				</li>
 				<li>
-					<a href="/#projekte" class="nav-element-base">Projekte</a>
+					<a href="/#tracks" class="nav-element-base">Tracks</a>
 				</li>
 				<li>
-					<a href="/#mitglied-werden" class="nav-element-base">Mitglied werden</a>
+					<a href="/#ratisbona-coding" class="nav-element-base">Behind Hackaburg</a>
 				</li>
 				<li>
-					<a href="/#termine" class="nav-element-base">Termine</a>
+					<a href="/#supporters" class="nav-element-base">Supporters</a>
 				</li>
 				<li>
-					<a href="/#kontakt" class="nav-element-base">Kontakt</a>
+					<a href="/#hackaburg22" class="nav-element-base">Hackaburg 2022</a>
+				</li>
+				<li>
+					<a href="/#schedule" class="nav-element-base">Schedule</a>
+				</li>
+				<li>
+					<a href="/#venue" class="nav-element-base">Venue</a>
+				</li>
+				<li>
+					<a href="/#kontakt" class="nav-element-base">FAQ</a>
 				</li>
 			</ul>
 		</div>

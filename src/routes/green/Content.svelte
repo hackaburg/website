@@ -2,7 +2,7 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
-<BaseComponent headline={'Satzung'}>
+<BaseComponent headline={'Green - Hackaburg`s Sustainability Concept'}>
 	<section class="text-center h-60">
 		<span>Hier findest du unsere Satzung.</span>
 		<br />
