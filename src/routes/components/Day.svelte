@@ -12,103 +12,68 @@
 				<!-- Horizontal lines -->
 				<div
 					class="col-start-1 col-end-2 row-start-1 grid divide-y divide-gray-100"
-					style="grid-template-rows:  repeat(31, minmax(1rem, 1fr))"
+					style="grid-template-rows:  repeat(18, minmax(3.5rem, 1fr))"
 				>
 					<div class="row-end-1 h-7" />
 
 					<div>
 						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							8AM
+							8:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							10:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							12:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							14:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							16:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							18:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							20:00
+						</div>
+					</div>
+					<div />
+
+					<div>
+						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
+							22:00
 						</div>
 					</div>
 					<div />
 					<div>
 						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							9AM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							10AM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							11AM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							12PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							1PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							2PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							3PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							4PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							5PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							6PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							7PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							8PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							9PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							10PM
-						</div>
-					</div>
-					<div />
-					<div>
-						<div class="-mt-2.5 -ml-14 w-14 pr-2 text-right text-xs leading-5 text-gray-400">
-							11PM
+							24:00
 						</div>
 					</div>
 					<div />
