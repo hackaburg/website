@@ -93,7 +93,7 @@
 <BaseComponent
 	headline={'Supporters'}
 	subHeadline={'Without them, Hackaburg would not be possible'}
-	id={'green'}
+	id={'supporters'}
 >
 	<div class="w-full md:w-1/2">
 		<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR PARTNERS</h2>

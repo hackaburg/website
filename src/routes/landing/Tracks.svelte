@@ -5,38 +5,38 @@
 		images: [
 			{
 				src: 'https://via.placeholder.com/600x300',
-				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				alt: 'Sustainable Mobility',
+				description: 'Sustainable Mobility'
 			},
 			{
 				src: 'https://via.placeholder.com/600x300',
-				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				alt: 'Think global, hack local ',
+				description: 'Think global, hack local '
 			},
 			{
 				src: 'https://via.placeholder.com/600x300',
-				alt: 'your-image-description-3',
-				description: 'Image 3 description'
+				alt: 'Reduce the Footprint',
+				description: 'Reduce the Footprint'
 			},
 			{
 				src: 'https://via.placeholder.com/600x300',
-				alt: 'your-image-description-4',
-				description: 'Image 4 description'
+				alt: 'Social',
+				description: 'Social'
 			},
 			{
 				src: 'https://via.placeholder.com/700x300',
-				alt: 'your-image-description-5',
-				description: 'Image 5 description'
+				alt: 'Free Track',
+				description: 'Free Track'
 			}
 		]
 	};
 </script>
 
-<BaseComponent headline={'Tracks'} subHeadline={'How you can change the future'} id={'green'}>
+<BaseComponent headline={'Tracks'} subHeadline={'How you can change the future'} id={'tracks'}>
 	<div class="w-full md:w-1/2 flex flex-wrap flex-col items-center">
 		<p class="text-black text-left">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, consectetur. Voluptatibus,
-			dolore, error nulla quaerat lib.
+			The new tracks introduced this year offer you the possibility to challenge in the category of
+			interest.
 		</p>
 		<div class="grid">
 			{#each data.images as image, i}
@@ -45,7 +45,9 @@
 						? 'grid-item-full'
 						: ''}"
 				>
-					<img src={image.src} alt={image.alt} />
+					<a href="/tracks">
+						<img src={image.src} alt={image.alt} />
+					</a>
 					<p class="text-center">{image.description}</p>
 				</div>
 			{/each}

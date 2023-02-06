@@ -65,7 +65,7 @@
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>
 				<li>
-					<a href="/#kontakt" class="nav-element-base">FAQ</a>
+					<a href="/#faq" class="nav-element-base">FAQ</a>
 				</li>
 			</ul>
 		</div>

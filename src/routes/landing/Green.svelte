@@ -19,7 +19,7 @@
 			</p>
 			<a
 				href="/green"
-				class="text-md border-2 hackaburg border rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-gray-200 w-full"
+				class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
 				>Learn more about our concept</a
 			>
 		</div>

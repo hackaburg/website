@@ -3,7 +3,11 @@
 	import videoUrl from '$lib/images/hb22.mp4';
 </script>
 
-<BaseComponent headline={'Hackaburg 2022'} subHeadline={'What happened last time?'} id={'green'} />
+<BaseComponent
+	headline={'Hackaburg 2022'}
+	subHeadline={'What happened last time?'}
+	id={'hackaburg22'}
+/>
 <div class="diagonal-box p-4 md:p-0 hb22">
 	<video class="hidden md:block" preload="none" autoplay loop muted src={videoUrl} />
 	<div class="info-box text-white p-4 mt-5 md:top-1/3 md:left-1/4 md:p-8 md:max-w-xl">

@@ -2,7 +2,7 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
-<BaseComponent headline={'Venue'} subHeadline={'How to get there?'} id={'green'}>
+<BaseComponent headline={'Venue'} subHeadline={'How to get there?'} id={'venue'}>
 	<div class="w-full md:w-1/2 flex flex-wrap venue">
 		<div class="w-1/2 p-8">
 			<div class="address lg:pl-24">
