@@ -4,7 +4,7 @@
 	import Event from '../components/Event.svelte';
 </script>
 
-<BaseComponent headline={'Schedule'} subHeadline={'When and what?'} id={'green'}>
+<BaseComponent headline={'Schedule'} subHeadline={'When and what?'} id={'schedule'}>
 	<div class="grid grid-cols-1 md:grid-cols-3">
 		<Day headline={'Do. 25.6.2023'}>
 			<Event headline="Breakfast" duration={60} start={[11, 0]} color="hackaburg" />

@@ -19,6 +19,12 @@
 				2018 from the student organization team of the Hackaburg Hackathon. As a young association,
 				we organize other IT events in the Regensburg region in addition to the Hackaburg.
 			</p>
+			<a
+				href="https://ratisbona-coding.org/"
+				target="_blank"
+				class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
+				>About Ratisbona Coding e.V.</a
+			>
 		</div>
 	</div>
 </BaseComponent>

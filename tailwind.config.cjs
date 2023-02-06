@@ -5,7 +5,12 @@ module.exports = {
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
 	theme: {
-		extend: {}
+		colors: {
+			hackaburg: {
+				100: '#82bd53',
+				900: '#82bd53'
+			}
+		}
 	},
 	plugins: [require('flowbite/plugin')],
 	darkMode: 'class'

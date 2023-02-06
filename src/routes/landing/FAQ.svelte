@@ -2,7 +2,7 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 </script>
 
-<BaseComponent headline={'FAQ'} subHeadline={'Questions and answers'} id={'green'}>
+<BaseComponent headline={'FAQ'} subHeadline={'Questions and answers'} id={'faq'}>
 	<div class="w-full md:w-1/2 flex flex-wrap">
 		<div class="w-1/2 p-4 text-left">
 			<p class="question">What exactly is a hackathon?</p>
