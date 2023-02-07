@@ -10,7 +10,9 @@
 			<Event headline="Breakfast" duration={60} start={[11, 0]} color="hackaburg" />
 			<Event headline="Breakfast" duration={60} start={[12, 0]} color="hackaburg" />
 		</Day>
-		<Day headline={'Fr. 25.6.2023'} />
+		<Day headline={'Fr. 25.6.2023'}>
+			<Event headline="Breakfast" duration={120} start={[15, 0]} color="hackaburg" />
+		</Day>
 		<Day headline={'Sa. 25.6.2023'} />
 	</div>
 </BaseComponent>
