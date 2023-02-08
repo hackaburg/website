@@ -1,32 +1,43 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
 
+	import track_ai from '$lib/images/track_ai.jpeg';
+	import track_free from '$lib/images/track_free.jpeg';
+	import track_local from '$lib/images/track_local.jpeg';
+	import track_mobility from '$lib/images/track_mobility.jpeg';
+	import track_social from '$lib/images/track_social.jpeg';
+
 	let data = {
 		images: [
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: track_mobility,
 				alt: 'Sustainable Mobility',
-				description: 'Sustainable Mobility'
+				description:
+					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
 			},
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: track_local,
 				alt: 'Think global, hack local ',
-				description: 'Think global, hack local '
+				description:
+					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
 			},
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: track_ai,
 				alt: 'Reduce the Footprint',
-				description: 'Reduce the Footprint'
+				description:
+					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
 			},
 			{
-				src: 'https://via.placeholder.com/600x300',
+				src: track_social,
 				alt: 'Social',
-				description: 'Social'
+				description:
+					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
 			},
 			{
-				src: 'https://via.placeholder.com/700x300',
+				src: track_free,
 				alt: 'Free Track',
-				description: 'Free Track'
+				description:
+					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
 			}
 		]
 	};
@@ -38,17 +49,28 @@
 			The new tracks introduced this year offer you the possibility to challenge in the category of
 			interest.
 		</p>
-		<div class="grid">
+		<div class="grid mt-12">
 			{#each data.images as image, i}
 				<div
 					class=" grid-item {i === data.images.length - 1 && data.images.length % 2 !== 0
-						? 'grid-item-full'
-						: ''}"
+						? 'grid-item-full relative'
+						: 'relative'}"
 				>
+					<img class="w-full h-64 object-cover" src={image.src} loading="lazy" alt={''} />
 					<a href="/tracks">
-						<img src={image.src} alt={image.alt} />
+						<div
+							class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+							style="background-color: rgba(251, 251, 251, 0.2)"
+						/>
 					</a>
-					<p class="text-center">{image.description}</p>
+					<div
+						class="absolute text-3xl text-white top-36 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-hackaburg-900 p-4  bg-opacity-50 "
+					>
+						{image.alt}
+					</div>
+					<div class="flex-1 p-6">
+						<div class="">{image.description}</div>
+					</div>
 				</div>
 			{/each}
 		</div>
