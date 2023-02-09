@@ -11,10 +11,10 @@
 		</div>
 		<div class="w-1/2 p-4 text-center">
 			<p class="text-base mb-8 text-left">
-				"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa
-				maiores aliquid consectetur voluptatibus doloremque placeat, ut nulla, id aperiam rem enim
-				vel quam sequi. Tempora, neque! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Nam magnam aliquid pariatur dolore velit fugit voluptas et eius! Accusantium expedita nobis,
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores
+				aliquid consectetur voluptatibus doloremque placeat, ut nulla, id aperiam rem enim vel quam
+				sequi. Tempora, neque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam magnam
+				aliquid pariatur dolore velit fugit voluptas et eius! Accusantium expedita nobis,
 				perspiciatis nihil eum eveniet velit tempora atque necessitatibus voluptatum?
 			</p>
 			<a
