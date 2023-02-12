@@ -29,7 +29,7 @@
 <Hb22 />
 
 <div class="container mx-auto">
-	<Schedule />
+	<!--Schedule /-->
 	<Venue />
 	<Faq />
 </div>
