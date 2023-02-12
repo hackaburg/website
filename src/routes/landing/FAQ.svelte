@@ -60,10 +60,13 @@
 				the reimbursement can be up to:
 			</p>
 			<ul class="list-disc pl-8 mb-4">
-				<li>Bavaria (outside of the Oberpfalz region): 25€</li>
-				<li>Germany: 40€</li>
-				<li>Rest of Europe (SEPA area): 75€</li>
+				<li>Bavaria (outside of the Oberpfalz region): 32€</li>
+				<li>Germany: 50€</li>
+				<li>Rest of Europe (SEPA area): 90€</li>
+				<br />
 			</ul>
+			<b>* We only support transport by train and carpools of 2 people minimum</b>
+			<br /><br />
 			<p class="answer">
 				Important note: We can only transfer money in the SEPA area! Thus, be ready to provide your
 				travel receipts and bank address.

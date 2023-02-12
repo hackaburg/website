@@ -112,6 +112,7 @@
 <BaseComponent
 	headline={'Green - Hackaburg`s Sustainability Concept'}
 	subHeadline="Find all details how we try reduce Hackaburg's foodprint"
+	id=""
 >
 	<div class="w-full md:w-1/2 flex flex-wrap">
 		<div class="p-4 mx-auto">
