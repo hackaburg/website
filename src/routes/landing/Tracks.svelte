@@ -13,31 +13,31 @@
 				src: track_mobility,
 				alt: 'Sustainable Mobility',
 				description:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
+					'Mobility is not an end in itself but rather a means, allowing people to access what they need: jobs, social interaction, education, and a full range of other services. But we need more sustainable and more intelligent ways to move.'
 			},
 			{
 				src: track_local,
 				alt: 'Think global, hack local ',
 				description:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
+					'We cant all save the world all the time, but each of us can change or improve something about the place where we live.'
 			},
 			{
 				src: track_ai,
 				alt: 'Reduce the Footprint',
 				description:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
+					'Artificial intelligence is no longer just a topic for the future, but already has real applications. How can we use the possibilities of this technology profitably for all of us?'
 			},
 			{
 				src: track_social,
 				alt: 'Social',
 				description:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
+					'In times when one crisis follows the next (Climate, War in Ukraine, Covid-19), perhaps the best idea is not the one that yields the most profit, but the one that most or most easily helps others.'
 			},
 			{
 				src: track_free,
 				alt: 'Free Track',
 				description:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores aliquid consectetur voluptatibus doloremque placeat'
+					'You have an idea that doesn`t fit into one of the tracks above? No restrictions are set here, feel free to build what ever you want!'
 			}
 		]
 	};

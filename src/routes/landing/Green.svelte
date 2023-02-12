@@ -10,12 +10,13 @@
 			<img src={green} alt="your-image-description" class="w-full" />
 		</div>
 		<div class="w-1/2 p-4 text-center">
-			<p class="text-base mb-8 text-left">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed eos vero ipsa maiores
-				aliquid consectetur voluptatibus doloremque placeat, ut nulla, id aperiam rem enim vel quam
-				sequi. Tempora, neque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam magnam
-				aliquid pariatur dolore velit fugit voluptas et eius! Accusantium expedita nobis,
-				perspiciatis nihil eum eveniet velit tempora atque necessitatibus voluptatum?
+			<p class="text-base mb-8 text-left mt-12">
+				The topics of climate protection, environmental protection and the creation of a fairer
+				world move many of us personally as organizers. We know that we can not change the world
+				with Hackaburg, but we hope to make a contribution and possibly give you food for thought as
+				participants in this great event. Hackaburg 2023, with the motto "Goes Green", should be the
+				starting point for us to communicate as transparently as possible how big our footprint is.
+				With the goal of reducing this footprint at every further event.
 			</p>
 			<a
 				href="/green"
