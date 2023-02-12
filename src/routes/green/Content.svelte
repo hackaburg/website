@@ -9,36 +9,36 @@
 
 	let kpis = [
 		{
-			headline: 'Total Carbon Foodprint (CO2)',
-			number: '10 tons',
+			headline: 'Total Carbon Foodprint (CO2 in kg)',
+			number: '~',
 			info: '',
 			color: '#82bd53',
 			icon: co2
 		},
 		{
-			headline: 'Energy Consumption',
-			number: '10.000 Kwh',
+			headline: 'Energy Consumption (kWh)',
+			number: '~',
 			info: '',
 			color: '#82bd53',
 			icon: energy
 		},
 		{
-			headline: 'Water Foodprint',
-			number: '10 m3',
+			headline: 'Water Foodprint (m3)',
+			number: '~',
 			info: '',
 			color: '#82bd53',
 			icon: water
 		},
 		{
-			headline: 'Waste',
-			number: '10 kg',
+			headline: 'Waste (kg)',
+			number: '~',
 			info: '',
 			color: '#82bd53',
 			icon: trash
 		},
 		{
 			headline: 'Gender Split (men / women / diverse)',
-			number: '70% / 20% / 10% ',
+			number: '~',
 			info: '',
 			color: '#82bd53',
 			icon: gender
@@ -120,23 +120,31 @@
 		</div>
 		<div class="w-1/2 p-4 text-center mt-16">
 			<p class="text-base mb-8 text-left">
-				The concept includes the content design of the hackathon. On the one hand, special attention
-				should be paid to the design of the tracks and challenges. And on the other hand, on the
+				Our concept includes the content design of the hackathon. On the one hand, special attention
+				is paid to the design of the tracks and challenges. And on the other hand, on the
 				implementation of the motto "Hackaburg Goes Green" and the associated sustainability, which
-				should not just be a phrase. Also, the understanding of sustainability and "green" must be
-				defined more precisely in order not to be confronted with the accusation of "greenwashing".
-				Below is a list of topics that are to be understood under the point Hackaburg Goes Green.
+				should not just be a phrase. Below you find the main indicators, with them we try to measure
+				how good we reduce our footprint. Further, you find a list of topics that are to be
+				understood under the point Hackaburg Goes Green and a sustainable event.
 			</p>
 		</div>
 	</div>
 
 	<div>
-		<h2 class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg">
+		<h2
+			class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg mt-24"
+			id="kpis"
+		>
 			Sustainablity KPIs
 		</h2>
 		<h2 class="text-xl font-bold text-center text-black-800 mb-8">
 			Our stats how we try to measure how sustainable we are
 		</h2>
+		<p class="w-2/3 text-center m-auto mb-10">
+			We try to be as transparent as possible about how we are trying to address the issue of
+			sustainability. Therefore, as soon as we have the numbers for it, we will fill the tiles below
+			and list you how they are composed in detail.
+		</p>
 
 		<dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
 			{#each kpis as kpi}
@@ -156,7 +164,10 @@
 		</dl>
 	</div>
 
-	<h2 class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg mt-20">
+	<h2
+		class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg mt-20"
+		id="actions"
+	>
 		Fields of acation
 	</h2>
 	<h2 class="text-xl font-bold text-center text-black-800 mb-8">
