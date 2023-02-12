@@ -1,11 +1,16 @@
 <script>
-	import back from '$lib/images/back.svg';
+	import ChevronLeft from 'svelte-material-icons/ChevronLeft.svelte';
 
 	let menuOpen = true;
 
 	function toggle() {
 		menuOpen = !menuOpen;
 	}
+	export let size = '1.5rem'; // string | number
+	export let width = size; // string | number
+	export let height = size; // string | number
+	export let color = 'currentColor'; // string
+	export let viewBox = '0 0 24 24'; // string
 </script>
 
 <nav
@@ -44,8 +49,9 @@
 						href="/"
 						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2  cursor-pointer hover:bg-hackaburg-900 hover:text-white w-40 flex -mt-2 "
 					>
-						<img src={back} class="w-5 hover:text-white" alt="back" />
-						<p class="ml-8">Go Back</p></a
+						<ChevronLeft {color} {size} {width} {height} {viewBox} />
+
+						<p class="ml-6" style="margin-top: 2px">Go Back</p></a
 					>
 				</li>
 				<li>
