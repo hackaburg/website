@@ -49,62 +49,62 @@
 		{
 			headline: 'Mobility',
 			text: 'The main environmental impact of events is usually caused by participants travel to and from the event. Create incentives for the use of public and / or environmentally friendly means of transport. Public transport plan + travel concepts (formation of groups for car sharing via Discord). When registering for the event, the planned travel time and means will be requested in order to be able to calculate the estimated Co2 costs.',
-			color: 'text-yellow-300'
+			color: '#f8c413'
 		},
 		{
 			headline: 'Venue and accommodation for participants',
 			text: '* Accommodation for participants should be as close as possible to the event location, e.g. in the TechBase directly, youth hostel. Thus, unnecessary travel & footprint can be avoided; <br>* There are bike racks at the Techbase and a bus line directly in front of the door (Bus 6).',
-			color: 'text-blue-900'
+			color: '#184669'
 		},
 		{
 			headline: 'Energy and climate',
 			text: '<b>Techbase as an event venue:</b> <br>* The construction of the TechBase is particularly low in concrete in order to conserve the scarce resource of sand<br> * LEDs and motion detectors are used for lighting in the building<br> * An extensive green roof ensures a pleasant climate inside, purifies the air, stores rainwater and provides a habitat for insects<br> * With the largest ice storage in Bavaria, an innovative concept for heat storage was implemented<br> * A combined heat and power plant provides heat and also reduces external electricity consumption through self-production<br> * The purchased energy sources are 100% green electricity<br> * Two free wall boxes in the underground parking garage<br> * One e-charging point on the building<br> * The "EARL" e-car sharing scheme run by the municipal utility company<br><br> <b>Other important measures:</b> <br>* Heating: not above 20 degrees in all meeting and conference rooms <br> * Temperature reduction at night  <br> * Cooling: no more than 6 degrees below outside temperature <br> * Use of daylight, optimized lighting control, optimized sun protection, energy-efficient lighting <br> * Training of employees on correct, i.e. energy-efficient ventilation<br>',
-			color: '#fffff'
+			color: '#2895d2'
 		},
 		{
 			headline: 'Temporary structures and exhibition stands',
-			text: '* Ensure separate waste collection and disposal <br> * Use reusable, at least recyclable, transport packaging wherever possible to avoid waste (e.g., no plastic dishes or cutlery)<br> * Create a concept for the further use of the individual parts of an exhibition stand and the decoration <br>',
-			color: '#fffff'
+			text: '* Ensure separate waste collection and disposal <br> * Use reusiiable, at least recyclable, transport packaging wherever possible to avoid waste (e.g., no plastic dishes or cutlery)<br> * Create a concept for the further use of the individual parts of an exhibition stand and the decoration <br>',
+			color: '#f49d1e'
 		},
 		{
 			headline: 'Procurement of products and services',
 			text: '* Reduction of paper consumption. through digital invitation and event management, e.g. digital contract creation, digital applicant management, etc.<br> * Badges only with name + and cut + Schedule with QR code<br> * If paper is required, use of recycled paper bearing the "Blue Angel" label or meeting its criteria (for all invitations, meeting documents, print jobs and the like); whiteness of recycled paper: maximum 100 % (incl. UV content) according to DIN ISO 2470 and maximum 135 according to ISO standard 11475 (CIE whiteness) <br> * Use of certified cleaning agents <br>',
-			color: '#fffff'
+			color: '#5db146'
 		},
 		{
 			headline: 'Catering',
 			text: '* Significant share of products from organic farming Promotion of seasonal foods <br> * Vegan and vegetarian catering<br> * Use of Fair Trade products if food from overseas is offered <br> * Avoidance of food waste as well as other waste (see also chapter 3.7 "Waste management")<br> * Provision of piped drinking water in carafes<br> * Use of reusable tableware, e.g. reusable cutlery, glasses and bottles<br> * Paying attention to the offer of quantities of food that meet the needs of the customer <br> * Use of packaging that avoids or reduces waste <br> * Labeling of the dishes at the buffet (avoidance of "mistakes") <br> * Sensitization of serving staff, e.g. serving smaller quantities, targeted replenishment of dishes <br> * Distribution of leftover food to charitable organizations, e.g. to food banks, to the extent permitted by the applicable hygiene regulations<br> * Separate collection of kitchen waste<br> * When choosing a catering service company, ensure compliance with the quality standards of the German Nutrition Society (DGE)<br>',
-			color: '#fffff'
+			color: '#e43526'
 		},
 		{
 			headline: 'Waste management',
 			text: '* Minimize packaging waste, e.g. by using reusable packaging and ordering in bulk if the contents are used up  <br> * Take-back systems and reuse, e.g. for name tags  <br> * Use of recyclable products and packaging made from recycled materials, e.g. recycled cardboard for cardboard packaging <br> * Installation of waste islands for separate waste collection, especially for the fractions paper, organic waste, glass and light packaging, as well as clear labeling (especially at international events) <br> * Information about the separation system to all suppliers and the operating company. Important: Involve cleaning companies <br> * Obligation of suppliers to take back packaging <br>',
-			color: '#fffff'
+			color: '#4a9b45'
 		},
 		{
 			headline: 'Handling water',
 			text: '* Conservation of the resource water <br> * Economical use of water, e.g. use of water-saving equipment in kitchens and canteens  <br> * Placing signs with information about water-saving devices in sanitary rooms to also address the awareness of the participants <br>',
-			color: '#fffff'
+			color: '#33bbe4'
 		},
 		{
 			headline: 'Guest gifts and giveaways',
 			text: '* We advice our supporeters to hand out sustainable guest gifts and giveaways',
-			color: '#fffff'
+			color: '#a51d3e'
 		},
 		{
 			headline: 'Organization, communication and evaluation',
 			text: '* Designate contact person <br> * Point out sustainability aspects of the event to participants (e.g., via presentation areas during breaks).<br> * Collect, evaluate and communicate data on the impact of the measures<br> * Qualitative and quantitative impact measurement of implemented measures (documentation) <br> * Evaluation of the collected data<br> * Communication of the evaluated data (especially for large events)<br>',
-			color: '#fffff'
+			color: '#d1d3d4'
 		},
 		{
 			headline: 'Accessibility',
 			text: '* Designate contact person <br> * Point out sustainability aspects of the event to participants (e.g., via presentation areas during breaks).<br> * Collect, evaluate and communicate data on the impact of the measures',
-			color: '#fffff'
+			color: '#e43526'
 		},
 		{
 			headline: 'Gender mainstreaming',
 			text: '* Gender-equitable written and oral formulations (in the sense of the cabinet decision of June 1999) ',
-			color: '#fffff'
+			color: '#dc1079'
 		}
 	];
 </script>
