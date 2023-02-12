@@ -58,9 +58,9 @@
 				<li>
 					<a href="/#hackaburg22" class="nav-element-base">Hackaburg 2022</a>
 				</li>
-				<li>
+				<!--li>
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
-				</li>
+				</li-->
 				<li>
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>

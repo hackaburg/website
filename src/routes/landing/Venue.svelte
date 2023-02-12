@@ -17,7 +17,7 @@
 						>Directions</a
 					>
 					<a
-						href="https://www.google.de/maps/dir//TechBase+Regensburg"
+						href={busplan}
 						target="_blank"
 						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
 						>Bus Stop: TechCampus/OTH
