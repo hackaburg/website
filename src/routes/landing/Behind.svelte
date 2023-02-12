@@ -14,7 +14,7 @@
 			<img src={team} alt="your-image-description" class="w-2/3 mx-auto" />
 		</div>
 		<div class="w-1/2 p-4 text-center">
-			<p class="text-base mb-8 text-left">
+			<p class="text-base mb-8 text-left mt-8">
 				We are ratisbona-coding e.V., a non-profit association from Regensburg. We were founded in
 				2018 from the student organization team of the Hackaburg Hackathon. As a young association,
 				we organize other IT events in the Regensburg region in addition to the Hackaburg Hackathon.

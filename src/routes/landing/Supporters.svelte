@@ -1,22 +1,24 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
 
-	import bechtle from '$lib/images/supporters/bechtle.svg';
-	import continental from '$lib/images/supporters/continental.svg';
-	import energieAgentur from '$lib/images/supporters/energieAgentur.svg';
-	import krones from '$lib/images/supporters/krones.svg';
-	import tcon from '$lib/images/supporters/tcon.svg';
-	import tng from '$lib/images/supporters/tng.svg';
-	import trinnovative from '$lib/images/supporters/trinnovative.svg';
-	import vitesco from '$lib/images/supporters/vitesco.svg';
-	import zollner from '$lib/images/supporters/zollner.svg';
-	import dgo from '$lib/images/supporters/dgo.svg';
-	import rNext from '$lib/images/supporters/rNext.png';
+	import bechtle from '$lib/images/supporters/bechtle.png';
+	import continental from '$lib/images/supporters/conti.png';
+	import energieAgentur from '$lib/images/supporters/eagentur.png';
+	import krones from '$lib/images/supporters/syscron.png';
+	import tcon from '$lib/images/supporters/tcon.png';
+	import tng from '$lib/images/supporters/tng.png';
+	import trinnovative from '$lib/images/supporters/trinnovative.png';
+	import vitesco from '$lib/images/supporters/vitesco.png';
+	import dgo from '$lib/images/supporters/dgo.png';
+	import rnext from '$lib/images/supporters/rnext.png';
+	import infineon from '$lib/images/supporters/infineon.png';
+	import witt from '$lib/images/supporters/witt.png';
+	import vector from '$lib/images/supporters/vector.png';
 
 	let images = {
 		partners: [
 			{
-				src: rNext,
+				src: rnext,
 				alt: 'your-image-description-1',
 				description: 'Image 1 description'
 			},
@@ -60,12 +62,12 @@
 				description: 'Tcon'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: witt,
 				alt: 'your-image-description-3',
 				description: 'Image 3 description'
 			},
 			{
-				src: 'https://via.placeholder.com/400x200',
+				src: vector,
 				alt: 'your-image-description-4',
 				description: 'Image 4 description'
 			}
@@ -77,7 +79,7 @@
 				description: 'Image 1 description'
 			},
 			{
-				src: zollner,
+				src: infineon,
 				alt: 'your-image-description-2',
 				description: 'Image 2 description'
 			},
@@ -97,11 +99,8 @@
 >
 	<div class="w-full md:w-1/2">
 		<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR PARTNERS</h2>
-		<p class="text-center mb-8">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem recusandae minima temporibus
-			id autem vel culpa magni?
-		</p>
-		<div class="mb-8 row">
+
+		<div class="mb-8 row p-8">
 			{#each images.partners as partner}
 				<div class="img-split">
 					<img src={partner.src} alt={partner.alt} />
@@ -110,21 +109,17 @@
 		</div>
 
 		<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR SPONSORS</h2>
-		<p class="text-center">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem recusandae minima temporibus
-			id autem vel culpa magni?
-		</p>
 
 		<div class="row">
 			{#each images.premium as image}
-				<div class="image img-normal p-4">
+				<div class="image img-normal ">
 					<img src={image.src} alt={image.alt} />
 				</div>
 			{/each}
 		</div>
 		<div class="row">
 			{#each images.medium as image}
-				<div class="image img-small p-16 pt-0">
+				<div class="image img-small p-4 pt-0">
 					<img src={image.src} alt={image.alt} />
 				</div>
 			{/each}
