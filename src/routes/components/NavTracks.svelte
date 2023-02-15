@@ -55,28 +55,28 @@
 						<p class="ml-6" style="margin-top: 2px">Go Back</p></a
 					>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#stainable" class="nav-element-base" aria-current="page"
 						>Sustainable Mobility
 					</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#local" class="nav-element-base" aria-current="page"
 						>Think global, hack local
 					</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#foodprint" class="nav-element-base" aria-current="page"
 						>Reduce the Footprint
 					</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#social" class="nav-element-base" aria-current="page">Social</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#free" class="nav-element-base" aria-current="page">Free Track</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/tracks#challenges" class="nav-element-base" aria-current="page">Challenges</a>
 				</li>
 			</ul>

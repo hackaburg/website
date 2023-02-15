@@ -37,34 +37,34 @@
 			<ul
 				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
 			>
-				<li>
+				<li class="mt-2">
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#about" class="nav-element-base">About</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#green" class="nav-element-base hackaburg">Green</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#tracks" class="nav-element-base">Tracks</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#ratisbona-coding" class="nav-element-base">Behind Hackaburg</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#supporters" class="nav-element-base">Supporters</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#hackaburg22" class="nav-element-base">Hackaburg 2022</a>
 				</li>
 				<!--li>
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
 				</li-->
-				<li>
+				<li class="mt-2">
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/#faq" class="nav-element-base">FAQ</a>
 				</li>
 			</ul>

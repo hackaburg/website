@@ -54,10 +54,10 @@
 						<p class="ml-6" style="margin-top: 2px">Go Back</p></a
 					>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/green#kpis" class="nav-element-base" aria-current="page">Sustainability KPIs</a>
 				</li>
-				<li>
+				<li class="mt-2">
 					<a href="/green#actions" class="nav-element-base">Fields of action</a>
 				</li>
 			</ul>
