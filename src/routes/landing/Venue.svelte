@@ -4,8 +4,8 @@
 </script>
 
 <BaseComponent headline={'Venue'} subHeadline={'How to get there?'} id={'venue'}>
-	<div class="w-full md:w-1/2 flex flex-wrap venue">
-		<div class="w-1/2 p-8">
+	<div class="grid grid-cols-1 md:grid-cols-2">
+		<div class="p-4">
 			<div class="address lg:pl-24">
 				<p class="text-lg mb-2 text-left">Techbase Regensburg</p>
 				<p class="text-lg mb-2 text-left">Franz-Mayer-Straße 1</p>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2 p-4">
+		<div class="p-4">
 			<iframe
 				class="venue"
 				title="Map"

@@ -11,7 +11,7 @@
 			{
 				src: track_mobility,
 				alt: 'Sustainable Mobility',
-				id: 'stainable',
+				id: 'mobility',
 				description:
 					'Mobility is not an end in itself but rather a means, allowing people to access what they need: jobs, social interaction, education, and a full range of other services. But we need more sustainable and more intelligent ways to move.'
 			},
@@ -25,7 +25,7 @@
 			{
 				src: track_ai,
 				alt: 'Reduce the Footprint',
-				id: 'foodprint',
+				id: 'footprint',
 				description:
 					'Artificial intelligence is no longer just a topic for the future, but already has real applications. How can we use the possibilities of this technology profitably for all of us?'
 			},
@@ -58,17 +58,17 @@
 			class="text-md w-52 text-center mt-10 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
 			>Jump to Challenges</a
 		>
-		<div class="grid grid-cols-2 mt-28">
+		<div class="grid  grid-cols-1 md:grid-cols-2 gap-4 mt-28">
 			{#each data.images as image, i}
-				<div class="p-10" id={image.id}>
+				<div class="md:pl-10 md:pr-10 md:pb-10" id={image.id}>
 					<img
-						class="w-11/12 h-72 object-cover rounded-xl"
+						class="w-full md:w-11/12 h-72 object-cover rounded-xl mt-10 md:mt-0"
 						src={image.src}
 						loading="lazy"
 						alt={''}
 					/>
 				</div>
-				<div class="text-left max-w-2xl mt-10">
+				<div class="text-left max-w-2xl">
 					<div class="text-2xl text-hackaburg-900">Track {i}</div>
 					<div class="text-3xl">{image.alt}</div>
 					<p class="mt-5">{image.description}</p>

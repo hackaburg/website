@@ -8,12 +8,12 @@
 	subHeadline={'Ratisbona Coding e.V.'}
 	id={'ratisbona-coding'}
 >
-	<div class="w-full md:w-1/2 flex flex-wrap">
-		<div class="w-1/2 p-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+		<div class="p-4">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={team} alt="your-image-description" class="w-2/3 mx-auto" />
 		</div>
-		<div class="w-1/2 p-4 text-center">
+		<div class="p-4 text-center">
 			<p class="text-base mb-8 text-left mt-8">
 				We are ratisbona-coding e.V., a non-profit association from Regensburg. We were founded in
 				2018 from the student organization team of the Hackaburg Hackathon. As a young association,

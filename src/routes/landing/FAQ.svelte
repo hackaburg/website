@@ -3,8 +3,8 @@
 </script>
 
 <BaseComponent headline={'FAQ'} subHeadline={'Questions and answers'} id={'faq'}>
-	<div class="w-full md:w-1/2 flex flex-wrap">
-		<div class="w-1/2 p-4 text-left">
+	<div class="grid grid-cols-1 md:grid-cols-2">
+		<div class="p-4 text-left">
 			<p class="question">What exactly is a hackathon?</p>
 			<p class="answer">
 				A hackathon is an event in which software developers, designers and entrepreneurs come
@@ -32,7 +32,7 @@
 			<p class="question">Are there any restrictions regarding the COVID-19 situation?</p>
 			<p class="answer">Yes. This event will be held with a 2G-concept.</p>
 		</div>
-		<div class="w-1/2 p-4 text-left">
+		<div class="p-4 text-left">
 			<p class="question">Do I have to be a programmer to attend?</p>
 			<p class="answer">
 				<span class="font-bold">No!</span> We're looking for a diverse group of people who want to work

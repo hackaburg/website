@@ -97,40 +97,36 @@
 	subHeadline={'Without them, Hackaburg would not be possible'}
 	id={'supporters'}
 >
-	<div class="w-full md:w-1/2">
-		<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR PARTNERS</h2>
+	<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR PARTNERS</h2>
 
-		<div class="mb-8 row p-8">
-			{#each images.partners as partner}
-				<div class="img-split">
-					<img src={partner.src} alt={partner.alt} />
-				</div>
-			{/each}
-		</div>
+	<div class="grid grid-cols-1 md:grid-cols-2">
+		{#each images.partners as partner}
+			<img src={partner.src} alt={partner.alt} class="w-full" />
+		{/each}
+	</div>
 
-		<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg">OUR SPONSORS</h2>
+	<h2 class="text-2xl font-bold text-center text-black-800 mb-8 hackaburg mt-16">OUR SPONSORS</h2>
 
-		<div class="row">
-			{#each images.premium as image}
-				<div class="image img-normal ">
-					<img src={image.src} alt={image.alt} />
-				</div>
-			{/each}
-		</div>
-		<div class="row">
-			{#each images.medium as image}
-				<div class="image img-small p-4 pt-0">
-					<img src={image.src} alt={image.alt} />
-				</div>
-			{/each}
-		</div>
-		<div class="row">
-			{#each images.starter as image}
-				<div class="image img-smaller p-5 pt-0">
-					<img src={image.src} alt={image.alt} />
-				</div>
-			{/each}
-		</div>
+	<div class="grid grid-cols-1 md:grid-cols-3">
+		{#each images.premium as image}
+			<img src={image.src} alt={image.alt} />
+		{/each}
+	</div>
+	<hr />
+	<div class="grid grid-cols-1 md:grid-cols-4">
+		{#each images.medium as image}
+			<div class="p-6 md:p-12">
+				<img src={image.src} alt={image.alt} />
+			</div>
+		{/each}
+	</div>
+	<hr />
+	<div class="grid grid-cols-1 md:grid-cols-4">
+		{#each images.starter as image}
+			<div class="p-8 md: p-16">
+				<img src={image.src} alt={image.alt} />
+			</div>
+		{/each}
 	</div></BaseComponent
 >
 

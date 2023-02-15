@@ -4,12 +4,12 @@
 </script>
 
 <BaseComponent headline={'Green'} subHeadline={'What is our goal this year?'} id={'green'}>
-	<div class="w-full md:w-1/2 flex flex-wrap">
+	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4 mx-auto">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={green} alt="your-image-description" class="w-full" />
 		</div>
-		<div class="w-1/2 p-4 text-center">
+		<div class="lg:w-1/2 w-full p-4 text-center">
 			<p class="text-base mb-8 text-left mt-12">
 				The topics of climate protection, environmental protection and the creation of a fairer
 				world move many of us personally as organizers. We know that we can not change the world
