@@ -114,12 +114,12 @@
 	subHeadline="Find all details how we try reduce Hackaburg's foodprint"
 	id=""
 >
-	<div class="w-full md:w-1/2 flex flex-wrap">
+	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4 mx-auto">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={green} alt="" class="w-full" />
 		</div>
-		<div class="w-1/2 p-4 text-center mt-16">
+		<div class="p-4 text-center mt-16">
 			<p class="text-base mb-8 text-left">
 				Our concept includes the content design of the hackathon. On the one hand, special attention
 				is paid to the design of the tracks and challenges. And on the other hand, on the
@@ -175,7 +175,7 @@
 		Fields of action of a sustainable hackathon based on guidlines of the BMUV
 	</h2>
 
-	<div class="grid grid-cols-2 gap-4 mt-10 mb-10">
+	<div class="grid grid-cols-1 gap-4 mt-10 mb-10">
 		{#each data as field}
 			<div class="mt-5">
 				<div class="text-2xl" style="color:{field.color}">{field.headline}</div>
