@@ -1,4 +1,6 @@
 <script>
+	import NavLogo from './NavLogo.svelte';
+
 	let menuOpen = true;
 
 	function toggle() {
@@ -10,10 +12,8 @@
 	class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
 >
 	<div class="container flex flex-wrap items-center justify-between mx-auto">
-		<h1 class="text-xl font-extrabold tracking-tight dark:text-white">
-			HACKA
-			<span class="-ml-1 hackaburg">BURG</span>
-		</h1>
+		<NavLogo />
+
 		<div>
 			<button
 				data-collapse-toggle="navbar-sticky"
