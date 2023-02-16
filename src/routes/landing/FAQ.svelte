@@ -29,8 +29,6 @@
 			</p>
 			<p class="question">Overnight stay?</p>
 			<p class="answer">Sure! We'll provide beds as required at a local hostel (maximum 30).</p>
-			<p class="question">Are there any restrictions regarding the COVID-19 situation?</p>
-			<p class="answer">Yes. This event will be held with a 2G-concept.</p>
 		</div>
 		<div class="p-4 text-left">
 			<p class="question">Do I have to be a programmer to attend?</p>
