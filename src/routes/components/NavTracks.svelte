@@ -54,7 +54,7 @@
 					>
 				</li>
 				<li class="mt-2">
-					<a href="/tracks#stainable" class="nav-element-base" aria-current="page"
+					<a href="/tracks#mobility" class="nav-element-base" aria-current="page"
 						>Sustainable Mobility
 					</a>
 				</li>
@@ -64,7 +64,7 @@
 					</a>
 				</li>
 				<li class="mt-2">
-					<a href="/tracks#foodprint" class="nav-element-base" aria-current="page"
+					<a href="/tracks#footprint" class="nav-element-base" aria-current="page"
 						>Reduce the Footprint
 					</a>
 				</li>
