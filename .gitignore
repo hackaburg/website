@@ -44,3 +44,6 @@ vite.config.ts.timestamp-*
 
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,svelte
+
+# yarn
+yarn.lock
