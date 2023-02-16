@@ -94,7 +94,7 @@
 		{
 			headline: 'Organization, communication and evaluation',
 			text: '* Designate contact person <br> * Point out sustainability aspects of the event to participants (e.g., via presentation areas during breaks).<br> * Collect, evaluate and communicate data on the impact of the measures<br> * Qualitative and quantitative impact measurement of implemented measures (documentation) <br> * Evaluation of the collected data<br> * Communication of the evaluated data (especially for large events)<br>',
-			color: '#d1d3d4'
+			color: '#184669'
 		},
 		{
 			headline: 'Accessibility',
