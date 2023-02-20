@@ -20,7 +20,7 @@
 				alt: 'Think global, hack local ',
 				id: 'local',
 				description:
-					'We cant all save the world all the time, but each of us can change or improve something about the place where we live.'
+					"We can't all save the world all the time, but each of us can change or improve something about the place where we live."
 			},
 			{
 				src: track_ai,

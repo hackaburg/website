@@ -18,7 +18,7 @@
 			</p>
 			<p class="question">What can I build?</p>
 			<p class="answer">
-				Anything your heart desires! Hardware, web, mobile, gaming; you name it, we ll support it.
+				Anything your heart desires! Hardware, web, mobile, gaming; you name it, we'll support it.
 			</p>
 			<p class="question">How do I find a team?</p>
 			<p class="answer">
