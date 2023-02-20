@@ -11,7 +11,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		<div class="p-4">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src={team} alt="your-image-description" class="w-2/3 mx-auto" />
+			<img src={team} alt="your-image-description" class="w-10/12 mx-auto" />
 		</div>
 		<div class="p-4 text-center">
 			<p class="text-base mb-8 text-left mt-8">

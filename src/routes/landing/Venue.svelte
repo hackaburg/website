@@ -6,20 +6,20 @@
 <BaseComponent headline={'Venue'} subHeadline={'How to get there?'} id={'venue'}>
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4">
-			<div class="address lg:pl-24">
+			<div class="address lg:pl-24 flex flex-col">
 				<p class="text-lg mb-2 text-left">Techbase Regensburg</p>
 				<p class="text-lg mb-2 text-left">Franz-Mayer-Straße 1</p>
 				<p class="text-lg mb-8 text-left">93053 Regensburg</p>
-				<div class="grid grid-cols-1 gap-4">
+				<div class="grid md:grid-cols-1 gap-4">
 					<a
 						href="https://www.google.de/maps/dir//TechBase+Regensburg"
-						class="text-md w-1/2 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
+						class="w-full max-w-xs text-md w-1/2 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
 						>Directions</a
 					>
 					<a
 						href={busplan}
 						target="_blank"
-						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-1/2"
+						class="w-full max-w-xs text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-1/2"
 						>Bus Stop: TechCampus/OTH
 					</a>
 				</div>
