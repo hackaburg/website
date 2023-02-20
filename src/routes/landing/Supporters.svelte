@@ -123,8 +123,8 @@
 	<hr />
 	<div class="grid grid-cols-1 md:grid-cols-4">
 		{#each images.starter as image}
-			<div class="p-8 md: p-16">
-				<img src={image.src} alt={image.alt} />
+			<div class="p-8 md:p-16 m-auto">
+				<img src={image.src} class="w-44" alt={image.alt} />
 			</div>
 		{/each}
 	</div></BaseComponent
