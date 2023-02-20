@@ -42,7 +42,7 @@
 			<ul
 				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
 			>
-				<li>
+				<li class="hover:text-hackaburg-900">
 					<a
 						href="/"
 						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2  cursor-pointer hover:bg-hackaburg-900 hover:text-white w-40 flex -mt-2 "
@@ -52,10 +52,10 @@
 						<p class="ml-6" style="margin-top: 2px">Go Back</p></a
 					>
 				</li>
-				<li class="mt-2">
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/green#kpis" class="nav-element-base" aria-current="page">Sustainability KPIs</a>
 				</li>
-				<li class="mt-2">
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/green#actions" class="nav-element-base">Fields of action</a>
 				</li>
 			</ul>

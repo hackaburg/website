@@ -101,7 +101,9 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		{#each images.partners as partner}
-			<img src={partner.src} alt={partner.alt} class="w-full" />
+			<div class="p-3 m-auto">
+				<img src={partner.src} alt={partner.alt} />
+			</div>
 		{/each}
 	</div>
 
@@ -109,22 +111,24 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-3">
 		{#each images.premium as image}
-			<img src={image.src} alt={image.alt} />
-		{/each}
-	</div>
-	<hr />
-	<div class="grid grid-cols-1 md:grid-cols-4">
-		{#each images.medium as image}
-			<div class="p-6 md:p-12">
+			<div class="p-3">
 				<img src={image.src} alt={image.alt} />
 			</div>
 		{/each}
 	</div>
 	<hr />
 	<div class="grid grid-cols-1 md:grid-cols-4">
+		{#each images.medium as image}
+			<div class="p-3 m-auto">
+				<img src={image.src} class="w-80" alt={image.alt} />
+			</div>
+		{/each}
+	</div>
+	<hr />
+	<div class="grid grid-cols-1 md:grid-cols-4">
 		{#each images.starter as image}
-			<div class="p-8 md:p-16 m-auto">
-				<img src={image.src} class="w-44" alt={image.alt} />
+			<div class="p-3 m-auto">
+				<img src={image.src} class="w-40" alt={image.alt} />
 			</div>
 		{/each}
 	</div></BaseComponent

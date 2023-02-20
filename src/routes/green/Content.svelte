@@ -133,7 +133,7 @@
 
 	<div>
 		<h2
-			class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg mt-24"
+			class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg pt-28"
 			id="kpis"
 		>
 			Sustainablity KPIs
@@ -166,13 +166,13 @@
 	</div>
 
 	<h2
-		class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg mt-20"
+		class="text-3xl font-bold text-center text-black-800 mb-8 uppercase hackaburg pt-28"
 		id="actions"
 	>
 		Fields of acation
 	</h2>
 	<h2 class="text-xl font-bold text-center text-black-800 mb-8">
-		Fields of action of a sustainable hackathon based on guidlines of the BMUV
+		Fields of action of a able hackathon based on guidlines of the BMUV
 	</h2>
 
 	<div class="grid grid-cols-1 gap-4 mt-10 mb-10">
