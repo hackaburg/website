@@ -50,10 +50,16 @@
 		height: 50rem;
 	}
 
-	@media only screen and (max-width: 600px) {
+	/* md = 767px */
+	@media only screen and (max-width: 767px) {
 		/* Bei jedem größeren Monitor kommen neue Regeln hinzu */
 		.hb22 {
 			height: 25rem;
+		}
+
+		/* disable diagonal box */
+		.diagonal-box {
+			transform: none;
 		}
 	}
 </style>

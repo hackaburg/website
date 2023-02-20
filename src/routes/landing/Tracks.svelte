@@ -57,9 +57,9 @@
 		</p>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 mt-8">
+	<div class="grid grid-cols-1 md:grid-cols-2 md:mt-8 mt-4">
 		{#each data.images as image, i}
-			<div class="overflow-hidden p-6 relative {image.class}" id={image.id}>
+			<div class="overflow-hidden md:p-6 p-3 relative {image.class}" id={image.id}>
 				<img class="w-full h-64 object-cover rounded-lg" src={image.src} loading="lazy" alt={''} />
 				<a href="/tracks#{image.id}">
 					<div
@@ -72,7 +72,7 @@
 				>
 					{image.alt}
 				</div>
-				<div class="p-6">
+				<div class="md:p-6 p-3 ">
 					{image.description}
 				</div>
 			</div>
