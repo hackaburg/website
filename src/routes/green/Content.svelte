@@ -1,6 +1,6 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import green from '$lib/images/green.svg';
+	import green from '$lib/images/green-explained.png';
 	import co2 from '$lib/images/kpiIcons/co2.svg';
 	import energy from '$lib/images/kpiIcons/energy.svg';
 	import gender from '$lib/images/kpiIcons/gender.svg';
@@ -117,7 +117,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4 mx-auto">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src={green} alt="" class="w-full" />
+			<img src={green} alt="" class="w-full p-6" />
 		</div>
 		<div class="p-4 text-center mt-16">
 			<p class="text-base mb-8 text-left">
