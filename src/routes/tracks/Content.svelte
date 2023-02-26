@@ -1,10 +1,10 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import track_ai from '$lib/images/track_ai.jpeg';
-	import track_free from '$lib/images/track_free.jpeg';
-	import track_local from '$lib/images/track_local.jpeg';
-	import track_mobility from '$lib/images/track_mobility.jpeg';
-	import track_social from '$lib/images/track_social.jpeg';
+	import track_ai from '$lib/images/track_ai.jpg';
+	import track_free from '$lib/images/track_free.jpg';
+	import track_local from '$lib/images/track_local.jpg';
+	import track_mobility from '$lib/images/track_mobility.jpg';
+	import track_social from '$lib/images/track_social.jpg';
 
 	let data = {
 		images: [
