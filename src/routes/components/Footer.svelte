@@ -88,7 +88,7 @@
 					<h2 class="mb-6 text-md font-bold text-white uppercase dark:text-white">Hackathon</h2>
 					<ul class="text-white dark:text-gray-400">
 						<li class="mb-4">
-							<a href="https://www.hackaburg.de" class="hover:underline" target="_blank"
+							<a href="https://www.hackaburg.de/2022" class="hover:underline" target="_blank"
 								>Hackaburg 2022</a
 							>
 						</li>
