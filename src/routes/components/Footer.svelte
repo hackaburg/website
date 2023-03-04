@@ -102,14 +102,6 @@
 								>Hackaburg 2018</a
 							>
 						</li>
-						<li class="mb-4">
-							<a href="https://www.hackaburg.de/2017" class="hover:underline" target="_blank"
-								>Hackaburg 2017</a
-							>
-						</li>
-						<li class="mb-4">
-							<a href="#" class="hover:underline">Hackaburg 2016</a>
-						</li>
 					</ul>
 				</div>
 			</div>
