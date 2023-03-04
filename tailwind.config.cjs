@@ -9,6 +9,9 @@ module.exports = {
 			hackaburg: {
 				100: '#82bd53',
 				900: '#82bd53'
+			},
+			navHighlight: {
+				900: '#686868'
 			}
 		}
 	},
