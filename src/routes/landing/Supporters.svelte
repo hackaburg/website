@@ -20,12 +20,14 @@
 			{
 				src: rnext,
 				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				description: 'Image 1 description',
+				link: 'https://www.regensburg.de/r-next' // validate
 			},
 			{
 				src: dgo,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				description: 'Image 2 description',
+				link: 'https://www.digitale-oberpfalz.de/' // validate
 			}
 		],
 		starter: [
@@ -54,39 +56,46 @@
 			{
 				src: bechtle,
 				alt: 'Bechtle',
-				description: 'Bechtle'
+				description: 'Bechtle',
+				link: 'https://www.bechtle.com/ueber-bechtle/unternehmen/standorte/bechtle-it-systemhaus-regensburg'
 			},
 			{
 				src: tcon,
 				alt: 'tcon',
-				description: 'Tcon'
+				description: 'Tcon',
+				link: 'https://careers.team-con.de'
 			},
 			{
 				src: witt,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description'
+				description: 'Image 3 description',
+				link: 'https://karriere.witt-gruppe.eu/'
 			},
 			{
 				src: vector,
 				alt: 'your-image-description-4',
-				description: 'Image 4 description'
+				description: 'Image 4 description',
+				link: 'https://jobs.vector.com/de/unsere-jobs'
 			}
 		],
 		premium: [
 			{
 				src: continental,
 				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				description: 'Image 1 description',
+				link: 'https://www.continental.com/'
 			},
 			{
 				src: infineon,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				description: 'Image 2 description',
+				link: 'https://www.infineon.com/cms/de/'
 			},
 			{
 				src: vitesco,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description'
+				description: 'Image 3 description',
+				link: 'https://www.vitesco-technologies.com/de-de' // INSERT REAL LINK!
 			}
 		]
 	};
@@ -111,17 +120,17 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-3">
 		{#each images.premium as image}
-			<div class="p-3">
+			<a class="p-3 " href={image.link}>
 				<img src={image.src} alt={image.alt} />
-			</div>
+			</a>
 		{/each}
 	</div>
 	<hr />
 	<div class="grid grid-cols-1 md:grid-cols-4">
 		{#each images.medium as image}
-			<div class="p-3 m-auto">
+			<a class="p-3 m-auto" href={image.link}>
 				<img src={image.src} class="w-60" alt={image.alt} />
-			</div>
+			</a>
 		{/each}
 	</div>
 	<hr />
