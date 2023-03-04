@@ -101,7 +101,7 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		{#each images.partners as partner}
-			<div class="p-3 m-auto">
+			<div class="p-3">
 				<img src={partner.src} alt={partner.alt} />
 			</div>
 		{/each}
@@ -120,7 +120,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-4">
 		{#each images.medium as image}
 			<div class="p-3 m-auto">
-				<img src={image.src} class="w-80" alt={image.alt} />
+				<img src={image.src} class="w-60" alt={image.alt} />
 			</div>
 		{/each}
 	</div>
