@@ -28,10 +28,12 @@
 </BaseComponent>
 
 <style scoped>
+	/*
 	.border {
 		--tw-border-opacity: 1;
 		border-color: #82bd53;
 	}
+	*/
 
 	img {
 		border-radius: 0.5rem;

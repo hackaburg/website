@@ -1,7 +1,7 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import Day from '../components/Day.svelte';
-	import Event from '../components/Event.svelte';
+	// import Day from '../components/Day.svelte';
+	// import Event from '../components/Event.svelte';
 	import Calendar from '@event-calendar/core';
 	import TimeGrid from '@event-calendar/time-grid';
 
@@ -40,8 +40,10 @@
 	<Calendar {plugins} {options} />
 </BaseComponent>
 
+<!--
 <style>
 	.ec-event {
 		padding-left: 0.5rem !important;
 	}
 </style>
+-->
