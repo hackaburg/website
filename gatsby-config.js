@@ -1,4 +1,5 @@
-const BASE_URL = process.env.BASE_URL || "";
+const BASE_URL = "/2022"
+//const BASE_URL = process.env.BASE_URL || "";
 
 module.exports = {
   pathPrefix: BASE_URL,
