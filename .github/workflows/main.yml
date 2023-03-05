@@ -29,7 +29,6 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    if: github.event.name == 'push'
     needs: [style]
     steps:
       - name: Checkout repository
