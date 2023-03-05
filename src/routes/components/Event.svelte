@@ -7,7 +7,7 @@
 	export let duration: number;
 	export let start: [number, number];
 
-	/* eslint-disable @typescript-eslint/no-unused-vars */
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	function mapHourToGrid(hour: number, min: number): number {
 		let returnValue = 0;
 		if (hour === 8) {

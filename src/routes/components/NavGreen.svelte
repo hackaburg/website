@@ -63,7 +63,7 @@
 	</div>
 </nav>
 
-<style>
+<style lang="postcss">
 	.menu {
 		@apply items-center justify-between w-full md:flex md:w-auto md:order-1;
 	}
