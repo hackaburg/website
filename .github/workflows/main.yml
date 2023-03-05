@@ -70,4 +70,4 @@ jobs:
       with:
         push: true
         tags: |
-          hackaburg/website:2022
+          hackaburg/website:hb-2022
