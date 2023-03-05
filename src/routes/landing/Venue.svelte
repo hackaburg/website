@@ -19,6 +19,7 @@
 					<a
 						href={busplan}
 						target="_blank"
+						rel="noreferrer"
 						class="w-full max-w-xs text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-1/2"
 						>Bus Stop: TechCampus/OTH
 					</a>
