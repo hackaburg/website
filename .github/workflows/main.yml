@@ -2,7 +2,7 @@ name: Tests and push apps
 
 on:
   push:
-    branches: [ master ]
+    branches: [ hb-2022 ]
   pull_request:
     branches: [ master ]
 
