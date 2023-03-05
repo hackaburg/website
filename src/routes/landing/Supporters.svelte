@@ -14,6 +14,9 @@
 	import infineon from '$lib/images/supporters/infineon.png';
 	import witt from '$lib/images/supporters/witt.png';
 	import vector from '$lib/images/supporters/vector.png';
+	import emgenics from '$lib/images/supporters/emgenics.png';
+	import zollner from '$lib/images/supporters/zollner.png';
+	import wacker from '$lib/images/supporters/wacker.png';
 
 	let images = {
 		partners: [
@@ -21,35 +24,59 @@
 				src: rnext,
 				alt: 'your-image-description-1',
 				description: 'Image 1 description',
-				link: 'https://www.regensburg.de/r-next' // validate
+				link: 'https://www.regensburg.de/r-next'
 			},
 			{
 				src: dgo,
 				alt: 'your-image-description-2',
 				description: 'Image 2 description',
-				link: 'https://www.digitale-oberpfalz.de/' // validate
+				link: 'https://www.digitale-oberpfalz.de/'
 			}
 		],
-		starter: [
+		starter_1: [
 			{
 				src: energieAgentur,
 				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				description: 'Image 1 description',
+				link: 'https://www.energieagentur-regensburg.de/'
 			},
 			{
 				src: tng,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				description: 'Image 2 description',
+				link: 'https://www.tngtech.com/index.html'
 			},
 			{
 				src: trinnovative,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description'
+				description: 'Image 3 description',
+				link: 'https://www.trinnovative.de/'
 			},
 			{
 				src: krones,
 				alt: 'your-image-description-4',
-				description: 'Image 4 description'
+				description: 'Image 4 description',
+				link: 'https://www.syskron.com/'
+			}
+		],
+		starter_2: [
+			{
+				src: emgenics,
+				alt: 'your-image-description-4',
+				description: 'Image 4 description',
+				link: 'https://www.emgenics.de/'
+			},
+			{
+				src: wacker,
+				alt: 'your-image-description-4',
+				description: 'Image 4 description',
+				link: 'https://www.wacker.com/'
+			},
+			{
+				src: zollner,
+				alt: 'your-image-description-4',
+				description: 'Image 4 description',
+				link: 'https://www.zollner.de/'
 			}
 		],
 		medium: [
@@ -135,13 +162,20 @@
 	</div>
 	<hr />
 	<div class="grid grid-cols-1 md:grid-cols-4">
-		{#each images.starter as image}
-			<div class="p-3 m-auto">
+		{#each images.starter_1 as image}
+			<a class="p-3 m-auto" href={image.link}>
 				<img src={image.src} class="w-40" alt={image.alt} />
-			</div>
+			</a>
 		{/each}
-	</div></BaseComponent
->
+	</div>
+	<div class="grid grid-cols-1 md:grid-cols-3">
+		{#each images.starter_2 as image}
+			<a class="p-3 m-auto" href={image.link}>
+				<img src={image.src} class="w-40" alt={image.alt} />
+			</a>
+		{/each}
+	</div>
+</BaseComponent>
 
 <style scoped>
 	.row {
