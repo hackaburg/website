@@ -118,7 +118,7 @@
 	</div>
 </footer>
 
-<style scoped>
+<style scoped lang="postcss">
 	.social-icon {
 		@apply w-5 h-5 hover:text-gray-400 hover:cursor-pointer;
 	}

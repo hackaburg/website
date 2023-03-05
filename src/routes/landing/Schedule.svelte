@@ -2,9 +2,11 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 	// import Day from '../components/Day.svelte';
 	// import Event from '../components/Event.svelte';
-	import Calendar from '@event-calendar/core';
-	import TimeGrid from '@event-calendar/time-grid';
 
+	// import Calendar from '@event-calendar/core';
+	// import TimeGrid from '@event-calendar/time-grid';
+
+	/*
 	let plugins = [TimeGrid];
 	let options = {
 		view: 'timeGridWeek',
@@ -24,6 +26,7 @@
 			}
 		]
 	};
+	*/
 </script>
 
 <BaseComponent headline={'Schedule'} subHeadline={'When and what?'} id={'schedule'}>
@@ -37,7 +40,7 @@
 		</Day>
 		<Day headline={'Sa. 25.6.2023'} />
 	</div-->
-	<Calendar {plugins} {options} />
+	<!-- <Calendar {plugins} {options} /> -->
 </BaseComponent>
 
 <!--
