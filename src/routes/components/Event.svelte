@@ -1,12 +1,13 @@
 <script lang="ts">
-	import type { StartType } from '../models/enum';
+	// import type { StartType } from '../models/enum';
 
 	export let headline: string;
-	export let subHeadline: any = undefined;
+	export let subHeadline: string | undefined = undefined;
 	export let color: string;
 	export let duration: number;
 	export let start: [number, number];
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	function mapHourToGrid(hour: number, min: number): number {
 		let returnValue = 0;
 		if (hour === 8) {

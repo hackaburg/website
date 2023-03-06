@@ -88,18 +88,27 @@
 					<h2 class="mb-6 text-md font-bold text-white uppercase dark:text-white">Hackathon</h2>
 					<ul class="text-white dark:text-gray-400">
 						<li class="mb-4">
-							<a href="https://www.hackaburg.de/2022" class="hover:underline" target="_blank"
-								>Hackaburg 2022</a
+							<a
+								href="https://www.hackaburg.de/2022"
+								class="hover:underline"
+								target="_blank"
+								rel="noreferrer">Hackaburg 2022</a
 							>
 						</li>
 						<li class="mb-4">
-							<a href="https://www.hackaburg.de/2019" class="hover:underline" target="_blank"
-								>Hackaburg 2019</a
+							<a
+								href="https://www.hackaburg.de/2019"
+								class="hover:underline"
+								target="_blank"
+								rel="noreferrer">Hackaburg 2019</a
 							>
 						</li>
 						<li class="mb-4">
-							<a href="https://www.hackaburg.de/2018" class="hover:underline" target="_blank"
-								>Hackaburg 2018</a
+							<a
+								href="https://www.hackaburg.de/2018"
+								class="hover:underline"
+								target="_blank"
+								rel="noreferrer">Hackaburg 2018</a
 							>
 						</li>
 					</ul>
@@ -109,7 +118,7 @@
 	</div>
 </footer>
 
-<style scoped>
+<style scoped lang="postcss">
 	.social-icon {
 		@apply w-5 h-5 hover:text-gray-400 hover:cursor-pointer;
 	}

@@ -22,6 +22,7 @@
 			<a
 				href="https://ratisbona-coding.org/"
 				target="_blank"
+				rel="noreferrer"
 				class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
 				>About Ratisbona Coding e.V.</a
 			>

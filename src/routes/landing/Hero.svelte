@@ -22,6 +22,7 @@
 			<a
 				href="https://26490796.sibforms.com/serve/MUIEAOsdDhsoBW3g3V2q3-cAW_fVqsXG1T3nfyLNL1EBlQSaR4FoH9yOZnYIuELEhKeQq0a3RGvfbHIh0_Kyr0jeCAUgESRaoVUqqPIEV7BKOHJSOnY_F3DA-ptmhi-RpicQ0TDLCJBQ2rrlmZXvaWjDpmZN4AXwVzPkEgnlVP0v-6vVpiRQmeWA9i6F-e955IThriZDkhTasYLi"
 				target="_blank"
+				rel="noreferrer"
 				class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
 				>Subscribe to newsletter</a
 			>

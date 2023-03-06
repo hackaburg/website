@@ -1,12 +1,12 @@
 FROM node:lts AS build
 
 WORKDIR /app
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . ./
-RUN npm build
+RUN npm run build
 
 FROM ratisbonacoding/nginx-cloudflare-cache
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
