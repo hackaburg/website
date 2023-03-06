@@ -14,67 +14,83 @@
 	import infineon from '$lib/images/supporters/infineon.png';
 	import witt from '$lib/images/supporters/witt.png';
 	import vector from '$lib/images/supporters/vector.png';
+	import emgenics from '$lib/images/supporters/emgenics.png';
+	import zollner from '$lib/images/supporters/zollner.png';
+	import wacker from '$lib/images/supporters/wacker.png';
 
 	let images = {
 		partners: [
 			{
 				src: rnext,
-				alt: 'your-image-description-1',
-				description: 'Image 1 description',
-				link: 'https://www.regensburg.de/r-next' // validate
+				alt: 'R_Next',
+				link: 'https://www.regensburg.de/r-next'
 			},
 			{
 				src: dgo,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description',
-				link: 'https://www.digitale-oberpfalz.de/' // validate
+				link: 'https://www.digitale-oberpfalz.de/'
 			}
 		],
-		starter: [
+		starter_1: [
 			{
 				src: energieAgentur,
 				alt: 'your-image-description-1',
-				description: 'Image 1 description'
+				link: 'https://www.energieagentur-regensburg.de/'
 			},
 			{
 				src: tng,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description'
+				link: 'https://www.tngtech.com/index.html'
 			},
 			{
 				src: trinnovative,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description'
+				link: 'https://www.trinnovative.de/'
 			},
 			{
 				src: krones,
 				alt: 'your-image-description-4',
-				description: 'Image 4 description'
+				link: 'https://www.syskron.com/'
+			}
+		],
+		starter_2: [
+			{
+				src: emgenics,
+				alt: 'your-image-description-4',
+				link: 'https://www.emgenics.de/',
+				class: 'md:mr-0'
+			},
+			{
+				src: wacker,
+				alt: 'your-image-description-4',
+				link: 'https://www.wacker.com/'
+			},
+			{
+				src: zollner,
+				alt: 'your-image-description-4',
+				link: 'https://www.zollner.de/',
+				class: 'md:ml-0'
 			}
 		],
 		medium: [
 			{
 				src: bechtle,
 				alt: 'Bechtle',
-				description: 'Bechtle',
 				link: 'https://www.bechtle.com/ueber-bechtle/unternehmen/standorte/bechtle-it-systemhaus-regensburg'
 			},
 			{
 				src: tcon,
 				alt: 'tcon',
-				description: 'Tcon',
 				link: 'https://careers.team-con.de'
 			},
 			{
 				src: witt,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description',
 				link: 'https://karriere.witt-gruppe.eu/'
 			},
 			{
 				src: vector,
 				alt: 'your-image-description-4',
-				description: 'Image 4 description',
 				link: 'https://jobs.vector.com/de/unsere-jobs'
 			}
 		],
@@ -82,19 +98,16 @@
 			{
 				src: continental,
 				alt: 'your-image-description-1',
-				description: 'Image 1 description',
 				link: 'https://www.continental.com/'
 			},
 			{
 				src: infineon,
 				alt: 'your-image-description-2',
-				description: 'Image 2 description',
 				link: 'https://www.infineon.com/cms/de/'
 			},
 			{
 				src: vitesco,
 				alt: 'your-image-description-3',
-				description: 'Image 3 description',
 				link: 'https://www.vitesco-technologies.com/de-de' // INSERT REAL LINK!
 			}
 		]
@@ -135,10 +148,17 @@
 	</div>
 	<hr />
 	<div class="grid grid-cols-1 md:grid-cols-4">
-		{#each images.starter as image}
-			<div class="p-3 m-auto">
+		{#each images.starter_1 as image}
+			<a class="p-3 m-auto" href={image.link}>
 				<img src={image.src} class="w-40" alt={image.alt} />
-			</div>
+			</a>
+		{/each}
+	</div>
+	<div class="grid grid-cols-1 md:grid-cols-3">
+		{#each images.starter_2 as image}
+			<a class="p-3 m-auto {image.class}" href={image.link}>
+				<img src={image.src} class="w-40" alt={image.alt} />
+			</a>
 		{/each}
 	</div></BaseComponent
 >
