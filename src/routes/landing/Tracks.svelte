@@ -68,6 +68,7 @@
 					/>
 				</a>
 				<div
+					style="pointer-events: none"
 					class="absolute text-3xl text-white top-36 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-hackaburg-900 p-4  bg-opacity-50 "
 				>
 					{image.alt}
