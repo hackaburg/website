@@ -1,6 +1,8 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import green from '$lib/images/green-explained.png';
+	import greenExplained from '$lib/images/green-explained.png';
+	import green from '$lib/images/green.svg';
+
 	import co2 from '$lib/images/kpiIcons/co2.svg';
 	import energy from '$lib/images/kpiIcons/energy.svg';
 	import gender from '$lib/images/kpiIcons/gender.svg';
@@ -117,7 +119,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4 mx-auto">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src={green} alt="" class="w-full p-6" />
+			<img src={green} alt="your-image-description" class="w-72" />
 		</div>
 		<div class="p-4 text-center mt-16">
 			<p class="text-base mb-8 text-left">
@@ -174,6 +176,8 @@
 	<h2 class="text-xl font-bold text-center text-black-800 mb-8">
 		Fields of action of a able hackathon based on guidlines of the BMUV
 	</h2>
+
+	<img src={greenExplained} alt="" class="w-1/2 m-auto p-6" />
 
 	<div class="grid grid-cols-1 gap-4 mt-10 mb-10">
 		{#each data as field}
