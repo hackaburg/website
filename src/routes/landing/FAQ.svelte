@@ -3,6 +3,14 @@
 </script>
 
 <BaseComponent headline={'FAQ'} subHeadline={'Questions and answers'} id={'faq'}>
+	<div class="w-full flex">
+		<a
+			href="mailto:support@hackaburg.de"
+			rel="noreferrer"
+			class="m-auto mb-8 w-56 text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
+			>Need support - contact us</a
+		>
+	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4 text-left">
 			<p class="question">What exactly is a hackathon?</p>
