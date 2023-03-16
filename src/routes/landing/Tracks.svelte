@@ -5,7 +5,7 @@
 	import track_free from '$lib/images/track_free.jpg';
 	import track_local from '$lib/images/track_local.jpg';
 	import track_mobility from '$lib/images/track_mobility.jpg';
-	import track_social from '$lib/images/track_social.jpg';
+	import track_social_justice from '$lib/images/track_social_justice.jpg';
 
 	let data = {
 		images: [
@@ -31,11 +31,11 @@
 					'Artificial intelligence is no longer just a topic for the future, but already has real applications. How can we use the possibilities of this technology profitably for all of us?'
 			},
 			{
-				src: track_social,
+				src: track_social_justice,
 				alt: 'Social',
 				id: 'social',
 				description:
-					'In times when one crisis follows the next (Climate, War in Ukraine, Covid-19), perhaps the best idea is not the one that yields the most profit, but the one that most or most easily helps others.'
+					'In times when one crisis follows the next (Climate, War in Ukraine, Covid), perhaps the best idea is not the one that yields the most profit, but the one that most or most easily helps others.'
 			},
 			{
 				src: track_free,
