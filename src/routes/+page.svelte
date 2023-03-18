@@ -10,7 +10,7 @@
 	import Tracks from './landing/Tracks.svelte';
 	import Supporters from './landing/Supporters.svelte';
 	import Hb22 from './landing/Hb22.svelte';
-	// import Schedule from './landing/Schedule.svelte';
+	import Schedule from './landing/Schedule.svelte';
 	import Venue from './landing/Venue.svelte';
 	import Faq from './landing/FAQ.svelte';
 	export const prerender = true;
@@ -29,7 +29,7 @@
 <Hb22 />
 
 <div class="container mx-auto">
-	<!--Schedule /-->
+	<Schedule />
 	<Venue />
 	<Faq />
 </div>
