@@ -1,38 +1,73 @@
 <script lang="ts">
-	// import type { StartType } from '../models/enum';
+	export let hours: number;
+	export let minutes: number;
+	export let food: boolean | undefined = undefined;
+	export let hidden: boolean | undefined = undefined;
+	export let special: boolean | undefined = undefined;
+	export let time: string;
+	export let title: string;
 
-	export let headline: string;
-	export let subHeadline: string | undefined = undefined;
-	export let color: string;
-	export let duration: number;
-	export let start: [number, number];
+	export const hourSize = 6.75;
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	function mapHourToGrid(hour: number, min: number): number {
-		let returnValue = 0;
-		if (hour === 8) {
-			returnValue = 2;
-		} else {
-			returnValue = 12 * (hour - 8);
-		}
-
-		return returnValue;
-	}
+	const getHeightFromDuration = (hours: number, minutes: number) =>
+		`${((hours + minutes / 60) * hourSize) / 1.65}rem`;
 </script>
 
-<li
-	class="relative flex"
-	style="grid-row: {mapHourToGrid(start[0], start[1])} / span  {duration / 5}"
->
-	<div
-		class="group absolute inset-1 flex flex-col overflow-y-auto rounded-lg bg-indigo-50 p-2 text-xs leading-5 hover:bg-indigo-100"
-	>
-		<div class="{color} group-hover:{color} flex">
-			<time datetime="" class="font-bold">{start[0]}:{start[1] === 0 ? '00' : start[1]}</time>
-			<p class="ml-4">{headline}</p>
-		</div>
-		{#if subHeadline}
-			<p class="order-1 {color} group-hover:{color}">{subHeadline}</p>
-		{/if}
+<div class="EventContainer {food ? 'stripped' : ''} {special ? 'special' : ''}">
+	<div class="DurationContainer" style="height:{getHeightFromDuration(hours, minutes)}" />
+	<div class="ContentContainer">
+		<div class="TimeContainer">{time}</div>
+		<div class="TitleContainer">{title}</div>
+		<div><slot /></div>
 	</div>
-</li>
+</div>
+
+<style>
+	.EventContainer {
+		display: block;
+		position: relative;
+
+		color: black;
+		background-color: white;
+		border-left: 3px solid #82bd53;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		border-radius: 2px;
+
+		white-space: initial;
+	}
+	.ContentContainer {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		padding: 0.25rem 0.5rem;
+		font-size: 0.75rem;
+	}
+	.TimeContainer {
+		display: inline-block;
+		opacity: 0.75;
+		font-weight: bold;
+		margin-right: 0.5rem;
+	}
+	.TitleContainer {
+		display: inline-block;
+	}
+
+	.stripped {
+		background: repeating-linear-gradient(-45deg, #eee, #eee 3px, #f7f7f7 3px, #f7f7f7 10px);
+	}
+
+	.special {
+		color: white;
+		background-color: #82bd53;
+	}
+	@media screen and (max-width: 766px) {
+		.ContentContainer {
+			position: initial;
+			margin-bottom: 0.5rem;
+		}
+	}
+</style>

@@ -58,9 +58,9 @@
 				<li class="mt-2 hover:text-navHighlight-900">
 					<a href="/#hackaburg22" class="nav-element-base">Hackaburg 2022</a>
 				</li>
-				<!--li>
+				<li class="mt-2 hover:text-navHighlight-900">
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
-				</li-->
+				</li>
 				<li class="mt-2 hover:text-navHighlight-900">
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>
