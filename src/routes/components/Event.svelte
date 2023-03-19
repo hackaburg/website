@@ -8,13 +8,18 @@
 	export let title: string;
 
 	export const hourSize = 6.75;
+	let screenSize: number;
 
 	const getHeightFromDuration = (hours: number, minutes: number) =>
 		`${((hours + minutes / 60) * hourSize) / 1.65}rem`;
 </script>
 
+<svelte:window bind:innerWidth={screenSize} />
 <div class="EventContainer {food ? 'stripped' : ''} {special ? 'special' : ''}">
-	<div class="DurationContainer" style="height:{getHeightFromDuration(hours, minutes)}" />
+	{#if screenSize > 766}
+		<div class="DurationContainer" style="height:{getHeightFromDuration(hours, minutes)}" />
+	{/if}
+
 	<div class="ContentContainer">
 		<div class="TimeContainer">{time}</div>
 		<div class="TitleContainer">{title}</div>

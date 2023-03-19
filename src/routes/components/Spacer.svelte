@@ -1,19 +1,14 @@
 <script lang="ts">
 	export let hours: number;
 	export let minutes: number;
-
-	export const hourSize = 6.8;
+	const hourSize = 6.8;
+	let screenSize: number;
 
 	const getHeightFromDuration = (hours: number, minutes: number) =>
 		`${((hours + minutes / 60) * hourSize) / 1.65}rem`;
 </script>
 
-<div class="DurationContainer" style="height:{getHeightFromDuration(hours, minutes)}" />
-
-<style>
-	@media screen and (max-width: 766px) {
-		.DurationContainer {
-			display: none;
-		}
-	}
-</style>
+<svelte:window bind:innerWidth={screenSize} />
+{#if screenSize > 766}
+	<div class="DurationContainer" style="height:{getHeightFromDuration(hours, minutes)}" />
+{/if}
