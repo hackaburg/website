@@ -13,14 +13,14 @@
 				<div class="grid md:grid-cols-1 gap-4">
 					<a
 						href="https://www.google.de/maps/dir//TechBase+Regensburg"
-						class="w-full max-w-xs text-md w-1/2 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
+						class="w-full max-w-xs text-md w-1/2 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white flex flex-col items-center"
 						>Directions</a
 					>
 					<a
 						href={busplan}
 						target="_blank"
 						rel="noreferrer"
-						class="w-full max-w-xs text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-1/2"
+						class="w-full max-w-xs text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-1/2 flex flex-col items-center"
 						>Bus Stop: TechCampus/OTH
 					</a>
 				</div>

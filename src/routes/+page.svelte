@@ -13,6 +13,7 @@
 	import Schedule from './landing/Schedule.svelte';
 	import Venue from './landing/Venue.svelte';
 	import Faq from './landing/FAQ.svelte';
+	import Teaser from './landing/Teaser.svelte';
 	export const prerender = true;
 </script>
 
@@ -30,6 +31,7 @@
 
 <div class="container mx-auto">
 	<Schedule />
+	<Teaser />
 	<Venue />
 	<Faq />
 </div>
