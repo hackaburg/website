@@ -62,6 +62,9 @@
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
 				</li>
 				<li class="mt-2 hover:text-navHighlight-900">
+					<a href="/#teaser" class="nav-element-base">Teaser</a>
+				</li>
+				<li class="mt-2 hover:text-navHighlight-900">
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>
 				<li class="mt-2 hover:text-navHighlight-900">

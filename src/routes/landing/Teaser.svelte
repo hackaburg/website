@@ -3,7 +3,7 @@
 	import busplan from '$lib/busplan.pdf';
 </script>
 
-<BaseComponent headline={'Teaser'} subHeadline={'A plant is not enough!'} id={'venue'}>
+<BaseComponent headline={'Teaser'} subHeadline={'A plant is not enough!'} id={'teaser'}>
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4">
 			<iframe
@@ -19,7 +19,7 @@
 		<div class="p-4">
 			<div class="address lg:pl-24 flex flex-col">
 				<p class="text-lg mb-2 text-left">
-					Hackaburg 2018 has finally started! <br />Stay up to date over our social media channels.
+					Hackaburg 2023 has finally started! <br />Stay up to date over our social media channels.
 				</p>
 				<br />
 
