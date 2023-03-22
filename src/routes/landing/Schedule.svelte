@@ -81,7 +81,7 @@
 			<Event hours={5} minutes={20} time="17:30 - open end" title="Afterparty" food />
 		</Day>
 	</Timetable>
-	<div class="w-full flex mt-32">
+	<div class="w-full flex mt-16 md:mt-32 flex-col md:flex-row">
 		<a
 			href="https://drive.google.com/file/d/123QS2ZPEOqKPbiQxZfja5EeVTJFqd4Vt/view?usp=sharing"
 			target="_blank"
