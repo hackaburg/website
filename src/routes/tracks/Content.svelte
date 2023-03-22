@@ -34,7 +34,7 @@
 				alt: 'Social',
 				id: 'social',
 				description:
-					'In times when one crisis follows the next (Climate, War in Ukraine, Covid-19), perhaps the best idea is not the one that yields the most profit, but the one that most or most easily helps others.'
+					'In times when one crisis follows the next (Climate, War of aggression against Ukraine, Covid-19), perhaps the best idea is not the one that yields the most profit, but the one that most or most easily helps others.'
 			},
 			{
 				src: track_free,
