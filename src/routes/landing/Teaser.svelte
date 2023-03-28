@@ -7,7 +7,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="p-4">
 			<iframe
-				width="560"
+				width="100%"
 				height="315"
 				src="https://www.youtube.com/embed/3D3N9r8PGv4"
 				title="YouTube video player"
