@@ -31,9 +31,9 @@
 			<p class="question">How do I find a team?</p>
 			<p class="answer">
 				A team has to be smaller than 5 people. On the first day, we will have a short pitch event.
-				That means, you can come with an idea and tell everyone what you re looking for or you get
+				That means, you can come with an idea and tell everyone what you're looking for or you get
 				inspired by other people. Maximum team size is 5 but of course you also can work in projects
-				on smaller teams, there is no minimum size.
+				on smaller teams. The minimum team size is 3 people.
 			</p>
 			<p class="question">Overnight stay?</p>
 			<p class="answer">Sure! We'll provide beds as required at a local hostel (maximum 30).</p>
@@ -55,14 +55,14 @@
 			<p class="question">What should I bring to the event</p>
 			<p class="answer">
 				Your computer (laptop or desktop), any electronics want to use, chargers, toiletries and a
-				sleeping bag or blanket and pillow if you re planning to stay over night and we hope you
+				sleeping bag or blanket and pillow if you're planning to stay over night and we hope you
 				will! And of course, your student ID.
 			</p>
 			<p class="question">Will there be travel reimbursements available?</p>
 			<p class="answer">
-				Yes! If you re coming from outside the Oberpfalz, it s possible to apply for reimbursement
+				Yes! If you're coming from outside the Oberpfalz, it s possible to apply for reimbursement
 				to cover some of your travel expenses. This also includes an overnight stay from Saturday to
-				Sunday if you can t reasonably get home after the event. bepending on where you come from,
+				Sunday if you can't reasonably get home after the event. Depending on where you come from,
 				the reimbursement can be up to:
 			</p>
 			<ul class="list-disc pl-8 mb-4">
