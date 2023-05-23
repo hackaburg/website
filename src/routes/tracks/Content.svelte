@@ -13,6 +13,11 @@
 	import rnext from '$lib/images/supporters/rnext.png';
 	import infineon from '$lib/images/supporters/infineon.png';
 
+	import vitescoPdf1 from '$lib/challenges/vitesco_1.pdf';
+	import vitescoPdf2 from '$lib/challenges/vitesco_2.pdf';
+	import rnextPdf from '$lib/challenges/rnext.pdf';
+	import infineonPdf from '$lib/challenges/infineon.pdf';
+
 	let images = {
 		partners: [
 			{
@@ -147,7 +152,9 @@
 					your colleagues. Let's go!
 				</p>
 				<a
-					href="/tracks"
+					href={vitescoPdf1}
+					target="_blank"
+					rel="noreferrer"
 					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
 					>Download details</a
 				>
@@ -172,7 +179,7 @@
 					consumption and pollution.
 				</p>
 				<a
-					href="https://hackaburg.de/apply"
+					href={vitescoPdf2}
 					target="_blank"
 					rel="noreferrer"
 					class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
@@ -194,10 +201,10 @@
 					way like repair, share, hand on, give away, buy sustainably.
 				</p>
 				<a
-					href="https://hackaburg.de/apply"
+					href={rnextPdf}
 					target="_blank"
 					rel="noreferrer"
-					class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
+					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
 					>Download details</a
 				>
 			</div>
@@ -223,10 +230,10 @@
 					<br />
 				</p>
 				<a
-					href="https://hackaburg.de/apply"
+					href={infineonPdf}
 					target="_blank"
 					rel="noreferrer"
-					class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
+					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
 					>Download details</a
 				>
 			</div>
