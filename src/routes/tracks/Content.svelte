@@ -1,6 +1,4 @@
 <script>
-	// @ts-nocheck
-
 	import BaseComponent from '../components/BaseComponent.svelte';
 	import track_ai from '$lib/images/track_ai.jpg';
 	import track_free from '$lib/images/track_free.jpg';

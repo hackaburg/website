@@ -1,6 +1,5 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import busplan from '$lib/busplan.pdf';
 </script>
 
 <BaseComponent headline={'Teaser'} subHeadline={'A plant is not enough!'} id={'teaser'}>
