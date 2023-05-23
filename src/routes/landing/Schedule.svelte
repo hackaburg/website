@@ -32,20 +32,44 @@
 			<Event hours={15} minutes={20} time="00:00 - 24:00" title="Hacking">
 				<Spacer hours={0} minutes={35} />
 				<Event hours={1} minutes={0} time="09:00 - 10:00" title="Breakfast" food />
-				<Event hours={1} minutes={0} time="10:00 - 11:00" title="Workshop: Slot 1" special />
+				<Event
+					hours={1}
+					minutes={0}
+					time="10:00 - 11:00"
+					title="Workshop (Infineon): From Pixels to Depth: A hands-on dive into Infineon's Time of Flight camera for Raspberry Pi"
+					special
+				/>
 				<Spacer hours={0} minutes={30} />
-				<Event hours={1} minutes={0} time="11:30 - 12:30" title="Workshop: Slot 2" special />
+				<Event
+					hours={1}
+					minutes={0}
+					time="11:30 - 12:30"
+					title="Workshop (Vitesco): Code Responsibly - How to build sustainable Cloud Solutions with AWS"
+					special
+				/>
 				<Event hours={1} minutes={0} time="12:30 - 13:30" title="Lunch" food />
 
 				<Spacer hours={0} minutes={30} />
-				<Event hours={1} minutes={0} time="14:00 - 15:00" title="Workshop: Slot 3" special />
+				<Event
+					hours={1}
+					minutes={0}
+					time="14:00 - 15:00"
+					title="Workshop (Continental): Soldering introduction"
+					special
+				/>
 
 				<Spacer hours={2} minutes={0} />
 
 				<Spacer hours={1} minutes={0} />
 				<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
 
-				<Event hours={1} minutes={0} time="19:00 - 20:00" title="Workshop: Slot 4" special />
+				<Event
+					hours={1}
+					minutes={0}
+					time="19:00 - 20:00"
+					title="Talk and Discussion (R-Next): Sustainable and ko-creative urban development"
+					special
+				/>
 
 				<Spacer hours={2} minutes={45} />
 				<Event hours={0} minutes={30} time="01:30 - 02:00" title="Playtime" special />
