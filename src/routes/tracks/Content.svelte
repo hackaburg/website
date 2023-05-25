@@ -16,6 +16,9 @@
 	import rnextPdf from '$lib/challenges/rnext.pdf';
 	import infineonPdf from '$lib/challenges/infineon.pdf';
 
+	import contiPdf1 from '$lib/challenges/conti_1.pdf';
+	import contiPdf2 from '$lib/challenges/conti_2.pdf';
+
 	let images = {
 		partners: [
 			{
@@ -229,6 +232,53 @@
 				</p>
 				<a
 					href={infineonPdf}
+					target="_blank"
+					rel="noreferrer"
+					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
+					>Download details</a
+				>
+			</div>
+
+			<div>
+				<img src={images.premium[0].src} alt={images.premium[2].src} class="w-2/3 m-auto" />
+			</div>
+			<div class="">
+				<div class="text-2xl text-hackaburg-900 mt-10">Anomaly Detection with AI</div>
+				<p class="mt-4 mb-8">
+					Optical quality inspection is a crucial step in the manufacturing process which ensures
+					that the products meet the required standards of quality. Traditional quality inspection
+					methods rely on human inspection, which can be subjective and prone to errors.
+					<br /><br />
+					The early detection of defects can reduce the cost of rework and waste, as defects can be addressed
+					before they become significant issues. By detecting and addressing defects early in the manufacturing
+					process, manufacturers can improve the overall quality of their products. This, in turn, can
+					lead to increased customer satisfaction and loyalty, as customers are more likely to purchase
+					products that meet their expectations of quality.
+				</p>
+				<a
+					href={contiPdf2}
+					target="_blank"
+					rel="noreferrer"
+					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
+					>Download details</a
+				>
+			</div>
+
+			<div>
+				<img src={images.premium[0].src} alt={images.premium[2].src} class="w-2/3 m-auto" />
+			</div>
+			<div class="">
+				<div class="text-2xl text-hackaburg-900 mt-10">Help to help others with UWB</div>
+				<p class="mt-4 mb-8">
+					The objective of this challenge is to develop an application that uses Ultra-wideband
+					technology to improve people's lives in a social context. UWB technology has the potential
+					to revolutionize the way we interact with the world around us. By using UWB, we can create
+					applications that are more accurate, more reliable, and more secure than ever before. This
+					challenge is a great opportunity to use your creativity and technical skills to make a
+					real difference in the world.
+				</p>
+				<a
+					href={contiPdf1}
 					target="_blank"
 					rel="noreferrer"
 					class="text-md w-52 text-center mt-16 text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white "
