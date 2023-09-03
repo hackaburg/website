@@ -13,16 +13,8 @@
 			</h1>
 
 			<p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 text-2xl dark:text-gray-400">
-				TechBase Regensburg | 25.5 - 27.5.2023
+				Thank you all for attending Hackaburg 2023. It was a blast! We're already planning for Hackaburg 2024 and hope to see you next year again.
 			</p>
-			<p class="mb-6">The application phase is open. Apply now.</p>
-			<a
-				href="https://hackaburg.de/apply"
-				target="_blank"
-				rel="noreferrer"
-				class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-full"
-				>Apply for Hackaburg 2023</a
-			>
 		</div>
 		<div class="lg:mt-0 lg:col-span-7 lg:flex mx-auto p-8">
 			<img src={hero} alt="mockup" style="width: 40rem;" />
