@@ -4,36 +4,19 @@
 	import 'flowbite/dist/flowbite.css';
 	import Hero from './landing/Hero.svelte';
 	import About from './landing/About.svelte';
-	import Footer from './components/Footer.svelte';
-	import Green from './landing/Green.svelte';
+	import Sponsors from './landing/Sponsors.svelte';
 	import Behind from './landing/Behind.svelte';
-	import Tracks from './landing/Tracks.svelte';
-	import Supporters from './landing/Supporters.svelte';
-	import Hb22 from './landing/Hb22.svelte';
-	import Schedule from './landing/Schedule.svelte';
-	import Venue from './landing/Venue.svelte';
-	import Faq from './landing/FAQ.svelte';
-	import Teaser from './landing/Teaser.svelte';
+
+	import Footer from './components/Footer.svelte';
 	export const prerender = true;
 </script>
 
 <Nav />
 <div class="container mx-auto">
 	<Hero />
+	<Sponsors />
 	<About />
-	<Green />
-	<Tracks />
 	<Behind />
-	<Supporters />
-</div>
-
-<Hb22 />
-
-<div class="container mx-auto">
-	<Schedule />
-	<Teaser />
-	<Venue />
-	<Faq />
 </div>
 <Footer />
 

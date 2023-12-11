@@ -43,33 +43,6 @@
 				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#about" class="nav-element-base">About</a>
 				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#green" class="nav-element-base">Green</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#tracks" class="nav-element-base">Tracks</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#ratisbona-coding" class="nav-element-base">Behind Hackaburg</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#supporters" class="nav-element-base">Supporters</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#hackaburg22" class="nav-element-base">Hackaburg 2022</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#schedule" class="nav-element-base">Schedule</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#teaser" class="nav-element-base">Teaser</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#venue" class="nav-element-base">Venue</a>
-				</li>
-				<li class="mt-2 hover:text-navHighlight-900">
-					<a href="/#faq" class="nav-element-base">FAQ</a>
-				</li>
 			</ul>
 		</div>
 	</div>

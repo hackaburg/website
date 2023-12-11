@@ -89,6 +89,14 @@
 					<ul class="text-white dark:text-gray-400">
 						<li class="mb-4">
 							<a
+								href="https://www.hackaburg.de/2023"
+								class="hover:underline"
+								target="_blank"
+								rel="noreferrer">Hackaburg 2023</a
+							>
+						</li>
+						<li class="mb-4">
+							<a
 								href="https://www.hackaburg.de/2022"
 								class="hover:underline"
 								target="_blank"
