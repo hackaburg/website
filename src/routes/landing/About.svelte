@@ -45,7 +45,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-4 md:mt-8 mt-4 p-8">
 		{#each events as event, i}
 			<div
-				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-4"
+				class="max-w-sm mt-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-4"
 			>
 				<img class="rounded-t-lg" src={event.img} alt="" />
 				<div class="p-5">
@@ -58,7 +58,7 @@
 					<div class="flex">
 						<a href={event.link}>
 							<button
-								class="flex items-center m-auto w-28 mt-8  border-black rounded-3xl px-3 py-2 text-black hover:cursor-pointer hover:bg-black hover:text-gray-200"
+								class="flex items-center m-auto w-20 mt-8  border-black rounded-3xl px-3 py-2 text-black hover:cursor-pointer hover:bg-black hover:text-gray-200"
 							>
 								Website <svg
 									class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
