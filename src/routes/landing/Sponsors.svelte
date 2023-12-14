@@ -10,9 +10,9 @@
 >
 	<div class="text-center">
 		Contact us and get detailed information on how a cooperation or sponsorship can look like. We
-		are looking forward to hearing from you! <br />Mail us at: <b>sponsors@ratisbona-coding.org</b>
+		are looking forward to hearing from you! <br />Mail us at: <b>sponsor@ratisbona-coding.org</b>
 		<br />
-		<a href="mailto:sponsors@ratisbona-coding.org">
+		<a href="mailto:sponsor@ratisbona-coding.org">
 			<button
 				class="m-auto w-52 mt-8 border-2 border-black rounded-3xl px-3 py-2 text-black hover:cursor-pointer hover:bg-black hover:text-gray-200"
 			>
