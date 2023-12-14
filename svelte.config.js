@@ -13,7 +13,8 @@ const config = {
 			fallback: 'index.html',
 			strict: false
     }),
-	},
+    paths: {base: '/2023'},
+  },
 	preprocess: [
 		preprocess({
 			postcss: true
