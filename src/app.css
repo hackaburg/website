@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 html {
 	scroll-behavior: smooth;
 }
 
+=======
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 @font-face {
 	font-family: 'Mulish';
 	font-style: normal;
@@ -30,6 +33,7 @@ html {
 @layer base {
 	body {
 		font-family: 'Mulish', sans-serif;
+<<<<<<< HEAD
     background-color: black;
   }
 }
@@ -40,4 +44,7 @@ html {
 
 .bg-hackaburg {
 	background-color: #3fb28f;
+=======
+	}
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 }

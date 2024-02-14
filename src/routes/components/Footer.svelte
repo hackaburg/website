@@ -3,15 +3,24 @@
 </script>
 
 <footer class="p-4 bg-black sm:p-6">
+<<<<<<< HEAD
 	<div class="">
+=======
+	<div class="mx-auto max-w-screen-xl">
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 		<div class="md:flex md:justify-between mt-8">
 			<div class="mb-12 md:mb-0 ml-20 w-1/2 sm:gap-6 sm:grid-cols-1 lg:grid-cols-1">
 				<a href="/" class="flex items-center">
 					<img src={logo} class="mr-3 h-8 invert" alt="ratisbona coding e.V. Logo" />
 				</a>
 				<p class="max-w-xs mt-4 text-sm text-white">
+<<<<<<< HEAD
 					Nice of you to stop by our website. You can find more about us on our social media
 					channels.
+=======
+					Schön, dass ihr auf unserer Website vorbeigeschaut habt. Mehr über uns findet ihr auf
+					unseren Social-Media Kanälen.
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 				</p>
 
 				<p class="w-1/2 text-sm mt-8 font-normal text-white">Made with 💚 in Regensburg</p>
@@ -49,6 +58,20 @@
 						></a
 					>
 
+<<<<<<< HEAD
+=======
+					<!-- Discord -->
+					<!-- svelte-ignore security-anchor-rel-noreferrer -->
+					<a href="https://discord.gg/6dUkTU47" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="social-icon"
+							><path
+								fill="currentColor"
+								d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+							/></svg
+						></a
+					>
+
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 					<!-- Facebook -->
 					<!-- svelte-ignore security-anchor-rel-noreferrer -->
 					<a href="https://www.facebook.com/hackaburg" target="_blank">
@@ -77,6 +100,7 @@
 					<h2 class="mb-6 ml-12 text-md font-bold text-white uppercase dark:text-white">Verein</h2>
 					<ul class="ml-12 text-white dark:text-gray-400">
 						<li class="mb-4">
+<<<<<<< HEAD
 							<a href="/dataprotection" class="hover:underline">Data Protection</a>
 						</li>
 						<li class="mb-4">
@@ -118,6 +142,39 @@
 								target="_blank"
 								rel="noreferrer">Hackaburg 2018</a
 							>
+=======
+							<a href="/datenschutz" class="hover:underline">Datenschutz</a>
+						</li>
+						<li class="mb-4">
+							<a href="/impressum" class="hover:underline">Impressum</a>
+						</li>
+						<li class="mb-4">
+							<a href="/mitglied-werden" class="hover:underline">Mitgliedsantrag</a>
+						</li>
+						<li class="mb-4">
+							<a href="/satzung" class="hover:underline">Satzung</a>
+						</li>
+					</ul>
+				</div>
+				<div class="grid-cols-1 ml-12 md:mr-32 w-full sm:gap-6 sm:grid-cols-1">
+					<h2 class="mb-6 text-md font-bold text-white uppercase dark:text-white">Hackathon</h2>
+					<ul class="text-white dark:text-gray-400">
+						<li class="mb-4">Hackaburg 2023 - coming soon</li>
+						<li class="mb-4">
+							<a href="https://www.hackaburg.de" class="hover:underline">Hackaburg 2022</a>
+						</li>
+						<li class="mb-4">
+							<a href="https://www.hackaburg.de/2019" class="hover:underline">Hackaburg 2019</a>
+						</li>
+						<li class="mb-4">
+							<a href="https://www.hackaburg.de/2018" class="hover:underline">Hackaburg 2018</a>
+						</li>
+						<li class="mb-4">
+							<a href="https://www.hackaburg.de/2017" class="hover:underline">Hackaburg 2017</a>
+						</li>
+						<li class="mb-4">
+							<a href="#" class="hover:underline">Hackaburg 2016</a>
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 						</li>
 					</ul>
 				</div>
@@ -126,7 +183,11 @@
 	</div>
 </footer>
 
+<<<<<<< HEAD
 <style scoped lang="postcss">
+=======
+<style scoped>
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 	.social-icon {
 		@apply w-5 h-5 hover:text-gray-400 hover:cursor-pointer;
 	}

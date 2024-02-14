@@ -4,6 +4,7 @@ import preprocess from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
+<<<<<<< HEAD
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
@@ -19,6 +20,11 @@ const config = {
 			postcss: true
 		})
 	]
+=======
+		adapter: adapter()
+	},
+	preprocess: vitePreprocess()
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 };
 
 export default config;

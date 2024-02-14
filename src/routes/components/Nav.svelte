@@ -1,5 +1,9 @@
 <script>
+<<<<<<< HEAD
 	import NavLogo from './NavLogo.svelte';
+=======
+	import logo from '$lib/images/rb_logo.svg';
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 
 	let menuOpen = true;
 
@@ -9,11 +13,20 @@
 </script>
 
 <nav
+<<<<<<< HEAD
 	class="bg-black px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
 >
 	<div class="container flex flex-wrap items-center justify-between mx-auto">
 		<NavLogo />
 
+=======
+	class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+>
+	<div class="container flex flex-wrap items-center justify-between mx-auto">
+		<a href="https://ratisbona-coding.org" class="flex items-center">
+			<img src={logo} class="h-6 mr-3 sm:h-9" alt="Ratisbona Logo" />
+		</a>
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 		<div>
 			<button
 				data-collapse-toggle="navbar-sticky"
@@ -35,6 +48,7 @@
 		</div>
 		<div class={menuOpen ? ' menu hidden' : 'menu'}>
 			<ul
+<<<<<<< HEAD
 				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 text-white md:bg-black dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
 			>
 				<li class="mt-2 hover:text-navHighlight-900">
@@ -42,13 +56,41 @@
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#about" class="nav-element-base">About</a>
+=======
+				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
+			>
+				<li>
+					<a href="/" class="nav-element-base" aria-current="page">Home</a>
+				</li>
+				<li>
+					<a href="/#about" class="nav-element-base">Über uns</a>
+				</li>
+				<li>
+					<a href="/#ziele" class="nav-element-base">Unsere Ziele</a>
+				</li>
+				<li>
+					<a href="/#projekte" class="nav-element-base">Projekte</a>
+				</li>
+				<li>
+					<a href="/#mitglied-werden" class="nav-element-base">Mitglied werden</a>
+				</li>
+				<li>
+					<a href="/#termine" class="nav-element-base">Termine</a>
+				</li>
+				<li>
+					<a href="/#kontakt" class="nav-element-base">Kontakt</a>
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
 
+<<<<<<< HEAD
 <style lang="postcss">
+=======
+<style>
+>>>>>>> 3d03d62 (feat: 🎸 add old repo)
 	.menu {
 		@apply items-center justify-between w-full md:flex md:w-auto md:order-1;
 	}
