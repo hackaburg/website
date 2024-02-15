@@ -41,7 +41,13 @@
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
-					<a href="/#about" class="nav-element-base">About</a>
+					<a href="/#timeline" class="nav-element-base">Timeline</a>
+				</li>
+        <li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#about" class="nav-element-base">Looking Back</a>
+				</li>
+        <li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#behind" class="nav-element-base">Behind Hackaburg</a>
 				</li>
 			</ul>
 		</div>
