@@ -32,7 +32,7 @@
 
 <BaseComponent headline={'Timeline'} subHeadline={'What happens when and how'} id={'timeline'}>
 	<div class="w-full max-w-3xl mx-auto">
-		<div class="-my-6">
+		<div class="-my-6 sm:p-10">
 			{#each timeline as event, i}
 			<div class="relative pl-8 sm:pl-32 py-6 group">
 				<div class="font-caveat font-medium text-2xl text-primary mb-1 sm:mb-0 sm:ml-24">{event.title}</div>
