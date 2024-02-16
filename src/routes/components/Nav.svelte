@@ -43,13 +43,13 @@
 				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#timeline" class="nav-element-base">Timeline</a>
 				</li>
-        <li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#team" class="nav-element-base">Team</a>
 				</li>
-        <li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#about" class="nav-element-base">Looking Back</a>
 				</li>
-        <li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#behind" class="nav-element-base">Behind Hackaburg</a>
 				</li>
 			</ul>

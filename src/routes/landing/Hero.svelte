@@ -50,10 +50,10 @@
 	.heroImg {
 		width: 40rem;
 	}
-/**mobile width 80rem*/
-  @media (min-width: 320px) {
-    .heroImg {
-      width: 80rem;
-    }
-  }
+	/**mobile width 80rem*/
+	@media (min-width: 320px) {
+		.heroImg {
+			width: 80rem;
+		}
+	}
 </style>

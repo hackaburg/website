@@ -8,8 +8,8 @@
 	<h2 class="text-3xl font-bold text-center text-black-800 mb-4 uppercase hackaburg text-white">
 		{headline}
 	</h2>
-  <hr class="w-20 h-1 bg-primary mb-4 mx-auto text-black" />
-	<h2 class="text-xl font-bold text-center text-black-800 mb-8 text-white ">{@html subHeadline}</h2>
+	<hr class="w-20 h-1 bg-primary mb-4 mx-auto text-black" />
+	<h2 class="text-xl font-bold text-center text-black-800 mb-8 text-white">{@html subHeadline}</h2>
 	<slot />
 </section>
 

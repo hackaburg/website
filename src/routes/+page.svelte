@@ -15,8 +15,8 @@
 <Nav />
 <div class="container mx-auto">
 	<Hero />
-  <Timeline />
-  <Team />
+	<Timeline />
+	<Team />
 	<About />
 	<Behind />
 </div>

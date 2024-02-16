@@ -10,13 +10,13 @@
 			img: team_1,
 			title: 'Tilt and Invite Friends',
 			text: 'Our registration tool (tilt) provides the possibility to invite your friends directly and to form teams in advance. You can request to join existing teams or create your own ones.<br><br> <b class="text-primary">Important:</b> Inviting friends and creating teams, increases your chances to get a spot at Hackaburg. So, don\'t miss it!'
-    },
+		},
 		{
 			img: team_2,
 			title: 'Connect on Discord',
 			text: 'Our Discord this year is open for everyone, now! Join, introduce yourself and get connected.',
-      btn: 'Discord coming soon',
-      btnLink: ''
+			btn: 'Discord coming soon',
+			btnLink: ''
 		},
 		{
 			img: team_3,
@@ -52,11 +52,11 @@
 							{team.title}
 						</h5>
 						<p class="mb-3 text-base text-white dark:text-gray-400 h-16">{@html team.text}</p>
-            <a href={team.btnLink} target="_blank" rel="noreferrer">
-              {#if team.btn}
-                <Button label={team.btn} />
-              {/if}
-            </a>
+						<a href={team.btnLink} target="_blank" rel="noreferrer">
+							{#if team.btn}
+								<Button label={team.btn} />
+							{/if}
+						</a>
 					</div>
 				</div>
 			</div>

@@ -46,7 +46,7 @@
 				<li class="hover:text-navHighlight-900">
 					<a
 						href="/"
-						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2  cursor-pointer hover:bg-hackaburg-900 hover:text-white w-40 flex -mt-2 "
+						class="text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white w-40 flex -mt-2"
 					>
 						<ChevronLeft {color} {size} {width} {height} {viewBox} />
 

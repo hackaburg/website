@@ -4,13 +4,13 @@ module.exports = {
 		'./src/**/*.{html,js,svelte,ts}',
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#3fb28f",
-      },
-    },
-  },
+	theme: {
+		extend: {
+			colors: {
+				primary: '#3fb28f'
+			}
+		}
+	},
 	plugins: [require('flowbite/plugin')],
 	darkMode: 'class'
 };
