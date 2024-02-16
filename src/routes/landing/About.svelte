@@ -1,11 +1,11 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-  import img_2016 from '$lib/images/2016.jpg';
-  import img_2017 from '$lib/images/2017.jpg';
-	import img_2018 from '$lib/images/2018.jpg';
-	import img_2019 from '$lib/images/2019.jpg';
-	import img_2022 from '$lib/images/2022.jpg';
-	import img_2023 from '$lib/images/2023.jpg';
+  import img_2016 from '$lib/images/2016.png';
+  import img_2017 from '$lib/images/2017.png';
+	import img_2018 from '$lib/images/2018.png';
+	import img_2019 from '$lib/images/2019.png';
+	import img_2022 from '$lib/images/2022.png';
+	import img_2023 from '$lib/images/2023.png';
 
 	let events = [
     {
@@ -58,7 +58,7 @@
 	subHeadline={'Hackaburg 2018 / 2019 / 2022 / 2023'}
 	id={'about'}
 >
-	<div class="grid grid-cols-1 gap-x-4 gap-y-6  md:grid-cols-3 md:mt-8 mt-4 sm:p-8">
+	<div class="grid grid-cols-1 gap-x-4 gap-y-6 lg:grid-cols-3  md:grid-cols-2 md:mt-8 mt-4 sm:p-8">
 		{#each events as event, i}
     <div class="relative group">
 			<div
@@ -67,8 +67,8 @@
 			<div
 				class="bg-black rounded-2xl shadow dark:bg-gray-800  ml-4 relative"
 			>
-      <div class="relative h-56">
-  			<img class="rounded-ss-xl rounded-se-xl" src={event.img}/>
+      <div class="relative">
+  			<img class="rounded-ss-xl rounded-se-xl w-full" src={event.img}/>
       </div>
 				<div class="p-5">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
