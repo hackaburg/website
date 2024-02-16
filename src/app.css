@@ -41,3 +41,11 @@ html {
 .bg-hackaburg {
   background-color: #3fb28f;
 }
+
+.glow {
+  box-shadow: 0 0 50px -10px rgba(63, 178, 143, 1);
+}
+
+.glow:hover {
+  box-shadow: 0 0 50px 15px rgba(63, 178, 143, 1);
+}

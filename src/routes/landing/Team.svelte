@@ -39,25 +39,20 @@
 			</p>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 gap-x-8 gap-y-8 place-items-center md:grid-cols-2 lg:grid-cols-3">
+	<div class="grid grid-cols-1 gap-x-8 gap-y-8 place-items-center lg:grid-cols-3 md:grid-cols-2">
 		{#each teams as team, i}
-			<div class="relative group h-100">
-				<div
-					class="absolute -inset-0.5 ml-4 mr-1 bg-gradient-to-r from-primary to-primary rounded-lg blur opacity-75 group-hover:opacity-100"
-				/>
-				<div class="bg-black rounded-2xl shadow dark:bg-gray-800 ml-4 relative h-100">
-					<img class="rounded-t-lg w-full object-fill" src={team.img} alt="" />
-					<div class="p-5 h-full">
-						<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
-							{team.title}
-						</h5>
-						<p class="mb-3 text-base text-white dark:text-gray-400 h-16">{@html team.text}</p>
-						<a href={team.btnLink} target="_blank" rel="noreferrer">
-							{#if team.btn}
-								<Button label={team.btn} />
-							{/if}
-						</a>
-					</div>
+			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative min-h-100">
+				<img class="rounded-t-lg w-full object-fill" src={team.img} alt="" />
+				<div class="p-5 h-full">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+						{team.title}
+					</h5>
+					<p class="mb-3 text-base text-white dark:text-gray-400 h-16">{@html team.text}</p>
+					<a href={team.btnLink} target="_blank" rel="noreferrer">
+						{#if team.btn}
+							<Button label={team.btn} />
+						{/if}
+					</a>
 				</div>
 			</div>
 		{/each}
@@ -65,7 +60,7 @@
 >
 
 <style>
-	.h-100 {
-		height: 30rem;
+	.min-h-100 {
+		min-height: 30rem;
 	}
 </style>
