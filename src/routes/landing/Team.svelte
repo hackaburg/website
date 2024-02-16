@@ -39,9 +39,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 gap-x-8 gap-y-8 place-items-center lg:grid-cols-3 md:grid-cols-2">
+	<div class="grid grid-cols-1 gap-x-8 gap-y-8 place-items-center md:grid-cols-3">
 		{#each teams as team, i}
-			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative min-h-100">
+			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative min-h-100 h-max">
 				<img class="rounded-t-lg w-full object-fill" src={team.img} alt="" />
 				<div class="p-5 h-full">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
@@ -61,6 +61,6 @@
 
 <style>
 	.min-h-100 {
-		min-height: 30rem;
+		min-height: 38rem;
 	}
 </style>

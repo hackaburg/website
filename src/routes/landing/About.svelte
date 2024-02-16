@@ -58,7 +58,7 @@
 	subHeadline={'Hackaburg 2018 / 2019 / 2022 / 2023'}
 	id={'about'}
 >
-	<div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-6 md:mt-8 mt-4 sm:p-8">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6 md:mt-8 mt-4 sm:p-8">
 		{#each events as event, i}
 			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative">
 				<div class="relative">
