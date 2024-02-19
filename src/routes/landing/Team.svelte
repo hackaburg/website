@@ -41,13 +41,13 @@
 	</div>
 	<div class="grid grid-cols-1 gap-x-8 gap-y-8 place-items-center md:grid-cols-3">
 		{#each teams as team, i}
-			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative min-h-100 h-max">
-				<img class="rounded-t-lg w-full object-fill" src={team.img} alt="" />
-				<div class="p-5 h-full">
+			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 flex-grow min-h-100">
+				<img class="rounded-t-lg w-full" src={team.img} alt="" />
+				<div class="p-5">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
 						{team.title}
 					</h5>
-					<p class="mb-3 text-base text-white dark:text-gray-400 h-16">{@html team.text}</p>
+					<p class="mb-3 text-base text-white dark:text-gray-400">{@html team.text}</p>
 					<a href={team.btnLink} target="_blank" rel="noreferrer">
 						{#if team.btn}
 							<Button label={team.btn} />
@@ -61,6 +61,6 @@
 
 <style>
 	.min-h-100 {
-		min-height: 38rem;
+		min-height: 32rem;
 	}
 </style>
