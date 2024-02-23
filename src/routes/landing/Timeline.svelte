@@ -21,7 +21,7 @@
 				'We will send out the first invitations to Hackaburg 2024. You have one week to confirm! <b class="text-primary">So, keep an eye on your inbox!</b>'
 		},
 		{
-			date: 'March 07, 2024',
+			date: 'May 07, 2024',
 			title: 'Confirm your spot!',
 			content:
 				'If you are invited, you will receive an email with a <b class="text-primary">confirmation link</b>. Please confirm your spot as soon as possible - <b class="text-primary">1 week</b>. If you are not invited, you will be put on the <b class="text-primary">waiting list</b>, but also about that you will be informed. Normally quite some people jump off and you will probably get a place. <b class="text-primary">So, keep an eye on your inbox!</b>'
