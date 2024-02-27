@@ -48,7 +48,7 @@
 			title: 'Hackaburg 2023',
 			link: '/2023',
 			text: 'Under the motto "Goes Green", Hackabug is taking place under the aspect of sustainability.',
-			aftermovie: 'https://www.youtube.com/watch?v=ygeK5hStwP8'
+			aftermovie: 'https://www.youtube.com/watch?v=7dS4uvJLne0'
 		}
 	];
 </script>
