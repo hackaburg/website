@@ -4,6 +4,7 @@
 	import 'flowbite/dist/flowbite.css';
 	import Hero from './landing/Hero.svelte';
 	import About from './landing/About.svelte';
+	import FAQ from './landing/FAQ.svelte';
 	import Behind from './landing/Behind.svelte';
 
 	import Footer from './components/Footer.svelte';
@@ -18,6 +19,7 @@
 	<Timeline />
 	<Team />
 	<About />
+	<FAQ />
 	<Behind />
 </div>
 <Footer />
