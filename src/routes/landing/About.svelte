@@ -62,7 +62,7 @@
 		{#each events as event, i}
 			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative">
 				<div class="relative">
-					<img class="rounded-ss-xl rounded-se-xl w-full" src={event.img} />
+					<img class="rounded-ss-xl rounded-se-xl w-full" alt="event" src={event.img} />
 				</div>
 				<div class="p-5">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">

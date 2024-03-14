@@ -17,7 +17,7 @@
 				we organize other IT events in the Regensburg region in addition to Hackaburg.
 			</p>
 			<div>
-				<a href="https://ratisbona-coding.org/" target="_blank">
+				<a href="https://ratisbona-coding.org/" target="_blank" rel="noreferrer">
 					<div class="relative group">
 						{#if glowVisible}
 							<div
@@ -26,6 +26,9 @@
 						{/if}
 
 						<button
+							on:focus={() => {
+								return;
+							}}
 							on:mouseover={() => {
 								glowVisible = true;
 							}}
@@ -46,7 +49,7 @@
 			class="absolute -inset-0.5 -mt-1 -mb-1 bg-gradient-to-r from-primary to-primary rounded-lg blur opacity-75 group-hover:opacity-100"
 		/>
 		<div class="relative">
-			<img class="mt-8 rounded-2xl w-full" src={ratisbonacoding} />
+			<img class="mt-8 rounded-2xl w-full" alt="ratisbona coding" src={ratisbonacoding} />
 		</div>
 	</div>
 </BaseComponent>

@@ -2,7 +2,7 @@
 	export let hours: number;
 	export let minutes: number;
 	export let food: boolean | undefined = undefined;
-	export let hidden: boolean | undefined = undefined;
+	// export let hidden: boolean | undefined = undefined;
 	export let special: boolean | undefined = undefined;
 	export let time: string;
 	export let title: string;
