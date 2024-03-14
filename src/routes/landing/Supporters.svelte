@@ -135,7 +135,7 @@
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3">
 			{#each images.starter_2 as image}
-				<a class="p-3 m-auto {image.class}" href={image.link}>
+				<a class="p-3 m-auto" href={image.link}>
 					<img src={image.src} class="w-40" alt={image.alt} />
 				</a>
 			{/each}
