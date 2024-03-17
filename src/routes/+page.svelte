@@ -19,12 +19,12 @@
 <div class="container mx-auto">
 	<Hero />
 	<Timeline />
-	<Team />
-	<About />
 	<Supporters />
+	<Team />
 	<Venue />
 	<FAQ />
 	<Behind />
+	<About />
 </div>
 <Footer />
 
