@@ -12,17 +12,17 @@
 			</h1>
 
 			<p class="mb-6 font-light text-white lg:mb-8 text-xl dark:text-gray-400">
-				We are currently working on the next edition of Hackaburg. Stay tuned for more information.
+				The registration is NOW open! <br />Lets's connect the unconnected.
 			</p>
 			<p class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
 				<b class="text-primary">23.5. - 25.5.2024</b> | Techbase Regensburg
 			</p>
-			<div class="sm:flex md:space-x-4 -mt-10">
-				<div>
-					<a href="https://hackaburg.de/apply/" target="_blank" rel="noreferrer">
-						<Button label="Apply now" />
-					</a>
-				</div>
+			<div>
+				<a href="https://hackaburg.de/apply/" target="_blank" rel="noreferrer">
+					<Button label="APPLY NOW" />
+				</a>
+			</div>
+			<div class="sm:flex md:space-x-4">
 				<div>
 					<a
 						href="https://26490796.sibforms.com/serve/MUIFAPx4aKGKuMbU3UZxk_ODAxapOpxY9oApe-LFK48oC2HcUpuUDG5RfLrplRnzmlE2fhnxFsrLWAO1LoVerg8hegpCyxQDQ85Ac45SzhCZXZlT8m5RRT7wDfIbcv9GgTCPGWiw6QSSK2qQR2n6ST8ezKWg-QTn0tCj8LRENn-vhJpHafi3096LcWLZQXDIx_IzJZaOLL7Chfdk"

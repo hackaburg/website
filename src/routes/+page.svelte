@@ -21,10 +21,10 @@
 	<Timeline />
 	<Supporters />
 	<Team />
-	<Venue />
-	<FAQ />
 	<Behind />
 	<About />
+	<Venue />
+	<FAQ />
 </div>
 <Footer />
 
