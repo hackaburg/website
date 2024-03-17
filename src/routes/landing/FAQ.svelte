@@ -1,5 +1,6 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
+	import Button from '../components/Button.svelte';
 
 	const faq = [
 		{
@@ -75,7 +76,7 @@
 	<div class="w-full max-w-3xl mx-auto">
 		<div class="-my-6 sm:p-10">
 			{#each faq as { question, answer }, i}
-				<div class="group my-2">
+				<div class="group my-2 mt-7">
 					<div class="font-caveat font-medium text-2xl text-primary mb-1 sm:mb-0">
 						{question}
 					</div>
@@ -90,11 +91,7 @@
 	</div>
 	<div class="w-full flex justify-center">
 		<a href="mailto:support@hackaburg.org">
-			<button
-				class="m-auto mb-8 w-56 text-md w-52 mt-8 border-2 border-white rounded-3xl px-3 py-2 text-white hover:cursor-pointer hover:bg-black hover:text-gray-200"
-			>
-				Need support? Contact us!
-			</button>
+			<Button label="Need support? Contact us!" />
 		</a>
 	</div>
 </BaseComponent>

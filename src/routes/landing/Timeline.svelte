@@ -3,7 +3,7 @@
 
 	const timeline = [
 		{
-			date: 'March 15, 2024',
+			date: 'March 17, 2024',
 			title: 'Registration opens',
 			content:
 				'At this day, you can fill your <b class="text-primary">profile form</b> (only takes 5min) and register for Hackaburg 2024. A <b class="text-primary">button</b> to our registration tool will appear on the website on that day, so you can not miss it.</b>'

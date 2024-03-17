@@ -44,6 +44,9 @@
 					<a href="/#timeline" class="nav-element-base">Timeline</a>
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#supporters" class="nav-element-base">Supporters</a>
+				</li>
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#team" class="nav-element-base">Team</a>
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
@@ -51,6 +54,12 @@
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#behind" class="nav-element-base">Behind Hackaburg</a>
+				</li>
+				<li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#venue" class="nav-element-base">Venue</a>
+				</li>
+				<li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#faq" class="nav-element-base">FAQ</a>
 				</li>
 			</ul>
 		</div>
