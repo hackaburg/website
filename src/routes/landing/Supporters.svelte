@@ -59,19 +59,19 @@
 			{
 				src: vector,
 				alt: 'Vector',
-				link: 'https://jobs.vector.com/de/unsere-jobs'
+				link: 'https://jobs.vector.com'
 			},
 			{
 				src: krones,
 				alt: 'Syskron',
-				link: 'https://www.syskron.com'
+				link: 'https://www.krones.com/en/career/krones.digital.php'
 			}
 		],
 		premium: [
 			{
 				src: continental,
 				alt: 'Continental',
-				link: 'https://www.continental.com/'
+				link: 'https://www.continental.com/en/career/'
 			},
 			{
 				src: rnext,
@@ -81,7 +81,7 @@
 			{
 				src: zollner,
 				alt: 'Zollner',
-				link: 'https://www.zollner.de/',
+				link: 'https://www.zollner.de/karriere',
 				class: 'md:ml-0'
 			}
 		]

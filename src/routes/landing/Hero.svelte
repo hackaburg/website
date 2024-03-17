@@ -19,6 +19,11 @@
 			</p>
 			<div class="sm:flex md:space-x-4 -mt-10">
 				<div>
+					<a href="https://hackaburg.de/apply/" target="_blank" rel="noreferrer">
+						<Button label="Apply now" />
+					</a>
+				</div>
+				<div>
 					<a
 						href="https://26490796.sibforms.com/serve/MUIFAPx4aKGKuMbU3UZxk_ODAxapOpxY9oApe-LFK48oC2HcUpuUDG5RfLrplRnzmlE2fhnxFsrLWAO1LoVerg8hegpCyxQDQ85Ac45SzhCZXZlT8m5RRT7wDfIbcv9GgTCPGWiw6QSSK2qQR2n6ST8ezKWg-QTn0tCj8LRENn-vhJpHafi3096LcWLZQXDIx_IzJZaOLL7Chfdk"
 						target="_blank"
