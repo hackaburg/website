@@ -90,7 +90,7 @@
 		</div>
 	</div>
 	<div class="w-full flex justify-center">
-		<a href="mailto:support@hackaburg.org">
+		<a href="mailto:support@hackaburg.de">
 			<Button label="Need support? Contact us!" />
 		</a>
 	</div>
