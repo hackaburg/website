@@ -12,7 +12,7 @@
 			</h1>
 
 			<p class="mb-6 font-light text-white lg:mb-8 text-xl dark:text-gray-400">
-				The registration is NOW open! <br />Lets's connect the unconnected.
+				The registration is NOW open! <br />Let's connect the unconnected.
 			</p>
 			<p class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
 				<b class="text-primary">23.5. - 25.5.2024</b> | Techbase Regensburg
