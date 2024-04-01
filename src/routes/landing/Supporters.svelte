@@ -20,68 +20,80 @@
 			{
 				src: msg,
 				alt: 'MSG Group',
-				link: 'https://www.msg.group'
+				link: 'https://www.msg.group',
+				width: 'w-20'
 			},
 			{
 				src: trinnovative,
 				alt: 'Trinnovative',
-				link: 'https://www.trinnovative.de/'
+				link: 'https://www.trinnovative.de/',
+				width: 'w-40'
 			},
 			{
 				src: edag,
 				alt: 'EDAG',
-				link: 'https://www.edag.com/de/'
+				link: 'https://www.edag.com/de/',
+				width: 'w-40'
 			},
 			{
 				src: intive,
 				alt: 'intive',
-				link: 'https://intive.com'
+				link: 'https://intive.com',
+				width: 'w-20'
 			}
 		],
 		starter_2: [
 			{
 				src: internetx,
 				alt: 'InternetX',
-				link: 'https://www.internetx.com'
+				link: 'https://www.internetx.com',
+				width: 'w-20'
 			}
 		],
 		medium: [
 			{
 				src: infineon,
 				alt: 'Infineon',
-				link: 'https://www.infineon.com/cms/de/'
+				link: 'https://www.infineon.com/cms/de/',
+				width: 'w-70'
 			},
 			{
 				src: tcon,
 				alt: 'tcon',
-				link: 'https://careers.team-con.de'
+				link: 'https://careers.team-con.de',
+				width: 'w-70'
 			},
 			{
 				src: vector,
 				alt: 'Vector',
-				link: 'https://jobs.vector.com'
+				link: 'https://jobs.vector.com',
+				width: 'w-70'
 			},
 			{
 				src: krones,
 				alt: 'Syskron',
-				link: 'https://www.krones.com/en/career/krones.digital.php'
+				link: 'https://www.krones.com/en/career/krones.digital.php',
+				width: 'w-70'
 			}
 		],
 		premium: [
 			{
 				src: continental,
 				alt: 'Continental',
-				link: 'https://www.continental.com/en/career/'
+				link: 'https://www.continental.com/en/career/',
+				width: 'full-size pt-3'
 			},
 			{
 				src: rnext,
 				alt: 'R-Next',
-				link: 'https://www.regensburg.de/r-next'
+				link: 'https://www.regensburg.de/r-next',
+				width: 'full-size pt-2'
 			},
 			{
 				src: zollner,
 				alt: 'Zollner',
 				link: 'https://www.zollner.de/karriere',
+				width: 'full-size',
 				class: 'md:ml-0'
 			}
 		]
@@ -112,8 +124,8 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-3">
 			{#each images.premium as image}
-				<a class="p-3 " href={image.link}>
-					<img src={image.src} alt={image.alt} />
+				<a class="px-10 py-8" href={image.link}>
+					<img src={image.src} class={image.width} alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -121,7 +133,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-4">
 			{#each images.medium as image}
 				<a class="p-3 m-auto" href={image.link}>
-					<img src={image.src} class="w-60" alt={image.alt} />
+					<img src={image.src} class={image.width} alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -129,14 +141,14 @@
 		<div class="grid grid-cols-1 md:grid-cols-4">
 			{#each images.starter_1 as image}
 				<a class="p-3 m-auto" href={image.link}>
-					<img src={image.src} class="w-40" alt={image.alt} />
+					<img src={image.src} class={image.width} alt={image.alt} />
 				</a>
 			{/each}
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3">
 			{#each images.starter_2 as image}
 				<a class="p-3 m-auto" href={image.link}>
-					<img src={image.src} class="w-40" alt={image.alt} />
+					<img src={image.src} class={image.width} alt={image.alt} />
 				</a>
 			{/each}
 		</div>
