@@ -22,7 +22,7 @@
 	.TimeTableContainer {
 		position: relative;
 		height: 60rem;
-    color: white !important;
+		color: white !important;
 	}
 	.HoursContainer {
 		position: absolute;

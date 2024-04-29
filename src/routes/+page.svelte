@@ -20,7 +20,7 @@
 <div class="container mx-auto">
 	<Hero />
 	<Timeline />
-  <Schedule />
+	<Schedule />
 	<Supporters />
 	<Team />
 	<Behind />

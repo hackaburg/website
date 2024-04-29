@@ -22,7 +22,7 @@
 				/>
 				<Event hours={0} minutes={25} time="16:40 - 17:00" title="Idea Pitches" special />
 			</Event>
-      <Event hours={1} minutes={0} time="18:00 - 19:00" title="Find your team" special />
+			<Event hours={1} minutes={0} time="18:00 - 19:00" title="Find your team" special />
 			<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
 			<Event hours={3} minutes={45} time="19:00 - 24:00" title="Hacking begins">
 				<Spacer hours={2} minutes={45} />

@@ -64,7 +64,7 @@
 
 	.stripped {
 		background: repeating-linear-gradient(-45deg, #eee, #eee 3px, #f7f7f7 3px, #f7f7f7 10px);
-    color: black
+		color: black;
 	}
 
 	.special {
