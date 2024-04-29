@@ -32,9 +32,10 @@
 		display: block;
 		position: relative;
 
-		color: black;
-		background-color: white;
-		border-left: 3px solid #82bd53;
+		color: white;
+
+		background-color: #3fb28f50;
+		border-left: 3px solid #3fb28f;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 		border-radius: 2px;
 
@@ -63,12 +64,14 @@
 
 	.stripped {
 		background: repeating-linear-gradient(-45deg, #eee, #eee 3px, #f7f7f7 3px, #f7f7f7 10px);
+    color: black
 	}
 
 	.special {
 		color: white;
-		background-color: #82bd53;
+		background-color: #3fb28f;
 	}
+
 	@media screen and (max-width: 766px) {
 		.ContentContainer {
 			position: initial;

@@ -12,6 +12,7 @@
 	import Footer from './components/Footer.svelte';
 	import Timeline from './landing/Timeline.svelte';
 	import Team from './landing/Team.svelte';
+	import Schedule from './landing/Schedule.svelte';
 	export const prerender = true;
 </script>
 
@@ -19,6 +20,7 @@
 <div class="container mx-auto">
 	<Hero />
 	<Timeline />
+  <Schedule />
 	<Supporters />
 	<Team />
 	<Behind />
