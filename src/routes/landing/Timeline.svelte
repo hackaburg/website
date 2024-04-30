@@ -9,7 +9,7 @@
 				'At this day, you can fill your <b class="text-primary">profile form</b> (only takes 5min) and register for Hackaburg 2024. A <b class="text-primary">button</b> to our registration tool will appear on the website on that day, so you can not miss it.</b>'
 		},
 		{
-			date: 'April 31, 2024',
+			date: 'April 30, 2024',
 			title: 'Registrations closes',
 			content:
 				'One month before the event, the registration for Hackaburg 2024 closes. Make sure to have your <b class="text-primary">profile form</b> ready.'
