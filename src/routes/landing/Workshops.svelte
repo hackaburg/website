@@ -3,7 +3,7 @@
 	import sponsors from '$lib/images/sponsors.png';
 </script>
 
-<BaseComponent headline={'Workshops'} subHeadline={''} id={'about'}>
+<BaseComponent headline={'Workshops'} subHeadline={''} id={'workshops'}>
 	<div class="text-center text-white">
 		<h2 class="text-2xl font-bold text-primary">Sat. 10:00-11:00</h2>
 		<h2 class="text-3xl font-bold">AOI – Optimierung durch Automatisierung (Zollner)</h2>
