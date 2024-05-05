@@ -22,7 +22,7 @@
 	<Hero />
 	<Timeline />
 	<Schedule />
-  <Workshops />
+	<Workshops />
 	<Supporters />
 	<Team />
 	<Behind />
