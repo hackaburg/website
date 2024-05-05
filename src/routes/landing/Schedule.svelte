@@ -37,7 +37,7 @@
 					hours={1}
 					minutes={0}
 					time="10:00 - 11:00"
-					title="Workshop (0): Will follow soon"
+					title="Workshop (Zollner): AOI – Optimierung durch Automatisierung"
 					special
 				/>
 				<Spacer hours={0} minutes={30} />
@@ -45,7 +45,7 @@
 					hours={1}
 					minutes={0}
 					time="11:30 - 12:30"
-					title="Workshop (1): Will follow soon"
+					title="Workshop (R-Next): Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg"
 					special
 				/>
 				<Event hours={1} minutes={0} time="12:30 - 13:30" title="Lunch" food />
@@ -55,7 +55,7 @@
 					hours={1}
 					minutes={0}
 					time="14:00 - 15:00"
-					title="Workshop (2): Will follow soon"
+					title="Workshop (Continental): Löt-Workshop"
 					special
 				/>
 

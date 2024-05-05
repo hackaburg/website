@@ -13,6 +13,7 @@
 	import Timeline from './landing/Timeline.svelte';
 	import Team from './landing/Team.svelte';
 	import Schedule from './landing/Schedule.svelte';
+	import Workshops from './landing/Workshops.svelte';
 	export const prerender = true;
 </script>
 
@@ -21,6 +22,7 @@
 	<Hero />
 	<Timeline />
 	<Schedule />
+  <Workshops />
 	<Supporters />
 	<Team />
 	<Behind />
