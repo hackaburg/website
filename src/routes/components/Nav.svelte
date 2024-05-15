@@ -50,6 +50,9 @@
 					<a href="/#workshops" class="nav-element-base">Workshops</a>
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">
+					<a href="/#hardware" class="nav-element-base">Hardware</a>
+				</li>
+				<li class="mt-2 hover:text-hackaburg-900">
 					<a href="/#supporters" class="nav-element-base">Supporters</a>
 				</li>
 				<li class="mt-2 hover:text-hackaburg-900">

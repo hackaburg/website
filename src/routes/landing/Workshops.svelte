@@ -1,6 +1,5 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import sponsors from '$lib/images/sponsors.png';
 </script>
 
 <BaseComponent headline={'Workshops'} subHeadline={''} id={'workshops'}>

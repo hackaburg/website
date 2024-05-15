@@ -14,6 +14,7 @@
 	import Team from './landing/Team.svelte';
 	import Schedule from './landing/Schedule.svelte';
 	import Workshops from './landing/Workshops.svelte';
+	import Hardware from './landing/Hardware.svelte';
 	export const prerender = true;
 </script>
 
@@ -23,6 +24,7 @@
 	<Timeline />
 	<Schedule />
 	<Workshops />
+	<Hardware />
 	<Supporters />
 	<Team />
 	<Behind />
