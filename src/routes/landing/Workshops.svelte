@@ -4,7 +4,7 @@
 
 <BaseComponent headline={'Workshops'} subHeadline={''} id={'workshops'}>
 	<div class="text-center text-white">
-		<h2 class="text-2xl font-bold text-primary">Sat. 10:00-11:00</h2>
+		<h2 class="text-2xl font-bold text-primary">Fri. 10:00-11:00</h2>
 		<h2 class="text-3xl font-bold">AOI – Optimierung durch Automatisierung (Zollner)</h2>
 		<p class="mt-4 text-lg">
 			Erhalte Einblicke in das Machine-Learning-Modell von Zollner, welches entwickelt wurde, um die
@@ -12,7 +12,11 @@
 			reduzieren.
 		</p>
 
-		<h2 class="text-2xl font-bold text-primary mt-12">Sat. 14:00-15:00</h2>
+		<h2 class="text-2xl font-bold text-primary mt-12">Fri. 14:00-15:00</h2>
+		<h2 class="text-3xl font-bold">Löt-Workshop (Continental)</h2>
+		<p class="mt-4 text-lg">Soldering rocks! Learn how to solder.</p>
+
+		<h2 class="text-2xl font-bold text-primary mt-12">Fri. 19:00-20:00</h2>
 		<h2 class="text-3xl font-bold">
 			Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg (r-Next))
 		</h2>
@@ -23,9 +27,5 @@
 			existierender Beispiele, wie dem Abruf von Karten per Web-Service (WMS) aus der städtischen
 			Geodaten-Infrastruktur."
 		</p>
-
-		<h2 class="text-2xl font-bold text-primary mt-12">Sat. 14:00-15:00</h2>
-		<h2 class="text-3xl font-bold">Löt-Workshop (Continental)</h2>
-		<p class="mt-4 text-lg">Soldering rocks! Learn how to solder.</p>
 	</div>
 </BaseComponent>
