@@ -68,7 +68,7 @@
 					hours={1}
 					minutes={0}
 					time="19:00 - 20:00"
-					title="Workshop (3): Will follow soon"
+					title="Workshop (r-Next): Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg"
 					special
 				/>
 
