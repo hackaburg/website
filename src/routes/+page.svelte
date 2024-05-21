@@ -16,7 +16,6 @@
 	import Workshops from './landing/Workshops.svelte';
 	import Hardware from './landing/Hardware.svelte';
 	import Challenges from './landing/Challenges.svelte';
-	export const prerender = true;
 </script>
 
 <Nav />
