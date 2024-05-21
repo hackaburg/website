@@ -22,7 +22,13 @@
 				/>
 				<Event hours={0} minutes={25} time="16:40 - 17:00" title="Idea Pitches" special />
 			</Event>
-			<Event hours={1} minutes={0} time="17:00 - 18:00" title="Idea workshop: Find your team, work at your idea." special />
+			<Event
+				hours={1}
+				minutes={0}
+				time="17:00 - 18:00"
+				title="Idea workshop: Find your team, work at your idea."
+				special
+			/>
 			<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
 			<Event hours={4} minutes={30} time="19:00 - 24:00" title="Hacking begins">
 				<Spacer hours={4} minutes={0} />
@@ -32,7 +38,7 @@
 		<Day date="Fri, 24.5.2024">
 			<Event hours={15} minutes={20} time="00:00 - 24:00" title="Hacking">
 				<Spacer hours={0} minutes={15} />
-        <Event hours={0} minutes={45} time="09:00 - 10:00" title="Yoga for Hackers" special />
+				<Event hours={0} minutes={45} time="09:00 - 10:00" title="Yoga for Hackers" special />
 				<Event hours={1} minutes={0} time="09:00 - 10:00" title="Breakfast" food />
 				<Event
 					hours={1}
