@@ -53,6 +53,18 @@
 	</div>
 
 	<div class="text-center text-white mt-20">
+		<h2 class="text-2xl font-bold text-primary">Zollner</h2>
+		<h2 class="text-3xl font-bold">
+			Optischen Gefahrenerkennung für Menschen mit Sehbeeinträchtigung
+		</h2>
+		<p class="mt-4 text-lg text-left">
+			Inklusion und die Anpassung an verschiedene Umstände ist ein zentrales Thema in unserer
+			Gesellschaft. Findet gemeinsam Lösungen zur optischen Gefahrenerkennung für Menschen mit
+			Sehbeeinträchtigung mit Hilfe von OpenCV.
+		</p>
+	</div>
+
+	<div class="text-center text-white mt-20">
 		<h2 class="text-2xl font-bold text-primary">CURIOX</h2>
 		<h2 class="text-3xl font-bold">Connect the toy - connected toy</h2>
 		<p class="mt-4 text-lg text-left">
