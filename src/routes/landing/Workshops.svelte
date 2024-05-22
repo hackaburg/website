@@ -18,7 +18,7 @@
 
 		<h2 class="text-2xl font-bold text-primary mt-12">Fri. 19:00-20:00</h2>
 		<h2 class="text-3xl font-bold">
-			Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg (r-Next))
+			Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg (r_next)
 		</h2>
 		<p class="mt-4 text-lg">
 			In diesem Workshop tauchen wir tiefer in die Welt der Urbanen Datenplattformen (UDP) ein und

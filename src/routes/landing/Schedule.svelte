@@ -52,7 +52,7 @@
 					hours={1}
 					minutes={0}
 					time="11:30 - 12:30"
-					title="Workshop (R-Next): Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg"
+					title="Workshop (r_next): Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg"
 					special
 				/>
 				<Event hours={1} minutes={0} time="12:30 - 13:30" title="Lunch" food />
@@ -68,18 +68,9 @@
 
 				<Spacer hours={2} minutes={0} />
 
-				<Spacer hours={1} minutes={0} />
+				<Spacer hours={0} minutes={30} />
 				<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
-
-				<Event
-					hours={1}
-					minutes={0}
-					time="19:00 - 20:00"
-					title="Workshop (r-Next): Urbane Datenplattform (UDP) + Standards: Schlüssel zur Smart City Regensburg"
-					special
-				/>
-
-				<Spacer hours={2} minutes={45} />
+				<Spacer hours={4} minutes={15} />
 				<Event hours={0} minutes={30} time="01:30 - 02:00" title="Playtime" special />
 			</Event>
 		</Day>
