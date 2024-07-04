@@ -10,17 +10,12 @@
 				HACKABURG <p class="ml-4 text-primary">2024</p>
 				<br />
 			</h1>
-
-			<p class="mb-6 font-light text-white lg:mb-8 text-xl dark:text-gray-400">
-				The registration is NOW open! <br />Let's connect the unconnected.
-			</p>
 			<p class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
 				<b class="text-primary">23.5. - 25.5.2024</b> | Techbase Regensburg
 			</p>
-			<div>
-				<a href="https://hackaburg.de/apply/" target="_blank" rel="noreferrer">
-					<Button label="APPLY NOW" />
-				</a>
+			<div class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
+				<h2>Thank you all for attending, it was a blast!</h2>
+				<h3>We are looking forward to see you again next year.</h3>
 			</div>
 			<div class="sm:flex md:space-x-4">
 				<div>
