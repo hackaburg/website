@@ -25,28 +25,28 @@
 		{
 			img: img_2018,
 			title: 'Hackaburg 2018',
-			link: '/2018',
+			link: '/2018/',
 			text: 'We are moving, for the first time Hackaburg will take place in the Techbase.',
 			aftermovie: 'https://www.youtube.com/watch?v=LVb5gjv5KeE'
 		},
 		{
 			img: img_2019,
 			title: 'Hackaburg 2019',
-			link: '/2019',
+			link: '/2019/',
 			text: 'We break the previous record for participants. Over 120 participants hack and tinker for 2 days.',
 			aftermovie: 'https://www.youtube.com/watch?v=ygeK5hStwP8'
 		},
 		{
 			img: img_2022,
 			title: 'Hackaburg 2022',
-			link: '/2022',
+			link: '/2022/',
 			text: 'After a Corona break of almost 3 years, Hackaburg can finally take place again.',
 			aftermovie: 'https://www.youtube.com/watch?v=0VDavuIEMOk'
 		},
 		{
 			img: img_2023,
 			title: 'Hackaburg 2023',
-			link: '/2023',
+			link: '/2023/',
 			text: 'Under the motto "Goes Green", Hackabug is taking place under the aspect of sustainability.',
 			aftermovie: 'https://www.youtube.com/watch?v=7dS4uvJLne0'
 		}
