@@ -30,22 +30,25 @@ html {
 @layer base {
   body {
     font-family: "Mulish", sans-serif;
-    background-color: black;
+    background-color: white;
   }
 }
 
 .hackaburg {
-  color: #3fb28f;
+  color: #82bd53;
 }
 
 .bg-hackaburg {
-  background-color: #3fb28f;
+  background-color: #82bd53;
 }
 
 .glow {
-  box-shadow: 0 0 50px -10px rgba(63, 178, 143, 1);
+  box-shadow: 0 0 50px -10px rgba(130, 189, 83, 1);
+}
+.glow-soft {
+  box-shadow: 0 0 50px -10px rgba(130, 189, 83, .3);
 }
 
 .glow:hover {
-  box-shadow: 0 0 50px 15px rgba(63, 178, 143, 1);
+  box-shadow: 0 0 50px 15px rrgba(130, 189, 83, 1);
 }
