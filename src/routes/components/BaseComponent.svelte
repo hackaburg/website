@@ -5,11 +5,15 @@
 </script>
 
 <section class="container mx-auto px-6 p-3 pt-10 mt-16" {id}>
-	<h2 class="text-3xl font-bold text-center text-black-800 mb-4 uppercase hackaburg dark:dark:text-white">
+	<h2
+		class="text-3xl font-bold text-center text-black-800 mb-4 uppercase hackaburg dark:dark:text-white"
+	>
 		{headline}
 	</h2>
 	<hr class="w-20 h-1 bg-primary mb-4 mx-auto text-black" />
-	<h2 class="text-xl font-bold text-center text-black-800 mb-8 dark:dark:text-white">{@html subHeadline}</h2>
+	<h2 class="text-xl font-bold text-center text-black-800 mb-8 dark:dark:text-white">
+		{@html subHeadline}
+	</h2>
 	<slot />
 </section>
 

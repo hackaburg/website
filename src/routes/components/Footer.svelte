@@ -72,7 +72,9 @@
 		</div>
 		<div class="grid grid-cols-1 sm:ml-8 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-2">
 			<div>
-				<h2 class="mb-6 sm:ml-12 text-md font-bold dark:text-white uppercase dark:dark:text-white">Verein</h2>
+				<h2 class="mb-6 sm:ml-12 text-md font-bold dark:text-white uppercase dark:dark:text-white">
+					Verein
+				</h2>
 				<ul class="sm:ml-12 dark:text-white dark:text-gray-400">
 					<li class="mb-4">
 						<a href="/dataprotection" class="hover:underline">Data Protection</a>
