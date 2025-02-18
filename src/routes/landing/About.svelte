@@ -60,22 +60,22 @@
 >
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6 md:mt-8 mt-4 sm:p-8">
 		{#each events as event, i}
-			<div class="glow bg-black rounded-2xl dark:bg-gray-800 ml-4 relative">
+			<div class="glow-soft bg-white rounded-2xl dark:bg-gray-800 ml-4 relative">
 				<div class="relative">
 					<img class="rounded-ss-xl rounded-se-xl w-full" alt="event" src={event.img} />
 				</div>
 				<div class="p-5">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white dark:dark:text-white">
 						{event.title}
 					</h5>
-					<p class="mb-3 text-base text-white dark:text-gray-400 h-16">
+					<p class="mb-3 text-base dark:text-white h-16">
 						{event.text}
 					</p>
 					<div class="flex">
 						{#if event.link != null}
 							<a href={event.link}>
 								<button
-									class="flex items-center m-auto w-20 mt-8 rounded-3xl px-3 py-2 text-primary hover:cursor-pointer hover:bg-black hover:text-gray-200"
+									class="glow-soft flex items-center m-auto w-24 border-2 border-white mt-8 rounded-3xl px-3 py-2 hover:cursor-pointer hover:bg-primary hover:text-white"
 								>
 									Website <svg
 										class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
@@ -97,7 +97,7 @@
 						{/if}
 						<a href={event.aftermovie} class="ml-2">
 							<button
-								class="flex items-center m-auto w-32 mt-8 border-2 text-white border-white rounded-3xl px-3 py-2 hover:cursor-pointer hover:bg-black hover:text-gray-200"
+								class="glow-soft flex items-center m-auto w-32 mt-8 border-2 border-white dark:text-white rounded-3xl px-3 py-2 hover:cursor-pointer hover:bg-primary hover:text-white"
 							>
 								Aftermovie <svg
 									class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"

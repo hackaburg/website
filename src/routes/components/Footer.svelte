@@ -2,18 +2,18 @@
 	import logo from '$lib/images/rb_logo.svg';
 </script>
 
-<footer class="p-4 bg-black sm:p-6 sm:mt-16">
+<footer class="p-4 bg-white border-t border-grey-200 sm:p-6 sm:mt-16">
 	<div class="md:flex md:justify-between mt-8">
 		<div class="mb-12 md:mb-0 sm:ml-20 md:w-1/2 sm:gap-6 sm:grid-cols-1 lg:grid-cols-1">
 			<a href="/" class="flex items-center">
 				<img src={logo} class="mr-3 h-8 invert" alt="ratisbona coding e.V. Logo" />
 			</a>
-			<p class="max-w-xs mt-4 text-sm text-white">
+			<p class="max-w-xs mt-4 text-sm dark:text-white">
 				Nice of you to stop by our website. You can find more about us on our social media channels.
 			</p>
 
-			<p class="w-1/2 text-sm mt-8 font-normal text-white">Made with 💚 in Regensburg</p>
-			<div class="mt-4 flex space-x-2 text-white">
+			<p class="w-1/2 text-sm mt-8 font-normal dark:text-white">Made with 💚 in Regensburg</p>
+			<div class="mt-4 flex space-x-2 dark:text-white">
 				<!-- svelte-ignore security-anchor-rel-noreferrer -->
 				<a href="https://github.com/ratisbona-coding" target="_blank">
 					<!-- Github -->
@@ -72,8 +72,8 @@
 		</div>
 		<div class="grid grid-cols-1 sm:ml-8 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-2">
 			<div>
-				<h2 class="mb-6 sm:ml-12 text-md font-bold text-white uppercase dark:text-white">Verein</h2>
-				<ul class="sm:ml-12 text-white dark:text-gray-400">
+				<h2 class="mb-6 sm:ml-12 text-md font-bold dark:text-white uppercase dark:dark:text-white">Verein</h2>
+				<ul class="sm:ml-12 dark:text-white dark:text-gray-400">
 					<li class="mb-4">
 						<a href="/dataprotection" class="hover:underline">Data Protection</a>
 					</li>

@@ -82,7 +82,7 @@
 					</div>
 
 					<!-- Content -->
-					<div class="text-gray-300">
+					<div class="text-gray-700">
 						{@html answer}
 					</div>
 				</div>

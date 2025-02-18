@@ -1,21 +1,20 @@
 <script>
-	import hero from '$lib/images/logo2024.png';
+	import hero from '$lib/images/hackaburg.svg';
 	import Button from '../components/Button.svelte';
 </script>
 
 <section class="dark:bg-gray-900 mt-8">
 	<div class="grid lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
 		<div class="place-self-center md:col-span-5 p-6">
-			<h1 class="flex text-white mb-4 md:text-5xl text-3xl font-extrabold dark:text-white mt-8">
-				HACKABURG <p class="ml-4 text-primary">2024</p>
+			<h1 class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8">
+				HACKABURG <p class="ml-4 text-primary">2025</p>
 				<br />
 			</h1>
-			<p class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
-				<b class="text-primary">23.5. - 25.5.2024</b> | Techbase Regensburg
+			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
+				<b class="text-primary">22.5. - 24.5.2025</b> | Techbase Regensburg
 			</p>
-			<div class="mb-6 font-bold text-white lg:mb-8 text-xl dark:text-gray-400">
-				<h2>Thank you all for attending, it was a blast!</h2>
-				<h3>We are looking forward to see you again next year.</h3>
+			<div class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
+				<h2>We're still cooking. See you soon!</h2>
 			</div>
 			<div class="sm:flex md:space-x-4">
 				<div>
@@ -36,19 +35,15 @@
 		</div>
 
 		<div class="mt:mt-0 md:col-span-7 lg:flex mx-auto sm:p-8">
-			<img src={hero} class="hover:saturate-400 heroImg" alt="mockup" />
+			<img src={hero} class="heroImg transition" alt="mockup" />
 		</div>
 	</div>
 </section>
 
 <style>
-	.hover\:saturate-400:hover {
-		filter: blur(5px);
-		filter: brightness(2);
-		backdrop-filter: blur(15px) saturate(3);
-	}
 	.heroImg {
 		width: 40rem;
+		height: 40rem;
 	}
 	/**mobile width 80rem*/
 	@media (min-width: 320px) {

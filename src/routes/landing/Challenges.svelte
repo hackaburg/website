@@ -3,7 +3,7 @@
 </script>
 
 <BaseComponent headline={'Challenges'} subHeadline={''} id={'challenges'}>
-	<div class="text-center text-white">
+	<div class="text-center dark:text-white">
 		<h2 class="text-2xl font-bold text-primary">Continental</h2>
 		<h2 class="text-3xl font-bold">Developing an AI/LLM Solution to Bridge the Digital Divide</h2>
 		<p class="mt-4 text-lg text-left">
@@ -37,7 +37,7 @@
 		</p>
 	</div>
 
-	<div class="text-center text-white mt-20">
+	<div class="text-center dark:text-white mt-20">
 		<h2 class="text-2xl font-bold text-primary">r_next</h2>
 		<h2 class="text-3xl font-bold">R_UNLIMITED: Building a city for All</h2>
 		<p class="mt-4 text-lg text-left">
@@ -52,7 +52,7 @@
 		</p>
 	</div>
 
-	<div class="text-center text-white mt-20">
+	<div class="text-center dark:text-white mt-20">
 		<h2 class="text-2xl font-bold text-primary">Zollner</h2>
 		<h2 class="text-3xl font-bold">
 			Optischen Gefahrenerkennung für Menschen mit Sehbeeinträchtigung
@@ -64,7 +64,7 @@
 		</p>
 	</div>
 
-	<div class="text-center text-white mt-20">
+	<div class="text-center dark:text-white mt-20">
 		<h2 class="text-2xl font-bold text-primary">CURIOX</h2>
 		<h2 class="text-3xl font-bold">Connect the toy - connected toy</h2>
 		<p class="mt-4 text-lg text-left">
@@ -80,7 +80,7 @@
 		</p>
 	</div>
 
-	<div class="text-center text-white mt-20">
+	<div class="text-center dark:text-white mt-20">
 		<h2 class="text-2xl font-bold text-primary">Pendura</h2>
 		<h2 class="text-3xl font-bold">AI-based Sustainability</h2>
 		<p class="mt-4 text-lg text-left">

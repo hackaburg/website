@@ -109,14 +109,14 @@
 			href="https://drive.google.com/file/d/123QS2ZPEOqKPbiQxZfja5EeVTJFqd4Vt/view?usp=sharing"
 			target="_blank"
 			rel="noreferrer"
-			class="m-auto mb-8 w-48 text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
+			class="m-auto mb-8 w-48 text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:dark:text-white"
 			>Download as .ics file</a
 		>
 		<a
 			href="https://calendar.google.com/calendar/u/0?cid=Y183MDVmNzFmZTQxMDA1ZmYxZmRkY2NkN2VkNjMwMjE2ZGQ3YzYzZDczYzljOGU3Yzc3ZDQ4OWNkMDZmMGFkYTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
 			target="_blank"
 			rel="noreferrer"
-			class="m-auto mb-8 w-68 text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:text-white"
+			class="m-auto mb-8 w-68 text-md text-hackaburg border-2 border-hackaburg-900 text-hackaburg-900 rounded-3xl px-3 py-2 cursor-pointer hover:bg-hackaburg-900 hover:dark:text-white"
 			>Subscribe to our event calendar</a
 		>
 	</div-->
