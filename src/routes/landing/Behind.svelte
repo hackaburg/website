@@ -35,7 +35,7 @@
 							on:mouseleave={() => {
 								glowVisible = false;
 							}}
-							class="relative bg-white m-auto w-52 mt-8 border-2  rounded-3xl px-3 py-2 dark:text-white hover:cursor-pointer hover:bg-primary hover:text-white"
+							class="relative bg-white m-auto w-52 mt-8 border-2 rounded-3xl px-3 py-2 dark:text-white hover:cursor-pointer hover:bg-primary hover:text-white"
 						>
 							More about us
 						</button>

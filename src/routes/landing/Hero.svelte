@@ -6,7 +6,9 @@
 <section class="dark:bg-gray-900 mt-8">
 	<div class="grid lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
 		<div class="place-self-center md:col-span-5 p-6">
-			<h1 class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8">
+			<h1
+				class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
+			>
 				HACKABURG <p class="ml-4 text-primary">2025</p>
 				<br />
 			</h1>
