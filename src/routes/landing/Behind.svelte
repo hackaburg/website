@@ -10,7 +10,7 @@
 	id={'behind'}
 >
 	<div class="w-full max-w-3xl mx-auto">
-		<div class="text-center mb-24 text-white justify-center">
+		<div class="text-center mb-24 dark:text-white justify-center">
 			<p>
 				We are ratisbona-coding e.V., a non-profit association from Regensburg. We were founded in
 				2018 from the student organization team of the Hackaburg Hackathon. As a young association,
@@ -35,7 +35,7 @@
 							on:mouseleave={() => {
 								glowVisible = false;
 							}}
-							class="relative bg-black m-auto w-52 mt-8 border-2 border-white rounded-3xl px-3 py-2 text-white hover:cursor-pointer hover:bg-primary hover:text-black"
+							class="relative bg-white m-auto w-52 mt-8 border-2  rounded-3xl px-3 py-2 dark:text-white hover:cursor-pointer hover:bg-primary hover:text-white"
 						>
 							More about us
 						</button>

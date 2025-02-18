@@ -3,7 +3,7 @@
 </script>
 
 <BaseComponent headline={'Imprint'} subHeadline={'How can you reach us?'} id={'imprint'}>
-	<section class="text-white">
+	<section class="dark:text-white">
 		<h2 class="mb-2">Angaben gemäß § 5 TMG</h2>
 		<p class="mb-8">
 			ratisbona coding e.V.<br />

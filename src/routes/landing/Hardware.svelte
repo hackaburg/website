@@ -6,7 +6,7 @@
 </script>
 
 <BaseComponent headline={'Hardware'} subHeadline={'You Need It We Have It!'} id={'hardware'}>
-	<div class="text-center text-white">
+	<div class="text-center dark:text-white">
 		<p>
 			We have a lot of hardware from us and our supporters. This year we also provide a lasercutter
 			and two 3D printers. We also have a lot of different smaller hardware components, have a look
