@@ -36,21 +36,8 @@
 			</div>
 		</div>
 
-		<div class="mt:mt-0 md:col-span-7 lg:flex mx-auto sm:p-8">
-			<img src={hero} class="heroImg transition" alt="mockup" />
+		<div class="mt:mt-0 md:col-span-7 lg:flex mx-auto sm:p-8 relative">
+			<img src={hero} class="transition w-96 px-20 md:px-0" alt="mockup" />
 		</div>
 	</div>
 </section>
-
-<style>
-	.heroImg {
-		width: 40rem;
-		height: 40rem;
-	}
-	/**mobile width 80rem*/
-	@media (min-width: 320px) {
-		.heroImg {
-			width: 80rem;
-		}
-	}
-</style>
