@@ -1,11 +1,11 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import img_2016 from '$lib/images/2016.png';
-	import img_2017 from '$lib/images/2017.png';
-	import img_2018 from '$lib/images/2018.png';
-	import img_2019 from '$lib/images/2019.png';
-	import img_2022 from '$lib/images/2022.png';
-	import img_2023 from '$lib/images/2023.png';
+	import img_2016 from '$lib/images/2016.jpg';
+	import img_2017 from '$lib/images/2017.jpg';
+	import img_2018 from '$lib/images/2018.jpg';
+	import img_2019 from '$lib/images/2019.jpg';
+	import img_2022 from '$lib/images/2022.jpg';
+	import img_2023 from '$lib/images/2023.jpg';
 
 	let events = [
 		{

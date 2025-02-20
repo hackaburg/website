@@ -1,6 +1,6 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
-	import ratisbonacoding from '$lib/images/ratisbonacoding.png';
+	import ratisbonacoding from '$lib/images/ratisbonacoding.jpg';
 	let glowVisible = false;
 </script>
 
