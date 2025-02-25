@@ -2,9 +2,9 @@ name: Tests and push apps
 
 on:
   push:
-    branches: [main]
+    branches: [hb-2024]
   pull_request:
-    branches: [main]
+    branches: [hb-2024]
 
 jobs:
   style:
@@ -51,4 +51,4 @@ jobs:
         with:
           push: true
           tags: |
-            hackaburg/website:latest
+            hackaburg/website:hb-2024
