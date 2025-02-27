@@ -28,8 +28,8 @@
 		<Challenges />
 		<Hardware />
 -->
-		<Supporters />
-		<!--
+	<Supporters />
+	<!--
 		<Team />
 		-->
 	<Behind />
