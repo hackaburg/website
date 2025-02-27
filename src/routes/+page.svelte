@@ -27,7 +27,9 @@
 		<Workshops />
 		<Challenges />
 		<Hardware />
+-->
 		<Supporters />
+		<!--
 		<Team />
 		-->
 	<Behind />
