@@ -19,7 +19,7 @@ $ yarn install
 You can take a look at the [package.json scripts section](package.json) to get an overview of available shorthands:
 
 - build the website: `yarn build`
-- start a livereload dev server: `yarn start`
+- start a livereload dev server: `yarn run dev`
 - clean the built project: `yarn clean`
 
 The websites of previous years are automatically built and put into their respective subfolder, e.g. the 2018 page will be located in `/2018/`. To automate this, the latest commit of a year's page needs to be tagged with `hb-year`, e.g. `hb-2019` for the year 2019.
