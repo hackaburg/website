@@ -13,9 +13,16 @@
 	import edag from '$lib/images/supporters/edag.png';
 	import zollner from '$lib/images/supporters/zollner.png';
 	import msg from '$lib/images/supporters/msg.png';
+	import dgo from '$lib/images/supporters/dgo.png';
 
 	let images = {
-		partners: [],
+		partners: [
+			{
+				src: dgo,
+				alt: 'Digitale Gründerinitiative Oberpfalz',
+				link: 'https://www.digitale-oberpfalz.de/'
+			}
+		],
 		starter_1: [
 			{
 				src: msg,
@@ -80,7 +87,7 @@
 	id={'supporters'}
 >
 	<div class="bg-white md:mt-8 mt-4 sm:p-2 rounded-2xl glow">
-		<h2 class="text-2xl font-bold text-center text-black-800 my-4 uppercase emerald">
+		<h2 class="text-2xl font-bold text-center text-black-800 pt-4 uppercase hackaburg">
 			Our Sponsors
 		</h2>
 
@@ -121,6 +128,17 @@
 						class="w-auto object-contain {image.alt === 'Trinnovative' ? 'h-16' : 'h-8'}"
 						alt={image.alt}
 					/>
+				</a>
+			{/each}
+		</div>
+		<hr class="mx-8 my-4" />
+
+		<!-- Supporters section -->
+		<h2 class="text-2xl font-bold text-center text-black-800 my-4 hackaburg">OUR PARTNERS</h2>
+		<div class="text-center pb-8">
+			{#each images.partners as partner}
+				<a href={partner.link} class=" flex justify-center">
+					<img src={partner.src} alt={partner.alt} class="max-h-28 w-auto" />
 				</a>
 			{/each}
 		</div>
