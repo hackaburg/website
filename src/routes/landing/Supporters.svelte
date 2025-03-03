@@ -2,15 +2,11 @@
 	import BaseComponent from '../components/BaseComponent.svelte';
 
 	import continental from '$lib/images/supporters/conti.png';
-	import krones from '$lib/images/supporters/syskron.png';
 	import tcon from '$lib/images/supporters/tcon.png';
 	import trinnovative from '$lib/images/supporters/trinnovative.png';
-	import internetx from '$lib/images/supporters/internetx.png';
 	import rnext from '$lib/images/supporters/rnext.png';
 	import infineon from '$lib/images/supporters/infineon.png';
-	import intive from '$lib/images/supporters/intive.png';
 	import vector from '$lib/images/supporters/vector.png';
-	import edag from '$lib/images/supporters/edag.png';
 	import zollner from '$lib/images/supporters/zollner.png';
 	import msg from '$lib/images/supporters/msg.png';
 	import dgo from '$lib/images/supporters/dgo.png';
