@@ -73,27 +73,29 @@
 					</p>
 					<div class="flex flex-row h-full md:pt-20">
 						<div class="flex flex-wrap gap-0 mt-auto">
-							<a href={event.aftermovie}>
-								<button
-									class="glow-soft flex items-center w-32 mt-2 border-2 border-white dark:text-white rounded-3xl px-3 py-2 hover:cursor-pointer hover:bg-primary hover:text-white"
-								>
-									Aftermovie <svg
-										class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
+							{#if event.aftermovie != null}
+								<a href={event.aftermovie}>
+									<button
+										class="glow-soft flex items-center w-32 mt-2 border-2 border-white dark:text-white rounded-3xl px-3 py-2 hover:cursor-pointer hover:bg-primary hover:text-white"
 									>
-										<path
-											stroke="white"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</button>
-							</a>
+										Aftermovie <svg
+											class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 14 10"
+										>
+											<path
+												stroke="white"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M1 5h12m0 0L9 1m4 4L9 9"
+											/>
+										</svg>
+									</button>
+								</a>
+							{/if}
 							{#if event.link != null}
 								<a href={event.link}>
 									<button
