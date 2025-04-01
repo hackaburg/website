@@ -15,8 +15,10 @@
 			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
 				<b class="text-primary">22.5. - 24.5.2025</b> | Techbase Regensburg
 			</p>
-			<div class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
-				<h2>We're still cooking. See you soon!</h2>
+			<div class="mb-6 font-bold dark:text-white lg:mb-8 text-md">
+				<a href="https://apply.hackaburg.de" target="_blank" rel="noreferrer">
+					<Button label="Apply now!" />
+				</a>
 			</div>
 			<div class="sm:flex md:space-x-4">
 				<div>
