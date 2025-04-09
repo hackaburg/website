@@ -3,19 +3,23 @@
 	import Button from '../components/Button.svelte';
 </script>
 
-<section class="dark:bg-gray-900 mt-8">
-	<div class="grid lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-		<div class="place-self-center md:col-span-5 p-6">
+<section class="stars dark:bg-gray-900 mt-32 px-10 mx-auto">
+	<div class="grid lg:grid-cols-12">
+		<div class="place-self-center lg:col-span-6 ml-mr-auto">
+			<img src={hero} class="transition w-96" alt="mockup" />
+		</div>
+
+		<div class="lg:col-span-4 sm:place-self-center">
 			<h1
 				class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
 			>
-				HACKABURG <p class="ml-4 text-primary">2025</p>
+				HACKABURG <p class="ml-4 text-palevioletred">2025</p>
 				<br />
 			</h1>
 			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
-				<b class="text-primary">22.5. - 24.5.2025</b> | Techbase Regensburg
+				<b class="text-palevioletred">22.05. - 24.05.2025</b> | Techbase Regensburg
 			</p>
-			<div class="mb-6 font-bold dark:text-white lg:mb-8 text-md">
+			<div class="mb-6 font-bold lg:mb-8 text-md">
 				<a href="https://apply.hackaburg.de" target="_blank" rel="noreferrer">
 					<Button label="Apply now!" />
 				</a>
@@ -36,10 +40,6 @@
 					</a>
 				</div>
 			</div>
-		</div>
-
-		<div class="mt:mt-0 md:col-span-7 lg:flex mx-auto sm:p-8 relative">
-			<img src={hero} class="transition w-96 px-20 md:px-0" alt="mockup" />
 		</div>
 	</div>
 </section>
