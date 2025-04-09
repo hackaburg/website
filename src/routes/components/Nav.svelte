@@ -40,10 +40,10 @@
 				<li class="mt-2 hover:text-palevioletred">
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>
 				</li>
-				<!--
 				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#timeline" class="nav-element-base">Timeline</a>
 				</li>
+				<!--
 				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
 				</li>
