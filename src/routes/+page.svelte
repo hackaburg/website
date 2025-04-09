@@ -21,9 +21,8 @@
 <Nav />
 <div class="container mx-auto">
 	<Hero />
-	<!--
-		<Timeline />
-		<Schedule />
+	<Timeline />
+	<!-- <Schedule />
 		<Workshops />
 		<Challenges />
 		<Hardware />
