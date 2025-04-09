@@ -2,7 +2,7 @@
 	import logo from '$lib/images/rb_logo.svg';
 </script>
 
-<footer class="p-4 bg-white border-t border-grey-200 sm:p-6 sm:mt-16">
+<footer class=" p-4 sm:p-6 sm:mt-16">
 	<div class="md:flex md:justify-between mt-8">
 		<div class="mb-12 md:mb-0 sm:ml-20 md:w-1/2 sm:gap-6 sm:grid-cols-1 lg:grid-cols-1">
 			<a href="/" class="flex items-center">

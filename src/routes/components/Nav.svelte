@@ -35,44 +35,44 @@
 		</div>
 		<div class={menuOpen ? ' menu hidden' : 'menu'}>
 			<ul
-				class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:text-white md:bg-black dark:bg-black md:dark:bg-gray-900 dark:border-gray-700"
+				class="flex flex-col p-4 mt-4 bg-white text-deadlydepth md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
 			>
-				<li class="mt-2 hover:text-navHighlight-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/" class="nav-element-base" aria-current="page">Home</a>
 				</li>
 				<!--
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#timeline" class="nav-element-base">Timeline</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#schedule" class="nav-element-base">Schedule</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#workshops" class="nav-element-base">Workshops</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#challenges" class="nav-element-base">Challenges</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#hardware" class="nav-element-base">Hardware</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#supporters" class="nav-element-base">Supporters</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#team" class="nav-element-base">Team</a>
 				</li>
 			-->
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#behind" class="nav-element-base">Behind Hackaburg</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#about" class="nav-element-base">Looking Back</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#venue" class="nav-element-base">Venue</a>
 				</li>
-				<li class="mt-2 hover:text-hackaburg-900">
+				<li class="mt-2 hover:text-palevioletred">
 					<a href="/#faq" class="nav-element-base">FAQ</a>
 				</li>
 			</ul>

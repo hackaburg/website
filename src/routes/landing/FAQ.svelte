@@ -77,12 +77,12 @@
 		<div class="-my-6 sm:p-10">
 			{#each faq as { question, answer }, i}
 				<div class="group my-2 mt-7">
-					<div class="font-caveat font-medium text-2xl text-primary mb-1 sm:mb-0">
+					<div class="font-caveat font-medium text-palevioletred text-2xl mb-1 sm:mb-0">
 						{question}
 					</div>
 
 					<!-- Content -->
-					<div class="text-gray-700">
+					<div>
 						{@html answer}
 					</div>
 				</div>
