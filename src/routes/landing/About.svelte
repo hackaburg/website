@@ -96,10 +96,9 @@
 									</button>
 								</a>
 							{/if}
-							{#if event.link != null}
+							{#if null != null}
 								<a href={event.link}>
 									<button
-										class="glow-soft flex items-center border-2 border-white mt-2 rounded-3xl px-4 py-2 hover:cursor-pointer hover:bg-primary hover:text-white"
 									>
 										Website <svg
 											class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
