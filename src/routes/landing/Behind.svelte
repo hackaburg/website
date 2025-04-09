@@ -1,6 +1,7 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
 	import ratisbonacoding from '$lib/images/ratisbonacoding.jpg';
+	import Button from '../components/Button.svelte';
 	let glowVisible = false;
 </script>
 
@@ -25,20 +26,7 @@
 							/>
 						{/if}
 
-						<button
-							on:focus={() => {
-								return;
-							}}
-							on:mouseover={() => {
-								glowVisible = true;
-							}}
-							on:mouseleave={() => {
-								glowVisible = false;
-							}}
-							class="relative bg-white m-auto w-52 mt-8 border-2 rounded-3xl px-3 py-2 dark:text-white hover:cursor-pointer hover:bg-primary hover:text-white"
-						>
-							More about us
-						</button>
+						<Button label="More about us" />
 					</div>
 				</a>
 			</div>
