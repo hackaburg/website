@@ -104,7 +104,9 @@
 				<a class="p-2 mx-3 my-2 flex items-center justify-center h-28" href={image.link}>
 					<img
 						src={image.src}
-						class="h-full w-auto object-contain {image.alt === 'Zollner' || image.alt === 'R-Next' || image.alt === 'tcon'
+						class="h-full w-auto object-contain {image.alt === 'Zollner' ||
+						image.alt === 'R-Next' ||
+						image.alt === 'tcon'
 							? 'scale-[60%]'
 							: ''}"
 						alt={image.alt}
