@@ -21,11 +21,11 @@
 <Nav />
 <div class="container mx-auto">
 	<Hero />
-	<Timeline />
-	<!-- <Schedule />
-		<Workshops />
+	<!-- <Timeline />-->
+	<Schedule />
+<!-- 		<Workshops />
 		<Challenges />
-		<Hardware />
+		<Hardware />  
 -->
 	<Supporters />
 	<!--
