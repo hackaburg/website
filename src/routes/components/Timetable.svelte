@@ -4,14 +4,13 @@
 
 <div class="TimeTableContainer">
 	<div class="HoursContainer">
-		<HourLine text="08:00" />
+		<HourLine text="00:00" />
 		<HourLine text="10:00" />
 		<HourLine text="12:00" />
 		<HourLine text="14:00" />
 		<HourLine text="16:00" />
 		<HourLine text="18:00" />
 		<HourLine text="20:00" />
-		<HourLine text="22:00" />
 	</div>
 	<div class="DaysContainer">
 		<slot />
