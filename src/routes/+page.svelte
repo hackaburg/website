@@ -23,7 +23,7 @@
 	<Hero />
 	<!-- <Timeline />-->
 	<Schedule />
-<!-- 		<Workshops />
+	<!-- 		<Workshops />
 		<Challenges />
 		<Hardware />  
 -->
