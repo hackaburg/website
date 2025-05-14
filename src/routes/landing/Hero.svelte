@@ -41,7 +41,7 @@
 				</div>
 				<div>
 					<a href="https://discord.gg/NF3DA2xghD" target="_blank" rel="noreferrer">
-						<Button label="Discord" type="discord"/>
+						<Button label="Discord" type="discord" />
 					</a>
 				</div>
 			</div>

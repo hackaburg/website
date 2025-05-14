@@ -13,7 +13,7 @@
 			<Event hours={1} minutes={30} time="13:30 - 15:00" title="Registration" food />
 			<Spacer hours={0} minutes={15} />
 			<Event hours={2} minutes={30} time="15:15 - 17:45" title="Opening Ceremony">
-				<Event hours={0} minutes={25} time="15:15 - 16:00" title="Getting Started" special/>
+				<Event hours={0} minutes={25} time="15:15 - 16:00" title="Getting Started" special />
 				<Event hours={0} minutes={25} time="16:00 - 16:15" title="Theme Announcement" special />
 				<Event hours={0} minutes={25} time="16:15 - 16:45" title="Partner & Sponsors" special />
 				<Event
@@ -42,7 +42,7 @@
 				<Spacer hours={3} minutes={30} />
 				<Event hours={1} minutes={0} time="17:00 - 18:00" title="Presentation Workshop" special />
 				<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
-				
+
 				<Spacer hours={1} minutes={45} />
 				<Event hours={0} minutes={30} time="01:30 - 02:00" title="Playtime" special />
 			</Event>
