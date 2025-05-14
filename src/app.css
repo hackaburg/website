@@ -46,6 +46,7 @@ html {
   background-size: 80%;
   background-repeat: repeat;
   background-blend-mode: overlay;
+  background-attachment: fixed;
 }
 
 .hackaburg {
