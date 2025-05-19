@@ -39,7 +39,10 @@
 				<Spacer hours={2} minutes={30} />
 				<Event hours={1} minutes={0} time="12:30 - 13:30" title="Lunch" food />
 
-				<Spacer hours={3} minutes={30} />
+				<Spacer hours={1} minutes={30} />
+				<Event hours={1} minutes={0} time="15:00 - 16:00" title="Continental: Building Agentic Apps for Mobile and Web with Vertex AI in Firebase" special />
+
+				<Spacer hours={1} minutes={0} />
 				<Event hours={1} minutes={0} time="17:00 - 18:00" title="Presentation Workshop" special />
 				<Event hours={1} minutes={0} time="18:00 - 19:00" title="Dinner" food />
 
