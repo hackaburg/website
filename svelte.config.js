@@ -12,7 +12,10 @@ const config = {
 			precompress: false,
 			fallback: 'index.html',
 			strict: false
-		})
+		}),
+		paths: {
+			base: '/2025'
+		}
 	},
 	preprocess: [
 		preprocess({
