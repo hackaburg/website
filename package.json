@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"dev:host": "vite --host",
-		"build": "vite build",
+		"build": "vite build --base=/2024/",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
