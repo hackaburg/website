@@ -96,7 +96,7 @@
 									</button>
 								</a>
 							{/if}
-							{#if null != null}
+							{#if event.link != null}
 								<a href={event.link}>
 									<button
 										class="flex items-center border-2 border-midnightblue mt-2 rounded-3xl px-4 py-2 hover:cursor-pointer hover:text-palevioletred hover:border-palevioletred"
