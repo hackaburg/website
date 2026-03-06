@@ -6,6 +6,8 @@
 	import img_2019 from '$lib/images/2019.jpg';
 	import img_2022 from '$lib/images/2022.jpg';
 	import img_2023 from '$lib/images/2023.jpg';
+	import img_2024 from '$lib/images/2024.jpg';
+	import img_2025 from '$lib/images/2025.jpg';
 
 	let events = [
 		{
@@ -49,13 +51,27 @@
 			link: '/2023/',
 			text: 'Under the motto "Goes Green", Hackabug is taking place under the aspect of sustainability.',
 			aftermovie: 'https://www.youtube.com/watch?v=7dS4uvJLne0'
+		},
+		{
+			img: img_2024,
+			title: 'Hackaburg 2024',
+			link: '/2024/',
+			text: 'Bridging the digital divide, Hackaburg aims to "connect the unconnected."',
+			aftermovie: null
+		},
+		{
+			img: img_2025,
+			title: 'Hackaburg 2025',
+			link: '/2025/',
+			text: 'With "Insecurity", Hackaburg challenged participants to redefine safety across every layer of life',
+			aftermovie: null
 		}
 	];
 </script>
 
 <BaseComponent
 	headline={'Looking Back'}
-	subHeadline={'Hackaburg 2018 / 2019 / 2022 / 2023'}
+	subHeadline={'Hackaburg 2018 / 2019 / 2022 / 2023 / 2024 / 2025'}
 	id={'about'}
 >
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6 md:mt-8 mt-4 sm:p-8">
