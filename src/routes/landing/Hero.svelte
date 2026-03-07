@@ -19,8 +19,11 @@
 			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
 				<b class="text-palevioletred">28.05. - 30.05.2026</b> | Techbase Regensburg
 			</p>
-			<h1 class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
-			>applications opening soon!</h1>
+			<h1
+				class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
+			>
+				applications opening soon!
+			</h1>
 
 			<!--
 			<div class="mb-6 font-bold lg:mb-8 text-md">

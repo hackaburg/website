@@ -35,7 +35,7 @@
 		color: white;
 
 		background-color: #261f54;
-		border-left: 3px solid #FABD77;
+		border-left: 3px solid #fabd77;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 		border-radius: 2px;
 
@@ -69,7 +69,7 @@
 
 	.special {
 		color: white;
-		background-color: #FABD77;
+		background-color: #fabd77;
 	}
 
 	@media screen and (max-width: 766px) {
