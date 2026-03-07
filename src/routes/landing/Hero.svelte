@@ -13,17 +13,22 @@
 			<h1
 				class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
 			>
-				HACKABURG <p class="ml-4 text-palevioletred">2025</p>
+				HACKABURG <p class="ml-4 text-palevioletred">2026</p>
 				<br />
 			</h1>
 			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
-				<b class="text-palevioletred">22.05. - 24.05.2025</b> | Techbase Regensburg
+				<b class="text-palevioletred">28.05. - 30.05.2026</b> | Techbase Regensburg
 			</p>
+			<h1 class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
+			>applications opening soon!</h1>
+
+			<!--
 			<div class="mb-6 font-bold lg:mb-8 text-md">
 				<a href="https://apply.hackaburg.de" target="_blank" rel="noreferrer">
 					<Button label="Apply now!" />
 				</a>
 			</div>
+		-->
 			<div class="sm:flex md:space-x-4">
 				<div>
 					<a

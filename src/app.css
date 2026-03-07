@@ -31,43 +31,33 @@ html {
   body {
     font-family: "Mulish", sans-serif;
     color: aliceblue;
-    background-color: rgb(26,17,54);
-    background-color: linear-gradient(180deg, rgba(26,17,54,1) 0%, rgba(29,20,62,1) 30%, rgba(38,31,84,1) 60%, rgba(41,39,100,1) 80%, rgba(56,51,118,1) 100%);
-
-    background-image:    url('$lib/images/cloud.webp');
+    background-color: #0E1D26;
+    background-image:    url('$lib/images/brown_footer.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
   }
 }
 
-.stars {
-  background-image: url('$lib/images/star_pattern.png');
-  background-size: 80%;
-  background-repeat: repeat;
-  background-blend-mode: overlay;
-  background-attachment: fixed;
-}
-
 .hackaburg {
-  color: #ca70a2;
+  color: #FABD77;
 }
 
 .bg-hackaburg {
-  background-color: #ca70a2;
+  background-color: #FABD77;
 }
 
 .glow {
-  box-shadow: 0 0 20px -5px hsl(203, 92%, 75%, 1);
+  box-shadow: 0 0 20px -5px hsl(48, 92%, 75%);
 }
 .glow-soft {
-  box-shadow: 0 0 10px -5px hsl(203, 92%, 75%, .3);
+  box-shadow: 0 0 10px -5px hsla(46, 92%, 75%, 0.3);
 }
 
 .glow:hover {
-  box-shadow: 0 0 30px 10px hsla(340, 57%, 64%, .5);
+  box-shadow: 0 0 30px 10px hsla(27, 57%, 64%, 0.5);
 }
 
 .glow-soft:hover {
-  box-shadow: 0 0 20px 10px hsla(340, 57%, 64%, .3);
+  box-shadow: 0 0 20px 10px hsla(13, 57%, 64%, 0.3);
 }

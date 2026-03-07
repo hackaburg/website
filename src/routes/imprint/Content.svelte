@@ -16,7 +16,7 @@
 			<span>Samantha Geller (1. Vorsitzender)</span> <br />
 			<span>Brooke Pintsuk (2. Vorsitzende)</span><br />
 			<span>Samuel Roeben (Kassier)</span><br />
-			<span>Le My Ngo (Beisitzer)</span><br />
+			<span>Konrad Blersch (Beisitzer)</span><br />
 		</p>
 
 		<div class="mb-8">

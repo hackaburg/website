@@ -22,13 +22,11 @@
 <div class="container mx-auto">
 	<Hero />
 	<!-- <Timeline />-->
-	<Schedule />
-	<!-- 		<Workshops />
+	<!-- <Schedule />
+		<Workshops />
 		<Challenges />
 		<Hardware />  
--->
-	<Supporters />
-	<!--
+		<Supporters />#
 		<Team />
 		-->
 	<Behind />

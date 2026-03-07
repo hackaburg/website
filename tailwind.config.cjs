@@ -7,15 +7,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				darkknight: '#1a1136',
-				deadlydepth: '#1d143e',
-				tungsten: '#261f54',
+				darkknight: '#0E1D26',
+				deadlydepth: '#0E1D26',
+				tungsten: '#0E1D26',
 				midnightblue: '#292764',
 				darkslateblue: '#383376',
 				mediumpurple: '#8a7fd5',
 				royallavender: '#8158aa',
 				slateblue: '#815baa',
-				palevioletred: '#ca70a2',
+				palevioletred: '#FABD77',
 				lightskyblue: '#8ae1f4',
 				cornflowerblue: '#74aee1'
 			}
