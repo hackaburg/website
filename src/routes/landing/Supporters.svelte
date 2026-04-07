@@ -1,7 +1,6 @@
 <script>
 	import BaseComponent from '../components/BaseComponent.svelte';
 
-	import continental from '$lib/images/supporters/conti.png';
 	import tcon from '$lib/images/supporters/tcon.png';
 	import trinnovative from '$lib/images/supporters/trinnovative.png';
 	import rnext from '$lib/images/supporters/rnext.png';
