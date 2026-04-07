@@ -39,6 +39,14 @@ html {
   }
 }
 
+.texture {
+  background-image: url('$lib/images/texture.png');
+  background-size: 80%;
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
 .hackaburg {
   color: #FABD77;
 }

@@ -4,7 +4,7 @@
 	export let subHeadline: string;
 </script>
 
-<section class="stars container mx-auto px-6 mt-10" {id}>
+<section class="container mx-auto px-6 mt-10" {id}>
 	<h2
 		class="text-3xl font-bold text-center text-black-800 mb-4 uppercase hackaburg dark:dark:text-white"
 	>

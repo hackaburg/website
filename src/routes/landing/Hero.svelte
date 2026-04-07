@@ -3,7 +3,7 @@
 	import Button from '../components/Button.svelte';
 </script>
 
-<section class="stars dark:bg-gray-900 mt-32 px-10 mx-auto">
+<section class="dark:bg-gray-900 mt-32 px-10 mx-auto">
 	<div class="grid lg:grid-cols-12">
 		<div class="place-self-center lg:col-span-6 ml-mr-auto">
 			<img src={hero} class="transition w-96" alt="mockup" />

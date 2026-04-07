@@ -5,7 +5,7 @@
 
 <BaseComponent
 	headline={'Sponsoring'}
-	subHeadline={'Become a sponsor for Hackaburg 2024'}
+	subHeadline={'Become a sponsor for Hackaburg 2026'}
 	id={'about'}
 >
 	<div class="text-center dark:text-white">

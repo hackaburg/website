@@ -19,16 +19,12 @@
 </script>
 
 <Nav />
-<div class="container mx-auto">
+<div class="texture container mx-auto">
 	<Hero />
-	<!-- <Timeline />-->
-	<!-- <Schedule />
 		<Workshops />
 		<Challenges />
 		<Hardware />  
-		<Supporters />#
 		<Team />
-		-->
 	<Behind />
 	<About />
 	<Venue />
