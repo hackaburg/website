@@ -21,10 +21,15 @@
 <Nav />
 <div class="texture container mx-auto">
 	<Hero />
+	<!-- 
+		<Timeline />
+	    <Schedule />
 		<Workshops />
 		<Challenges />
 		<Hardware />  
 		<Team />
+	-->
+		<Supporters />
 	<Behind />
 	<About />
 	<Venue />

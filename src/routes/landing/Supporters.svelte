@@ -7,71 +7,94 @@
 	import rnext from '$lib/images/supporters/rnext.png';
 	import infineon from '$lib/images/supporters/infineon.png';
 	import vector from '$lib/images/supporters/vector.png';
-	import zollner from '$lib/images/supporters/zollner.png';
 	import msg from '$lib/images/supporters/msg.png';
 	import dgo from '$lib/images/supporters/dgo.png';
+	import syskron from '$lib/images/supporters/syskron.png';
+	import finanzit from '$lib/images/supporters/finanzit.png';
+	import righleycooper from '$lib/images/supporters/righleycooper.svg';
+	import logfield from '$lib/images/supporters/logfield.png';
+	import stadtwerk from '$lib/images/supporters/stadtwerk.png';
+
 
 	let images = {
 		partners: [
 			{
 				src: dgo,
 				alt: 'Digitale Gründerinitiative Oberpfalz',
-				link: 'https://www.digitale-oberpfalz.de/'
+				link: 'https://www.digitale-oberpfalz.de/',
+				width: 'h-20'
 			}
 		],
-		starter_1: [
+		starter: [
 			{
 				src: msg,
 				alt: 'MSG Group',
 				link: 'https://karriere.msg.group/',
-				width: 'w-40'
+				width: 'h-8'
+			},
+			{
+				src: syskron,
+				alt: 'syskron',
+				link: 'https://www.krones.com/en/career/krones.digital.php',
+				width: 'h-24'
+			},
+			{
+				src: tcon,
+				alt: 'tcon',
+				link: 'https://careers.team-con.de/',
+				width: 'h-10'
 			},
 			{
 				src: trinnovative,
 				alt: 'Trinnovative',
 				link: 'https://www.trinnovative.de/karriere/',
 				width: 'h-20'
-			}
+			},
+			{
+				src: righleycooper,
+				alt: 'Righley Cooper',
+				link: 'hhttps://righleycooper.eu/',
+				width: 'h-20'
+			},
+			{
+				src: logfield,
+				alt: 'Logfield',
+				link: 'https://logfield.de/',
+				width: 'h-20'
+			},
 		],
 		medium: [
-			{
-				src: infineon,
-				alt: 'Infineon',
-				link: 'https://www.infineon.com/regensburg',
-				width: 'w-33'
-			},
 			{
 				src: vector,
 				alt: 'Vector',
 				link: 'https://jobs.vector.com',
-				width: 'w-33'
+				width: 'h-22'
 			},
-			{
-				src: tcon,
-				alt: 'tcon',
-				link: 'https://careers.team-con.de',
-				width: 'w-33'
-			},
-			{
-				src: zollner,
-				alt: 'Zollner',
-				link: 'https://www.zollner.de/karriere',
-				width: 'w-20'
-			},
-
 			{
 				src: rnext,
 				alt: 'R-Next',
 				link: 'https://www.regensburg.de/r-next',
-				width: 'w-33'
+				width: 'h-12'
 			}
 		],
 		premium: [
 			{
-				src: continental,
-				alt: 'Continental',
+				src: finanzit,
+				alt: 'FinanzIT',
 				link: 'https://www.continental.com/en/career/',
-				width: 'full-size max-h-[120px]'
+				width: 'h-30' 
+			},
+			{
+				src: infineon,
+				alt: 'Infineon',
+				link: 'https://www.infineon.com/regensburg',
+				width: 'h-24'
+			},
+			{
+				src: stadtwerk,
+				alt: 'Stadtwerk',
+				link: 'https://www.continental.com/en/career/',
+				width: 'h-20'
 			}
 		]
 	};
@@ -91,7 +114,7 @@
 		<div class="flex flex-wrap justify-center pb-2">
 			{#each images.premium as image}
 				<a class="px-4 py-6 mx-4 flex items-center h-40" href={image.link}>
-					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
+					<img src={image.src} class="h-full w-auto object-contain {image.width}" alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -104,11 +127,7 @@
 				<a class="p-2 mx-3 my-2 flex items-center justify-center h-28" href={image.link}>
 					<img
 						src={image.src}
-						class="h-full w-auto object-contain {image.alt === 'Zollner' ||
-						image.alt === 'R-Next' ||
-						image.alt === 'tcon'
-							? 'scale-[60%]'
-							: ''}"
+						class="h-full w-auto object-contain {image.width}"
 						alt={image.alt}
 					/>
 				</a>
@@ -119,11 +138,11 @@
 
 		<!-- Starter sponsors section with specific height adjustment -->
 		<div class="flex flex-wrap justify-center">
-			{#each images.starter_1 as image}
+			{#each images.starter as image}
 				<a class="p-2 mx-3 my-1 flex items-center justify-center" href={image.link}>
 					<img
 						src={image.src}
-						class="w-auto object-contain {image.alt === 'Trinnovative' ? 'h-16' : 'h-8'}"
+						class="w-auto object-contain {image.width}"
 						alt={image.alt}
 					/>
 				</a>
