@@ -15,7 +15,6 @@
 	import logfield from '$lib/images/supporters/logfield.png';
 	import stadtwerk from '$lib/images/supporters/stadtwerk.png';
 
-
 	let images = {
 		partners: [
 			{
@@ -61,7 +60,7 @@
 				alt: 'Logfield',
 				link: 'https://logfield.de/',
 				width: 'h-20'
-			},
+			}
 		],
 		medium: [
 			{
@@ -82,7 +81,7 @@
 				src: finanzit,
 				alt: 'FinanzIT',
 				link: 'https://www.continental.com/en/career/',
-				width: 'h-30' 
+				width: 'h-30'
 			},
 			{
 				src: infineon,
@@ -125,11 +124,7 @@
 		<div class="flex flex-wrap justify-center">
 			{#each images.medium as image}
 				<a class="p-2 mx-3 my-2 flex items-center justify-center h-28" href={image.link}>
-					<img
-						src={image.src}
-						class="h-full w-auto object-contain {image.width}"
-						alt={image.alt}
-					/>
+					<img src={image.src} class="h-full w-auto object-contain {image.width}" alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -140,11 +135,7 @@
 		<div class="flex flex-wrap justify-center">
 			{#each images.starter as image}
 				<a class="p-2 mx-3 my-1 flex items-center justify-center" href={image.link}>
-					<img
-						src={image.src}
-						class="w-auto object-contain {image.width}"
-						alt={image.alt}
-					/>
+					<img src={image.src} class="w-auto object-contain {image.width}" alt={image.alt} />
 				</a>
 			{/each}
 		</div>

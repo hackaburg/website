@@ -29,7 +29,7 @@
 		<Hardware />  
 		<Team />
 	-->
-		<Supporters />
+	<Supporters />
 	<Behind />
 	<About />
 	<Venue />
