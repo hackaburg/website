@@ -79,8 +79,8 @@
 			{
 				src: finanzit,
 				alt: 'FinanzIT',
-				link: 'https://www.continental.com/en/career/',
-				width: 'h-30'
+				link: 'https://www.lff-karriere.bayern.de/kampagne/',
+				width: 'h-20'
 			},
 			{
 				src: infineon,
