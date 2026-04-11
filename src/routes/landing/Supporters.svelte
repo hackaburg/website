@@ -9,7 +9,7 @@
 	import msg from '$lib/images/supporters/msg.png';
 	import dgo from '$lib/images/supporters/dgo.png';
 	import syskron from '$lib/images/supporters/syskron.png';
-	import finanzit from '$lib/images/supporters/finanzit.png';
+	import finanzit from '$lib/images/supporters/finanzit.svg';
 	import righleycooper from '$lib/images/supporters/righleycooper.svg';
 	import logfield from '$lib/images/supporters/logfield.png';
 	import stadtwerk from '$lib/images/supporters/stadtwerk.png';
