@@ -91,7 +91,7 @@
 			{
 				src: stadtwerk,
 				alt: 'Stadtwerk',
-				link: 'https://www.continental.com/en/career/',
+				link: 'https://www.das-stadtwerk-regensburg.de/',
 				width: 'h-20'
 			}
 		]
