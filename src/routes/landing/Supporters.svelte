@@ -99,7 +99,10 @@
 		<!-- Premium sponsors section -->
 		<div class="flex flex-wrap md:flex-nowrap justify-center pb-2">
 			{#each images.premium as image}
-				<a class="w-full md:w-auto md:flex-1 md:min-w-0 px-4 py-6 mx-4 flex items-center justify-center h-40" href={image.link}>
+				<a
+					class="w-full md:w-auto md:flex-1 md:min-w-0 px-4 py-6 mx-4 flex items-center justify-center h-40"
+					href={image.link}
+				>
 					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
@@ -110,7 +113,10 @@
 		<!-- Medium sponsors section -->
 		<div class="flex flex-wrap md:flex-nowrap justify-center">
 			{#each images.medium as image}
-				<a class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-2 flex items-center justify-center h-20" href={image.link}>
+				<a
+					class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-2 flex items-center justify-center h-20"
+					href={image.link}
+				>
 					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
@@ -121,7 +127,10 @@
 		<!-- Starter sponsors section with specific height adjustment -->
 		<div class="flex flex-wrap md:flex-nowrap justify-center">
 			{#each images.starter as image}
-				<a class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-1 flex items-center justify-center h-16" href={image.link}>
+				<a
+					class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-1 flex items-center justify-center h-16"
+					href={image.link}
+				>
 					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
