@@ -19,80 +19,68 @@
 			{
 				src: dgo,
 				alt: 'Digitale Gründerinitiative Oberpfalz',
-				link: 'https://www.digitale-oberpfalz.de/',
-				width: 'h-20'
+				link: 'https://www.digitale-oberpfalz.de/'
 			}
 		],
 		starter: [
 			{
 				src: msg,
 				alt: 'MSG Group',
-				link: 'https://karriere.msg.group/',
-				width: 'h-8'
+				link: 'https://karriere.msg.group/'
 			},
 			{
 				src: syskron,
 				alt: 'syskron',
-				link: 'https://www.krones.com/en/career/krones.digital.php',
-				width: 'h-24'
+				link: 'https://www.krones.com/en/career/krones.digital.php'
 			},
 			{
 				src: tcon,
 				alt: 'tcon',
-				link: 'https://careers.team-con.de/',
-				width: 'h-10'
+				link: 'https://careers.team-con.de/'
 			},
 			{
 				src: trinnovative,
 				alt: 'Trinnovative',
-				link: 'https://www.trinnovative.de/karriere/',
-				width: 'h-20'
+				link: 'https://www.trinnovative.de/karriere/'
 			},
 			{
 				src: righleycooper,
 				alt: 'Righley Cooper',
-				link: 'hhttps://righleycooper.eu/',
-				width: 'h-20'
+				link: 'hhttps://righleycooper.eu/'
 			},
 			{
 				src: logfield,
 				alt: 'Logfield',
-				link: 'https://logfield.de/',
-				width: 'h-20'
+				link: 'https://logfield.de/'
 			}
 		],
 		medium: [
 			{
 				src: vector,
 				alt: 'Vector',
-				link: 'https://jobs.vector.com',
-				width: 'h-22'
+				link: 'https://jobs.vector.com'
 			},
 			{
 				src: rnext,
 				alt: 'R-Next',
-				link: 'https://www.regensburg.de/r-next',
-				width: 'h-12'
+				link: 'https://www.regensburg.de/r-next'
 			}
 		],
 		premium: [
 			{
 				src: finanzit,
 				alt: 'FinanzIT',
-				link: 'https://www.lff-karriere.bayern.de/kampagne/',
-				width: 'h-20'
+				link: 'https://www.lff-karriere.bayern.de/kampagne/'
 			},
 			{
 				src: infineon,
 				alt: 'Infineon',
-				link: 'https://www.infineon.com/regensburg',
-				width: 'h-24'
+				link: 'https://www.infineon.com/regensburg'
 			},
 			{
 				src: stadtwerk,
 				alt: 'Stadtwerk',
-				link: 'https://www.das-stadtwerk-regensburg.de/',
-				width: 'h-20'
+				link: 'https://www.das-stadtwerk-regensburg.de/'
 			}
 		]
 	};
@@ -109,10 +97,10 @@
 		</h2>
 
 		<!-- Premium sponsors section -->
-		<div class="flex flex-wrap justify-center pb-2">
+		<div class="flex flex-wrap md:flex-nowrap justify-center pb-2">
 			{#each images.premium as image}
-				<a class="px-4 py-6 mx-4 flex items-center h-40" href={image.link}>
-					<img src={image.src} class="h-full w-auto object-contain {image.width}" alt={image.alt} />
+				<a class="w-full md:w-auto md:flex-1 md:min-w-0 px-4 py-6 mx-4 flex items-center justify-center h-40" href={image.link}>
+					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -120,10 +108,10 @@
 		<hr class="mx-8 my-4" />
 
 		<!-- Medium sponsors section -->
-		<div class="flex flex-wrap justify-center">
+		<div class="flex flex-wrap md:flex-nowrap justify-center">
 			{#each images.medium as image}
-				<a class="p-2 mx-3 my-2 flex items-center justify-center h-28" href={image.link}>
-					<img src={image.src} class="h-full w-auto object-contain {image.width}" alt={image.alt} />
+				<a class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-2 flex items-center justify-center h-20" href={image.link}>
+					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
 		</div>
@@ -131,10 +119,10 @@
 		<hr class="mx-8 my-4" />
 
 		<!-- Starter sponsors section with specific height adjustment -->
-		<div class="flex flex-wrap justify-center">
+		<div class="flex flex-wrap md:flex-nowrap justify-center">
 			{#each images.starter as image}
-				<a class="p-2 mx-3 my-1 flex items-center justify-center" href={image.link}>
-					<img src={image.src} class="w-auto object-contain {image.width}" alt={image.alt} />
+				<a class="w-full md:w-auto md:flex-1 md:min-w-0 p-2 mx-3 my-1 flex items-center justify-center h-16" href={image.link}>
+					<img src={image.src} class="h-full w-auto object-contain" alt={image.alt} />
 				</a>
 			{/each}
 		</div>
