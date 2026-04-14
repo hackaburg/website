@@ -46,7 +46,7 @@
 			{
 				src: righleycooper,
 				alt: 'Righley Cooper',
-				link: 'hhttps://righleycooper.eu/'
+				link: 'https://righleycooper.eu/'
 			},
 			{
 				src: logfield,
