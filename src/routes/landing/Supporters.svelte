@@ -58,7 +58,7 @@
 			{
 				src: vector,
 				alt: 'Vector',
-				link: 'https://jobs.vector.com'
+				link: 'https://join.vector.com/'
 			},
 			{
 				src: rnext,
