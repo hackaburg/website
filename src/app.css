@@ -40,7 +40,7 @@ html {
 }
 
 .texture {
-  background-image: url('$lib/images/texture.png');
+  background-image: url('$lib/images/texture.webp');
   background-size: 80%;
   background-repeat: repeat;
   background-blend-mode: overlay;
