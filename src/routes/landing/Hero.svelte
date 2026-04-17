@@ -16,38 +16,40 @@
 				HACKABURG <p class="ml-4 text-palevioletred">2026</p>
 				<br />
 			</h1>
-			<!--
+
 			<p class="mb-6 font-bold dark:text-white lg:mb-8 text-xl">
 				<b class="text-palevioletred">28.05. - 30.05.2026</b> | Techbase Regensburg
 			</p>
+			<!--
 			<h1
 				class="flex dark:text-white mb-4 md:text-5xl text-3xl font-extrabold dark:dark:text-white mt-8"
 			>
 				applications opening soon!
 			</h1> -->
 
-			<div class="mb-6 font-bold lg:mb-8 text-md">
-				<a href="https://apply.hackaburg.de" target="_blank" rel="noreferrer">
+			<div class="font-bold text-md w-full sm:w-52">
+				<a href="https://apply.hackaburg.de" target="_blank" rel="noreferrer" class="block">
 					<Button label="Apply now!" />
 				</a>
 			</div>
-			<div class="sm:flex md:space-x-4">
-				<div>
+			<div class="sm:flex sm:space-x-2 md:space-x-3">
+				<div class="w-full sm:w-52">
 					<a
 						href="https://26490796.sibforms.com/serve/MUIFAPx4aKGKuMbU3UZxk_ODAxapOpxY9oApe-LFK48oC2HcUpuUDG5RfLrplRnzmlE2fhnxFsrLWAO1LoVerg8hegpCyxQDQ85Ac45SzhCZXZlT8m5RRT7wDfIbcv9GgTCPGWiw6QSSK2qQR2n6ST8ezKWg-QTn0tCj8LRENn-vhJpHafi3096LcWLZQXDIx_IzJZaOLL7Chfdk"
 						target="_blank"
 						rel="noreferrer"
+						class="block"
 					>
 						<Button label="Our Newsletter" />
 					</a>
 				</div>
-				<div>
-					<a href="https://linktr.ee/hackaburg/" target="_blank" rel="noreferrer">
+				<div class="w-full sm:w-52">
+					<a href="https://linktr.ee/hackaburg/" target="_blank" rel="noreferrer" class="block">
 						<Button label="Social Media" />
 					</a>
 				</div>
-				<div>
-					<a href="https://discord.gg/NF3DA2xghD" target="_blank" rel="noreferrer">
+				<div class="w-full sm:w-52">
+					<a href="https://discord.gg/NF3DA2xghD" target="_blank" rel="noreferrer" class="block">
 						<Button label="Discord" type="discord" />
 					</a>
 				</div>

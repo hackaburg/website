@@ -87,22 +87,22 @@
 					<p class="mb-3 text-base dark:text-white h-16">
 						{event.text}
 					</p>
-					<div class="flex flex-row h-full md:pt-20">
-						<div class="flex flex-wrap gap-0 mt-auto">
+					<div class="flex flex-row h-full md:pt-10">
+						<div class="flex w-full flex-wrap justify-center gap-2 mt-auto">
 							{#if event.aftermovie != null}
 								<a href={event.aftermovie}>
 									<button
-										class="flex items-center w-32 mt-2 border-2 rounded-3xl px-3 py-2 hover:cursor-pointer hover:text-palevioletred hover:border-palevioletred"
+										class="flex items-center justify-center gap-1 whitespace-nowrap w-40 mt-2 border-2 rounded-3xl px-3 py-2 hover:cursor-pointer hover:text-palevioletred hover:border-palevioletred"
 									>
 										Aftermovie <svg
-											class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
+											class="rtl:rotate-180 w-3.5 h-3.5 shrink-0"
 											aria-hidden="true"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 14 10"
 										>
 											<path
-												stroke="white"
+												stroke="currentColor"
 												stroke-linecap="round"
 												stroke-linejoin="round"
 												stroke-width="2"
@@ -115,17 +115,17 @@
 							{#if event.link != null}
 								<a href={event.link}>
 									<button
-										class="flex items-center border-2 border-midnightblue mt-2 rounded-3xl px-4 py-2 hover:cursor-pointer hover:text-palevioletred hover:border-palevioletred"
+										class="flex items-center justify-center gap-1 whitespace-nowrap w-40 border-2 border-midnightblue mt-2 rounded-3xl px-3 py-2 hover:cursor-pointer hover:text-palevioletred hover:border-palevioletred"
 									>
 										Website <svg
-											class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2"
+											class="rtl:rotate-180 w-3.5 h-3.5 shrink-0"
 											aria-hidden="true"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 14 10"
 										>
 											<path
-												stroke="white"
+												stroke="currentColor"
 												stroke-linecap="round"
 												stroke-linejoin="round"
 												stroke-width="2"
