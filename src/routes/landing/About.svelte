@@ -64,7 +64,7 @@
 			title: 'Hackaburg 2025',
 			link: '/2025/',
 			text: 'With "Insecurity", Hackaburg challenged participants to redefine safety across every layer of life',
-			aftermovie: null
+			aftermovie: 'https://www.youtube.com/watch?v=SksK_LZLm1k'
 		}
 	];
 </script>
